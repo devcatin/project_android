@@ -1,32 +1,58 @@
+import java.util.jar.Manifest
+
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
         applicationId "com.erik.android.androidlean"
-        minSdkVersion 15
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
+            //设置是否进行混淆
             minifyEnabled false
+            //设置混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            //设置是否进行混淆
+            minifyEnabled false
+            //设置混淆文件的位置
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     repositories {
         flatDir {
             dirs 'libs'
         }
     }
+
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
         }
     }
+
+    lintOptions {
+        checkReleaseBuilds false
+        //删除lint检查的error
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
 }
 
 dependencies {

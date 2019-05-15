@@ -1,0 +1,4 @@
+#Wed May 15 17:33:38 CST 2019
+base.0=/Users/yuanwang/Documents/Learning/AndroidProjects/project_android/AndroidLean/app/build/intermediates/dex/release/mergeDexRelease/out
+path.0=classes.dex
+renamed.0=classes.dex

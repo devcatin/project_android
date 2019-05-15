@@ -23,3 +23,15 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.3"
+    minSdkVersion = 15
+    targetSdkVersion = 28
+    versionCode = 1
+    versionName = "1.0"
+    environment = "1"
+    ENABLE_LOG = "true"
+    UMENG_APPKEY_VALUE = "5aab7bc9a40fa32bca0000ea"//友盟生产
+}
