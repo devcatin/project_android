@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 15 17:33:38 CST 2019
+#Mon Jun 24 17:13:11 CST 2019
 1.base=/Users/yuanwang/Documents/Learning/AndroidProjects/project_android/AndroidLean/app/build/intermediates/merged_assets/release/mergeReleaseAssets/out
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

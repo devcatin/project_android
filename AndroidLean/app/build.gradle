@@ -14,18 +14,39 @@ android {
         versionName rootProject.ext.versionName
         applicationId "com.erik.android.androidlean"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //版本名后面添加一句话，意思就是flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+        flavorDimensions "versionCode"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("$rootDir/dev.keystore")
+            storePassword "dev123"
+            keyAlias "dev_keystore"
+            keyPassword "dev123"
+        }
+        release {
+            storeFile file("$rootDir/pro.keystore")
+            storePassword "pro123"
+            keyAlias "pro_keystore"
+            keyPassword "pro123"
+        }
     }
 
     buildTypes {
         release {
             //设置是否进行混淆
             minifyEnabled false
+            debuggable false
+            signingConfig signingConfigs.release
             //设置混淆文件的位置
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
             //设置是否进行混淆
             minifyEnabled false
+            debuggable true
+            signingConfig signingConfigs.debug
             //设置混淆文件的位置
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -51,6 +72,19 @@ android {
 
     dexOptions {
         javaMaxHeapSize "4g"
+    }
+
+    //渠道
+    productFlavors {
+        /**
+         * 华为
+         */
+        HuaWei {
+            flavorDimensions "default"
+            buildConfigField "int", "Environment", rootProject.ext.environment
+            buildConfigField "boolean", "ENABLE_LOG", rootProject.ext.ENABLE_LOG
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei", UMENG_APPKEY_VALUE: rootProject.ext.UMENG_APPKEY_VALUE]
+        }
     }
 
 }

@@ -512,6 +512,7 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
+dimen default_height
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen highlight_alpha_material_colored
@@ -676,7 +677,6 @@ id add
 id alertTitle
 id all
 id always
-id appwidget_text
 id async
 id barrier
 id beginning
@@ -830,7 +830,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
-layout new_app_widget
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -1282,4 +1281,3 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
-xml new_app_widget_info

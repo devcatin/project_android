@@ -4,7 +4,7 @@
             "outputFile": "/Users/yuanwang/Documents/Learning/AndroidProjects/project_android/AndroidLean/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/Users/yuanwang/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/1ec4838557b0a18aaf6490aa5ce2a773/res/values-v17/values-v17.xml",
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/758769a0e84fcf1fb8e22318388dc3d7/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -1,1 +1,1 @@
-{"mName":"debug","mStoreFile":"/Users/yuanwang/.android/debug.keystore","mStorePassword":"android","mKeyAlias":"AndroidDebugKey","mKeyPassword":"android","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}
+{"mName":"externalOverride","mStoreFile":"/Users/yuanwang/Desktop/test.jks","mStorePassword":"123456","mKeyAlias":"key0","mKeyPassword":"123456","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}
