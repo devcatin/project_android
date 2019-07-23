@@ -1,6 +1,6 @@
 #Internal package file, do not edit.
-#Mon Jun 24 18:54:13 CST 2019
-1.base=/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/merged_assets/HuaWeiDebug/mergeHuaWeiDebugAssets/out
+#Fri Jul 19 18:05:59 CST 2019
+1.base=/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/merged_assets/HuaWeiDebug/out
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
 count=2

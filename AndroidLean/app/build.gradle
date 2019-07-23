@@ -1,5 +1,3 @@
-import java.util.jar.Manifest
-
 apply plugin: 'com.android.application'
 
 android {
@@ -46,6 +44,7 @@ android {
             //设置是否进行混淆
             minifyEnabled false
             debuggable true
+
             signingConfig signingConfigs.debug
             //设置混淆文件的位置
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -85,6 +84,15 @@ android {
             buildConfigField "boolean", "ENABLE_LOG", rootProject.ext.ENABLE_LOG
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei", UMENG_APPKEY_VALUE: rootProject.ext.UMENG_APPKEY_VALUE]
         }
+        /**
+         * * 小米
+         */
+        XiaoMi {
+            flavorDimensions "default"
+            buildConfigField "int", "Environment", rootProject.ext.environment
+            buildConfigField "boolean", "ENABLE_LOG", rootProject.ext.ENABLE_LOG
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi", UMENG_APPKEY_VALUE: rootProject.ext.UMENG_APPKEY_VALUE]
+        }
     }
 
 }
@@ -93,7 +101,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13-beta-3'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':loginmodule')

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/yuanwang/Documents/Learning/AndroidProjects/project_android/AndroidLean/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
+            "outputFile": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
             "map": [
                 {
-                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/1162b5fd95e5620917aae3bcc95c167f/res/values-ja/values-ja.xml",
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/332f6148f26b1fa2bdc6456a5690bf28/res/values-ja/values-ja.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/758769a0e84fcf1fb8e22318388dc3d7/res/values-ja/values-ja.xml",
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/15ce55a14728d83eda67ba9b9a94b0f9/res/values-ja/values-ja.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

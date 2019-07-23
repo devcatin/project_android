@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/yuanwang/Documents/Learning/AndroidProjects/project_android/AndroidLean/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/758769a0e84fcf1fb8e22318388dc3d7/res/values-v24/values-v24.xml",
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/15ce55a14728d83eda67ba9b9a94b0f9/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

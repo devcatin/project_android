@@ -369,10 +369,15 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color back_red
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color background_white
+color bg_topbar
+color bottom_bg
+color bottom_color
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -392,6 +397,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color frame_search
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -416,6 +422,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color reveal_color
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -428,6 +435,9 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color text_blue
+color text_gray
+color text_topbar
 color tooltip_background_dark
 color tooltip_background_light
 dimen abc_action_bar_content_inset_material
@@ -630,6 +640,11 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable bg_frame_search
+drawable delete
+drawable drawable_border_style
+drawable drawable_slide_line
+drawable drawable_virtual_line
 drawable example_appwidget_preview
 drawable ic_android_black_24dp
 drawable ic_launcher_background
@@ -646,8 +661,25 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable tab_menu_bg
+drawable tab_menu_buy
+drawable tab_menu_home
+drawable tab_menu_hot
+drawable tab_menu_mine
+drawable tab_menu_text
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable touch
+drawable ty_10
+drawable ty_11
+drawable ty_2
+drawable ty_3
+drawable ty_4
+drawable ty_5
+drawable ty_6
+drawable ty_7
+drawable ty_8
+drawable ty_9
 id ALT
 id CTRL
 id FUNCTION
@@ -701,6 +733,7 @@ id default_activity_button
 id dimensions
 id direct
 id disableHome
+id div_tab_bar
 id edit_query
 id end
 id expand_activities_button
@@ -726,6 +759,7 @@ id line1
 id line3
 id listMode
 id list_item
+id ly_top_bar
 id message
 id middle
 id multiply
@@ -742,6 +776,11 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id rb_buy
+id rb_home
+id rb_hot
+id rb_mine
+id rg_tab_bar
 id right
 id right_icon
 id right_side
@@ -789,9 +828,12 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id tv_title
+id txt_topbar
 id uniform
 id up
 id useLogo
+id vpager
 id withText
 id wrap
 id wrap_content
@@ -830,6 +872,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
+layout activity_one
+layout fregment_content
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -842,6 +886,14 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap index_icon_buy_hover
+mipmap index_icon_buy_nor
+mipmap index_icon_home_hover
+mipmap index_icon_home_nor
+mipmap index_icon_hot_hover
+mipmap index_icon_hot_nor
+mipmap index_icon_mine_hover
+mipmap index_icon_mine_nor
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -886,6 +938,10 @@ string app_name
 string appwidget_text
 string search_menu_title
 string status_bar_notification_info_overflow
+string tab_menu_buy
+string tab_menu_home
+string tab_menu_hot
+string tab_menu_mine
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1233,6 +1289,7 @@ style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 style Widget_Support_CoordinatorLayout
+style tab_menu_item
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">AndroidLean</string>
+    <string name="app_name">学习</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+
+    <string name="tab_menu_home">首页</string>
+    <string name="tab_menu_hot">热门</string>
+    <string name="tab_menu_buy">已购</string>
+    <string name="tab_menu_mine">我的</string>
+
 </resources>

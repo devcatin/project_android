@@ -3,8 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidLean.iml" filepath="$PROJECT_DIR$/AndroidLean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AndroidLean-app.iml" filepath="$PROJECT_DIR$/app/AndroidLean-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loginmodule/AndroidLean-loginmodule.iml" filepath="$PROJECT_DIR$/loginmodule/AndroidLean-loginmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utilslibrary/AndroidLean-utilslibrary.iml" filepath="$PROJECT_DIR$/utilslibrary/AndroidLean-utilslibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/loginmodule/loginmodule.iml" filepath="$PROJECT_DIR$/loginmodule/loginmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project_android-AndroidLean.iml" filepath="$PROJECT_DIR$/project_android-AndroidLean.iml" />
       <module fileurl="file://$PROJECT_DIR$/utilslibrary/utilslibrary.iml" filepath="$PROJECT_DIR$/utilslibrary/utilslibrary.iml" />
     </modules>
   </component>
