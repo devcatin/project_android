@@ -8,6 +8,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 
+import com.erik.android.androidlean.Tools.DBOpenHelper;
+
 public class NameContentProvider extends ContentProvider {
 
     private static UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);

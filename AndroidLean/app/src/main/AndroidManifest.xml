@@ -7,6 +7,8 @@
         android:value="${UMENG_CHANNEL_VALUE}" />
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".Ohters.TestApplication"
@@ -16,15 +18,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        <activity android:name=".Activity.OneActivity"
+        <activity android:name=".Activity.DetailActivity"></activity>
+        <activity
+            android:name=".Activity.OneActivity"
             android:label="第二个Activity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Activity.MainActivity"
             android:configChanges="orientation"
@@ -35,7 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

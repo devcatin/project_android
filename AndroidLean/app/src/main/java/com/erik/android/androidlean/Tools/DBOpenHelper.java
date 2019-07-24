@@ -1,4 +1,4 @@
-package com.erik.android.androidlean.Ohters;
+package com.erik.android.androidlean.Tools;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

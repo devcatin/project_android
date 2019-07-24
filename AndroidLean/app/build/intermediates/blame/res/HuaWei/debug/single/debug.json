@@ -132,6 +132,10 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/15ce55a14728d83eda67ba9b9a94b0f9/res/color/abc_btn_colored_text_material.xml"
     },
     {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/raw_test.txt.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/raw/test.txt"
+    },
+    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/15ce55a14728d83eda67ba9b9a94b0f9/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -372,6 +376,10 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/15ce55a14728d83eda67ba9b9a94b0f9/res/color/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/layout_fragment_newlist.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/fragment_newlist.xml"
+    },
+    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/15ce55a14728d83eda67ba9b9a94b0f9/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -574,6 +582,10 @@
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/drawable_tab_menu_buy.xml.flat",
         "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/drawable/tab_menu_buy.xml"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/layout_activity_detail.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/activity_detail.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/layout_fregment_content.xml.flat",
@@ -1050,6 +1062,10 @@
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/mipmap-hdpi_index_icon_buy_nor.png.flat",
         "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/mipmap-hdpi/index_icon_buy_nor.png"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/layout_list_item.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/list_item.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/HuaWei/debug/color_abc_tint_default.xml.flat",

@@ -1,6 +1,8 @@
 package com.erik.android.androidlean.Bean;
 
-public class NewBean {
+import java.io.Serializable;
+
+public class NewBean implements Serializable {
 
     private String new_title;
     private String new_content;

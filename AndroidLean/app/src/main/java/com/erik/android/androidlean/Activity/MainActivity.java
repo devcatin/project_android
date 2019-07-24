@@ -9,22 +9,17 @@ import android.net.Uri;
 import android.provider.Contacts;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.view.Window;
-import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.erik.android.androidlean.Adapter.TestFragmentPagerAdapter;
 import com.erik.android.androidlean.R;
-import com.erik.android.androidlean.Fragment.TestFregment;
 
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {

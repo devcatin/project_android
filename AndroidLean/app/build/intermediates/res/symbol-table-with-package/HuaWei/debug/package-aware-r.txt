@@ -525,6 +525,7 @@ dimen compat_notification_large_icon_max_width
 dimen default_height
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen font_size
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
@@ -714,6 +715,9 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnclean
+id btnread
+id btnsave
 id buttonPanel
 id center
 id center_horizontal
@@ -735,9 +739,12 @@ id direct
 id disableHome
 id div_tab_bar
 id edit_query
+id editdetail
+id editname
 id end
 id expand_activities_button
 id expanded_menu
+id fg_list
 id fill
 id fill_horizontal
 id fill_vertical
@@ -759,6 +766,7 @@ id line1
 id line3
 id listMode
 id list_item
+id list_news
 id ly_top_bar
 id message
 id middle
@@ -829,6 +837,7 @@ id title_template
 id top
 id topPanel
 id tv_title
+id txt_item_title
 id txt_topbar
 id uniform
 id up
@@ -870,10 +879,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detail
 layout activity_login
 layout activity_main
 layout activity_one
+layout fragment_newlist
 layout fregment_content
+layout list_item
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -894,6 +906,7 @@ mipmap index_icon_hot_hover
 mipmap index_icon_hot_nor
 mipmap index_icon_mine_hover
 mipmap index_icon_mine_nor
+raw test
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -936,6 +949,11 @@ string abc_toolbar_collapse_description
 string add_widget
 string app_name
 string appwidget_text
+string btnclean
+string btnread
+string btnwrite
+string detailtitle
+string nametitle
 string search_menu_title
 string status_bar_notification_info_overflow
 string tab_menu_buy

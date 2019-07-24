@@ -8,4 +8,10 @@
     <string name="tab_menu_buy">已购</string>
     <string name="tab_menu_mine">我的</string>
 
+    <string name="nametitle">请输入文件名</string>
+    <string name="detailtitle">请输入文件内容</string>
+    <string name="btnwrite">写入</string>
+    <string name="btnclean">清空</string>
+    <string name="btnread">读取文件内容</string>
+
 </resources>
