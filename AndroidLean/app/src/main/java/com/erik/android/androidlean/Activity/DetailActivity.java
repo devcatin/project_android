@@ -70,7 +70,6 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
                 }
                 break;
             case R.id.btnread:
-                String detail = "";
                 SharedHelper sharedHelper1 = new SharedHelper(mContext);
                 Map<String, String> map = sharedHelper1.readData();
                 String value = "suername:" + map.get("username") + " passwd:" + map.get("passwd");

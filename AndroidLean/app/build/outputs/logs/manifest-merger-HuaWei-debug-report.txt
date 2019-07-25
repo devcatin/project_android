@@ -7,53 +7,53 @@ INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app
 	android:name
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:6:9-37
 manifest
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-44:12
 MERGED from [:loginmodule] /Users/yuanwang/Documents/Learning/project_android/AndroidLean/loginmodule/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-27:12
 MERGED from [:utilslibrary] /Users/yuanwang/Documents/Learning/project_android/AndroidLean/utilslibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/15ce55a14728d83eda67ba9b9a94b0f9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/04c611e67067756fd1bd27f9205ce38c/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/e0479dffba529bec693ac2419efbd598/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ee80ed84c9ca44f19bbe07dcd02d0af9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c1930a407354506c055a51c4c0daa5eb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/60cee63f6a65ea30d61b5dfab4cf1fac/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5760dad7f9661e411f85bc09fac79aab/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c2aa5fd491c0aa6dc44ce5c146715a9d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9642018cd229483bfc3a20ff15466210/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/22b1464750fad5459c11294384d46c07/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/62364843a9046b869f5cf47b4bcee1dc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/aba5ca8b88fb1f8346d6ebffa78e2fe6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/533add0ebe0ac65a8f247dc9b7dc36e2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/fb1288f553ece200abc9f07043a18a75/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/7e799ca3f53a668e19c2593c301aa2cc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/332f6148f26b1fa2bdc6456a5690bf28/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5ca04115bb81ea91318175d054166110/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/10583edd7144dff2f26a15f1ba4de39a/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/7a904e68fe265515235b356481a9b599/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c7c77871c069be91e7c831b83bf235e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/0155ad570b59bfa0a0c01037bddb8130/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bccbd20ee2d96538dd75fb8b8da559b9/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/06509ae021bd637f74c54d19a1efb691/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/7ca8a535247abfe863c1838d37b16839/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/b07e5d2fa068d6630f9b0e125eecba56/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/845b53942633767d0e3b8fda58f48054/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/e2349adc17181e25c7d0767bc9f53df3/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-43:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2509d23fe20e68155cb06f780fef584c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ae428bd741c8ffcef0e06d6a1c43f3cd/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/04d59198f5d2893a30d24c0b6bb2edcb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8406103ca198e5da034e938880f36900/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/afd337891df114ca81ad2c8d77760e57/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/3af170b01dee5e888e06d0a50b3cd711/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/df2cdd2eff65210aabe854670bba8e48/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9de83df49317bd42080bba3dcc708153/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/881c930f7a386aeb8ec7fb056f7256c5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/0875ec1f69063eee46f00526cb6848f5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/311e364eb835fb63740ef4a13c57909a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/d22999eff7aa255553b08b1ff3a95401/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bb0b88634c4859c92376994ed93ec544/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/58257f141fb664ccccfdd767dd717d85/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/0cb49699f166e9cad8b138317ed06a48/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/fcf738ca538536cae164dfbd97cd9278/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ceaae80e2087ffa694d4330605b2ba3b/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/386b82aa92f47d9d6b66e0345b73d48e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2a716fecdeb716b68a2ac01bb216b4b3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/a1ffc86e4e8205767be08227497bfcbd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/4815f787dfe00ca66787cedbc683cd6b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/6ed1a2540c97f98637bd164f71ccded3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bcc0add862c1598082af9875c0229fda/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9f05d1efdac21153d86d62d3dd8f66be/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/196feec08df53e01f789504567b02550/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c2ed3b4ba8f4dac93985d1cc1f681064/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/37669e9b7e27727f2e990a6f48b6b0ef/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:3:5-43
 		INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-44:12
 		INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:1-44:12
 		INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:2:11-69
@@ -62,25 +62,25 @@ ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/sr
 	android:name
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:9:22-69
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:10:5-83
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:10:5-84
 	android:name
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:10:22-81
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:11:5-80
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:11:22-78
 application
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:13:5-41:19
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:13:5-42:19
 MERGED from [:loginmodule] /Users/yuanwang/Documents/Learning/project_android/AndroidLean/loginmodule/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-25:19
 MERGED from [:loginmodule] /Users/yuanwang/Documents/Learning/project_android/AndroidLean/loginmodule/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-25:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/04c611e67067756fd1bd27f9205ce38c/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/04c611e67067756fd1bd27f9205ce38c/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/332f6148f26b1fa2bdc6456a5690bf28/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/332f6148f26b1fa2bdc6456a5690bf28/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5ca04115bb81ea91318175d054166110/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5ca04115bb81ea91318175d054166110/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ae428bd741c8ffcef0e06d6a1c43f3cd/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ae428bd741c8ffcef0e06d6a1c43f3cd/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/fcf738ca538536cae164dfbd97cd9278/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/fcf738ca538536cae164dfbd97cd9278/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ceaae80e2087ffa694d4330605b2ba3b/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ceaae80e2087ffa694d4330605b2ba3b/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/332f6148f26b1fa2bdc6456a5690bf28/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/fcf738ca538536cae164dfbd97cd9278/AndroidManifest.xml:22:18-91
 	android:supportsRtl
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:19:9-35
 	android:label
@@ -95,44 +95,48 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gr
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:20:9-65
 	android:name
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:14:9-47
+activity#com.erik.android.androidlean.Activity.DBActivity
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:21:9-66
+	android:name
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:21:19-54
 activity#com.erik.android.androidlean.Activity.DetailActivity
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:21:9-70
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:22:9-61
 	android:name
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:21:19-58
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:22:19-58
 activity#com.erik.android.androidlean.Activity.OneActivity
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:22:9-30:20
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:23:9-31:20
 	android:label
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:24:13-40
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:25:13-40
 	android:name
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:23:13-49
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:24:13-49
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:25:13-29:29
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:26:13-30:29
 action#android.intent.action.VIEW
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:26:17-69
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:26:25-66
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:28:17-76
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:29:17-76
 	android:name
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:28:27-73
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:29:27-73
 activity#com.erik.android.androidlean.Activity.MainActivity
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:31:9-40:20
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:32:9-41:20
 	android:hardwareAccelerated
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:34:13-48
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:35:13-48
 	android:configChanges
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:33:13-48
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:34:13-48
 	android:name
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:32:13-50
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:33:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:35:13-39:29
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:36:17-69
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:36:25-66
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:38:17-77
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:38:27-74
+		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:39:27-74
 uses-sdk
 INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
@@ -141,60 +145,60 @@ MERGED from [:loginmodule] /Users/yuanwang/Documents/Learning/project_android/An
 MERGED from [:loginmodule] /Users/yuanwang/Documents/Learning/project_android/AndroidLean/loginmodule/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:utilslibrary] /Users/yuanwang/Documents/Learning/project_android/AndroidLean/utilslibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:utilslibrary] /Users/yuanwang/Documents/Learning/project_android/AndroidLean/utilslibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/15ce55a14728d83eda67ba9b9a94b0f9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/15ce55a14728d83eda67ba9b9a94b0f9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/04c611e67067756fd1bd27f9205ce38c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/04c611e67067756fd1bd27f9205ce38c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/e0479dffba529bec693ac2419efbd598/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/e0479dffba529bec693ac2419efbd598/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ee80ed84c9ca44f19bbe07dcd02d0af9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ee80ed84c9ca44f19bbe07dcd02d0af9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c1930a407354506c055a51c4c0daa5eb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c1930a407354506c055a51c4c0daa5eb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/60cee63f6a65ea30d61b5dfab4cf1fac/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/60cee63f6a65ea30d61b5dfab4cf1fac/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5760dad7f9661e411f85bc09fac79aab/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5760dad7f9661e411f85bc09fac79aab/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c2aa5fd491c0aa6dc44ce5c146715a9d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c2aa5fd491c0aa6dc44ce5c146715a9d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9642018cd229483bfc3a20ff15466210/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9642018cd229483bfc3a20ff15466210/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/22b1464750fad5459c11294384d46c07/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/22b1464750fad5459c11294384d46c07/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/62364843a9046b869f5cf47b4bcee1dc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/62364843a9046b869f5cf47b4bcee1dc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/aba5ca8b88fb1f8346d6ebffa78e2fe6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/aba5ca8b88fb1f8346d6ebffa78e2fe6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/533add0ebe0ac65a8f247dc9b7dc36e2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/533add0ebe0ac65a8f247dc9b7dc36e2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/fb1288f553ece200abc9f07043a18a75/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/fb1288f553ece200abc9f07043a18a75/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/7e799ca3f53a668e19c2593c301aa2cc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/7e799ca3f53a668e19c2593c301aa2cc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/332f6148f26b1fa2bdc6456a5690bf28/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/332f6148f26b1fa2bdc6456a5690bf28/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5ca04115bb81ea91318175d054166110/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5ca04115bb81ea91318175d054166110/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/10583edd7144dff2f26a15f1ba4de39a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/10583edd7144dff2f26a15f1ba4de39a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/7a904e68fe265515235b356481a9b599/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/7a904e68fe265515235b356481a9b599/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c7c77871c069be91e7c831b83bf235e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c7c77871c069be91e7c831b83bf235e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/0155ad570b59bfa0a0c01037bddb8130/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/0155ad570b59bfa0a0c01037bddb8130/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bccbd20ee2d96538dd75fb8b8da559b9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bccbd20ee2d96538dd75fb8b8da559b9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/06509ae021bd637f74c54d19a1efb691/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/06509ae021bd637f74c54d19a1efb691/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/7ca8a535247abfe863c1838d37b16839/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/7ca8a535247abfe863c1838d37b16839/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/b07e5d2fa068d6630f9b0e125eecba56/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/b07e5d2fa068d6630f9b0e125eecba56/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/845b53942633767d0e3b8fda58f48054/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/845b53942633767d0e3b8fda58f48054/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/e2349adc17181e25c7d0767bc9f53df3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/e2349adc17181e25c7d0767bc9f53df3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2509d23fe20e68155cb06f780fef584c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2509d23fe20e68155cb06f780fef584c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ae428bd741c8ffcef0e06d6a1c43f3cd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ae428bd741c8ffcef0e06d6a1c43f3cd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/04d59198f5d2893a30d24c0b6bb2edcb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/04d59198f5d2893a30d24c0b6bb2edcb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8406103ca198e5da034e938880f36900/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8406103ca198e5da034e938880f36900/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/afd337891df114ca81ad2c8d77760e57/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/afd337891df114ca81ad2c8d77760e57/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/3af170b01dee5e888e06d0a50b3cd711/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/3af170b01dee5e888e06d0a50b3cd711/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/df2cdd2eff65210aabe854670bba8e48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/df2cdd2eff65210aabe854670bba8e48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9de83df49317bd42080bba3dcc708153/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9de83df49317bd42080bba3dcc708153/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/881c930f7a386aeb8ec7fb056f7256c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/881c930f7a386aeb8ec7fb056f7256c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/0875ec1f69063eee46f00526cb6848f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/0875ec1f69063eee46f00526cb6848f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/311e364eb835fb63740ef4a13c57909a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/311e364eb835fb63740ef4a13c57909a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/d22999eff7aa255553b08b1ff3a95401/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/d22999eff7aa255553b08b1ff3a95401/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bb0b88634c4859c92376994ed93ec544/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bb0b88634c4859c92376994ed93ec544/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/58257f141fb664ccccfdd767dd717d85/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/58257f141fb664ccccfdd767dd717d85/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/0cb49699f166e9cad8b138317ed06a48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/0cb49699f166e9cad8b138317ed06a48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/fcf738ca538536cae164dfbd97cd9278/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/fcf738ca538536cae164dfbd97cd9278/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ceaae80e2087ffa694d4330605b2ba3b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ceaae80e2087ffa694d4330605b2ba3b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/386b82aa92f47d9d6b66e0345b73d48e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/386b82aa92f47d9d6b66e0345b73d48e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2a716fecdeb716b68a2ac01bb216b4b3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2a716fecdeb716b68a2ac01bb216b4b3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/a1ffc86e4e8205767be08227497bfcbd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/a1ffc86e4e8205767be08227497bfcbd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/4815f787dfe00ca66787cedbc683cd6b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/4815f787dfe00ca66787cedbc683cd6b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/6ed1a2540c97f98637bd164f71ccded3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/6ed1a2540c97f98637bd164f71ccded3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bcc0add862c1598082af9875c0229fda/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bcc0add862c1598082af9875c0229fda/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9f05d1efdac21153d86d62d3dd8f66be/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9f05d1efdac21153d86d62d3dd8f66be/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/196feec08df53e01f789504567b02550/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/196feec08df53e01f789504567b02550/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c2ed3b4ba8f4dac93985d1cc1f681064/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c2ed3b4ba8f4dac93985d1cc1f681064/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/37669e9b7e27727f2e990a6f48b6b0ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/37669e9b7e27727f2e990a6f48b6b0ef/AndroidManifest.xml:20:5-44
 INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
 INJECTED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion

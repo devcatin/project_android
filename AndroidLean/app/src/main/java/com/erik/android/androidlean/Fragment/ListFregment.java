@@ -33,6 +33,11 @@ public class ListFregment extends Fragment implements AdapterView.OnItemClickLis
         this.context = context;
     }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
     public void setManager(FragmentManager manager) {
         this.manager = manager;
     }

@@ -7,25 +7,28 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.view.ViewGroup;
 
 import com.erik.android.androidlean.Activity.MainActivity;
-import com.erik.android.androidlean.Fragment.ListFregment;
+import com.erik.android.androidlean.Fragment.BuyFragment;
+import com.erik.android.androidlean.Fragment.HomeFragment;
+import com.erik.android.androidlean.Fragment.HotFragment;
+import com.erik.android.androidlean.Fragment.MineFragment;
 import com.erik.android.androidlean.Fragment.TestFregment;
 
 
 public class TestFragmentPagerAdapter extends FragmentPagerAdapter {
 
     private final int PAGER_COUNT = 4;
-    private TestFregment homeFragment = null;
-    private ListFregment hotFragment = null;
-    private TestFregment buyFragment = null;
-    private TestFregment mineFragment = null;
+    private HomeFragment homeFragment = null;
+    private HotFragment hotFragment = null;
+    private BuyFragment buyFragment = null;
+    private MineFragment mineFragment = null;
 
     public TestFragmentPagerAdapter(FragmentManager manager) {
         super(manager);
-        homeFragment = new TestFregment();
-        hotFragment = new ListFregment();
+        homeFragment = new HomeFragment();
+        hotFragment = new HotFragment();
         hotFragment.setManager(manager);
-        buyFragment = new TestFregment();
-        mineFragment = new TestFregment();
+        buyFragment = new BuyFragment();
+        mineFragment = new MineFragment();
     }
 
     @Override

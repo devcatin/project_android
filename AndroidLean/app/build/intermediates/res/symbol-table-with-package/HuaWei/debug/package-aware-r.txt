@@ -715,6 +715,10 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_delete
+id btn_insert
+id btn_query
+id btn_update
 id btnclean
 id btnread
 id btnsave
@@ -879,10 +883,14 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_db
 layout activity_detail
 layout activity_login
 layout activity_main
 layout activity_one
+layout fragment_buy
+layout fragment_home
+layout fragment_mine
 layout fragment_newlist
 layout fregment_content
 layout list_item
