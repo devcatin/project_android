@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jiapeng.munedemo.MainActivity" >
+
+    <item
+        android:id="@+id/one"
+        android:orderInCategory="100"
+        android:title="@string/load_image"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/two"
+        android:orderInCategory="100"
+        android:title="@string/load_html"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/three"
+        android:orderInCategory="100"
+        android:title="@string/load_webview"
+        app:showAsAction="never"/>
+</menu>

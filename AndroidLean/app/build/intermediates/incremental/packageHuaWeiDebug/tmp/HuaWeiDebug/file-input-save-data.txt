@@ -1,11 +1,15 @@
 #Internal package file, do not edit.
-#Wed Jul 24 18:35:08 CST 2019
+#Tue Jul 30 15:01:21 CST 2019
 1.base=/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/merged_assets/HuaWeiDebug/out
+2.path=README.md
 0.baseType=DIRECTORY
+2.base=/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/merged_assets/HuaWeiDebug/out
+2.set=ASSET
 1.baseType=DIRECTORY
-count=2
+count=3
 1.set=ASSET
 0.path=classes.dex
 0.set=DEX
 0.base=/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/dex/HuaWeiDebug/mergeDexHuaWeiDebug/out
-1.path=README.md
+2.baseType=DIRECTORY
+1.path=Test.html

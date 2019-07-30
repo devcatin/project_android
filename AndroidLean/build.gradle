@@ -10,6 +10,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.2'
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        classpath 'com.loopj.android:android-async-http:1.4.10'
     }
 }
 
@@ -28,7 +29,7 @@ task clean(type: Delete) {
 ext {
     compileSdkVersion = 28
     buildToolsVersion = "28.0.3"
-    minSdkVersion = 17
+    minSdkVersion = 19
     targetSdkVersion = 28
     versionCode = 1
     versionName = "1.0"

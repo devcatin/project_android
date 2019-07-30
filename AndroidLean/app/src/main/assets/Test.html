@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>JS调用</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+</head>
+<body>
+    <p>三种对话框的使用</p>
+
+    <p>1.Alert对话框</p>
+    <p>
+        <input type="button" name = "Submit1" value="展示1" onclick="alert('Hello world!');"/>
+    </p>
+    <p>2.Confirm对话框</p>
+    <p>
+        <input type="button" name = "Submit2" value="展示2" onclick="confirmFun()"/>
+    </p>
+    <p>3.Prompt对话框</p>
+    <p>
+        <input type="button" name = "Submit3" value="展示3" onclick="promptFun()"/>
+    </p>
+    <p>H5调用原生方法</p>
+    <input type="button" value="Toast提示" onclick="obj.showToast('Hello world!');" />
+    <input type="button" value="列表对话框" onclick="obj.showDialog();" />
+
+    <script language="JavaScript">
+        function test() {
+            alert("测试");
+        }
+        function alertFun() {
+            alert("Alert警告对话框!");
+        }
+        function confirmFun() {
+            if(confirm("访问百度?")) {
+                location.href = "http://www.baidu.com";
+            } else {
+                alert("取消访问!");
+             }
+        }
+        function promptFun() {
+            var word = prompt("Prompt对话框","请输入点什么...:");
+            if(word) {
+                alert("你输入了:"+word);
+            } else {
+                alert("呵呵,你什么都没写!");
+            }
+        }
+    </script>
+</body>
+</html>

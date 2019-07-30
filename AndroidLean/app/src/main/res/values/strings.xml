@@ -14,4 +14,21 @@
     <string name="btnclean">清空</string>
     <string name="btnread">读取文件内容</string>
 
+    <string name="long_press_title">长按我，加载菜单</string>
+
+    <string name="load_image">加载图片</string>
+    <string name="load_html">加载html代码</string>
+    <string name="load_webview">加载网页</string>
+
+    <string name="download_title">下载</string>
+    <string name="stop_title">停止</string>
+    <string name="download_page_title">请输入要下载的文件地址</string>
+    <string name="download_progress_rate">显示实时下载的百分比</string>
+
+    <string name="download_file">文件下载</string>
+    <string name="view_webview">网页加载</string>
+
+    <string name="clean_webview_data">清除缓存</string>
+    <string name="refresh_webview_data">刷新网页</string>
+
 </resources>
