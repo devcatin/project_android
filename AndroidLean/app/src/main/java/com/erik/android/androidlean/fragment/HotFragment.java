@@ -1,5 +1,6 @@
 package com.erik.android.androidlean.fragment;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +16,8 @@ import com.erik.android.androidlean.activity.DetailActivity;
 import com.erik.android.androidlean.adapter.ListAdapter;
 import com.erik.android.androidlean.bean.NewBean;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.view.NavigationBar;
+import com.erik.utilslibrary.ActivityManager;
 
 import java.util.ArrayList;
 
@@ -54,12 +57,33 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_newlist, container, false);
+        navigationBar(view);
+        bindViews(view);
+        return view;
+    }
+
+    private void bindViews(View view) {
         list_new = view.findViewById(R.id.list_news);
         this.beans = this.createData();
         ListAdapter adapter = new ListAdapter(beans, getActivity());
         list_new.setAdapter(adapter);
         list_new.setOnItemClickListener(this);
-        return view;
+    }
+
+    private void navigationBar(View view) {
+        final NavigationBar navigationBar = view.findViewById(R.id.nav_bar);
+        navigationBar.setShowBackBtn(false);
+        navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
+            @Override
+            public void onBackClick() {
+                Activity activity = ActivityManager.getActivity().get();
+                activity.finish();
+            }
+            @Override
+            public void onRightClick() {
+
+            }
+        });
     }
 
     @Override

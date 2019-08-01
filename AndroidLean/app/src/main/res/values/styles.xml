@@ -20,4 +20,13 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="AppNewTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppNewTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppNewTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

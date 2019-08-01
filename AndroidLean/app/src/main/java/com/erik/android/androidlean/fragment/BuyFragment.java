@@ -1,5 +1,6 @@
 package com.erik.android.androidlean.fragment;
 
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -9,11 +10,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.tool.DBHelper;
+import com.erik.android.androidlean.view.NavigationBar;
+import com.erik.utilslibrary.ActivityManager;
 
 public class BuyFragment extends Fragment implements View.OnClickListener {
 
@@ -39,6 +43,14 @@ public class BuyFragment extends Fragment implements View.OnClickListener {
         dbHelper = new DBHelper(context, "test.db", null, 1);
     }
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_buy, container, false);
+        navigationBar(view);
+        bindViews(view);
+        return view;
+    }
+
     private void bindViews(View view) {
         Button btn_insert = view.findViewById(R.id.btn_insert);
         Button btn_query = view.findViewById(R.id.btn_query);
@@ -51,12 +63,20 @@ public class BuyFragment extends Fragment implements View.OnClickListener {
         btn_delete.setOnClickListener(this);
     }
 
+    private void navigationBar(View view) {
+        final NavigationBar navigationBar = view.findViewById(R.id.nav_bar);
+        navigationBar.setShowBackBtn(false);
+        navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
+            @Override
+            public void onBackClick() {
+                Activity activity = ActivityManager.getActivity().get();
+                activity.finish();
+            }
+            @Override
+            public void onRightClick() {
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_buy, container, false);
-        bindViews(view);
-        return view;
+            }
+        });
     }
 
     @Override

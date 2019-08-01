@@ -1,14 +1,13 @@
 package com.erik.android.androidlean.activity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Handler;
-import android.renderscript.Script;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
-import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -17,9 +16,11 @@ import android.widget.Toast;
 
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.bean.TestObject;
+import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.android.androidlean.view.TestWebView;
+import com.erik.utilslibrary.ActivityManager;
 
-public class WebViewActivity extends AppCompatActivity implements View.OnClickListener {
+public class WebViewActivity extends BaseActivity implements View.OnClickListener {
 
     private TestWebView webview;
     private long exitTime = 0;
@@ -31,13 +32,35 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
+        navigationBar();
+        bindViews();
+        loadWebView();
+    }
 
+    private void bindViews() {
         Button cleanBtn = findViewById(R.id.btn_clean);
         cleanBtn.setOnClickListener(this);
         Button refreshBtn = findViewById(R.id.btn_refresh);
         refreshBtn.setOnClickListener(this);
+    }
 
-        this.loadWebView();
+    private void navigationBar() {
+        final NavigationBar navigationBar = findViewById(R.id.nav_bar);
+        Intent intent = getIntent();
+        String title = intent.getStringExtra("name");
+        navigationBar.setTitleTextStr(title);
+        navigationBar.setShowBackBtn(true);
+        navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
+            @Override
+            public void onBackClick() {
+                Activity activity = ActivityManager.getActivity().get();
+                activity.finish();
+            }
+            @Override
+            public void onRightClick() {
+                Toast.makeText(WebViewActivity.this, "点击右边按钮", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public void loadWebView() {
@@ -75,13 +98,13 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
             }
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String utl) {
-                webview.loadUrl(url);
+                //webview.loadUrl(url);
                 return true;
             }
             @Override
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 super.onReceivedError(view, errorCode, description, failingUrl);
-                webview.loadUrl("url");
+                //webview.loadUrl("url");
             }
         });
         //调用loadUrl方法为WebView加入链接
@@ -103,13 +126,13 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         if (webview.canGoBack()) {
             webview.goBack();
         } else {
-            if ((System.currentTimeMillis() - exitTime) > 2000) {
+            /*if ((System.currentTimeMillis() - exitTime) > 2000) {
                 Toast.makeText(getApplicationContext(), "再按一次退出程序",
                         Toast.LENGTH_SHORT).show();
                 exitTime = System.currentTimeMillis();
-            } else {
+            } else {*/
                 super.onBackPressed();
-            }
+            //}
         }
     }
 

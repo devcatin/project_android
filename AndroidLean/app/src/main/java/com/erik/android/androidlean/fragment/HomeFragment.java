@@ -1,5 +1,6 @@
 package com.erik.android.androidlean.fragment;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -20,51 +21,21 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.tool.GlideImageLoader;
+import com.erik.android.androidlean.view.NavigationBar;
+import com.erik.utilslibrary.ActivityManager;
 import com.erik.utilslibrary.UtilsTools;
+import com.youth.banner.Banner;
+import com.youth.banner.BannerConfig;
+import com.youth.banner.Transformer;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomeFragment extends Fragment {
 
     private Context context;
-
-    private TextView txtMenu, txtshow;
-    private ImageView imgPic;
-    private WebView webView;
-    private ScrollView scroll;
-    private Bitmap bitmap;
-    private String detail = "";
-    private boolean flag = false;
-    private final static String PIC_URL = "https://ww2.sinaimg.cn/large/7a8aed7bgw1evshgr5z3oj20hs0qo0vq.jpg";
-    private final static String HTML_URL = "https://www.baidu.com";
-
-    // 用于刷新界面
-    private Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message message) {
-            switch (message.what) {
-                case 0x001:
-                    hideAllWidget();
-                    imgPic.setVisibility(View.VISIBLE);
-                    imgPic.setImageBitmap(bitmap);
-                    Toast.makeText(context, "图片加载完毕", Toast.LENGTH_SHORT).show();
-                    break;
-                case 0x002:
-                    hideAllWidget();
-                    scroll.setVisibility(View.VISIBLE);
-                    txtshow.setText(detail);
-                    Toast.makeText(context, "HTML代码加载完毕", Toast.LENGTH_SHORT).show();
-                    break;
-                case 0x003:
-                    hideAllWidget();
-                    webView.setVisibility(View.VISIBLE);
-                    //webView.loadDataWithBaseURL("", detail, "text/html", "UTF-8", "");
-                    webView.loadUrl(HTML_URL);
-                    Toast.makeText(context, "网页加载完毕", Toast.LENGTH_SHORT).show();
-                    break;
-                default:
-                    break;
-            }
-        }
-    };
+    private Banner banner;
 
     @Override
     public void onAttach(Context context) {
@@ -84,24 +55,62 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        setViews(view);
+        navigationBar(view);
+        loadBanner(view);
         return view;
     }
 
-    private void setViews(View view) {
-        txtMenu = view.findViewById(R.id.txtMenu);
-        txtshow = view.findViewById(R.id.txtshow);
-        imgPic = view.findViewById(R.id.imgPic);
-        webView = view.findViewById(R.id.webView);
-        scroll = view.findViewById(R.id.scroll);
-        registerForContextMenu(txtMenu);
+    @Override
+    public void onStart() {
+        super.onStart();
+        banner.startAutoPlay();
     }
 
-    // 定义一个隐藏所有控件的方法:
-    private void hideAllWidget() {
-        imgPic.setVisibility(View.GONE);
-        scroll.setVisibility(View.GONE);
-        webView.setVisibility(View.GONE);
+    @Override
+    public void onStop() {
+        super.onStop();
+        banner.stopAutoPlay();
+    }
+
+    private void navigationBar(View view) {
+        final NavigationBar navigationBar = view.findViewById(R.id.nav_bar);
+        navigationBar.setShowBackBtn(false);
+        navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
+            @Override
+            public void onBackClick() {
+                Activity activity = ActivityManager.getActivity().get();
+                activity.finish();
+            }
+            @Override
+            public void onRightClick() {
+                registerForContextMenu(navigationBar.getBtn_right());
+            }
+        });
+    }
+
+    private void loadBanner(View view) {
+        banner = view.findViewById(R.id.banner);
+        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE);
+        banner.setImageLoader(new GlideImageLoader());
+        List<String> images = new ArrayList<>();
+        images.add("http://pic33.nipic.com/20131007/13639685_123501617185_2.jpg");
+        images.add("http://pic18.nipic.com/20111214/6834314_092609528357_2.jpg");
+        images.add("http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg");
+        images.add("http://hbimg.b0.upaiyun.com/a8f1b16790e92888dc2033125da59cea80cb60b519536-dbgwl3_fw658");
+        images.add("http://pic.rmb.bdstatic.com/586a836a5a8bf661114166e2df414074.jpeg");
+        banner.setImages(images);
+        banner.setBannerAnimation(Transformer.Accordion);
+        List<String> titles = new ArrayList<>();
+        titles.add("123");
+        titles.add("321");
+        titles.add("231");
+        titles.add("213");
+        titles.add("123");
+        banner.setBannerTitles(titles);
+        banner.isAutoPlay(true);
+        banner.setDelayTime(3000);
+        banner.setIndicatorGravity(BannerConfig.RIGHT);
+        banner.start();
     }
 
     @Override
@@ -119,34 +128,19 @@ public class HomeFragment extends Fragment {
             case R.id.one:
                 new Thread() {
                     public void run() {
-                        try {
-                            byte[] data = UtilsTools.getImage(PIC_URL);
-                            bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        handler.sendEmptyMessage(0x001);
+
                     }
                 }.start();
                 break;
             case R.id.two:
                 new Thread() {
                     public void run() {
-                        try {
-                            detail = UtilsTools.getHtml(HTML_URL);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        handler.sendEmptyMessage(0x002);
+
                     }
                 }.start();
                 break;
             case R.id.three:
-                if (detail.equals("")) {
-                    Toast.makeText(context, "先请求HTML先嘛~", Toast.LENGTH_SHORT).show();
-                } else {
-                    handler.sendEmptyMessage(0x003);
-                }
+
                 break;
         }
         return true;

@@ -5,29 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity" >
 
-    <RelativeLayout
-        android:id="@+id/ly_top_bar"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/bg_topbar" >
-
-        <TextView
-            android:id="@+id/txt_topbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:gravity="center"
-            android:textSize="18sp"
-            android:textColor="@color/text_topbar" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2px"
-            android:background="@color/background_white"
-            android:layout_alignParentBottom="true" />
-
-    </RelativeLayout>
-
     <RadioGroup
         android:id="@+id/rg_tab_bar"
         android:layout_width="match_parent"
@@ -73,7 +50,6 @@
             android:id="@+id/vpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@id/div_tab_bar"
-            android:layout_below="@id/ly_top_bar" />
+            android:layout_above="@id/div_tab_bar" />
 
 </RelativeLayout>

@@ -1,13 +1,20 @@
 package com.erik.utilslibrary;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
@@ -138,6 +145,53 @@ public class UtilsTools {
         inputStream.close();
         outputStream.close();
     }
+
+    public void captureScreen() {
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                ActivityManager activityManager = ActivityManager.getActivity();
+                final View contentView = activityManager.get().getWindow().getDecorView();
+                try {
+                    Bitmap bitmap = Bitmap.createBitmap(contentView.getWidth(), contentView.getHeight(), Bitmap.Config.ARGB_4444);
+                    contentView.draw(new Canvas(bitmap));
+                    final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream);
+                    savePic(bitmap, "sdcard/short.png");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    System.out.println("Hello world!");
+                }
+            }
+        };
+        try {
+            runnable.run();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void savePic(Bitmap bitmap, String fileName) {
+        FileOutputStream outputStream = null;
+        ActivityManager activityManager = ActivityManager.getActivity();
+        try {
+            outputStream = new FileOutputStream(fileName);
+            if (null != outputStream) {
+                boolean success = bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+                outputStream.flush();
+                outputStream.close();
+                if (success) {
+                    Toast.makeText(activityManager.get(), "截屏成功", Toast.LENGTH_SHORT).show();
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 

@@ -1,10 +1,10 @@
 package com.erik.android.androidlean.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,13 +14,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.view.NavigationBar;
+import com.erik.utilslibrary.ActivityManager;
 import com.erik.utilslibrary.FileDownload.FileDownloadered;
 
 import java.io.File;
-import java.text.Format;
 import java.util.Locale;
 
-public class DownloadActivity extends AppCompatActivity {
+public class DownloadActivity extends BaseActivity {
 
     public EditText editPath;
     private Button btndown;
@@ -58,10 +59,11 @@ public class DownloadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_download);
 
-        Intent intent = getIntent();
-        String value = intent.getStringExtra("name");
-        Toast.makeText(DownloadActivity.this, value, Toast.LENGTH_LONG).show();
+        navigationBar();
+        bindViews();
+    }
 
+    private void bindViews() {
         editPath = findViewById(R.id.editpath);
         String url = "http://ultravideo.cs.tut.fi/video/Bosphorus_3840x2160_120fps_420_10bit_YUV_RAW.7z";
         editPath.setText(url);
@@ -72,6 +74,25 @@ public class DownloadActivity extends AppCompatActivity {
         ButtonClickListener listener = new ButtonClickListener();
         btndown.setOnClickListener(listener);
         btnstop.setOnClickListener(listener);
+    }
+
+    private void navigationBar() {
+        final NavigationBar navigationBar = findViewById(R.id.nav_bar);
+        Intent intent = getIntent();
+        String title = intent.getStringExtra("name");
+        navigationBar.setTitleTextStr(title);
+        navigationBar.setShowBackBtn(true);
+        navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
+            @Override
+            public void onBackClick() {
+                Activity activity = ActivityManager.getActivity().get();
+                activity.finish();
+            }
+            @Override
+            public void onRightClick() {
+
+            }
+        });
     }
 
     private final class ButtonClickListener implements View.OnClickListener {

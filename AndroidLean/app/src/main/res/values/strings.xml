@@ -27,8 +27,10 @@
 
     <string name="download_file">文件下载</string>
     <string name="view_webview">网页加载</string>
+    <string name="view_image">浏览图片</string>
 
     <string name="clean_webview_data">清除缓存</string>
     <string name="refresh_webview_data">刷新网页</string>
+    <string name="title_activity_base">BaseActivity</string>
 
 </resources>

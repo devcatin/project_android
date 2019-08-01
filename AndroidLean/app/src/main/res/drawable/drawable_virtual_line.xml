@@ -5,12 +5,11 @@
         android:dashWidth="3dp"
         android:width="1dp"
         android:dashGap="5dp"/>
-    <size
-        android:height="1dp" />
+
     <!--width：线条的高度
     color：颜色
     dashWidth：破折线的宽度
     dashGap：破折线间空隙的宽度
-    如果这里设置了width，xml中android:layout_height的值必须比它大。不设置就默认为0
-    -->
+    如果这里设置了width，xml中android:layout_height的值必须比它大。不设置就默认为0-->
+
 </shape>

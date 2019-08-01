@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item android:drawable="@drawable/ty_2"
+        android:duration="100" />
+
+    <item android:drawable="@drawable/ty_3"
+        android:duration="100" />
+
+    <item android:drawable="@drawable/ty_4"
+        android:duration="100" />
+
+    <item android:drawable="@drawable/ty_5"
+        android:duration="100" />
+
+    <item android:drawable="@drawable/ty_6"
+        android:duration="100" />
+
+</animation-list>

@@ -10,6 +10,7 @@
     <color name="frame_search">#ADAEAD</color>
     <color name="background_white">#FFFFFF</color>
     <color name="back_red">#e75049</color>
+    <color name="back_ground_color">#F2F2F2</color>
 
     <color name="bg_topbar">#00A0E9</color>
     <color name="text_topbar">#FFFFFF</color>

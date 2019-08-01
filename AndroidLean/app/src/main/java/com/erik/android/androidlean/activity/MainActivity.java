@@ -10,7 +10,6 @@ import android.provider.Contacts;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -21,15 +20,10 @@ import android.widget.TextView;
 import com.erik.android.androidlean.adapter.TestFragmentPagerAdapter;
 import com.erik.android.androidlean.R;
 
-import java.lang.reflect.Array;
-import java.util.List;
 
-
-public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {
+public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {
 
     public static final String TAG = "TestService";
-
-    private TextView txt_topbar;
 
     private RadioGroup rg_tab_bar;
     private RadioButton rb_home;
@@ -56,15 +50,10 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
         bindViews();
 
-        txt_topbar.setText("首页");
         rb_home.setChecked(true);
-
-
     }
 
     private void bindViews() {
-        txt_topbar = findViewById(R.id.txt_topbar);
-
         rg_tab_bar = findViewById(R.id.rg_tab_bar);
         rg_tab_bar.setOnCheckedChangeListener(this);
 
@@ -83,19 +72,15 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         switch (checkedId) {
             case R.id.rb_home:
-                txt_topbar.setText("首页");
                 viewPager.setCurrentItem(PAGE_ONE);
                 break;
             case R.id.rb_hot:
-                txt_topbar.setText("热门");
                 viewPager.setCurrentItem(PAGE_TWO);
                 break;
             case R.id.rb_buy:
-                txt_topbar.setText("已购");
                 viewPager.setCurrentItem(PAGE_THREE);
                 break;
             case R.id.rb_mine:
-                txt_topbar.setText("我的");
                 viewPager.setCurrentItem(PAGE_FOUR);
                 break;
         }
