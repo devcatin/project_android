@@ -5,8 +5,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,22 +27,37 @@ import com.erik.android.androidlean.activity.DetailActivity;
 import com.erik.android.androidlean.adapter.ListAdapter;
 import com.erik.android.androidlean.bean.NewBean;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.UserBean;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.databinding.FragmentNewlistBinding;
+import com.erik.android.androidlean.network.BaseResponse;
+import com.erik.android.androidlean.network.NetRequest;
+import com.erik.android.androidlean.network.RequestMethod;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.security.auth.callback.Callback;
+import okhttp3.Response;
 
 public class HotFragment extends Fragment implements AdapterView.OnItemClickListener {
 
     private FragmentManager manager;
-    private ArrayList<NewBean> beans;
+    private List<UserBean> beans = new ArrayList<>();
     private Context context;
     private ListView list_new;
+
+    private Handler handler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+            if (msg.what == 0x123) {
+                updateData();
+            }
+            return false;
+        }
+    });
 
     @Override
     public void onAttach(Context context) {
@@ -89,6 +107,34 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
         return list;
     }
 
+    private void requestData() {
+        NetRequest netRequest = NetRequest.getInstance(context);
+        netRequest.get(RequestMethod.GET_USER_LIST, new NetRequest.RequestCallBack() {
+            @Override
+            public void success(Response response) throws IOException {
+                int code = response.code();
+                if (code == 200) {
+                    String result = response.body().string();
+                    Log.i("tag", result);
+                    BaseResponse baseResponse = JSON.parseObject(result, BaseResponse.class);
+                    String data = baseResponse.getData();
+                    List<UserBean> list = JSON.parseArray(data, UserBean.class);
+                    for (int index = 0; index < list.size(); index++) {
+                        UserBean userBean = list.get(index);
+                        beans.add(userBean);
+                    }
+                    Message message = new Message();
+                    message.what = 0x123;
+                    handler.sendMessage(message);
+                }
+            }
+            @Override
+            public void failure(IOException e) {
+                e.printStackTrace();
+            }
+        });
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_newlist, container, false);
@@ -99,7 +145,10 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
 
     private void bindViews(View view) {
         list_new = view.findViewById(R.id.list_news);
-        this.beans = this.createData();
+        requestData();
+    }
+
+    private void updateData() {
         ListAdapter adapter = new ListAdapter(beans, getActivity(), BR.user);
         list_new.setAdapter(adapter);
         list_new.setOnItemClickListener(this);
@@ -123,15 +172,15 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        NewBean bean = beans.get(position);
+        UserBean bean = beans.get(position);
         enterDetailActivity(bean);
     }
 
-    private void enterDetailActivity(NewBean bean) {
+    private void enterDetailActivity(UserBean bean) {
         final Activity activity = getActivity();
         String user = JSON.toJSONString(bean);
         ARouter.getInstance().build(ConstConfig.DETAIL_ACTIVITY)
-                .withString("name", bean.getNew_title())
+                .withString("name", bean.getUsername())
                 .withString("user", user)
                 .navigation(activity, 123, new NavigationCallback() {
                     @Override

@@ -64,7 +64,7 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
         if (BR.user == variableId) {
-            setUser((com.erik.android.androidlean.bean.NewBean) variable);
+            setUser((com.erik.android.androidlean.bean.UserBean) variable);
         }
         else {
             variableSet = false;
@@ -72,7 +72,7 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
             return variableSet;
     }
 
-    public void setUser(@Nullable com.erik.android.androidlean.bean.NewBean User) {
+    public void setUser(@Nullable com.erik.android.androidlean.bean.UserBean User) {
         this.mUser = User;
         synchronized(this) {
             mDirtyFlags |= 0x1L;
@@ -95,27 +95,27 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
-        java.lang.String userNewContent = null;
-        com.erik.android.androidlean.bean.NewBean user = mUser;
-        java.lang.String userNewTitle = null;
+        com.erik.android.androidlean.bean.UserBean user = mUser;
+        java.lang.String userUsername = null;
+        java.lang.String userPassword = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
 
 
 
                 if (user != null) {
-                    // read user.new_content
-                    userNewContent = user.getNew_content();
-                    // read user.new_title
-                    userNewTitle = user.getNew_title();
+                    // read user.username
+                    userUsername = user.getUsername();
+                    // read user.password
+                    userPassword = user.getPassword();
                 }
         }
         // batch finished
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.editdetail, userNewContent);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.editname, userNewTitle);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.editdetail, userPassword);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.editname, userUsername);
         }
     }
     // Listener Stub Implementations

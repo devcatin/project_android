@@ -4,7 +4,10 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuInflater;
@@ -13,7 +16,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.alibaba.fastjson.JSON;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.BannerBean;
+import com.erik.android.androidlean.bean.UserBean;
+import com.erik.android.androidlean.network.BaseResponse;
+import com.erik.android.androidlean.network.NetRequest;
+import com.erik.android.androidlean.network.RequestMethod;
 import com.erik.android.androidlean.tool.GlideImageLoader;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.qrcodelibrary.ZXingUtils;
@@ -22,13 +31,28 @@ import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import okhttp3.Response;
 
 public class HomeFragment extends Fragment {
 
     private Context context;
     private Banner banner;
+    private List<String> lists = new ArrayList<>();
+
+    private Handler handler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+            if (msg.what == 0x123) {
+                banner.setImages(lists);
+                banner.start();
+            }
+            return false;
+        }
+    });
 
     @Override
     public void onAttach(Context context) {
@@ -82,35 +106,49 @@ public class HomeFragment extends Fragment {
         });
     }
 
+    private void requestData() {
+        NetRequest netRequest = NetRequest.getInstance(context);
+        netRequest.get(RequestMethod.GET_BANNER_LIST, new NetRequest.RequestCallBack() {
+            @Override
+            public void success(Response response) throws IOException {
+                int code = response.code();
+                if (code == 200) {
+                    String result = response.body().string();
+                    Log.i("tag", result);
+                    BaseResponse baseResponse = JSON.parseObject(result, BaseResponse.class);
+                    String data = baseResponse.getData();
+                    List<BannerBean> list = JSON.parseArray(data, BannerBean.class);
+                    for (int index = 0; index < list.size(); index++) {
+                        BannerBean bannerBean = list.get(index);
+                        lists.add(bannerBean.getImgUrl());
+                    }
+                    Message message = new Message();
+                    message.what = 0x123;
+                    handler.sendMessage(message);
+                }
+            }
+            @Override
+            public void failure(IOException e) {
+                e.printStackTrace();
+            }
+        });
+    }
+
     private void loadBanner(View view) {
         banner = view.findViewById(R.id.banner);
-        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE);
+        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR);
         banner.setImageLoader(new GlideImageLoader());
-        List<String> images = new ArrayList<>();
-        images.add("http://pic33.nipic.com/20131007/13639685_123501617185_2.jpg");
-        images.add("http://pic18.nipic.com/20111214/6834314_092609528357_2.jpg");
-        images.add("http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg");
-        images.add("http://hbimg.b0.upaiyun.com/a8f1b16790e92888dc2033125da59cea80cb60b519536-dbgwl3_fw658");
-        images.add("http://pic.rmb.bdstatic.com/586a836a5a8bf661114166e2df414074.jpeg");
-        banner.setImages(images);
         banner.setBannerAnimation(Transformer.Accordion);
-        List<String> titles = new ArrayList<>();
-        titles.add("123");
-        titles.add("321");
-        titles.add("231");
-        titles.add("213");
-        titles.add("123");
-        banner.setBannerTitles(titles);
         banner.isAutoPlay(true);
         banner.setDelayTime(3000);
         banner.setIndicatorGravity(BannerConfig.RIGHT);
-        banner.start();
     }
 
     private void bindViews(View view) {
         //ImageView imageView = view.findViewById(R.id.iv_qrcode);
         //Bitmap bitmap = ZXingUtils.createQRImage("https://www.baidu.com", 300, 300);
         //imageView.setImageBitmap(bitmap);
+        requestData();
     }
 
     @Override

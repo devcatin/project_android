@@ -10,6 +10,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.erik.android.androidlean.BR;
 import com.erik.android.androidlean.bean.NewBean;
+import com.erik.android.androidlean.bean.UserBean;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.databinding.ActivityDetailBinding;
 import com.erik.android.androidlean.R;
@@ -35,7 +36,7 @@ public class DetailActivity extends BaseActivity {
     }
 
     private void bindViews() {
-        NewBean bean = JSON.parseObject(user, NewBean.class);
+        UserBean bean = JSON.parseObject(user, UserBean.class);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_detail);
         binding.setVariable(BR.user, bean);
     }

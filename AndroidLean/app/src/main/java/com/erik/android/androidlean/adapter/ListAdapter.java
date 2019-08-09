@@ -10,18 +10,19 @@ import android.widget.BaseAdapter;
 import com.bumptech.glide.Glide;
 import com.erik.android.androidlean.bean.NewBean;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.UserBean;
 import com.erik.android.androidlean.databinding.ListItemBinding;
 
 import java.util.List;
 
 public class ListAdapter extends BaseAdapter {
 
-    private List<NewBean> beans;
+    private List<UserBean> beans;
     private Context context;
     private LayoutInflater inflater;
     private int resId;
 
-    public ListAdapter(List<NewBean> beans, Context context, int resId) {
+    public ListAdapter(List<UserBean> beans, Context context, int resId) {
         this.beans = beans;
         this.context = context;
         this.resId = resId;
@@ -52,9 +53,9 @@ public class ListAdapter extends BaseAdapter {
         } else {
             itemBinding = DataBindingUtil.getBinding(convertView);
         }
-        NewBean newBean = beans.get(position);
-        itemBinding.setVariable(resId, newBean);
-        Glide.with(context).load(newBean.getNew_icon()).into(itemBinding.ivHead);
+        UserBean userBean = beans.get(position);
+        itemBinding.setVariable(resId, userBean);
+        Glide.with(context).load(userBean.getHeadimg()).into(itemBinding.ivHead);
         return convertView;
     }
 

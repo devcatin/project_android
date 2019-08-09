@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.erik.android.androidlean.bean.NewBean;
+import com.erik.android.androidlean.bean.UserBean;
 import com.erik.android.androidlean.view.CustomRoundAngleImageView;
 import java.lang.Deprecated;
 import java.lang.Object;
@@ -29,7 +29,7 @@ public abstract class ListItemBinding extends ViewDataBinding {
   public final TextView txtItemTitle;
 
   @Bindable
-  protected NewBean mUser;
+  protected UserBean mUser;
 
   protected ListItemBinding(Object _bindingComponent, View _root, int _localFieldCount,
       CustomRoundAngleImageView ivHead, LinearLayout rlList, TextView txtItemContent,
@@ -41,10 +41,10 @@ public abstract class ListItemBinding extends ViewDataBinding {
     this.txtItemTitle = txtItemTitle;
   }
 
-  public abstract void setUser(@Nullable NewBean user);
+  public abstract void setUser(@Nullable UserBean user);
 
   @Nullable
-  public NewBean getUser() {
+  public UserBean getUser() {
     return mUser;
   }
 

@@ -1,4 +1,4 @@
-#Thu Aug 08 16:41:06 CST 2019
+#Fri Aug 09 18:18:01 CST 2019
 base.0=/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/dex/HuaWeiDebug/mergeDexHuaWeiDebug/out
 path.0=classes.dex
 renamed.0=classes.dex

@@ -4,10 +4,10 @@
     xmlns:roundiv="http://schemas.android.com/tools">
 
     <data>
-        <import type="com.erik.android.androidlean.bean.NewBean" />
+        <import type="com.erik.android.androidlean.bean.UserBean" />
         <variable
             name="user"
-            type="NewBean" />
+            type="UserBean" />
     </data>
 
     <RelativeLayout
@@ -35,13 +35,13 @@
                 android:id="@+id/txt_item_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{user.new_title}" />
+                android:text="@{user.username}" />
 
             <TextView
                 android:id="@+id/txt_item_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{user.new_content}" />
+                android:text="@{user.password}" />
 
         </LinearLayout>
 
