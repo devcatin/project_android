@@ -41,13 +41,13 @@ public class HomeFragment extends Fragment {
 
     private Context context;
     private Banner banner;
-    private List<String> lists = new ArrayList<>();
+    private List<String> banners = new ArrayList<>();
 
     private Handler handler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message msg) {
             if (msg.what == 0x123) {
-                banner.setImages(lists);
+                banner.setImages(banners);
                 banner.start();
             }
             return false;
@@ -118,9 +118,12 @@ public class HomeFragment extends Fragment {
                     BaseResponse baseResponse = JSON.parseObject(result, BaseResponse.class);
                     String data = baseResponse.getData();
                     List<BannerBean> list = JSON.parseArray(data, BannerBean.class);
+                    if (list.size() > 0) {
+                        banners.clear();
+                    }
                     for (int index = 0; index < list.size(); index++) {
                         BannerBean bannerBean = list.get(index);
-                        lists.add(bannerBean.getImgUrl());
+                        banners.add(bannerBean.getImgUrl());
                     }
                     Message message = new Message();
                     message.what = 0x123;

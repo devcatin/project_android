@@ -74,39 +74,6 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
         this.manager = manager;
     }
 
-    private ArrayList<NewBean> createData() {
-        String[] lists = {
-                "http://b-ssl.duitang.com/uploads/item/201312/05/20131205171755_CU5Uc.thumb.700_0.jpeg",
-                "http://image20.it168.com/201009_500x375/259/579615e75be00f31.jpg",
-                "http://img3.imgtn.bdimg.com/it/u=434170247,1551549712&fm=26&gp=0.jpg",
-                "http://img4.imgtn.bdimg.com/it/u=2532671928,3651212234&fm=26&gp=0.jpg",
-                "http://img4.imgtn.bdimg.com/it/u=127061689,3363333999&fm=11&gp=0.jpg",
-                "http://img3.yxlady.com/yl/UploadFiles_5361/2015097/20150907110505762.jpg",
-                "http://img4.imgtn.bdimg.com/it/u=4273922869,200826877&fm=15&gp=0.jpg",
-                "http://img3.imgtn.bdimg.com/it/u=1672191331,4231877124&fm=26&gp=0.jpg",
-                "http://img4.imgtn.bdimg.com/it/u=2407711330,2463104470&fm=15&gp=0.jpg",
-                "http://img2.imgtn.bdimg.com/it/u=3724393503,1838121963&fm=26&gp=0.jpg",
-                "http://img1.imgtn.bdimg.com/it/u=4095556672,771867217&fm=26&gp=0.jpg",
-                "http://img2.imgtn.bdimg.com/it/u=4178669995,2135461733&fm=15&gp=0.jpg",
-                "http://img1.imgtn.bdimg.com/it/u=2376532239,109373350&fm=15&gp=0.jpg",
-                "http://img4.imgtn.bdimg.com/it/u=2459744317,4173260371&fm=26&gp=0.jpg",
-                "http://img2.imgtn.bdimg.com/it/u=1489795425,684306761&fm=15&gp=0.jpg",
-                "http://img1.imgtn.bdimg.com/it/u=3774331881,3594116486&fm=15&gp=0.jpg",
-                "http://img2.imgtn.bdimg.com/it/u=54152149,2182434463&fm=26&gp=0.jpg",
-                "http://img4.imgtn.bdimg.com/it/u=3164602614,3522649646&fm=26&gp=0.jpg",
-                "http://img0.imgtn.bdimg.com/it/u=122041151,2875243441&fm=26&gp=0.jpg"
-        };
-        ArrayList<NewBean>list = new ArrayList<NewBean>();
-        for (int index = 0; index < lists.length; index++) {
-            String title = "测试" + index;
-            String content = "内容" + index;
-            String icon = lists[index];
-            NewBean bean = new NewBean(title, content, icon);
-            list.add(bean);
-        }
-        return list;
-    }
-
     private void requestData() {
         NetRequest netRequest = NetRequest.getInstance(context);
         netRequest.get(RequestMethod.GET_USER_LIST, new NetRequest.RequestCallBack() {
@@ -119,6 +86,9 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
                     BaseResponse baseResponse = JSON.parseObject(result, BaseResponse.class);
                     String data = baseResponse.getData();
                     List<UserBean> list = JSON.parseArray(data, UserBean.class);
+                    if (list.size() > 0) {
+                        beans.clear();
+                    }
                     for (int index = 0; index < list.size(); index++) {
                         UserBean userBean = list.get(index);
                         beans.add(userBean);

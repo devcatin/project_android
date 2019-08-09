@@ -74,73 +74,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa36f812-baef-4d33-bb8e-69943617205d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/bean/BannerBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/bean/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/network/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/network/NetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/network/RequestMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/HuaWeiDebug/dataBindingGenBaseClassesHuaWeiDebug/out/com/erik/android/androidlean/databinding/ActivityDetailBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/HuaWeiDebug/dataBindingGenBaseClassesHuaWeiDebug/out/com/erik/android/androidlean/databinding/ActivityDetailBinding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/HuaWeiDebug/dataBindingGenBaseClassesHuaWeiDebug/out/com/erik/android/androidlean/databinding/ListItemBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/HuaWeiDebug/dataBindingGenBaseClassesHuaWeiDebug/out/com/erik/android/androidlean/databinding/ListItemBinding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/HuaWei/debug/com/erik/android/androidlean/databinding/ActivityDetailBindingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/HuaWei/debug/com/erik/android/androidlean/databinding/ActivityDetailBindingImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/HuaWei/debug/com/erik/android/androidlean/databinding/ListItemBindingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/HuaWei/debug/com/erik/android/androidlean/databinding/ListItemBindingImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/data_binding_base_class_log_artifact/HuaWeiDebug/dataBindingGenBaseClassesHuaWeiDebug/out/com.erik.android.androidlean-binding_classes.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/data_binding_base_class_log_artifact/HuaWeiDebug/dataBindingGenBaseClassesHuaWeiDebug/out/com.erik.android.androidlean-binding_classes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/data_binding_layout_info_type_merge/HuaWeiDebug/mergeHuaWeiDebugResources/out/activity_detail-layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/data_binding_layout_info_type_merge/HuaWeiDebug/mergeHuaWeiDebugResources/out/activity_detail-layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/data_binding_layout_info_type_merge/HuaWeiDebug/mergeHuaWeiDebugResources/out/list_item-layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/data_binding_layout_info_type_merge/HuaWeiDebug/mergeHuaWeiDebugResources/out/list_item-layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/HuaWeiDebug/mergeDexHuaWeiDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/HuaWeiDebug/mergeDexHuaWeiDebug/out/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/HuaWeiDebug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/HuaWeiDebug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/dataBindingGenBaseClassesHuaWeiDebug/base_builder_log.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/dataBindingGenBaseClassesHuaWeiDebug/base_builder_log.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeHuaWeiDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeHuaWeiDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeHuaWeiDebugResources/merged.dir/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageHuaWeiDebug/tmp/HuaWeiDebug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageHuaWeiDebug/tmp/HuaWeiDebug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/Activity/DetailActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/Activity/DetailActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/Adapter/ListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/Adapter/ListAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/Fragment/HomeFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/Fragment/HomeFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/Fragment/HotFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/Fragment/HotFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/activity/DetailActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/activity/DetailActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/databinding/ActivityDetailBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/databinding/ActivityDetailBinding.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/databinding/ActivityDetailBindingImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/databinding/ActivityDetailBindingImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/databinding/ListItemBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/databinding/ListItemBinding.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/databinding/ListItemBindingImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/databinding/ListItemBindingImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HomeFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HomeFragment$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HomeFragment$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HomeFragment$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HomeFragment$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HomeFragment$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HotFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HotFragment$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HotFragment$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/HuaWeiDebug/compileHuaWeiDebugJavaWithJavac/classes/com/erik/android/androidlean/fragment/HotFragment$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/HuaWei/debug/layout_activity_detail.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/HuaWei/debug/layout_activity_detail.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/HuaWei/debug/layout_list_item.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/HuaWei/debug/layout_list_item.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/Activity/DetailActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/Activity/DetailActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/Adapter/ListAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/Adapter/ListAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/Fragment/HomeFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/Fragment/HomeFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/Fragment/HotFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/Fragment/HotFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/activity/DetailActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/activity/DetailActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/databinding/ActivityDetailBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/databinding/ActivityDetailBinding.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/databinding/ActivityDetailBindingImpl.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/databinding/ActivityDetailBindingImpl.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/databinding/ListItemBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/databinding/ListItemBinding.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/databinding/ListItemBindingImpl.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/databinding/ListItemBindingImpl.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HomeFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HomeFragment$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HomeFragment$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HomeFragment$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HomeFragment$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HomeFragment$3.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HotFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HotFragment$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HotFragment$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/HuaWei/debug/0/com/erik/android/androidlean/fragment/HotFragment$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/HuaWei/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/HuaWei/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/HuaWei/debug/app-HuaWei-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/HuaWei/debug/app-HuaWei-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/activity/DetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/activity/DetailActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/adapter/ListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/adapter/ListAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HomeFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HotFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HotFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilslibrary/AndroidLean-utilslibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/utilslibrary/AndroidLean-utilslibrary.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -201,15 +136,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HotFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+            <state relative-caret-position="139">
+              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1936#2199#0" expanded="true" />
-                <element signature="e#2198#2199#0" expanded="true" />
+                <element signature="e#1932#2149#0" expanded="true" />
+                <element signature="e#2148#2149#0" expanded="true" />
                 <element signature="e#4729#4730#0" expanded="true" />
                 <element signature="e#4780#4781#0" expanded="true" />
               </folding>
@@ -235,11 +170,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HomeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+            <state relative-caret-position="343">
+              <caret line="122" column="21" lean-forward="true" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
               <folding>
                 <element signature="e#1474#1691#0" expanded="true" />
                 <element signature="e#1690#1691#0" expanded="true" />
@@ -428,12 +363,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/adapter/ListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/network/BaseResponse.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HotFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/activity/DetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/bean/BannerBean.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/network/RequestMethod.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HotFragment.java" />
       </list>
     </option>
   </component>
@@ -923,7 +858,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.5036075" side_tool="true" weight="0.16544567" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49331352" visible="true" weight="0.15506716" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49331352" visible="true" weight="0.15506716" />
       <window_info id="Structure" order="2" sideWeight="0.50668645" side_tool="true" weight="0.16666667" />
       <window_info id="Favorites" order="3" sideWeight="0.5042445" side_tool="true" weight="0.17521368" />
       <window_info id="Build Variants" order="4" sideWeight="0.5042445" side_tool="true" weight="0.17521368" />
@@ -935,7 +870,7 @@
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.514652" weight="0.32908458" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.4993895" weight="0.32908458" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3719583" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.4993895" visible="true" weight="0.34994206" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4993895" visible="true" weight="0.34994206" />
       <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.496337" weight="0.20857474" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.43711844" side_tool="true" weight="0.31865585" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4981685" weight="0.32992035" />
@@ -961,24 +896,10 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HomeFragment.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_download.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_draw_board.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1363,20 +1284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HotFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1936#2199#0" expanded="true" />
-            <element signature="e#2198#2199#0" expanded="true" />
-            <element signature="e#4729#4730#0" expanded="true" />
-            <element signature="e#4780#4781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/network/RequestMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1391,15 +1298,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8625">
+          <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+          <folding>
+            <element signature="e#7911#7912#0" expanded="true" />
+            <element signature="e#7979#7980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+        <state relative-caret-position="343">
+          <caret line="122" column="21" lean-forward="true" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
           <folding>
             <element signature="e#1474#1691#0" expanded="true" />
             <element signature="e#1690#1691#0" expanded="true" />
             <element signature="e#3849#3850#0" expanded="true" />
             <element signature="e#3900#3901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/erik/android/androidlean/fragment/HotFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1932#2149#0" expanded="true" />
+            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#4729#4730#0" expanded="true" />
+            <element signature="e#4780#4781#0" expanded="true" />
           </folding>
         </state>
       </provider>
