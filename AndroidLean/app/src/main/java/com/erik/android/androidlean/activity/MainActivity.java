@@ -1,5 +1,6 @@
 package com.erik.android.androidlean.activity;
 
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;
@@ -15,7 +16,6 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 
 import com.erik.android.androidlean.adapter.TestFragmentPagerAdapter;
 import com.erik.android.androidlean.R;
@@ -51,6 +51,29 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         bindViews();
 
         rb_home.setChecked(true);
+
+        //addShortcut(this, "学习");
+    }
+
+    public static void addShortcut(Activity cx, String name) {
+        // TODO: 2017/6/25  创建快捷方式的intent广播
+        Intent shortcut = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");
+        // TODO: 2017/6/25 添加快捷名称
+        shortcut.putExtra(Intent.EXTRA_SHORTCUT_NAME, name);
+        //  快捷图标是允许重复
+        shortcut.putExtra("duplicate", false);
+        // 快捷图标
+        Intent.ShortcutIconResource iconRes = Intent.ShortcutIconResource.fromContext(cx, R.mipmap.ic_launcher);
+        shortcut.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, iconRes);
+        // TODO: 2017/6/25 我们下次启动要用的Intent信息
+        Intent carryIntent = new Intent(Intent.ACTION_MAIN);
+        carryIntent.putExtra("name", name);
+        carryIntent.setClassName(cx.getPackageName(),cx.getClass().getName());
+        carryIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        //添加携带的Intent
+        shortcut.putExtra(Intent.EXTRA_SHORTCUT_INTENT, carryIntent);
+        // TODO: 2017/6/25  发送广播
+        cx.sendBroadcast(shortcut);
     }
 
     private void bindViews() {

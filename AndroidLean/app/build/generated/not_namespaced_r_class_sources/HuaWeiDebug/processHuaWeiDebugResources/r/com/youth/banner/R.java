@@ -27,50 +27,50 @@ public final class R {
         public static final int indicator_margin = 0x7f03010c;
         public static final int indicator_width = 0x7f03010d;
         public static final int is_auto_play = 0x7f030111;
-        public static final int scroll_time = 0x7f0301b2;
-        public static final int title_background = 0x7f030229;
-        public static final int title_height = 0x7f03022a;
-        public static final int title_textcolor = 0x7f03022b;
-        public static final int title_textsize = 0x7f03022c;
+        public static final int scroll_time = 0x7f0301d6;
+        public static final int title_background = 0x7f03024d;
+        public static final int title_height = 0x7f03024e;
+        public static final int title_textcolor = 0x7f03024f;
+        public static final int title_textsize = 0x7f030250;
     }
     public static final class drawable {
         private drawable() {}
 
         public static final int black_background = 0x7f070062;
-        public static final int gray_radius = 0x7f070070;
-        public static final int no_banner = 0x7f07007c;
-        public static final int white_radius = 0x7f07009d;
+        public static final int gray_radius = 0x7f070071;
+        public static final int no_banner = 0x7f07007e;
+        public static final int white_radius = 0x7f0700a4;
     }
     public static final class id {
         private id() {}
 
-        public static final int bannerContainer = 0x7f080021;
-        public static final int bannerDefaultImage = 0x7f080022;
-        public static final int bannerTitle = 0x7f080023;
-        public static final int bannerViewPager = 0x7f080024;
-        public static final int center = 0x7f08003a;
-        public static final int center_crop = 0x7f08003d;
-        public static final int center_inside = 0x7f08003f;
-        public static final int circleIndicator = 0x7f080044;
-        public static final int fit_center = 0x7f08006e;
-        public static final int fit_end = 0x7f08006f;
-        public static final int fit_start = 0x7f080070;
-        public static final int fit_xy = 0x7f080071;
-        public static final int indicatorInside = 0x7f080080;
-        public static final int matrix = 0x7f08008e;
-        public static final int numIndicator = 0x7f08009d;
-        public static final int numIndicatorInside = 0x7f08009e;
-        public static final int titleView = 0x7f0800f0;
+        public static final int bannerContainer = 0x7f080022;
+        public static final int bannerDefaultImage = 0x7f080023;
+        public static final int bannerTitle = 0x7f080024;
+        public static final int bannerViewPager = 0x7f080025;
+        public static final int center = 0x7f080043;
+        public static final int center_crop = 0x7f080046;
+        public static final int center_inside = 0x7f080048;
+        public static final int circleIndicator = 0x7f08004d;
+        public static final int fit_center = 0x7f08007a;
+        public static final int fit_end = 0x7f08007b;
+        public static final int fit_start = 0x7f08007c;
+        public static final int fit_xy = 0x7f08007d;
+        public static final int indicatorInside = 0x7f08008e;
+        public static final int matrix = 0x7f0800a1;
+        public static final int numIndicator = 0x7f0800b1;
+        public static final int numIndicatorInside = 0x7f0800b2;
+        public static final int titleView = 0x7f08010e;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int banner = 0x7f0b0023;
+        public static final int banner = 0x7f0b0027;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] Banner = { 0x7f03003a, 0x7f03003b, 0x7f0300b2, 0x7f030107, 0x7f030109, 0x7f03010a, 0x7f03010b, 0x7f03010c, 0x7f03010d, 0x7f030111, 0x7f0301b2, 0x7f030229, 0x7f03022a, 0x7f03022b, 0x7f03022c };
+        public static final int[] Banner = { 0x7f03003a, 0x7f03003b, 0x7f0300b2, 0x7f030107, 0x7f030109, 0x7f03010a, 0x7f03010b, 0x7f03010c, 0x7f03010d, 0x7f030111, 0x7f0301d6, 0x7f03024d, 0x7f03024e, 0x7f03024f, 0x7f030250 };
         public static final int Banner_banner_default_image = 0;
         public static final int Banner_banner_layout = 1;
         public static final int Banner_delay_time = 2;

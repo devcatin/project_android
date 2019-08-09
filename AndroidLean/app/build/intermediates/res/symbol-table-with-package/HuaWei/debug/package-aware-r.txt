@@ -383,6 +383,8 @@ attr layout_keyline
 attr layout_optimizationLevel
 attr layout_scrollFlags
 attr layout_scrollInterpolator
+attr left_bottom_radius
+attr left_top_radius
 attr liftOnScroll
 attr lineHeight
 attr lineSpacing
@@ -439,15 +441,49 @@ attr progressBarImage
 attr progressBarImageScaleType
 attr progressBarPadding
 attr progressBarStyle
+attr qrcv_animTime
+attr qrcv_barCodeTipText
+attr qrcv_barcodeRectHeight
+attr qrcv_borderColor
+attr qrcv_borderSize
+attr qrcv_cornerColor
+attr qrcv_cornerLength
+attr qrcv_cornerSize
+attr qrcv_customGridScanLineDrawable
+attr qrcv_customScanLineDrawable
+attr qrcv_isBarcode
+attr qrcv_isCenterVertical
+attr qrcv_isOnlyDecodeScanBoxArea
+attr qrcv_isScanLineReverse
+attr qrcv_isShowDefaultGridScanLineDrawable
+attr qrcv_isShowDefaultScanLineDrawable
+attr qrcv_isShowTipBackground
+attr qrcv_isShowTipTextAsSingleLine
+attr qrcv_isTipTextBelowRect
+attr qrcv_maskColor
+attr qrcv_qrCodeTipText
+attr qrcv_rectWidth
+attr qrcv_scanLineColor
+attr qrcv_scanLineMargin
+attr qrcv_scanLineSize
+attr qrcv_tipBackgroundColor
+attr qrcv_tipTextColor
+attr qrcv_tipTextMargin
+attr qrcv_tipTextSize
+attr qrcv_toolbarHeight
+attr qrcv_topOffset
 attr queryBackground
 attr queryHint
 attr radioButtonStyle
+attr radius
 attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
 attr retryImage
 attr retryImageScaleType
 attr reverseLayout
+attr right_bottom_radius
+attr right_top_radius
 attr rippleColor
 attr roundAsCircle
 attr roundBottomEnd
@@ -732,6 +768,7 @@ color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -968,6 +1005,10 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1070,6 +1111,7 @@ drawable bg_frame_search
 drawable bitmap_drawable
 drawable black_background
 drawable circle_style
+drawable clear
 drawable clip_drawable
 drawable delete
 drawable design_bottom_navigation_item_background
@@ -1083,6 +1125,7 @@ drawable drawable_slide_line
 drawable drawable_virtual_line
 drawable example_appwidget_preview
 drawable gray_radius
+drawable hide_pw
 drawable ic_android_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1107,12 +1150,16 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable password
+drawable selector_login_change_psw
+drawable show_pw
 drawable tab_menu_bg
 drawable tab_menu_buy
 drawable tab_menu_home
 drawable tab_menu_hot
 drawable tab_menu_mine
 drawable tab_menu_text
+drawable test
 drawable test_girl
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1127,6 +1174,7 @@ drawable ty_6
 drawable ty_7
 drawable ty_8
 drawable ty_9
+drawable username
 drawable white_radius
 id ALT
 id CTRL
@@ -1135,6 +1183,7 @@ id LinearLayout1
 id META
 id SHIFT
 id SYM
+id action0
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1167,15 +1216,22 @@ id bannerTitle
 id bannerViewPager
 id barrier
 id beginning
+id bgaqrcode_camera_preview
 id blocking
 id bottom
+id bt_pwd_clear
+id bt_pwd_eyes
+id bt_usename_clear
 id btn_back
-id btn_clean
+id btn_clean_board
 id btn_delete
 id btn_download
+id btn_draw_board
 id btn_insert
+id btn_login
+id btn_matrix_color
+id btn_preforence
 id btn_query
-id btn_refresh
 id btn_right
 id btn_update
 id btn_view_image
@@ -1186,6 +1242,7 @@ id btnread
 id btnsave
 id btnstop
 id buttonPanel
+id cancel_action
 id center
 id centerCrop
 id centerInside
@@ -1206,6 +1263,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id dataBinding
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1217,11 +1275,13 @@ id dimensions
 id direct
 id disableHome
 id div_tab_bar
+id draw_board
 id edit_query
 id editdetail
 id editname
 id editpath
 id end
+id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1246,6 +1306,7 @@ id fixed
 id focusCrop
 id forever
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -1255,12 +1316,15 @@ id icon
 id icon_group
 id ifRoom
 id image
+id img_meizi
 id img_show
 id indicatorInside
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv_head
+id iv_qrcode
 id labeled
 id largeLabel
 id left
@@ -1269,8 +1333,12 @@ id line3
 id listMode
 id list_item
 id list_news
+id login
+id login_error
+id login_layout
 id masked
 id matrix
+id media_actions
 id message
 id middle
 id mini
@@ -1287,6 +1355,8 @@ id notification_main_column
 id notification_main_column_container
 id numIndicator
 id numIndicatorInside
+id onAttachStateChangeListener
+id onDateChanged
 id one
 id outline
 id packed
@@ -1294,6 +1364,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id password
 id percent
 id pin
 id progressBar
@@ -1304,13 +1375,18 @@ id rb_buy
 id rb_home
 id rb_hot
 id rb_mine
+id register
 id rg_tab_bar
 id right
 id right_icon
 id right_side
+id rl_list
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
+id sb_hue
+id sb_lum
+id sb_saturation
 id screen
 id scroll
 id scrollIndicatorDown
@@ -1347,6 +1423,7 @@ id src_in
 id src_over
 id standard
 id start
+id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
@@ -1359,6 +1436,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textWatcher
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1370,6 +1448,7 @@ id title
 id titleDividerNoCustom
 id titleView
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1380,11 +1459,18 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tv_title
 id two
+id txt_hue
+id txt_item_content
 id txt_item_title
+id txt_lun
+id txt_saturation
 id uniform
 id unlabeled
 id up
 id useLogo
+id usecode_layout
+id usename
+id usename_layout
 id view_offset_helper
 id visible
 id vpager
@@ -1442,12 +1528,17 @@ layout abc_tooltip
 layout activity_base
 layout activity_detail
 layout activity_download
+layout activity_draw_board
 layout activity_image
 layout activity_login
 layout activity_main
+layout activity_matrix
+layout activity_preforence
+layout activity_qrcode
 layout activity_web_view
 layout banner
 layout content_base
+layout content_qrcode
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1473,8 +1564,17 @@ layout mtrl_layout_snackbar_include
 layout nav_bar_layout
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout select_dialog_item_material
@@ -1482,7 +1582,9 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu menu
+menu webview_menu
 mipmap ic_launcher
+mipmap ic_launcher_logo
 mipmap ic_launcher_round
 mipmap index_icon_buy_hover
 mipmap index_icon_buy_nor
@@ -1492,6 +1594,8 @@ mipmap index_icon_hot_hover
 mipmap index_icon_hot_nor
 mipmap index_icon_mine_hover
 mipmap index_icon_mine_nor
+mipmap qrcode_default_grid_scan_line
+mipmap qrcode_default_scan_line
 raw test
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -1542,19 +1646,22 @@ string btnread
 string btnwrite
 string character_counter_content_description
 string character_counter_pattern
-string clean_webview_data
+string clean_board
 string detailtitle
 string download_file
 string download_page_title
 string download_progress_rate
 string download_title
+string draw_board
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string load_html
 string load_image
 string load_webview
+string login
 string long_press_title
+string matrix_color
 string mtrl_chip_close_icon_content_description
 string nametitle
 string password_toggle_content_description
@@ -1562,7 +1669,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string refresh_webview_data
+string preforence
 string search_menu_title
 string status_bar_notification_info_overflow
 string stop_title
@@ -1571,8 +1678,11 @@ string tab_menu_home
 string tab_menu_hot
 string tab_menu_mine
 string title_activity_base
+string title_activity_qrcode
 string view_image
 string view_webview
+string webview_clean
+string webview_refresh
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1584,6 +1694,9 @@ style AppNewTheme_AppBarOverlay
 style AppNewTheme_NoActionBar
 style AppNewTheme_PopupOverlay
 style AppTheme
+style AppTheme_AppBarOverlay
+style AppTheme_NoActionBar
+style AppTheme_PopupOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -1856,9 +1969,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -2110,6 +2228,7 @@ styleable ConstraintLayout_placeholder content emptyVisibility
 styleable ConstraintSet android_orientation android_id android_visibility android_layout_width android_layout_height android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_maxWidth android_maxHeight android_minWidth android_minHeight android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_layout_marginStart android_layout_marginEnd android_translationZ android_elevation barrierAllowsGoneWidgets barrierDirection chainUseRtl constraint_referenced_ids layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
+styleable Custom_Round_Image_View left_bottom_radius left_top_radius radius right_bottom_radius right_top_radius
 styleable DesignTheme bottomSheetDialogTheme bottomSheetStyle
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable FloatingActionButton backgroundTint backgroundTintMode borderWidth elevation fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor showMotionSpec useCompatPadding
@@ -2135,6 +2254,7 @@ styleable NaviBar titleText
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
+styleable QRCodeView qrcv_animTime qrcv_barCodeTipText qrcv_barcodeRectHeight qrcv_borderColor qrcv_borderSize qrcv_cornerColor qrcv_cornerLength qrcv_cornerSize qrcv_customGridScanLineDrawable qrcv_customScanLineDrawable qrcv_isBarcode qrcv_isCenterVertical qrcv_isOnlyDecodeScanBoxArea qrcv_isScanLineReverse qrcv_isShowDefaultGridScanLineDrawable qrcv_isShowDefaultScanLineDrawable qrcv_isShowTipBackground qrcv_isShowTipTextAsSingleLine qrcv_isTipTextBelowRect qrcv_maskColor qrcv_qrCodeTipText qrcv_rectWidth qrcv_scanLineColor qrcv_scanLineMargin qrcv_scanLineSize qrcv_tipBackgroundColor qrcv_tipTextColor qrcv_tipTextMargin qrcv_tipTextSize qrcv_toolbarHeight qrcv_topOffset
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
 styleable ScrimInsetsFrameLayout insetForeground
@@ -2156,3 +2276,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml network_security_config

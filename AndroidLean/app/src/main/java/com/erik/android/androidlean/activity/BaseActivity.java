@@ -1,13 +1,9 @@
 package com.erik.android.androidlean.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 
-import com.erik.android.androidlean.R;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.erik.utilslibrary.ActivityManager;
 
 public class BaseActivity extends AppCompatActivity {
@@ -18,6 +14,8 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityManager.getActivity().add(this);
+        //ARouter 注入
+        ARouter.getInstance().inject(this);
     }
 
     @Override

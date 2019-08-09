@@ -1,21 +1,27 @@
 package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Handler;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.alibaba.android.arouter.facade.annotation.Autowired;
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
 
+@Route(path = ConstConfig.IMAGE_ACTIVITY)
 public class ImageActivity extends BaseActivity {
 
     private ImageView img_show;
     private AnimationDrawable animationDrawable;
+
+    @Autowired(name = "name")
+    public String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +45,7 @@ public class ImageActivity extends BaseActivity {
 
     private void navigationBar() {
         final NavigationBar navigationBar = findViewById(R.id.nav_bar);
-        Intent intent = getIntent();
-        String title = intent.getStringExtra("name");
-        navigationBar.setTitleTextStr(title);
+        navigationBar.setTitleTextStr(name);
         navigationBar.setShowBackBtn(true);
         navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
             @Override

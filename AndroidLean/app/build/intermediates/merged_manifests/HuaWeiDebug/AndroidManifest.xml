@@ -8,13 +8,16 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="28" />
 
+    <!-- 访问internet权限 -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 访问internet权限 -->
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- 往SDCard写入数据权限 -->
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- if you want to load images from a file OR from the internet -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- if you want to load images from a file OR from the internet -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
     <application
         android:name="com.erik.android.androidlean.ohter.TestApplication"
@@ -23,15 +26,43 @@
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_logo"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppNewTheme" >
         <activity
+            android:name="com.erik.android.androidlean.activity.MainActivity"
+            android:configChanges="orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="m.test.com"
+                    android:scheme="arouter" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.erik.android.androidlean.activity.DetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.erik.android.androidlean.activity.MatrixActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.erik.android.androidlean.activity.DrawBoardActivity"
+            android:launchMode="singleTop" />
+        <activity
             android:name="com.erik.android.androidlean.activity.BaseActivity"
             android:label="@string/title_activity_base"
-            android:theme="@style/AppNewTheme" >
-        </activity>
+            android:theme="@style/AppNewTheme" />
         <activity
             android:name="com.erik.android.androidlean.activity.ImageActivity"
             android:launchMode="singleTop" />
@@ -42,38 +73,27 @@
         <activity
             android:name="com.erik.android.androidlean.activity.DownloadActivity"
             android:launchMode="singleTop" />
+        <activity
+            android:name="com.erik.android.androidlean.activity.LoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.erik.android.androidlean.activity.PreforenceActivity"
+            android:launchMode="singleTop" />
 
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="huawei" />
 
+        <provider
+            android:name="com.erik.android.androidlean.ohter.NameContentProvider"
+            android:authorities="com.jay.example.providers.myprovider"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity
-            android:name="com.erik.android.androidlean.activity.MainActivity"
-            android:configChanges="orientation"
-            android:hardwareAccelerated="false"
-            android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.erik.android.androidlean.activity.DetailActivity"
-            android:launchMode="singleTop" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.erik.loginmodule.LoginActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name="com.erik.qrcodelibrary.QRCodeActivity"
+            android:label="@string/title_activity_qrcode"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

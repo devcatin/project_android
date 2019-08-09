@@ -1,30 +1,36 @@
 package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Handler;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.Toast;
 
+import com.alibaba.android.arouter.facade.annotation.Autowired;
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.bean.TestObject;
+import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.android.androidlean.view.TestWebView;
 import com.erik.utilslibrary.ActivityManager;
 
+@Route(path = ConstConfig.WEBVIEW_ACTIVITY)
 public class WebViewActivity extends BaseActivity implements View.OnClickListener {
+
+    @Autowired(name = "name")
+    public String name;
 
     private TestWebView webview;
     private long exitTime = 0;
-
     private static final String APP_CACHE_DIRNAME = "/webcache";
     private static final String URL = "https://www.baidu.com";
 
@@ -38,17 +44,12 @@ public class WebViewActivity extends BaseActivity implements View.OnClickListene
     }
 
     private void bindViews() {
-        Button cleanBtn = findViewById(R.id.btn_clean);
-        cleanBtn.setOnClickListener(this);
-        Button refreshBtn = findViewById(R.id.btn_refresh);
-        refreshBtn.setOnClickListener(this);
+
     }
 
     private void navigationBar() {
         final NavigationBar navigationBar = findViewById(R.id.nav_bar);
-        Intent intent = getIntent();
-        String title = intent.getStringExtra("name");
-        navigationBar.setTitleTextStr(title);
+        navigationBar.setTitleTextStr(name);
         navigationBar.setShowBackBtn(true);
         navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
             @Override
@@ -58,7 +59,7 @@ public class WebViewActivity extends BaseActivity implements View.OnClickListene
             }
             @Override
             public void onRightClick() {
-                Toast.makeText(WebViewActivity.this, "点击右边按钮", Toast.LENGTH_SHORT).show();
+                registerForContextMenu(navigationBar.getBtn_right());
             }
         });
     }
@@ -145,13 +146,28 @@ public class WebViewActivity extends BaseActivity implements View.OnClickListene
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_clean:
-                webview.clearCache(true);
+
+    }
+
+    @Override
+    // 重写上下文菜单的创建方法
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        MenuInflater inflator = new MenuInflater(WebViewActivity.this);
+        inflator.inflate(R.menu.webview_menu, menu);
+        super.onCreateContextMenu(menu, v, menuInfo);
+    }
+
+    // 上下文菜单被点击是触发该方法
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.one:
+                webview.clearHistory();
                 break;
-            case R.id.btn_refresh:
+            case R.id.two:
                 webview.reload();
                 break;
         }
+        return true;
     }
 }

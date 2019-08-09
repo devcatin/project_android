@@ -1,69 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activity.DetailActivity">
+    xmlns:tools="http://schemas.android.com/tools" >
 
-    <com.erik.android.androidlean.view.NavigationBar
-        android:id="@+id/nav_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:titleText="详情" />
+    <data>
+        <variable
+            name="user"
+            type="com.erik.android.androidlean.bean.NewBean" />
+    </data>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="10dp" >
+        tools:context=".activity.DetailActivity" >
 
-        <EditText
-            android:id="@+id/editname"
+        <com.erik.android.androidlean.view.NavigationBar
+            android:id="@+id/nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nametitle"
-            android:textSize="@dimen/font_size" />
+            android:orientation="vertical"
+            android:padding="10dp" >
 
-        <EditText
-            android:id="@+id/editdetail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minLines="2"
-            android:hint="@string/detailtitle"
-            android:textSize="@dimen/font_size" />
+            <TextView
+                android:id="@+id/editname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{user.new_title}"/>
+
+            <TextView
+                android:id="@+id/editdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{user.new_content}" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:padding="10dp" >
-
-        <Button
-            android:id="@+id/btnsave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btnwrite"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/btnclean"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btnclean"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/btnread"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btnread"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</layout>

@@ -1,58 +1,48 @@
 package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.erik.android.androidlean.tool.SharedHelper;
+import com.alibaba.android.arouter.facade.annotation.Autowired;
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.erik.android.androidlean.BR;
+import com.erik.android.androidlean.bean.NewBean;
+import com.erik.android.androidlean.constant.ConstConfig;
+import com.erik.android.androidlean.databinding.ActivityDetailBinding;
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
 
-import java.util.Map;
+@Route(path = ConstConfig.DETAIL_ACTIVITY)
+public class DetailActivity extends BaseActivity {
 
-public class DetailActivity extends BaseActivity implements View.OnClickListener {
+    @Autowired(name = "name")
+    public String name;
 
-    private EditText editname;
-    private EditText editdetail;
-    private Button btn_save;
-    private Button btnclean;
-    private Button btnread;
-    private Context mContext;
+    @Autowired(name = "user")
+    public String user;
+
+    ActivityDetailBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
-        mContext = getApplicationContext();
-        navigationBar();
         bindViews();
+        navigationBar();
     }
 
     private void bindViews() {
-        editdetail = findViewById(R.id.editdetail);
-        editname = findViewById(R.id.editname);
-        btnclean = findViewById(R.id.btnclean);
-        btn_save = findViewById(R.id.btnsave);
-        btnread = findViewById(R.id.btnread);
-
-        btnclean.setOnClickListener(this);
-        btn_save.setOnClickListener(this);
-        btnread.setOnClickListener(this);
+        NewBean bean = JSON.parseObject(user, NewBean.class);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_detail);
+        binding.setVariable(BR.user, bean);
     }
 
     private void navigationBar() {
-        final NavigationBar navigationBar = findViewById(R.id.nav_bar);
-        Intent intent = getIntent();
-        String title = intent.getStringExtra("title");
-        navigationBar.setTitleTextStr(title);
+        NavigationBar navigationBar = binding.navBar;
+        navigationBar.setTitleTextStr(name);
         navigationBar.setShowBackBtn(true);
         navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
             @Override
@@ -65,34 +55,6 @@ public class DetailActivity extends BaseActivity implements View.OnClickListener
 
             }
         });
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btnclean:
-                editdetail.setText("");
-                editname.setText("");
-                break;
-            case R.id.btnsave:
-                SharedHelper sharedHelper = new SharedHelper(mContext);
-                String filename = editname.getText().toString();
-                String filedetail = editdetail.getText().toString();
-                try {
-                    sharedHelper.saveData(filename, filedetail);
-                    Toast.makeText(mContext, "数据写入成功", Toast.LENGTH_SHORT).show();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    Toast.makeText(mContext, "数据写入失败", Toast.LENGTH_SHORT).show();
-                }
-                break;
-            case R.id.btnread:
-                SharedHelper sharedHelper1 = new SharedHelper(mContext);
-                Map<String, String> map = sharedHelper1.readData();
-                String value = "suername:" + map.get("username") + " passwd:" + map.get("passwd");
-                Toast.makeText(mContext, value, Toast.LENGTH_SHORT).show();
-                break;
-        }
     }
 
 }

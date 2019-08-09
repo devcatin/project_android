@@ -10,23 +10,30 @@
     <com.erik.android.androidlean.view.NavigationBar
         android:id="@+id/nav_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:titleText="浏览网页" />
+        android:layout_height="wrap_content" />
 
-    <ImageView
-        android:id="@+id/img_show"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/animation_drawable" />
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical" >
 
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
-        android:indeterminateOnly="false"
-        android:maxHeight="10dp"
-        android:minHeight="5dp"
-        android:progressDrawable="@drawable/layer_list_drawable"
-        android:thumb="@drawable/ic_android_black_24dp" />
+        <ImageView
+            android:id="@+id/img_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/animation_drawable" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+            android:indeterminateOnly="false"
+            android:maxHeight="10dp"
+            android:minHeight="5dp"
+            android:progressDrawable="@drawable/layer_list_drawable"
+            android:thumb="@drawable/ic_android_black_24dp" />
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -12,11 +12,12 @@ import com.erik.android.androidlean.tool.DBOpenHelper;
 
 public class NameContentProvider extends ContentProvider {
 
-    private static UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);
     private DBOpenHelper openHelper;
+    public static final int USER_INFO = 1;
+    private static UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);
 
     static {
-        matcher.addURI("com.jay.example.providers.myprovider", "test", 1);
+        matcher.addURI(UserInfoContent.AUTHORITIES, "/test", USER_INFO);
     }
 
     @Override
@@ -27,15 +28,21 @@ public class NameContentProvider extends ContentProvider {
 
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
-        return null;
+        Cursor cursor = null;
+        if (matcher.match(uri) == USER_INFO) {
+            SQLiteDatabase database = openHelper.getReadableDatabase();
+            cursor = database.query(UserInfoContent.TABLE_NAME, projection, selection, selectionArgs, null, null, sortOrder);
+            cursor.setNotificationUri(getContext().getContentResolver(), uri);
+        }
+        return cursor;
     }
 
     @Override
     public Uri insert(Uri uri, ContentValues values) {
         switch (matcher.match(uri)) {
-            case 1:
-                SQLiteDatabase database = openHelper.getReadableDatabase();
-                long rowId = database.insert("test", null, values);
+            case USER_INFO:
+                SQLiteDatabase database = openHelper.getWritableDatabase();
+                long rowId = database.insert(UserInfoContent.TABLE_NAME, null, values);
                 if (rowId > 0) {
                     Uri nameUri = ContentUris.withAppendedId(uri, rowId);
                     getContext().getContentResolver().notifyChange(nameUri, null);
@@ -47,7 +54,13 @@ public class NameContentProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
-        return 0;
+        int count = 0;
+        if (matcher.match(uri) == USER_INFO) {
+            SQLiteDatabase database = openHelper.getWritableDatabase();
+            count = database.delete(UserInfoContent.TABLE_NAME, selection, selectionArgs);
+            database.close();
+        }
+        return count;
     }
 
     @Override
@@ -59,6 +72,5 @@ public class NameContentProvider extends ContentProvider {
     public String getType(Uri uri) {
         return "";
     }
-
 
 }

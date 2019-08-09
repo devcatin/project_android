@@ -1,1 +1,1 @@
-include ':app', ':loginmodule', ':utilslibrary'
+include ':app',':utilslibrary'

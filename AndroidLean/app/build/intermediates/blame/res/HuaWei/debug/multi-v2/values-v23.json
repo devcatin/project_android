@@ -4,7 +4,7 @@
             "outputFile": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/incremental/mergeHuaWeiDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/854c9339676ca40eae0645ef0881ae97/res/values-v23/values-v23.xml",
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c0ae8da4a7c189405c3fee140f333e8c/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ea334e0b70cf7db6a4abc3966abc3ab8/res/values-v23/values-v23.xml",
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

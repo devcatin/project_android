@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/back_ground_color"
-    android:orientation="vertical"
-    android:id="@+id/fg_list">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.erik.android.androidlean.view.NavigationBar
-        android:id="@+id/nav_bar"
+    <data>
+
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:titleText="热门" />
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/back_ground_color"
+        android:orientation="vertical"
+        android:id="@+id/fg_list">
 
-    <ListView
-        android:id="@+id/list_news"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <com.erik.android.androidlean.view.NavigationBar
+            android:id="@+id/nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleText="热门" />
 
-</LinearLayout>
+        <ListView
+            android:id="@+id/list_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</layout>

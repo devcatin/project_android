@@ -58,11 +58,6 @@ public class NavigationBar extends LinearLayout implements View.OnClickListener 
         if (titleTextStr != null) {
             nav_title.setText(titleTextStr);
         }
-        if (isShowBackBtn) {
-            btn_back.setVisibility(VISIBLE);
-        } else {
-            btn_back.setVisibility(GONE);
-        }
     }
 
     @Override
@@ -86,7 +81,7 @@ public class NavigationBar extends LinearLayout implements View.OnClickListener 
         if (showBackBtn) {
             btn_back.setVisibility(VISIBLE);
         } else {
-            btn_back.setVisibility(GONE);
+            btn_back.setVisibility(INVISIBLE);
         }
     }
 

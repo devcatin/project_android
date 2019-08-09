@@ -1,7 +1,6 @@
 package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
@@ -13,7 +12,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alibaba.android.arouter.facade.annotation.Autowired;
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
 import com.erik.utilslibrary.FileDownload.FileDownloadered;
@@ -21,6 +23,7 @@ import com.erik.utilslibrary.FileDownload.FileDownloadered;
 import java.io.File;
 import java.util.Locale;
 
+@Route(path = ConstConfig.DOWNLOAD_ACTIVITY)
 public class DownloadActivity extends BaseActivity {
 
     public EditText editPath;
@@ -30,6 +33,9 @@ public class DownloadActivity extends BaseActivity {
     public ProgressBar progressBar;
     private static final int PROCESSONG = 1;
     private static final int FAILURE = -1;
+
+    @Autowired(name = "name")
+    public String name;
 
     private Handler handler = new UIHandler();
 
@@ -78,9 +84,7 @@ public class DownloadActivity extends BaseActivity {
 
     private void navigationBar() {
         final NavigationBar navigationBar = findViewById(R.id.nav_bar);
-        Intent intent = getIntent();
-        String title = intent.getStringExtra("name");
-        navigationBar.setTitleTextStr(title);
+        navigationBar.setTitleTextStr(name);
         navigationBar.setShowBackBtn(true);
         navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
             @Override

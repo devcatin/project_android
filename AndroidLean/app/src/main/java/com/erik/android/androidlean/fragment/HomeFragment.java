@@ -3,10 +3,7 @@ package com.erik.android.androidlean.fragment;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -14,17 +11,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.ImageView;
-import android.widget.ScrollView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.tool.GlideImageLoader;
 import com.erik.android.androidlean.view.NavigationBar;
+import com.erik.qrcodelibrary.ZXingUtils;
 import com.erik.utilslibrary.ActivityManager;
-import com.erik.utilslibrary.UtilsTools;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
@@ -57,6 +50,7 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         navigationBar(view);
         loadBanner(view);
+        bindViews(view);
         return view;
     }
 
@@ -111,6 +105,12 @@ public class HomeFragment extends Fragment {
         banner.setDelayTime(3000);
         banner.setIndicatorGravity(BannerConfig.RIGHT);
         banner.start();
+    }
+
+    private void bindViews(View view) {
+        //ImageView imageView = view.findViewById(R.id.iv_qrcode);
+        //Bitmap bitmap = ZXingUtils.createQRImage("https://www.baidu.com", 300, 300);
+        //imageView.setImageBitmap(bitmap);
     }
 
     @Override
