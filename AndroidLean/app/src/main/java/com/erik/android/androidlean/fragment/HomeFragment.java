@@ -2,11 +2,9 @@ package com.erik.android.androidlean.fragment;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -14,18 +12,15 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.alibaba.fastjson.JSON;
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.bean.BannerBean;
-import com.erik.android.androidlean.bean.UserBean;
 import com.erik.android.androidlean.network.BaseResponse;
 import com.erik.android.androidlean.network.NetRequest;
 import com.erik.android.androidlean.network.RequestMethod;
 import com.erik.android.androidlean.tool.GlideImageLoader;
 import com.erik.android.androidlean.view.NavigationBar;
-import com.erik.qrcodelibrary.ZXingUtils;
 import com.erik.utilslibrary.ActivityManager;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -37,22 +32,10 @@ import java.util.List;
 
 import okhttp3.Response;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends BaseFragment {
 
-    private Context context;
     private Banner banner;
     private List<String> banners = new ArrayList<>();
-
-    private Handler handler = new Handler(new Handler.Callback() {
-        @Override
-        public boolean handleMessage(Message msg) {
-            if (msg.what == 0x123) {
-                banner.setImages(banners);
-                banner.start();
-            }
-            return false;
-        }
-    });
 
     @Override
     public void onAttach(Context context) {
@@ -106,7 +89,13 @@ public class HomeFragment extends Fragment {
         });
     }
 
-    private void requestData() {
+    @Override
+    public void messageEventPostThread(Message msg) {
+        banner.setImages(banners);
+        banner.start();
+    }
+
+    public void requestData() {
         NetRequest netRequest = NetRequest.getInstance(context);
         netRequest.get(RequestMethod.GET_BANNER_LIST, new NetRequest.RequestCallBack() {
             @Override
@@ -132,6 +121,9 @@ public class HomeFragment extends Fragment {
             }
             @Override
             public void failure(IOException e) {
+                Message message = new Message();
+                message.what = 0x456;
+                handler.sendMessage(message);
                 e.printStackTrace();
             }
         });
@@ -151,7 +143,7 @@ public class HomeFragment extends Fragment {
         //ImageView imageView = view.findViewById(R.id.iv_qrcode);
         //Bitmap bitmap = ZXingUtils.createQRImage("https://www.baidu.com", 300, 300);
         //imageView.setImageBitmap(bitmap);
-        requestData();
+        refreshLayout = view.findViewById(R.id.refreshLayout);
     }
 
     @Override

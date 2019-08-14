@@ -32,7 +32,7 @@
     <string name="matrix_color">图片滤镜</string>
     <string name="login">登录</string>
     <string name="preforence">数据保存</string>
-
+    <string name="view_larger_image">查看大图</string>
     <string name="webview_clean">清除缓存</string>
     <string name="webview_refresh">刷新网页</string>
     <string name="clean_board">清除画板</string>

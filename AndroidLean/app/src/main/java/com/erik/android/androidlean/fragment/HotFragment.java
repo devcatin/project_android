@@ -3,11 +3,9 @@ package com.erik.android.androidlean.fragment;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,49 +13,45 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.Postcard;
-import com.alibaba.android.arouter.facade.callback.NavCallback;
 import com.alibaba.android.arouter.facade.callback.NavigationCallback;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.alibaba.fastjson.JSON;
 import com.erik.android.androidlean.BR;
-import com.erik.android.androidlean.activity.DetailActivity;
 import com.erik.android.androidlean.adapter.ListAdapter;
-import com.erik.android.androidlean.bean.NewBean;
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.bean.UserBean;
 import com.erik.android.androidlean.constant.ConstConfig;
-import com.erik.android.androidlean.databinding.FragmentNewlistBinding;
 import com.erik.android.androidlean.network.BaseResponse;
 import com.erik.android.androidlean.network.NetRequest;
 import com.erik.android.androidlean.network.RequestMethod;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.footer.BallPulseFooter;
+import com.scwang.smartrefresh.layout.header.BezierRadarHeader;
+import com.scwang.smartrefresh.layout.header.ClassicsHeader;
+import com.scwang.smartrefresh.layout.header.FalsifyHeader;
+import com.scwang.smartrefresh.layout.header.TwoLevelHeader;
+import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import okhttp3.Response;
 
-public class HotFragment extends Fragment implements AdapterView.OnItemClickListener {
+public class HotFragment extends BaseFragment implements AdapterView.OnItemClickListener {
 
-    private FragmentManager manager;
+    public FragmentManager manager;
     private List<UserBean> beans = new ArrayList<>();
-    private Context context;
     private ListView list_new;
-
-    private Handler handler = new Handler(new Handler.Callback() {
-        @Override
-        public boolean handleMessage(Message msg) {
-            if (msg.what == 0x123) {
-                updateData();
-            }
-            return false;
-        }
-    });
+    private ListAdapter adapter;
 
     @Override
     public void onAttach(Context context) {
@@ -68,15 +62,24 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        isDoubleRefresh = true;
     }
 
     public void setManager(FragmentManager manager) {
         this.manager = manager;
     }
 
-    private void requestData() {
+    @Override
+    public void messageEventPostThread(Message msg) {
+        updateData();
+    }
+
+    public void requestData() {
         NetRequest netRequest = NetRequest.getInstance(context);
-        netRequest.get(RequestMethod.GET_USER_LIST, new NetRequest.RequestCallBack() {
+        HashMap<String, String> param = new HashMap<>();
+        param.put("pageIndex", String.valueOf(pageIndex));
+        param.put("pageSize", String.valueOf(5));
+        netRequest.get(RequestMethod.GET_USER_LIST, param, new NetRequest.RequestCallBack() {
             @Override
             public void success(Response response) throws IOException {
                 int code = response.code();
@@ -86,7 +89,7 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
                     BaseResponse baseResponse = JSON.parseObject(result, BaseResponse.class);
                     String data = baseResponse.getData();
                     List<UserBean> list = JSON.parseArray(data, UserBean.class);
-                    if (list.size() > 0) {
+                    if (list.size() > 0 && !isup) {
                         beans.clear();
                     }
                     for (int index = 0; index < list.size(); index++) {
@@ -100,6 +103,9 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
             }
             @Override
             public void failure(IOException e) {
+                Message message = new Message();
+                message.what = 0x456;
+                handler.sendMessage(message);
                 e.printStackTrace();
             }
         });
@@ -115,13 +121,14 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
 
     private void bindViews(View view) {
         list_new = view.findViewById(R.id.list_news);
-        requestData();
+        list_new.setOnItemClickListener(this);
+        adapter = new ListAdapter(beans, getActivity(), BR.user);
+        list_new.setAdapter(adapter);
+        refreshLayout = view.findViewById(R.id.refreshLayout);
     }
 
     private void updateData() {
-        ListAdapter adapter = new ListAdapter(beans, getActivity(), BR.user);
-        list_new.setAdapter(adapter);
-        list_new.setOnItemClickListener(this);
+        adapter.notifyDataSetChanged();
     }
 
     private void navigationBar(View view) {
@@ -147,32 +154,11 @@ public class HotFragment extends Fragment implements AdapterView.OnItemClickList
     }
 
     private void enterDetailActivity(UserBean bean) {
-        final Activity activity = getActivity();
         String user = JSON.toJSONString(bean);
         ARouter.getInstance().build(ConstConfig.DETAIL_ACTIVITY)
                 .withString("name", bean.getUsername())
                 .withString("user", user)
-                .navigation(activity, 123, new NavigationCallback() {
-                    @Override
-                    public void onFound(Postcard postcard) {
-
-                    }
-
-                    @Override
-                    public void onLost(Postcard postcard) {
-
-                    }
-
-                    @Override
-                    public void onArrival(Postcard postcard) {
-
-                    }
-
-                    @Override
-                    public void onInterrupt(Postcard postcard) {
-
-                    }
-                });
+                .navigation();
     }
 
     @Override

@@ -6,11 +6,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -19,7 +17,7 @@ import com.erik.android.androidlean.tool.DBHelper;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
 
-public class BuyFragment extends Fragment implements View.OnClickListener {
+public class BuyFragment extends BaseFragment implements View.OnClickListener {
 
     private Context context;
     private SQLiteDatabase database;

@@ -15,7 +15,7 @@ public class CustomRoundAngleImageView extends AppCompatImageView {
 
     float width, height;
     private int defaultRadius = 6;
-    private int radius;
+    private int radius1;
     private int leftTopRadius;
     private int rightTopRadius;
     private int rightBottomRadius;
@@ -42,7 +42,7 @@ public class CustomRoundAngleImageView extends AppCompatImageView {
         }
         // 读取配置
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.Custom_Round_Image_View);
-        radius = array.getDimensionPixelOffset(R.styleable.Custom_Round_Image_View_radius, defaultRadius);
+        radius1 = array.getDimensionPixelOffset(R.styleable.Custom_Round_Image_View_radius1, defaultRadius);
         leftTopRadius = array.getDimensionPixelOffset(R.styleable.Custom_Round_Image_View_left_top_radius, defaultRadius);
         rightTopRadius = array.getDimensionPixelOffset(R.styleable.Custom_Round_Image_View_right_top_radius, defaultRadius);
         rightBottomRadius = array.getDimensionPixelOffset(R.styleable.Custom_Round_Image_View_right_bottom_radius, defaultRadius);
@@ -50,16 +50,16 @@ public class CustomRoundAngleImageView extends AppCompatImageView {
 
         //如果四个角的值没有设置，那么就使用通用的radius的值。
         if (defaultRadius == leftTopRadius) {
-            leftTopRadius = radius;
+            leftTopRadius = radius1;
         }
         if (defaultRadius == rightTopRadius) {
-            rightTopRadius = radius;
+            rightTopRadius = radius1;
         }
         if (defaultRadius == rightBottomRadius) {
-            rightBottomRadius = radius;
+            rightBottomRadius = radius1;
         }
         if (defaultRadius == leftBottomRadius) {
-            leftBottomRadius = radius;
+            leftBottomRadius = radius1;
         }
         array.recycle();
     }

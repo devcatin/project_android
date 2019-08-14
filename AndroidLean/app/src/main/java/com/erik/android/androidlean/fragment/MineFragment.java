@@ -2,11 +2,9 @@ package com.erik.android.androidlean.fragment;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.Button;
 
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -15,7 +13,7 @@ import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
 
-public class MineFragment extends Fragment implements View.OnClickListener {
+public class MineFragment extends BaseFragment implements View.OnClickListener {
 
     public MineFragment() {
 
@@ -49,6 +47,8 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         btn_login.setOnClickListener(this);
         Button preforence = view.findViewById(R.id.btn_preforence);
         preforence.setOnClickListener(this);
+        Button view_larger_image = view.findViewById(R.id.btn_view_larger_image);
+        view_larger_image.setOnClickListener(this);
     }
 
     private void navigationBar(View view) {
@@ -90,6 +90,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_preforence:
                 enterPreforenceActivity();
+                break;
+            case R.id.btn_view_larger_image:
+                enterViewLargerImageActivity();
                 break;
         }
     }
@@ -133,6 +136,12 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     private void enterPreforenceActivity() {
         ARouter.getInstance().build(ConstConfig.PREFORENCE_ACTIVITY)
                 .withString("name", "数据保存")
+                .navigation();
+    }
+
+    private void enterViewLargerImageActivity() {
+        ARouter.getInstance().build(ConstConfig.VIEW_LARGER_IMAGE_ACTIVITY)
+                .withString("name", "查看大图")
                 .navigation();
     }
 

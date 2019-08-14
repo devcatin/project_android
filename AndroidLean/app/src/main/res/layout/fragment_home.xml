@@ -12,6 +12,11 @@
         android:layout_height="wrap_content"
         app:titleText="首页" />
 
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <com.youth.banner.Banner
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/banner"
@@ -22,5 +27,7 @@
         android:id="@+id/iv_qrcode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 
 </LinearLayout>

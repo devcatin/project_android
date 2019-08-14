@@ -10,5 +10,6 @@ public final class ConstConfig {
     public static final String MATRIX_ACTIVITY = "/detail/matrixcolor";
     public static final String LOGIN_ACTIVITY = "/detail/login";
     public static final String PREFORENCE_ACTIVITY = "/detail/preforence";
+    public static final String VIEW_LARGER_IMAGE_ACTIVITY = "/detail/viewlargerimage";
 
 }

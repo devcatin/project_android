@@ -65,6 +65,9 @@ android {
         flatDir {
             dirs 'libs'
         }
+        maven {
+            url "http://dl.bintray.com/piasy/maven"
+        }
     }
 
     sourceSets {
@@ -85,24 +88,7 @@ android {
 
     //渠道
     productFlavors {
-        /**
-         * 华为
-         */
-        HuaWei {
-            flavorDimensions "default"
-            buildConfigField "int", "Environment", rootProject.ext.environment
-            buildConfigField "boolean", "ENABLE_LOG", rootProject.ext.ENABLE_LOG
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei", UMENG_APPKEY_VALUE: rootProject.ext.UMENG_APPKEY_VALUE]
-        }
-        /**
-         * * 小米
-         */
-        XiaoMi {
-            flavorDimensions "default"
-            buildConfigField "int", "Environment", rootProject.ext.environment
-            buildConfigField "boolean", "ENABLE_LOG", rootProject.ext.ENABLE_LOG
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi", UMENG_APPKEY_VALUE: rootProject.ext.UMENG_APPKEY_VALUE]
-        }
+
     }
 
 }
@@ -131,4 +117,10 @@ dependencies {
     implementation 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
     implementation 'com.alibaba:fastjson:1.2.58'
     implementation 'com.alibaba:fastjson:1.2.58.android'
+
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-beta-1'
+
+    //implementation 'com.github.piasy:BigImageViewer:1.5.7'
+    // load with glide
+    implementation 'com.github.piasy:GlideImageLoader:1.5.7'
 }
