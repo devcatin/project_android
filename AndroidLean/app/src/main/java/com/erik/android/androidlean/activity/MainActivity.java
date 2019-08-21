@@ -5,6 +5,7 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.PixelFormat;
 import android.graphics.PointF;
 import android.net.Uri;
 import android.provider.Contacts;
@@ -13,9 +14,15 @@ import android.provider.MediaStore;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 
 import com.erik.android.androidlean.adapter.TestFragmentPagerAdapter;
 import com.erik.android.androidlean.R;
@@ -45,14 +52,19 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         adapter = new TestFragmentPagerAdapter(getSupportFragmentManager());
-
         bindViews();
-
         rb_home.setChecked(true);
 
-        //addShortcut(this, "学习");
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        layoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        Button button = new Button(this);
+        RelativeLayout rly = new RelativeLayout(this);
+        rly.addView(button, layoutParams);
+    }
+
+    private void test() {
+        LayoutInflater inflater = LayoutInflater.from(this);
     }
 
     public static void addShortcut(Activity cx, String name) {

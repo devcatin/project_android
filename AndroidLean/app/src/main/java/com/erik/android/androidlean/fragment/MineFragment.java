@@ -9,9 +9,12 @@ import android.widget.Button;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.activity.BaseActivity;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
+
+import cc.shinichi.library.ImagePreview;
 
 public class MineFragment extends BaseFragment implements View.OnClickListener {
 
@@ -49,6 +52,14 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         preforence.setOnClickListener(this);
         Button view_larger_image = view.findViewById(R.id.btn_view_larger_image);
         view_larger_image.setOnClickListener(this);
+        Button change_volume = view.findViewById(R.id.btn_change_volume);
+        change_volume.setOnClickListener(this);
+        Button qrcode = view.findViewById(R.id.btn_qrcode);
+        qrcode.setOnClickListener(this);
+        Button location = view.findViewById(R.id.btn_location);
+        location.setOnClickListener(this);
+        Button wallpapper = view.findViewById(R.id.btn_wallpapper);
+        wallpapper.setOnClickListener(this);
     }
 
     private void navigationBar(View view) {
@@ -92,7 +103,20 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
                 enterPreforenceActivity();
                 break;
             case R.id.btn_view_larger_image:
-                enterViewLargerImageActivity();
+                viewLargeImage();
+                //enterViewLargerImageActivity();
+                break;
+            case R.id.btn_change_volume:
+                enterChangeVolume();
+                break;
+            case R.id.btn_qrcode:
+                enterQRCode();
+                break;
+            case R.id.btn_location:
+                enterLocation();
+                break;
+            case R.id.btn_wallpapper:
+                enterWallPapper();
                 break;
         }
     }
@@ -142,6 +166,59 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     private void enterViewLargerImageActivity() {
         ARouter.getInstance().build(ConstConfig.VIEW_LARGER_IMAGE_ACTIVITY)
                 .withString("name", "查看大图")
+                .navigation();
+    }
+
+    private void viewLargeImage() {
+        String url = "https://v.iduov.com/insurance-person/d709c946-cee5-4311-9d51-226758610dab.png";
+        BaseActivity activity = (BaseActivity)getActivity();
+        ImagePreview
+                .getInstance()
+                // 上下文，必须是activity，不需要担心内存泄漏，本框架已经处理好；
+                .setContext(activity)
+
+                // 设置从第几张开始看（索引从0开始）
+                .setIndex(0)
+                .setEnableClickClose(false)
+                .setShowCloseButton(true)
+
+                //=================================================================================================
+                // 有三种设置数据集合的方式，根据自己的需求进行三选一：
+                // 1：第一步生成的imageInfo List
+                // .setImageInfoList(imageInfoList)
+
+                // 2：直接传url List
+                //.setImageList(List<String> imageList)
+
+                // 3：只有一张图片的情况，可以直接传入这张图片的url
+                .setImage(url)
+                //=================================================================================================
+
+                // 开启预览
+                .start();
+    }
+
+    private void enterChangeVolume() {
+        ARouter.getInstance().build(ConstConfig.VOLUME_ACTIVITY)
+                .withString("name", "调节音量")
+                .navigation();
+    }
+
+    private void enterQRCode() {
+        ARouter.getInstance().build(ConstConfig.QRCODE_ACTIVITY)
+                .withString("name", "生成二维码")
+                .navigation();
+    }
+
+    private void enterLocation() {
+        ARouter.getInstance().build(ConstConfig.LOCATION_ACTIVITY)
+                .withString("name", "地图定位")
+                .navigation();
+    }
+
+    private void enterWallPapper() {
+        ARouter.getInstance().build(ConstConfig.WALLPAPPER_ACTIVITY)
+                .withString("name", "切换壁纸")
                 .navigation();
     }
 

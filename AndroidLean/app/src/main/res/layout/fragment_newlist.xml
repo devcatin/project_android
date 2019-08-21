@@ -17,7 +17,7 @@
             android:id="@+id/nav_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:titleText="热门" />
+            app:titleText="好友" />
 
         <com.scwang.smartrefresh.layout.SmartRefreshLayout
             android:id="@+id/refreshLayout"

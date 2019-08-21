@@ -9,6 +9,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name=".ohter.TestApplication"
@@ -19,7 +22,14 @@
         android:roundIcon="@mipmap/ic_launcher_logo"
         android:supportsRtl="true"
         android:theme="@style/AppNewTheme">
-        <activity android:name=".activity.LargerImageActivity"></activity>
+        <activity android:name=".activity.LocationActivity"></activity>
+
+        <service android:name=".ohter.WallPaperService" />
+
+        <activity android:name=".activity.ChangeWallPagerActivity" />
+        <activity android:name=".activity.QRCodeActivity" />
+        <activity android:name=".activity.VolumeActivity" />
+        <activity android:name=".activity.LargerImageActivity" />
         <activity
             android:name=".activity.MainActivity"
             android:configChanges="orientation">

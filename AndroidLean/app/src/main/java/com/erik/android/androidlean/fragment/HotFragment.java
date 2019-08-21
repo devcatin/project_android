@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,7 +57,6 @@ public class HotFragment extends BaseFragment implements AdapterView.OnItemClick
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        this.context = context;
     }
 
     @Override
@@ -75,7 +75,7 @@ public class HotFragment extends BaseFragment implements AdapterView.OnItemClick
     }
 
     public void requestData() {
-        NetRequest netRequest = NetRequest.getInstance(context);
+        NetRequest netRequest = NetRequest.getInstance(getContext());
         HashMap<String, String> param = new HashMap<>();
         param.put("pageIndex", String.valueOf(pageIndex));
         param.put("pageSize", String.valueOf(5));
@@ -92,10 +92,7 @@ public class HotFragment extends BaseFragment implements AdapterView.OnItemClick
                     if (list.size() > 0 && !isup) {
                         beans.clear();
                     }
-                    for (int index = 0; index < list.size(); index++) {
-                        UserBean userBean = list.get(index);
-                        beans.add(userBean);
-                    }
+                    beans.addAll(list);
                     Message message = new Message();
                     message.what = 0x123;
                     handler.sendMessage(message);

@@ -12,10 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.github.piasy.biv.view.BigImageView
-        android:id="@+id/mBigImage"
+    <!--<com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.shizhefei.view.largeimage.LargeImageView
+        android:id="@+id/imageView"
+        android:scrollbars="vertical|horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:optimizeDisplay="true" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

@@ -68,6 +68,7 @@ android {
         maven {
             url "http://dl.bintray.com/piasy/maven"
         }
+        maven { url 'https://jitpack.io' }
     }
 
     sourceSets {
@@ -112,15 +113,17 @@ dependencies {
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
-    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.google.zxing:core:3.3.0'
     implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
     implementation 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
     implementation 'com.alibaba:fastjson:1.2.58'
     implementation 'com.alibaba:fastjson:1.2.58.android'
 
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-beta-1'
-
-    //implementation 'com.github.piasy:BigImageViewer:1.5.7'
     // load with glide
     implementation 'com.github.piasy:GlideImageLoader:1.5.7'
+    implementation 'com.shizhefei:LargeImageView:1.1.0'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+    implementation 'com.github.SherlockGougou:BigImageViewPager:v4_4.1.0'
+    implementation 'com.shizhefei:LargeImageView:1.1.0'
 }

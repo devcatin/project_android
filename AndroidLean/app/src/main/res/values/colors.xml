@@ -17,5 +17,6 @@
 
     <color name="text_blue">#00A0E9</color>
     <color name="text_gray">#B0B0B0</color>
+    <color name="list_line">#CCCCCC</color>
 
 </resources>

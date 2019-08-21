@@ -25,12 +25,16 @@ public final class R {
     public static final int design_bottom_sheet_slide_out=0x7f01000d;
     public static final int design_snackbar_in=0x7f01000e;
     public static final int design_snackbar_out=0x7f01000f;
-    public static final int slide_left_in=0x7f010010;
-    public static final int slide_left_out=0x7f010011;
-    public static final int slide_right_in=0x7f010012;
-    public static final int slide_right_out=0x7f010013;
-    public static final int zoomin=0x7f010014;
-    public static final int zoomout=0x7f010015;
+    public static final int fade_in=0x7f010010;
+    public static final int fade_in_150=0x7f010011;
+    public static final int fade_out=0x7f010012;
+    public static final int fade_out_150=0x7f010013;
+    public static final int slide_left_in=0x7f010014;
+    public static final int slide_left_out=0x7f010015;
+    public static final int slide_right_in=0x7f010016;
+    public static final int slide_right_out=0x7f010017;
+    public static final int zoomin=0x7f010018;
+    public static final int zoomout=0x7f010019;
   }
   public static final class animator {
     public static final int design_appbar_state_list_animator=0x7f020000;
@@ -47,7 +51,6 @@ public final class R {
   }
   public static final class attr {
     /**
-     * Custom divider drawable to use for elements in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -55,7 +58,6 @@ public final class R {
      */
     public static final int actionBarDivider=0x7f030000;
     /**
-     * Custom item state list drawable background for action bar items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -63,8 +65,6 @@ public final class R {
      */
     public static final int actionBarItemBackground=0x7f030001;
     /**
-     * Reference to a theme that should be used to inflate popups
-     * shown by widgets in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -72,8 +72,6 @@ public final class R {
      */
     public static final int actionBarPopupTheme=0x7f030002;
     /**
-     * Size of the Action Bar, including the contextual
-     * bar used to present Action Modes.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -90,10 +88,6 @@ public final class R {
      */
     public static final int actionBarSize=0x7f030003;
     /**
-     * Reference to a style for the split Action Bar. This style
-     * controls the split component that holds the menu/action
-     * buttons. actionBarStyle is still used for the primary
-     * bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -101,7 +95,6 @@ public final class R {
      */
     public static final int actionBarSplitStyle=0x7f030004;
     /**
-     * Reference to a style for the Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -116,7 +109,6 @@ public final class R {
      */
     public static final int actionBarTabBarStyle=0x7f030006;
     /**
-     * Default style for tabs within an action bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -131,9 +123,6 @@ public final class R {
      */
     public static final int actionBarTabTextStyle=0x7f030008;
     /**
-     * Reference to a theme that should be used to inflate the
-     * action bar. This will be inherited by any widget inflated
-     * into the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -141,13 +130,6 @@ public final class R {
      */
     public static final int actionBarTheme=0x7f030009;
     /**
-     * Reference to a theme that should be used to inflate widgets
-     * and layouts destined for the action bar. Most of the time
-     * this will be a reference to the current theme, but when
-     * the action bar has a significantly different contrast
-     * profile than the rest of the activity the difference
-     * can become important. If this is set to @null the current
-     * theme will be used.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -155,7 +137,6 @@ public final class R {
      */
     public static final int actionBarWidgetTheme=0x7f03000a;
     /**
-     * Default action button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -163,7 +144,6 @@ public final class R {
      */
     public static final int actionButtonStyle=0x7f03000b;
     /**
-     * Default ActionBar dropdown style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -171,9 +151,6 @@ public final class R {
      */
     public static final int actionDropDownStyle=0x7f03000c;
     /**
-     * An optional layout to be used as an action view.
-     * See {@link android.view.MenuItem#setActionView(android.view.View)}
-     * for more info.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -181,8 +158,6 @@ public final class R {
      */
     public static final int actionLayout=0x7f03000d;
     /**
-     * TextAppearance style that will be applied to text that
-     * appears within action menu items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -190,7 +165,6 @@ public final class R {
      */
     public static final int actionMenuTextAppearance=0x7f03000e;
     /**
-     * Color for text that appears within action menu items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -201,7 +175,6 @@ public final class R {
      */
     public static final int actionMenuTextColor=0x7f03000f;
     /**
-     * Background drawable to use for action mode UI
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -216,7 +189,6 @@ public final class R {
      */
     public static final int actionModeCloseButtonStyle=0x7f030011;
     /**
-     * Drawable to use for the close action mode button
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -224,7 +196,6 @@ public final class R {
      */
     public static final int actionModeCloseDrawable=0x7f030012;
     /**
-     * Drawable to use for the Copy action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -232,7 +203,6 @@ public final class R {
      */
     public static final int actionModeCopyDrawable=0x7f030013;
     /**
-     * Drawable to use for the Cut action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -240,7 +210,6 @@ public final class R {
      */
     public static final int actionModeCutDrawable=0x7f030014;
     /**
-     * Drawable to use for the Find action button in WebView selection action modes
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -248,7 +217,6 @@ public final class R {
      */
     public static final int actionModeFindDrawable=0x7f030015;
     /**
-     * Drawable to use for the Paste action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -256,7 +224,6 @@ public final class R {
      */
     public static final int actionModePasteDrawable=0x7f030016;
     /**
-     * PopupWindow style to use for action modes when showing as a window overlay.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -264,7 +231,6 @@ public final class R {
      */
     public static final int actionModePopupWindowStyle=0x7f030017;
     /**
-     * Drawable to use for the Select all action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -272,7 +238,6 @@ public final class R {
      */
     public static final int actionModeSelectAllDrawable=0x7f030018;
     /**
-     * Drawable to use for the Share action button in WebView selection action modes
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -280,7 +245,6 @@ public final class R {
      */
     public static final int actionModeShareDrawable=0x7f030019;
     /**
-     * Background drawable to use for action mode UI in the lower split bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -295,7 +259,6 @@ public final class R {
      */
     public static final int actionModeStyle=0x7f03001b;
     /**
-     * Drawable to use for the Web Search action button in WebView selection action modes
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -317,24 +280,16 @@ public final class R {
      */
     public static final int actionOverflowMenuStyle=0x7f03001e;
     /**
-     * The name of an optional ActionProvider class to instantiate an action view
-     * and perform operations such as default action for that menu item.
-     * See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
-     * for more info.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int actionProviderClass=0x7f03001f;
     /**
-     * The name of an optional View class to instantiate and use as an
-     * action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
-     * for more info.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int actionViewClass=0x7f030020;
     /**
-     * Default ActivityChooserView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -342,7 +297,6 @@ public final class R {
      */
     public static final int activityChooserViewStyle=0x7f030021;
     /**
-     * An image reference
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -350,7 +304,6 @@ public final class R {
      */
     public static final int actualImageResource=0x7f030022;
     /**
-     * Scale type of the actual image.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -371,7 +324,6 @@ public final class R {
      */
     public static final int actualImageScaleType=0x7f030023;
     /**
-     * An image uri .
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -396,7 +348,6 @@ public final class R {
      */
     public static final int alertDialogStyle=0x7f030027;
     /**
-     * Theme to use for alert dialogs spawned from this theme.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -404,20 +355,15 @@ public final class R {
      */
     public static final int alertDialogTheme=0x7f030028;
     /**
-     * Whether to automatically stack the buttons when there is not
-     * enough space to lay them out side-by-side.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int allowStacking=0x7f030029;
     /**
-     * Alpha multiplier applied to the base color.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int alpha=0x7f03002a;
     /**
-     * The alphabetic modifier key. This is the modifier when using a keyboard
-     * with alphabetic keys. The values should be kept in sync with KeyEvent
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -434,7 +380,6 @@ public final class R {
      */
     public static final int alphabeticModifiers=0x7f03002b;
     /**
-     * The length of the arrow head when formed to make an arrow
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -443,7 +388,6 @@ public final class R {
      */
     public static final int arrowHeadLength=0x7f03002c;
     /**
-     * The length of the shaft when formed to make an arrow
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -457,7 +401,6 @@ public final class R {
      */
     public static final int assetName=0x7f03002e;
     /**
-     * Default AutoCompleteTextView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -465,7 +408,6 @@ public final class R {
      */
     public static final int autoCompleteTextViewStyle=0x7f03002f;
     /**
-     * The maximum text size constraint to be used when auto-sizing text.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -474,7 +416,6 @@ public final class R {
      */
     public static final int autoSizeMaxTextSize=0x7f030030;
     /**
-     * The minimum text size constraint to be used when auto-sizing text.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -483,9 +424,6 @@ public final class R {
      */
     public static final int autoSizeMinTextSize=0x7f030031;
     /**
-     * Resource array of dimensions to be used in conjunction with
-     * <code>autoSizeTextType</code> set to <code>uniform</code>. Overrides
-     * <code>autoSizeStepGranularity</code> if set.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -493,9 +431,6 @@ public final class R {
      */
     public static final int autoSizePresetSizes=0x7f030032;
     /**
-     * Specify the auto-size step size if <code>autoSizeTextType</code> is set to
-     * <code>uniform</code>. The default is 1px. Overwrites
-     * <code>autoSizePresetSizes</code> if set.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -504,22 +439,18 @@ public final class R {
      */
     public static final int autoSizeStepGranularity=0x7f030033;
     /**
-     * Specify the type of auto-size. Note that this feature is not supported by EditText,
-     * works only for TextView.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td>No auto-sizing (default).</td></tr>
-     * <tr><td>uniform</td><td>1</td><td>Uniform horizontal and vertical text size scaling to fit within the
-     * container.</td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      */
     public static final int autoSizeTextType=0x7f030034;
     /**
-     * Specifies a background drawable for the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -527,7 +458,6 @@ public final class R {
      */
     public static final int background=0x7f030035;
     /**
-     * A drawable or color to be used as a background.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -535,7 +465,6 @@ public final class R {
      */
     public static final int backgroundImage=0x7f030036;
     /**
-     * Specifies a background drawable for the bottom component of a split action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -546,7 +475,6 @@ public final class R {
      */
     public static final int backgroundSplit=0x7f030037;
     /**
-     * Specifies a background drawable for a second stacked row of the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -557,31 +485,24 @@ public final class R {
      */
     public static final int backgroundStacked=0x7f030038;
     /**
-     * Tint to apply to the background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int backgroundTint=0x7f030039;
     /**
-     * Blending mode used to apply the background tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
     public static final int backgroundTintMode=0x7f03003a;
@@ -600,7 +521,6 @@ public final class R {
      */
     public static final int banner_layout=0x7f03003c;
     /**
-     * The length of the bars when they are parallel to each other
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -682,7 +602,6 @@ public final class R {
      */
     public static final int borderWidth=0x7f030046;
     /**
-     * Style for buttons without an explicit border, often used in groups.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -791,7 +710,6 @@ public final class R {
      */
     public static final int boxStrokeWidth=0x7f030054;
     /**
-     * Style for buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -799,7 +717,6 @@ public final class R {
      */
     public static final int buttonBarButtonStyle=0x7f030055;
     /**
-     * Style for the "negative" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -807,7 +724,6 @@ public final class R {
      */
     public static final int buttonBarNegativeButtonStyle=0x7f030056;
     /**
-     * Style for the "neutral" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -815,7 +731,6 @@ public final class R {
      */
     public static final int buttonBarNeutralButtonStyle=0x7f030057;
     /**
-     * Style for the "positive" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -823,7 +738,6 @@ public final class R {
      */
     public static final int buttonBarPositiveButtonStyle=0x7f030058;
     /**
-     * Style for button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -837,8 +751,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
     public static final int buttonGravity=0x7f03005a;
@@ -858,7 +772,6 @@ public final class R {
      */
     public static final int buttonPanelSideLayout=0x7f03005c;
     /**
-     * Normal Button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -866,7 +779,6 @@ public final class R {
      */
     public static final int buttonStyle=0x7f03005d;
     /**
-     * Small Button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -874,43 +786,34 @@ public final class R {
      */
     public static final int buttonStyleSmall=0x7f03005e;
     /**
-     * Tint to apply to the button drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int buttonTint=0x7f03005f;
     /**
-     * Blending mode used to apply the button tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
     public static final int buttonTintMode=0x7f030060;
     /**
-     * Background color for CardView.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int cardBackgroundColor=0x7f030061;
     /**
-     * Corner radius for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -919,7 +822,6 @@ public final class R {
      */
     public static final int cardCornerRadius=0x7f030062;
     /**
-     * Elevation for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -928,7 +830,6 @@ public final class R {
      */
     public static final int cardElevation=0x7f030063;
     /**
-     * Maximum Elevation for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -937,13 +838,11 @@ public final class R {
      */
     public static final int cardMaxElevation=0x7f030064;
     /**
-     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int cardPreventCornerOverlap=0x7f030065;
     /**
-     * Add padding in API v21+ as well to have the same measurements with previous versions.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -961,7 +860,6 @@ public final class R {
      */
     public static final int chainUseRtl=0x7f030068;
     /**
-     * Default Checkbox style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -993,7 +891,6 @@ public final class R {
      */
     public static final int checkedIconVisible=0x7f03006d;
     /**
-     * Default CheckedTextView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1129,7 +1026,6 @@ public final class R {
      */
     public static final int chipStyle=0x7f030080;
     /**
-     * Close button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1177,7 +1073,6 @@ public final class R {
      */
     public static final int closeIconVisible=0x7f030087;
     /**
-     * Specifies a layout to use for the "close" item at the starting edge.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1185,13 +1080,11 @@ public final class R {
      */
     public static final int closeItemLayout=0x7f030088;
     /**
-     * Text to set as the content description for the collapse button.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int collapseContentDescription=0x7f030089;
     /**
-     * Icon drawable to use for the collapse button.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1226,58 +1119,48 @@ public final class R {
      */
     public static final int collapsedTitleTextAppearance=0x7f03008c;
     /**
-     * The drawing color for the bars
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int color=0x7f03008d;
     /**
-     * Bright complement to the primary branding color. By default, this is the color applied
-     * to framework controls (via colorControlActivated).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorAccent=0x7f03008e;
     /**
-     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorBackgroundFloating=0x7f03008f;
     /**
-     * The color applied to framework buttons in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorButtonNormal=0x7f030090;
     /**
-     * The color applied to framework controls in their activated (ex. checked) state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorControlActivated=0x7f030091;
     /**
-     * The color applied to framework control highlights (ex. ripples, list selectors).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorControlHighlight=0x7f030092;
     /**
-     * The color applied to framework controls in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorControlNormal=0x7f030093;
     /**
-     * Color used for error states and things that need to be drawn to
-     * the user's attention.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1288,16 +1171,12 @@ public final class R {
      */
     public static final int colorError=0x7f030094;
     /**
-     * The primary branding color for the app. By default, this is the color applied to the
-     * action bar background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorPrimary=0x7f030095;
     /**
-     * Dark variant of the primary branding color. By default, this is the color applied to
-     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -1310,14 +1189,12 @@ public final class R {
      */
     public static final int colorSecondary=0x7f030097;
     /**
-     * The color applied to framework switch thumbs in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorSwitchThumbNormal=0x7f030098;
     /**
-     * Commit icon shown in the query suggestion row
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1344,14 +1221,11 @@ public final class R {
      */
     public static final int content=0x7f03009c;
     /**
-     * The content description associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int contentDescription=0x7f03009d;
     /**
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1360,8 +1234,6 @@ public final class R {
      */
     public static final int contentInsetEnd=0x7f03009e;
     /**
-     * Minimum inset for content views within a bar when actions from a menu
-     * are present. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1370,8 +1242,6 @@ public final class R {
      */
     public static final int contentInsetEndWithActions=0x7f03009f;
     /**
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1380,8 +1250,6 @@ public final class R {
      */
     public static final int contentInsetLeft=0x7f0300a0;
     /**
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1390,8 +1258,6 @@ public final class R {
      */
     public static final int contentInsetRight=0x7f0300a1;
     /**
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1400,8 +1266,6 @@ public final class R {
      */
     public static final int contentInsetStart=0x7f0300a2;
     /**
-     * Minimum inset for content views within a bar when a navigation button
-     * is present, such as the Up button. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1410,7 +1274,6 @@ public final class R {
      */
     public static final int contentInsetStartWithNavigation=0x7f0300a3;
     /**
-     * Inner padding between the edges of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1419,7 +1282,6 @@ public final class R {
      */
     public static final int contentPadding=0x7f0300a4;
     /**
-     * Inner padding between the bottom edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1428,7 +1290,6 @@ public final class R {
      */
     public static final int contentPaddingBottom=0x7f0300a5;
     /**
-     * Inner padding between the left edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1437,7 +1298,6 @@ public final class R {
      */
     public static final int contentPaddingLeft=0x7f0300a6;
     /**
-     * Inner padding between the right edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1446,7 +1306,6 @@ public final class R {
      */
     public static final int contentPaddingRight=0x7f0300a7;
     /**
-     * Inner padding between the top edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1461,7 +1320,6 @@ public final class R {
      */
     public static final int contentScrim=0x7f0300a9;
     /**
-     * The background used by framework controls.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1507,7 +1365,6 @@ public final class R {
      */
     public static final int counterTextAppearance=0x7f0300b0;
     /**
-     * Specifies a layout for custom navigation. Overrides navigationMode.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1515,8 +1372,6 @@ public final class R {
      */
     public static final int customNavigationLayout=0x7f0300b1;
     /**
-     * Default query hint used when {@code queryHint} is undefined and
-     * the search view's {@code SearchableInfo} does not provide a hint.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -1526,7 +1381,6 @@ public final class R {
      */
     public static final int delay_time=0x7f0300b3;
     /**
-     * Preferred corner radius of dialogs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1535,7 +1389,6 @@ public final class R {
      */
     public static final int dialogCornerRadius=0x7f0300b4;
     /**
-     * Preferred padding for dialog content.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1544,7 +1397,6 @@ public final class R {
      */
     public static final int dialogPreferredPadding=0x7f0300b5;
     /**
-     * Theme to use for dialogs spawned from this theme.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1552,7 +1404,6 @@ public final class R {
      */
     public static final int dialogTheme=0x7f0300b6;
     /**
-     * Options affecting how the action bar is displayed.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1570,7 +1421,6 @@ public final class R {
      */
     public static final int displayOptions=0x7f0300b7;
     /**
-     * Specifies the drawable used for item dividers.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1578,7 +1428,6 @@ public final class R {
      */
     public static final int divider=0x7f0300b8;
     /**
-     * A drawable that may be used as a horizontal divider between visual elements.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1586,7 +1435,6 @@ public final class R {
      */
     public static final int dividerHorizontal=0x7f0300b9;
     /**
-     * Size of padding on either end of a divider.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1595,7 +1443,6 @@ public final class R {
      */
     public static final int dividerPadding=0x7f0300ba;
     /**
-     * A drawable that may be used as a vertical divider between visual elements.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1603,7 +1450,6 @@ public final class R {
      */
     public static final int dividerVertical=0x7f0300bb;
     /**
-     * The total size of the drawable
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1619,7 +1465,6 @@ public final class R {
      */
     public static final int drawerArrowStyle=0x7f0300bd;
     /**
-     * ListPopupWindow compatibility
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1627,7 +1472,6 @@ public final class R {
      */
     public static final int dropDownListViewStyle=0x7f0300be;
     /**
-     * The preferred item height for dropdown lists.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1636,7 +1480,6 @@ public final class R {
      */
     public static final int dropdownListPreferredItemHeight=0x7f0300bf;
     /**
-     * EditText background drawable.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1644,7 +1487,6 @@ public final class R {
      */
     public static final int editTextBackground=0x7f0300c0;
     /**
-     * EditText text foreground color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1655,7 +1497,6 @@ public final class R {
      */
     public static final int editTextColor=0x7f0300c1;
     /**
-     * Default EditText style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1663,7 +1504,6 @@ public final class R {
      */
     public static final int editTextStyle=0x7f0300c2;
     /**
-     * Elevation for the action bar itself
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1706,11 +1546,6 @@ public final class R {
      */
     public static final int errorTextAppearance=0x7f0300c8;
     /**
-     * The drawable to show in the button for expanding the activities overflow popup.
-     * <strong>Note:</strong> Clients would like to set this drawable
-     * as a clue about the action the chosen activity will perform. For
-     * example, if share activity is to be chosen the drawable should
-     * give a clue that sharing is to be performed.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1847,12 +1682,10 @@ public final class R {
      */
     public static final int fabSize=0x7f0300d7;
     /**
-     * Fade duration in milliseconds.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int fadeDuration=0x7f0300d8;
     /**
-     * A drawable to be be used as a failure image.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1877,7 +1710,6 @@ public final class R {
      */
     public static final int failureImageInitScaleType=0x7f0300da;
     /**
-     * Scale type of the failure image. Ignored if failureImage is not specified.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1931,8 +1763,6 @@ public final class R {
      */
     public static final int fastScrollVerticalTrackDrawable=0x7f0300e0;
     /**
-     * Distance from the top of the TextView to the first text baseline. If set, this
-     * overrides the value set for paddingTop.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1966,8 +1796,6 @@ public final class R {
      */
     public static final int floatingActionButtonStyle=0x7f0300e2;
     /**
-     * The reference to the font file to be used. This should be a file in the res/font folder
-     * and should therefore have an R reference value. E.g. @font/myfont
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1975,23 +1803,16 @@ public final class R {
      */
     public static final int font=0x7f0300e3;
     /**
-     * The attribute for the font family.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontFamily=0x7f0300e4;
     /**
-     * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderAuthority=0x7f0300e5;
     /**
-     * The sets of hashes for the certificates the provider should be signed with. This is
-     * used to verify the identity of the provider, and is only required if the provider is not
-     * part of the system image. This value may point to one list or a list of lists, where each
-     * individual list represents one collection of signature hashes. Refer to your font provider's
-     * documentation for these values.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1999,34 +1820,18 @@ public final class R {
      */
     public static final int fontProviderCerts=0x7f0300e6;
     /**
-     * The strategy to be used when fetching font data from a font provider in XML layouts.
-     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
-     * choice of API between {@link
-     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
-     * {@link
-     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
-     * (async).
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
-     * First, check the local cache, then if the requeted font is not cached, trigger a
-     * request the font and continue with layout inflation. Once the font fetch succeeds, the
-     * target text view will be refreshed with the downloaded font data. The
-     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
-     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
-     * First, check the local cache, then if the requested font is not cached, request the
-     * font from the provider and wait until it is finished.  You can change the length of
-     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
-     * default typeface will be used instead.</td></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      */
     public static final int fontProviderFetchStrategy=0x7f0300e7;
     /**
-     * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2034,29 +1839,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
-     * timeout and wait until a reply is received from the font provider.</td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
     public static final int fontProviderFetchTimeout=0x7f0300e8;
     /**
-     * The package for the Font Provider to be used for the request. This is used to verify
-     * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderPackage=0x7f0300e9;
     /**
-     * The query to be sent over to the provider. Refer to your font provider's documentation
-     * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderQuery=0x7f0300ea;
     /**
-     * The style of the given font file. This will be used when the font is being loaded into
-     * the font stack and will override any style information in the font's header tables. If
-     * unspecified, the value in the font's header tables will be used.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -2069,20 +1866,11 @@ public final class R {
      */
     public static final int fontStyle=0x7f0300eb;
     /**
-     * The variation settings to be applied to the font. The string should be in the following
-     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
-     * used, or the font used does not support variation settings, this attribute needs not be
-     * specified.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontVariationSettings=0x7f0300ec;
     /**
-     * The weight of the given font file. This will be used when the font is being loaded into
-     * the font stack and will override any weight information in the font's header tables. Must
-     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
-     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
-     * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int fontWeight=0x7f0300ed;
@@ -2092,7 +1880,6 @@ public final class R {
      */
     public static final int foregroundInsidePadding=0x7f0300ee;
     /**
-     * The max gap between the bars when they are parallel to each other
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2101,7 +1888,6 @@ public final class R {
      */
     public static final int gapBetweenBars=0x7f0300ef;
     /**
-     * Go button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2148,7 +1934,6 @@ public final class R {
      */
     public static final int hideMotionSpec=0x7f0300f6;
     /**
-     * Set true to hide the action bar on a vertical nested scroll of content.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -2176,7 +1961,6 @@ public final class R {
      */
     public static final int hintTextAppearance=0x7f0300fb;
     /**
-     * Specifies a drawable to use for the 'home as up' indicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2184,7 +1968,6 @@ public final class R {
      */
     public static final int homeAsUpIndicator=0x7f0300fc;
     /**
-     * Specifies a layout to use for the "home" section of the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2251,43 +2034,33 @@ public final class R {
      */
     public static final int iconStartPadding=0x7f030104;
     /**
-     * Tint to apply to the icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int iconTint=0x7f030105;
     /**
-     * Blending mode used to apply the icon tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the icon with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the icon, but with the icon’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the icon. The icon’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the icon.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
     public static final int iconTintMode=0x7f030106;
     /**
-     * The default state of the SearchView. If true, it will be iconified when not in
-     * use and expanded when clicked.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int iconifiedByDefault=0x7f030107;
     /**
-     * ImageButton background drawable.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2313,7 +2086,6 @@ public final class R {
      */
     public static final int image_scale_type=0x7f030109;
     /**
-     * Specifies a style resource to use for an indeterminate progress spinner.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2378,7 +2150,6 @@ public final class R {
      */
     public static final int initScaleType=0x7f030110;
     /**
-     * The maximal number of items initially shown in the activity list.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -2446,8 +2217,6 @@ public final class R {
      */
     public static final int itemIconTint=0x7f03011a;
     /**
-     * Specifies padding that should be applied to the left and right sides of
-     * system-provided items in the bar.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2491,11 +2260,6 @@ public final class R {
      */
     public static final int itemTextColor=0x7f030120;
     /**
-     * A reference to an array of integers representing the
-     * locations of horizontal keylines in dp from the starting edge.
-     * Child views can refer to these keylines for alignment using
-     * layout_keyline="index" where index is a 0-based index into
-     * this array.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2517,8 +2281,6 @@ public final class R {
      */
     public static final int labelVisibilityMode=0x7f030122;
     /**
-     * Distance from the bottom of the TextView to the last text baseline. If set, this
-     * overrides the value set for paddingBottom.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2527,7 +2289,6 @@ public final class R {
      */
     public static final int lastBaselineToBottomHeight=0x7f030123;
     /**
-     * The layout to use for the search view.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2535,21 +2296,11 @@ public final class R {
      */
     public static final int layout=0x7f030124;
     /**
-     * Class name of the Layout Manager to be used.
-     * <p/>
-     * The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
-     * and have either a default constructor or constructor with the signature
-     * (android.content.Context, android.util.AttributeSet, int, int).
-     * <p/>
-     * If the name starts with a '.', application package is prefixed.
-     * Else, if the name contains a '.', the classname is assumed to be a full class name.
-     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int layoutManager=0x7f030125;
     /**
-     * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2557,40 +2308,30 @@ public final class R {
      */
     public static final int layout_anchor=0x7f030126;
     /**
-     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
-     * within its parent's bounds.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the horizontal gravity: a left gravity will clip the right
-     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
-     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
-     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>center</td><td>11</td><td></td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>fill</td><td>77</td><td></td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
     public static final int layout_anchorGravity=0x7f030127;
     /**
-     * The class name of a Behavior class defining special runtime behavior
-     * for this child view.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3022,21 +2763,20 @@ public final class R {
      */
     public static final int layout_constraintWidth_percent=0x7f030153;
     /**
-     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
-     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
-     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
+     * <tr><td>all</td><td>77</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
     public static final int layout_dodgeInsetEdges=0x7f030154;
@@ -3105,28 +2845,23 @@ public final class R {
      */
     public static final int layout_goneMarginTop=0x7f03015c;
     /**
-     * Specifies how this view insets the CoordinatorLayout and make some other views
-     * dodge it.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
     public static final int layout_insetEdge=0x7f03015d;
     /**
-     * The index of a keyline this view should position relative to.
-     * android:layout_gravity will affect how the view aligns to the
-     * specified keyline.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int layout_keyline=0x7f03015e;
@@ -3140,7 +2875,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -3183,10 +2918,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>FixedFront</td><td>3</td><td>固定在背后</td></tr>
-     * <tr><td>MatchLayout</td><td>4</td><td>固定在前面</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>FixedFront</td><td>3</td><td></td></tr>
+     * <tr><td>MatchLayout</td><td>4</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      */
@@ -3213,8 +2948,6 @@ public final class R {
      */
     public static final int liftOnScroll=0x7f030166;
     /**
-     * Explicit height between lines of text. If set, this will override the values set
-     * for lineSpacingExtra and lineSpacingMultiplier.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3231,7 +2964,6 @@ public final class R {
      */
     public static final int lineSpacing=0x7f030168;
     /**
-     * Drawable used as a background for selected list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3239,7 +2971,6 @@ public final class R {
      */
     public static final int listChoiceBackgroundIndicator=0x7f030169;
     /**
-     * The list divider used in alert dialogs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3261,7 +2992,6 @@ public final class R {
      */
     public static final int listLayout=0x7f03016c;
     /**
-     * Default menu-style ListView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3276,7 +3006,6 @@ public final class R {
      */
     public static final int listPopupWindowStyle=0x7f03016e;
     /**
-     * The preferred list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3285,7 +3014,6 @@ public final class R {
      */
     public static final int listPreferredItemHeight=0x7f03016f;
     /**
-     * A larger, more robust list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3294,7 +3022,6 @@ public final class R {
      */
     public static final int listPreferredItemHeightLarge=0x7f030170;
     /**
-     * A smaller, sleeker list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3303,7 +3030,6 @@ public final class R {
      */
     public static final int listPreferredItemHeightSmall=0x7f030171;
     /**
-     * The preferred padding along the left edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3312,7 +3038,6 @@ public final class R {
      */
     public static final int listPreferredItemPaddingLeft=0x7f030172;
     /**
-     * The preferred padding along the right edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3321,7 +3046,6 @@ public final class R {
      */
     public static final int listPreferredItemPaddingRight=0x7f030173;
     /**
-     * Specifies the drawable used for the application logo.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3329,8 +3053,6 @@ public final class R {
      */
     public static final int logo=0x7f030174;
     /**
-     * A content description string to describe the appearance of the
-     * associated logo image.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3374,9 +3096,6 @@ public final class R {
      */
     public static final int maxImageSize=0x7f03017a;
     /**
-     * When set to true, all children with a weight will be considered having
-     * the minimum size of the largest child. If false, all children are
-     * measured normally.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -3396,15 +3115,11 @@ public final class R {
      */
     public static final int multiChoiceItemLayout=0x7f03017d;
     /**
-     * Text to set as the content description for the navigation button
-     * located at the start of the toolbar.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int navigationContentDescription=0x7f03017e;
     /**
-     * Icon drawable to use for the navigation button located at
-     * the start of the toolbar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3412,16 +3127,15 @@ public final class R {
      */
     public static final int navigationIcon=0x7f03017f;
     /**
-     * The type of navigation to use.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>listMode</td><td>1</td><td>The action bar will use a selection list for navigation.</td></tr>
-     * <tr><td>normal</td><td>0</td><td>Normal static title text</td></tr>
-     * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
+     * <tr><td>listMode</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      */
     public static final int navigationMode=0x7f030180;
@@ -3433,8 +3147,6 @@ public final class R {
      */
     public static final int navigationViewStyle=0x7f030181;
     /**
-     * The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
-     * keyboard. The values should be kept in sync with KeyEvent
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -3456,13 +3168,11 @@ public final class R {
      */
     public static final int optimizeDisplay=0x7f030183;
     /**
-     * Whether the popup window should overlap its anchor view.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int overlapAnchor=0x7f030184;
     /**
-     * A drawable or color to be used as an overlay.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3470,7 +3180,6 @@ public final class R {
      */
     public static final int overlayImage=0x7f030185;
     /**
-     * Bottom padding to use when no buttons are present.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3479,7 +3188,6 @@ public final class R {
      */
     public static final int paddingBottomNoButtons=0x7f030186;
     /**
-     * Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3488,7 +3196,6 @@ public final class R {
      */
     public static final int paddingEnd=0x7f030187;
     /**
-     * Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3497,7 +3204,6 @@ public final class R {
      */
     public static final int paddingStart=0x7f030188;
     /**
-     * Top padding to use when no title is present.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3511,7 +3217,6 @@ public final class R {
      */
     public static final int panEnabled=0x7f03018a;
     /**
-     * The background of a panel when it is inset from the left and right edges of the screen.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3519,7 +3224,6 @@ public final class R {
      */
     public static final int panelBackground=0x7f03018b;
     /**
-     * Default Panel Menu style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3527,7 +3231,6 @@ public final class R {
      */
     public static final int panelMenuListTheme=0x7f03018c;
     /**
-     * Default Panel Menu width.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3574,7 +3277,6 @@ public final class R {
      */
     public static final int passwordToggleTintMode=0x7f030192;
     /**
-     * A drawable or color to be be used as a placeholder.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3582,7 +3284,6 @@ public final class R {
      */
     public static final int placeholderImage=0x7f030193;
     /**
-     * Scale type of the placeholder image. Ignored if placeholderImage is not specified.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -3603,7 +3304,6 @@ public final class R {
      */
     public static final int placeholderImageScaleType=0x7f030194;
     /**
-     * Default PopupMenu style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3611,8 +3311,6 @@ public final class R {
      */
     public static final int popupMenuStyle=0x7f030195;
     /**
-     * Reference to a theme that should be used to inflate popups
-     * shown by widgets in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3620,7 +3318,6 @@ public final class R {
      */
     public static final int popupTheme=0x7f030196;
     /**
-     * Default PopupWindow style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3628,13 +3325,11 @@ public final class R {
      */
     public static final int popupWindowStyle=0x7f030197;
     /**
-     * Whether space should be reserved in layout when an icon is missing.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int preserveIconSpacing=0x7f030198;
     /**
-     * A drawable or color to be used as a pressed-state-overlay
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3650,12 +3345,10 @@ public final class R {
      */
     public static final int pressedTranslationZ=0x7f03019a;
     /**
-     * Progress bar Auto Rotate interval in milliseconds
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int progressBarAutoRotateInterval=0x7f03019b;
     /**
-     * A drawable to be be used as a progress bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3663,7 +3356,6 @@ public final class R {
      */
     public static final int progressBarImage=0x7f03019c;
     /**
-     * Scale type of the progress bar. Ignored if progressBarImage is not specified.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -3684,7 +3376,6 @@ public final class R {
      */
     public static final int progressBarImageScaleType=0x7f03019d;
     /**
-     * Specifies the horizontal padding on either end for an embedded progress bar.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3693,7 +3384,6 @@ public final class R {
      */
     public static final int progressBarPadding=0x7f03019e;
     /**
-     * Specifies a style resource to use for an embedded progress bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3974,7 +3664,6 @@ public final class R {
      */
     public static final int qrcv_topOffset=0x7f0301be;
     /**
-     * Background for the section containing the search query
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3982,7 +3671,6 @@ public final class R {
      */
     public static final int queryBackground=0x7f0301bf;
     /**
-     * An optional user-defined query hint string to be displayed in the empty query field.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3993,7 +3681,6 @@ public final class R {
      */
     public static final int quickScaleEnabled=0x7f0301c1;
     /**
-     * Default RadioButton style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4009,7 +3696,6 @@ public final class R {
      */
     public static final int radius1=0x7f0301c3;
     /**
-     * Default RatingBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4017,7 +3703,6 @@ public final class R {
      */
     public static final int ratingBarStyle=0x7f0301c4;
     /**
-     * Indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4025,7 +3710,6 @@ public final class R {
      */
     public static final int ratingBarStyleIndicator=0x7f0301c5;
     /**
-     * Small indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4033,7 +3717,6 @@ public final class R {
      */
     public static final int ratingBarStyleSmall=0x7f0301c6;
     /**
-     * A drawable to be be used as a retry image.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4041,7 +3724,6 @@ public final class R {
      */
     public static final int retryImage=0x7f0301c7;
     /**
-     * Scale type of the retry image. Ignored if retryImage is not specified.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -4089,68 +3771,57 @@ public final class R {
      */
     public static final int rippleColor=0x7f0301cc;
     /**
-     * Round as circle.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundAsCircle=0x7f0301cd;
     /**
-     * Round the bottom-end edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundBottomEnd=0x7f0301ce;
     /**
-     * Round the bottom-left corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundBottomLeft=0x7f0301cf;
     /**
-     * Round the bottom-right corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundBottomRight=0x7f0301d0;
     /**
-     * Round the bottom-start edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundBottomStart=0x7f0301d1;
     /**
-     * Round the top-end edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundTopEnd=0x7f0301d2;
     /**
-     * Round the top-left corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundTopLeft=0x7f0301d3;
     /**
-     * Round the top-right corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundTopRight=0x7f0301d4;
     /**
-     * Round the top-start edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundTopStart=0x7f0301d5;
     /**
-     * Round by overlying color.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int roundWithOverlayColor=0x7f0301d6;
     /**
-     * Rounded corner radius. Ignored if roundAsCircle is used.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4159,14 +3830,12 @@ public final class R {
      */
     public static final int roundedCornerRadius=0x7f0301d7;
     /**
-     * Rounding border color
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int roundingBorderColor=0x7f0301d8;
     /**
-     * Rounding border padding
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4175,7 +3844,6 @@ public final class R {
      */
     public static final int roundingBorderPadding=0x7f0301d9;
     /**
-     * Rounding border width
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4210,7 +3878,6 @@ public final class R {
      */
     public static final int scroll_time=0x7f0301de;
     /**
-     * Search icon displayed as a text field hint
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4218,7 +3885,6 @@ public final class R {
      */
     public static final int searchHintIcon=0x7f0301df;
     /**
-     * Search icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4226,7 +3892,6 @@ public final class R {
      */
     public static final int searchIcon=0x7f0301e0;
     /**
-     * Style for the search query widget.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4234,7 +3899,6 @@ public final class R {
      */
     public static final int searchViewStyle=0x7f0301e1;
     /**
-     * Default SeekBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4242,9 +3906,6 @@ public final class R {
      */
     public static final int seekBarStyle=0x7f0301e2;
     /**
-     * A style that may be applied to buttons or other selectable items
-     * that should react to pressed and focus states, but that do not
-     * have a clear visual border along the edges.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4252,7 +3913,6 @@ public final class R {
      */
     public static final int selectableItemBackground=0x7f0301e3;
     /**
-     * Background drawable for borderless standalone items that need focus/pressed states.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4260,32 +3920,21 @@ public final class R {
      */
     public static final int selectableItemBackgroundBorderless=0x7f0301e4;
     /**
-     * How this item should display in the Action Bar, if present.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>always</td><td>2</td><td>Always show this item in an actionbar, even if it would override
-     * the system's limits of how much stuff to put there. This may make
-     * your action bar look bad on some screens. In most cases you should
-     * use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never".</td></tr>
-     * <tr><td>collapseActionView</td><td>8</td><td>This item's action view collapses to a normal menu
-     * item. When expanded, the action view takes over a
-     * larger segment of its container.</td></tr>
-     * <tr><td>ifRoom</td><td>1</td><td>Show this item in an action bar if there is room for it as determined
-     * by the system. Favor this option over "always" where possible.
-     * Mutually exclusive with "never" and "always".</td></tr>
-     * <tr><td>never</td><td>0</td><td>Never show this item in an action bar, show it in the overflow menu instead.
-     * Mutually exclusive with "ifRoom" and "always".</td></tr>
-     * <tr><td>withText</td><td>4</td><td>When this item is shown as an action in the action bar, show a text
-     * label with it even if it has an icon representation.</td></tr>
+     * <tr><td>always</td><td>2</td><td></td></tr>
+     * <tr><td>collapseActionView</td><td>8</td><td></td></tr>
+     * <tr><td>ifRoom</td><td>1</td><td></td></tr>
+     * <tr><td>never</td><td>0</td><td></td></tr>
+     * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      */
     public static final int showAsAction=0x7f0301e5;
     /**
-     * Setting for which dividers to show.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -4307,7 +3956,6 @@ public final class R {
      */
     public static final int showMotionSpec=0x7f0301e7;
     /**
-     * Whether to draw on/off text.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -4353,13 +4001,11 @@ public final class R {
      */
     public static final int spanCount=0x7f0301ef;
     /**
-     * Whether bars should rotate or not during transition
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int spinBars=0x7f0301f0;
     /**
-     * Default Spinner style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4367,7 +4013,6 @@ public final class R {
      */
     public static final int spinnerDropDownItemStyle=0x7f0301f1;
     /**
-     * Default Spinner style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4375,7 +4020,6 @@ public final class R {
      */
     public static final int spinnerStyle=0x7f0301f2;
     /**
-     * Whether to split the track and leave a gap for the thumb drawable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -4388,8 +4032,6 @@ public final class R {
      */
     public static final int src=0x7f0301f4;
     /**
-     * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
-     * when running on older versions of the platform.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4415,8 +4057,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      */
@@ -4773,7 +4415,6 @@ public final class R {
      */
     public static final int stackFromEnd=0x7f030237;
     /**
-     * State identifier indicating the popup will be above the anchor.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -4799,7 +4440,6 @@ public final class R {
      */
     public static final int state_lifted=0x7f03023c;
     /**
-     * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4830,7 +4470,6 @@ public final class R {
      */
     public static final int strokeWidth=0x7f030240;
     /**
-     * Drawable for the arrow icon indicating a particular item is a submenu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4838,7 +4477,6 @@ public final class R {
      */
     public static final int subMenuArrow=0x7f030241;
     /**
-     * Background for the section containing the action (e.g. voice search)
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4846,7 +4484,6 @@ public final class R {
      */
     public static final int submitBackground=0x7f030242;
     /**
-     * Specifies subtitle text used for navigationMode="normal"
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -4859,14 +4496,12 @@ public final class R {
      */
     public static final int subtitleTextAppearance=0x7f030244;
     /**
-     * A color to apply to the subtitle string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int subtitleTextColor=0x7f030245;
     /**
-     * Specifies a style to use for subtitle text.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4874,7 +4509,6 @@ public final class R {
      */
     public static final int subtitleTextStyle=0x7f030246;
     /**
-     * Layout for query suggestion rows
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4882,7 +4516,6 @@ public final class R {
      */
     public static final int suggestionRowLayout=0x7f030247;
     /**
-     * Minimum width for the switch component
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4891,7 +4524,6 @@ public final class R {
      */
     public static final int switchMinWidth=0x7f030248;
     /**
-     * Minimum space between the switch and caption text
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4900,7 +4532,6 @@ public final class R {
      */
     public static final int switchPadding=0x7f030249;
     /**
-     * Default style for the Switch widget.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4908,7 +4539,6 @@ public final class R {
      */
     public static final int switchStyle=0x7f03024a;
     /**
-     * TextAppearance style for text displayed on the switch thumb.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5124,7 +4754,6 @@ public final class R {
      */
     public static final int tapToRetry=0x7f030266;
     /**
-     * Present the text in ALL CAPS. This may use a small-caps form when available.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5204,7 +4833,6 @@ public final class R {
      */
     public static final int textAppearanceHeadline6=0x7f030271;
     /**
-     * Text color, typeface, size, and style for the text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5212,7 +4840,6 @@ public final class R {
      */
     public static final int textAppearanceLargePopupMenu=0x7f030272;
     /**
-     * The preferred TextAppearance for the primary text of list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5220,7 +4847,6 @@ public final class R {
      */
     public static final int textAppearanceListItem=0x7f030273;
     /**
-     * The preferred TextAppearance for the secondary text of list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5228,7 +4854,6 @@ public final class R {
      */
     public static final int textAppearanceListItemSecondary=0x7f030274;
     /**
-     * The preferred TextAppearance for the primary text of small list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5243,7 +4868,6 @@ public final class R {
      */
     public static final int textAppearanceOverline=0x7f030276;
     /**
-     * Text color, typeface, size, and style for header text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5251,7 +4875,6 @@ public final class R {
      */
     public static final int textAppearancePopupMenuHeader=0x7f030277;
     /**
-     * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5259,7 +4882,6 @@ public final class R {
      */
     public static final int textAppearanceSearchResultSubtitle=0x7f030278;
     /**
-     * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5267,7 +4889,6 @@ public final class R {
      */
     public static final int textAppearanceSearchResultTitle=0x7f030279;
     /**
-     * Text color, typeface, size, and style for small text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5289,7 +4910,6 @@ public final class R {
      */
     public static final int textAppearanceSubtitle2=0x7f03027c;
     /**
-     * Color of list item text in alert dialogs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5300,7 +4920,6 @@ public final class R {
      */
     public static final int textColorAlertDialogListItem=0x7f03027d;
     /**
-     * Text color for urls in search suggestions, used by things like global search
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5334,7 +4953,6 @@ public final class R {
      */
     public static final int textStartPadding=0x7f030281;
     /**
-     * Deprecated.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5342,7 +4960,6 @@ public final class R {
      */
     public static final int theme=0x7f030282;
     /**
-     * The thickness (stroke size) for the bar paint
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5351,7 +4968,6 @@ public final class R {
      */
     public static final int thickness=0x7f030283;
     /**
-     * Amount of padding on either side of text within the switch thumb.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5360,31 +4976,24 @@ public final class R {
      */
     public static final int thumbTextPadding=0x7f030284;
     /**
-     * Tint to apply to the thumb drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int thumbTint=0x7f030285;
     /**
-     * Blending mode used to apply the thumb tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
     public static final int thumbTintMode=0x7f030286;
@@ -5406,7 +5015,6 @@ public final class R {
      */
     public static final int thumbnailScaleType=0x7f030287;
     /**
-     * Drawable displayed at each progress position on a seekbar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5414,31 +5022,24 @@ public final class R {
      */
     public static final int tickMark=0x7f030288;
     /**
-     * Tint to apply to the tick mark drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tickMarkTint=0x7f030289;
     /**
-     * Blending mode used to apply the tick mark tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
     public static final int tickMarkTintMode=0x7f03028a;
@@ -5449,31 +5050,24 @@ public final class R {
      */
     public static final int tileBackgroundColor=0x7f03028b;
     /**
-     * Tint to apply to the image source.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tint=0x7f03028c;
     /**
-     * Blending mode used to apply the image source tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
     public static final int tintMode=0x7f03028d;
@@ -5488,8 +5082,6 @@ public final class R {
      */
     public static final int titleEnabled=0x7f03028f;
     /**
-     * Specifies extra space on the left, start, right and end sides
-     * of the toolbar's title. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5498,9 +5090,6 @@ public final class R {
      */
     public static final int titleMargin=0x7f030290;
     /**
-     * Specifies extra space on the bottom side of the toolbar's title.
-     * If both this attribute and titleMargin are specified, then this
-     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5509,9 +5098,6 @@ public final class R {
      */
     public static final int titleMarginBottom=0x7f030291;
     /**
-     * Specifies extra space on the end side of the toolbar's title.
-     * If both this attribute and titleMargin are specified, then this
-     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5520,9 +5106,6 @@ public final class R {
      */
     public static final int titleMarginEnd=0x7f030292;
     /**
-     * Specifies extra space on the start side of the toolbar's title.
-     * If both this attribute and titleMargin are specified, then this
-     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5531,9 +5114,6 @@ public final class R {
      */
     public static final int titleMarginStart=0x7f030293;
     /**
-     * Specifies extra space on the top side of the toolbar's title.
-     * If both this attribute and titleMargin are specified, then this
-     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5542,14 +5122,12 @@ public final class R {
      */
     public static final int titleMarginTop=0x7f030294;
     /**
-     * {@deprecated Use titleMargin}
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    @Deprecated
     public static final int titleMargins=0x7f030295;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -5564,14 +5142,12 @@ public final class R {
      */
     public static final int titleTextAppearance=0x7f030297;
     /**
-     * A color to apply to the title string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int titleTextColor=0x7f030298;
     /**
-     * Specifies a style to use for title text.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5618,7 +5194,6 @@ public final class R {
      */
     public static final int toolbarId=0x7f03029e;
     /**
-     * Default Toolar NavigationButtonStyle
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5626,7 +5201,6 @@ public final class R {
      */
     public static final int toolbarNavigationButtonStyle=0x7f03029f;
     /**
-     * Default Toolbar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5634,7 +5208,6 @@ public final class R {
      */
     public static final int toolbarStyle=0x7f0302a0;
     /**
-     * Foreground color to use for tooltips
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5645,7 +5218,6 @@ public final class R {
      */
     public static final int tooltipForegroundColor=0x7f0302a1;
     /**
-     * Background to use for tooltips
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5653,13 +5225,11 @@ public final class R {
      */
     public static final int tooltipFrameBackground=0x7f0302a2;
     /**
-     * The tooltip text associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int tooltipText=0x7f0302a3;
     /**
-     * Drawable to use as the "track" that the switch thumb slides within.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5667,37 +5237,28 @@ public final class R {
      */
     public static final int track=0x7f0302a4;
     /**
-     * Tint to apply to the track.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int trackTint=0x7f0302a5;
     /**
-     * Blending mode used to apply the track tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
     public static final int trackTintMode=0x7f0302a6;
     /**
-     * The index of the font in the tcc font file. If the font file referenced is not in the
-     * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int ttcIndex=0x7f0302a7;
@@ -5707,7 +5268,6 @@ public final class R {
      */
     public static final int useCompatPadding=0x7f0302a8;
     /**
-     * Aspect ratio (width / height) of the view, not necessarily of the images.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int viewAspectRatio=0x7f0302a9;
@@ -5717,7 +5277,6 @@ public final class R {
      */
     public static final int viewInflaterClass=0x7f0302aa;
     /**
-     * Voice button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5725,31 +5284,21 @@ public final class R {
      */
     public static final int voiceIcon=0x7f0302ab;
     /**
-     * Flag indicating whether this window should have an Action Bar
-     * in place of the usual title bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowActionBar=0x7f0302ac;
     /**
-     * Flag indicating whether this window's Action Bar should overlay
-     * application content. Does nothing if the window would not
-     * have an Action Bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowActionBarOverlay=0x7f0302ad;
     /**
-     * Flag indicating whether action modes should overlay window content
-     * when there is not reserved space for their UI (such as an Action Bar).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowActionModeOverlay=0x7f0302ae;
     /**
-     * A fixed height for the window along the major axis of the screen,
-     * that is, when in portrait. Can be either an absolute dimension
-     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5762,9 +5311,6 @@ public final class R {
      */
     public static final int windowFixedHeightMajor=0x7f0302af;
     /**
-     * A fixed height for the window along the minor axis of the screen,
-     * that is, when in landscape. Can be either an absolute dimension
-     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5777,9 +5323,6 @@ public final class R {
      */
     public static final int windowFixedHeightMinor=0x7f0302b0;
     /**
-     * A fixed width for the window along the major axis of the screen,
-     * that is, when in landscape. Can be either an absolute dimension
-     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5792,9 +5335,6 @@ public final class R {
      */
     public static final int windowFixedWidthMajor=0x7f0302b1;
     /**
-     * A fixed width for the window along the minor axis of the screen,
-     * that is, when in portrait. Can be either an absolute dimension
-     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5807,10 +5347,6 @@ public final class R {
      */
     public static final int windowFixedWidthMinor=0x7f0302b2;
     /**
-     * The minimum width the window is allowed to be, along the major
-     * axis of the screen.  That is, when in landscape.  Can be either
-     * an absolute dimension or a fraction of the screen size in that
-     * dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5823,10 +5359,6 @@ public final class R {
      */
     public static final int windowMinWidthMajor=0x7f0302b3;
     /**
-     * The minimum width the window is allowed to be, along the minor
-     * axis of the screen.  That is, when in portrait.  Can be either
-     * an absolute dimension or a fraction of the screen size in that
-     * dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5839,7 +5371,6 @@ public final class R {
      */
     public static final int windowMinWidthMinor=0x7f0302b4;
     /**
-     * Flag indicating whether there should be no title on this window.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -5932,73 +5463,74 @@ public final class R {
     public static final int frame_search=0x7f050048;
     public static final int highlighted_text_material_dark=0x7f050049;
     public static final int highlighted_text_material_light=0x7f05004a;
-    public static final int material_blue_grey_800=0x7f05004b;
-    public static final int material_blue_grey_900=0x7f05004c;
-    public static final int material_blue_grey_950=0x7f05004d;
-    public static final int material_deep_teal_200=0x7f05004e;
-    public static final int material_deep_teal_500=0x7f05004f;
-    public static final int material_grey_100=0x7f050050;
-    public static final int material_grey_300=0x7f050051;
-    public static final int material_grey_50=0x7f050052;
-    public static final int material_grey_600=0x7f050053;
-    public static final int material_grey_800=0x7f050054;
-    public static final int material_grey_850=0x7f050055;
-    public static final int material_grey_900=0x7f050056;
-    public static final int mtrl_bottom_nav_colored_item_tint=0x7f050057;
-    public static final int mtrl_bottom_nav_item_tint=0x7f050058;
-    public static final int mtrl_btn_bg_color_disabled=0x7f050059;
-    public static final int mtrl_btn_bg_color_selector=0x7f05005a;
-    public static final int mtrl_btn_ripple_color=0x7f05005b;
-    public static final int mtrl_btn_stroke_color_selector=0x7f05005c;
-    public static final int mtrl_btn_text_btn_ripple_color=0x7f05005d;
-    public static final int mtrl_btn_text_color_disabled=0x7f05005e;
-    public static final int mtrl_btn_text_color_selector=0x7f05005f;
-    public static final int mtrl_btn_transparent_bg_color=0x7f050060;
-    public static final int mtrl_chip_background_color=0x7f050061;
-    public static final int mtrl_chip_close_icon_tint=0x7f050062;
-    public static final int mtrl_chip_ripple_color=0x7f050063;
-    public static final int mtrl_chip_text_color=0x7f050064;
-    public static final int mtrl_fab_ripple_color=0x7f050065;
-    public static final int mtrl_scrim_color=0x7f050066;
-    public static final int mtrl_tabs_colored_ripple_color=0x7f050067;
-    public static final int mtrl_tabs_icon_color_selector=0x7f050068;
-    public static final int mtrl_tabs_icon_color_selector_colored=0x7f050069;
-    public static final int mtrl_tabs_legacy_text_color_selector=0x7f05006a;
-    public static final int mtrl_tabs_ripple_color=0x7f05006b;
-    public static final int mtrl_text_btn_text_color_selector=0x7f05006c;
-    public static final int mtrl_textinput_default_box_stroke_color=0x7f05006d;
-    public static final int mtrl_textinput_disabled_color=0x7f05006e;
-    public static final int mtrl_textinput_filled_box_default_background_color=0x7f05006f;
-    public static final int mtrl_textinput_hovered_box_stroke_color=0x7f050070;
-    public static final int notification_action_color_filter=0x7f050071;
-    public static final int notification_icon_bg_color=0x7f050072;
-    public static final int notification_material_background_media_default_color=0x7f050073;
-    public static final int primary_dark_material_dark=0x7f050074;
-    public static final int primary_dark_material_light=0x7f050075;
-    public static final int primary_material_dark=0x7f050076;
-    public static final int primary_material_light=0x7f050077;
-    public static final int primary_text_default_material_dark=0x7f050078;
-    public static final int primary_text_default_material_light=0x7f050079;
-    public static final int primary_text_disabled_material_dark=0x7f05007a;
-    public static final int primary_text_disabled_material_light=0x7f05007b;
-    public static final int reveal_color=0x7f05007c;
-    public static final int ripple_material_dark=0x7f05007d;
-    public static final int ripple_material_light=0x7f05007e;
-    public static final int secondary_text_default_material_dark=0x7f05007f;
-    public static final int secondary_text_default_material_light=0x7f050080;
-    public static final int secondary_text_disabled_material_dark=0x7f050081;
-    public static final int secondary_text_disabled_material_light=0x7f050082;
-    public static final int switch_thumb_disabled_material_dark=0x7f050083;
-    public static final int switch_thumb_disabled_material_light=0x7f050084;
-    public static final int switch_thumb_material_dark=0x7f050085;
-    public static final int switch_thumb_material_light=0x7f050086;
-    public static final int switch_thumb_normal_material_dark=0x7f050087;
-    public static final int switch_thumb_normal_material_light=0x7f050088;
-    public static final int text_blue=0x7f050089;
-    public static final int text_gray=0x7f05008a;
-    public static final int text_topbar=0x7f05008b;
-    public static final int tooltip_background_dark=0x7f05008c;
-    public static final int tooltip_background_light=0x7f05008d;
+    public static final int list_line=0x7f05004b;
+    public static final int material_blue_grey_800=0x7f05004c;
+    public static final int material_blue_grey_900=0x7f05004d;
+    public static final int material_blue_grey_950=0x7f05004e;
+    public static final int material_deep_teal_200=0x7f05004f;
+    public static final int material_deep_teal_500=0x7f050050;
+    public static final int material_grey_100=0x7f050051;
+    public static final int material_grey_300=0x7f050052;
+    public static final int material_grey_50=0x7f050053;
+    public static final int material_grey_600=0x7f050054;
+    public static final int material_grey_800=0x7f050055;
+    public static final int material_grey_850=0x7f050056;
+    public static final int material_grey_900=0x7f050057;
+    public static final int mtrl_bottom_nav_colored_item_tint=0x7f050058;
+    public static final int mtrl_bottom_nav_item_tint=0x7f050059;
+    public static final int mtrl_btn_bg_color_disabled=0x7f05005a;
+    public static final int mtrl_btn_bg_color_selector=0x7f05005b;
+    public static final int mtrl_btn_ripple_color=0x7f05005c;
+    public static final int mtrl_btn_stroke_color_selector=0x7f05005d;
+    public static final int mtrl_btn_text_btn_ripple_color=0x7f05005e;
+    public static final int mtrl_btn_text_color_disabled=0x7f05005f;
+    public static final int mtrl_btn_text_color_selector=0x7f050060;
+    public static final int mtrl_btn_transparent_bg_color=0x7f050061;
+    public static final int mtrl_chip_background_color=0x7f050062;
+    public static final int mtrl_chip_close_icon_tint=0x7f050063;
+    public static final int mtrl_chip_ripple_color=0x7f050064;
+    public static final int mtrl_chip_text_color=0x7f050065;
+    public static final int mtrl_fab_ripple_color=0x7f050066;
+    public static final int mtrl_scrim_color=0x7f050067;
+    public static final int mtrl_tabs_colored_ripple_color=0x7f050068;
+    public static final int mtrl_tabs_icon_color_selector=0x7f050069;
+    public static final int mtrl_tabs_icon_color_selector_colored=0x7f05006a;
+    public static final int mtrl_tabs_legacy_text_color_selector=0x7f05006b;
+    public static final int mtrl_tabs_ripple_color=0x7f05006c;
+    public static final int mtrl_text_btn_text_color_selector=0x7f05006d;
+    public static final int mtrl_textinput_default_box_stroke_color=0x7f05006e;
+    public static final int mtrl_textinput_disabled_color=0x7f05006f;
+    public static final int mtrl_textinput_filled_box_default_background_color=0x7f050070;
+    public static final int mtrl_textinput_hovered_box_stroke_color=0x7f050071;
+    public static final int notification_action_color_filter=0x7f050072;
+    public static final int notification_icon_bg_color=0x7f050073;
+    public static final int notification_material_background_media_default_color=0x7f050074;
+    public static final int primary_dark_material_dark=0x7f050075;
+    public static final int primary_dark_material_light=0x7f050076;
+    public static final int primary_material_dark=0x7f050077;
+    public static final int primary_material_light=0x7f050078;
+    public static final int primary_text_default_material_dark=0x7f050079;
+    public static final int primary_text_default_material_light=0x7f05007a;
+    public static final int primary_text_disabled_material_dark=0x7f05007b;
+    public static final int primary_text_disabled_material_light=0x7f05007c;
+    public static final int reveal_color=0x7f05007d;
+    public static final int ripple_material_dark=0x7f05007e;
+    public static final int ripple_material_light=0x7f05007f;
+    public static final int secondary_text_default_material_dark=0x7f050080;
+    public static final int secondary_text_default_material_light=0x7f050081;
+    public static final int secondary_text_disabled_material_dark=0x7f050082;
+    public static final int secondary_text_disabled_material_light=0x7f050083;
+    public static final int switch_thumb_disabled_material_dark=0x7f050084;
+    public static final int switch_thumb_disabled_material_light=0x7f050085;
+    public static final int switch_thumb_material_dark=0x7f050086;
+    public static final int switch_thumb_material_light=0x7f050087;
+    public static final int switch_thumb_normal_material_dark=0x7f050088;
+    public static final int switch_thumb_normal_material_light=0x7f050089;
+    public static final int text_blue=0x7f05008a;
+    public static final int text_gray=0x7f05008b;
+    public static final int text_topbar=0x7f05008c;
+    public static final int tooltip_background_dark=0x7f05008d;
+    public static final int tooltip_background_light=0x7f05008e;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f060000;
@@ -6332,58 +5864,67 @@ public final class R {
     public static final int drawable_slide_line=0x7f07006e;
     public static final int drawable_virtual_line=0x7f07006f;
     public static final int example_appwidget_preview=0x7f070070;
-    public static final int gray_radius=0x7f070071;
-    public static final int hide_pw=0x7f070072;
-    public static final int ic_android_black_24dp=0x7f070073;
-    public static final int ic_launcher_background=0x7f070074;
-    public static final int ic_launcher_foreground=0x7f070075;
-    public static final int ic_mtrl_chip_checked_black=0x7f070076;
-    public static final int ic_mtrl_chip_checked_circle=0x7f070077;
-    public static final int ic_mtrl_chip_close_circle=0x7f070078;
-    public static final int layer_list_drawable=0x7f070079;
-    public static final int mtrl_snackbar_background=0x7f07007a;
-    public static final int mtrl_tabs_default_indicator=0x7f07007b;
-    public static final int navigation_empty_icon=0x7f07007c;
-    public static final int nine_patch_drawable=0x7f07007d;
-    public static final int no_banner=0x7f07007e;
-    public static final int notification_action_background=0x7f07007f;
-    public static final int notification_bg=0x7f070080;
-    public static final int notification_bg_low=0x7f070081;
-    public static final int notification_bg_low_normal=0x7f070082;
-    public static final int notification_bg_low_pressed=0x7f070083;
-    public static final int notification_bg_normal=0x7f070084;
-    public static final int notification_bg_normal_pressed=0x7f070085;
-    public static final int notification_icon_background=0x7f070086;
-    public static final int notification_template_icon_bg=0x7f070087;
-    public static final int notification_template_icon_low_bg=0x7f070088;
-    public static final int notification_tile_bg=0x7f070089;
-    public static final int notify_panel_notification_icon_bg=0x7f07008a;
-    public static final int password=0x7f07008b;
-    public static final int selector_login_change_psw=0x7f07008c;
-    public static final int show_pw=0x7f07008d;
-    public static final int tab_menu_bg=0x7f07008e;
-    public static final int tab_menu_buy=0x7f07008f;
-    public static final int tab_menu_home=0x7f070090;
-    public static final int tab_menu_hot=0x7f070091;
-    public static final int tab_menu_mine=0x7f070092;
-    public static final int tab_menu_text=0x7f070093;
-    public static final int test=0x7f070094;
-    public static final int test_girl=0x7f070095;
-    public static final int tooltip_frame_dark=0x7f070096;
-    public static final int tooltip_frame_light=0x7f070097;
-    public static final int touch=0x7f070098;
-    public static final int ty_10=0x7f070099;
-    public static final int ty_11=0x7f07009a;
-    public static final int ty_2=0x7f07009b;
-    public static final int ty_3=0x7f07009c;
-    public static final int ty_4=0x7f07009d;
-    public static final int ty_5=0x7f07009e;
-    public static final int ty_6=0x7f07009f;
-    public static final int ty_7=0x7f0700a0;
-    public static final int ty_8=0x7f0700a1;
-    public static final int ty_9=0x7f0700a2;
-    public static final int username=0x7f0700a3;
-    public static final int white_radius=0x7f0700a4;
+    public static final int gray_circle_bg=0x7f070071;
+    public static final int gray_radius=0x7f070072;
+    public static final int gray_square_circle_bg_white_stroke=0x7f070073;
+    public static final int hide_pw=0x7f070074;
+    public static final int ic_action_close=0x7f070075;
+    public static final int ic_android_black_24dp=0x7f070076;
+    public static final int ic_launcher_background=0x7f070077;
+    public static final int ic_launcher_foreground=0x7f070078;
+    public static final int ic_mtrl_chip_checked_black=0x7f070079;
+    public static final int ic_mtrl_chip_checked_circle=0x7f07007a;
+    public static final int ic_mtrl_chip_close_circle=0x7f07007b;
+    public static final int icon_download_new=0x7f07007c;
+    public static final int layer_list_drawable=0x7f07007d;
+    public static final int list_line=0x7f07007e;
+    public static final int load_failed=0x7f07007f;
+    public static final int mtrl_snackbar_background=0x7f070080;
+    public static final int mtrl_tabs_default_indicator=0x7f070081;
+    public static final int navigation_empty_icon=0x7f070082;
+    public static final int nine_patch_drawable=0x7f070083;
+    public static final int no_banner=0x7f070084;
+    public static final int notification_action_background=0x7f070085;
+    public static final int notification_bg=0x7f070086;
+    public static final int notification_bg_low=0x7f070087;
+    public static final int notification_bg_low_normal=0x7f070088;
+    public static final int notification_bg_low_pressed=0x7f070089;
+    public static final int notification_bg_normal=0x7f07008a;
+    public static final int notification_bg_normal_pressed=0x7f07008b;
+    public static final int notification_icon_background=0x7f07008c;
+    public static final int notification_template_icon_bg=0x7f07008d;
+    public static final int notification_template_icon_low_bg=0x7f07008e;
+    public static final int notification_tile_bg=0x7f07008f;
+    public static final int notify_panel_notification_icon_bg=0x7f070090;
+    public static final int password=0x7f070091;
+    public static final int selector_login_change_psw=0x7f070092;
+    public static final int show_pw=0x7f070093;
+    public static final int tab_menu_bg=0x7f070094;
+    public static final int tab_menu_buy=0x7f070095;
+    public static final int tab_menu_home=0x7f070096;
+    public static final int tab_menu_hot=0x7f070097;
+    public static final int tab_menu_mine=0x7f070098;
+    public static final int tab_menu_text=0x7f070099;
+    public static final int test=0x7f07009a;
+    public static final int test_girl=0x7f07009b;
+    public static final int tooltip_frame_dark=0x7f07009c;
+    public static final int tooltip_frame_light=0x7f07009d;
+    public static final int touch=0x7f07009e;
+    public static final int ty_10=0x7f07009f;
+    public static final int ty_11=0x7f0700a0;
+    public static final int ty_2=0x7f0700a1;
+    public static final int ty_3=0x7f0700a2;
+    public static final int ty_4=0x7f0700a3;
+    public static final int ty_5=0x7f0700a4;
+    public static final int ty_6=0x7f0700a5;
+    public static final int ty_7=0x7f0700a6;
+    public static final int ty_8=0x7f0700a7;
+    public static final int ty_9=0x7f0700a8;
+    public static final int username=0x7f0700a9;
+    public static final int wallpaper1=0x7f0700aa;
+    public static final int wallpaper2=0x7f0700ab;
+    public static final int wallpaper3=0x7f0700ac;
+    public static final int white_radius=0x7f0700ad;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -6438,269 +5979,297 @@ public final class R {
     public static final int bt_pwd_eyes=0x7f080031;
     public static final int bt_usename_clear=0x7f080032;
     public static final int btn_back=0x7f080033;
-    public static final int btn_clean_board=0x7f080034;
-    public static final int btn_delete=0x7f080035;
-    public static final int btn_download=0x7f080036;
-    public static final int btn_draw_board=0x7f080037;
-    public static final int btn_insert=0x7f080038;
-    public static final int btn_login=0x7f080039;
-    public static final int btn_matrix_color=0x7f08003a;
-    public static final int btn_preforence=0x7f08003b;
-    public static final int btn_query=0x7f08003c;
-    public static final int btn_right=0x7f08003d;
-    public static final int btn_update=0x7f08003e;
-    public static final int btn_view_image=0x7f08003f;
-    public static final int btn_view_larger_image=0x7f080040;
-    public static final int btn_view_webview=0x7f080041;
-    public static final int btnclean=0x7f080042;
-    public static final int btndown=0x7f080043;
-    public static final int btnread=0x7f080044;
-    public static final int btnsave=0x7f080045;
-    public static final int btnstop=0x7f080046;
-    public static final int buttonPanel=0x7f080047;
-    public static final int cancel_action=0x7f080048;
-    public static final int center=0x7f080049;
-    public static final int centerCrop=0x7f08004a;
-    public static final int centerInside=0x7f08004b;
-    public static final int center_crop=0x7f08004c;
-    public static final int center_horizontal=0x7f08004d;
-    public static final int center_inside=0x7f08004e;
-    public static final int center_vertical=0x7f08004f;
-    public static final int chains=0x7f080050;
-    public static final int checkbox=0x7f080051;
-    public static final int chronometer=0x7f080052;
-    public static final int circleIndicator=0x7f080053;
-    public static final int clip_horizontal=0x7f080054;
-    public static final int clip_vertical=0x7f080055;
-    public static final int collapseActionView=0x7f080056;
-    public static final int container=0x7f080057;
-    public static final int content=0x7f080058;
-    public static final int contentPanel=0x7f080059;
-    public static final int coordinator=0x7f08005a;
-    public static final int custom=0x7f08005b;
-    public static final int customPanel=0x7f08005c;
-    public static final int dataBinding=0x7f08005d;
-    public static final int decor_content_parent=0x7f08005e;
-    public static final int default_activity_button=0x7f08005f;
-    public static final int design_bottom_sheet=0x7f080060;
-    public static final int design_menu_item_action_area=0x7f080061;
-    public static final int design_menu_item_action_area_stub=0x7f080062;
-    public static final int design_menu_item_text=0x7f080063;
-    public static final int design_navigation_view=0x7f080064;
-    public static final int dimensions=0x7f080065;
-    public static final int direct=0x7f080066;
-    public static final int disableHome=0x7f080067;
-    public static final int div_tab_bar=0x7f080068;
-    public static final int draw_board=0x7f080069;
-    public static final int edit_query=0x7f08006a;
-    public static final int editdetail=0x7f08006b;
-    public static final int editname=0x7f08006c;
-    public static final int editpath=0x7f08006d;
-    public static final int end=0x7f08006e;
-    public static final int end_padder=0x7f08006f;
-    public static final int enterAlways=0x7f080070;
-    public static final int enterAlwaysCollapsed=0x7f080071;
-    public static final int exitUntilCollapsed=0x7f080072;
-    public static final int expand_activities_button=0x7f080073;
-    public static final int expanded_menu=0x7f080074;
-    public static final int fab=0x7f080075;
-    public static final int fg_list=0x7f080076;
-    public static final int fill=0x7f080077;
-    public static final int fill_horizontal=0x7f080078;
-    public static final int fill_vertical=0x7f080079;
-    public static final int filled=0x7f08007a;
-    public static final int fitBottomStart=0x7f08007b;
-    public static final int fitCenter=0x7f08007c;
-    public static final int fitEnd=0x7f08007d;
-    public static final int fitStart=0x7f08007e;
-    public static final int fitXY=0x7f08007f;
-    public static final int fit_center=0x7f080080;
-    public static final int fit_end=0x7f080081;
-    public static final int fit_start=0x7f080082;
-    public static final int fit_xy=0x7f080083;
-    public static final int fixed=0x7f080084;
-    public static final int focusCrop=0x7f080085;
-    public static final int forever=0x7f080086;
-    public static final int ghost_view=0x7f080087;
-    public static final int glide_custom_view_target_tag=0x7f080088;
-    public static final int gone=0x7f080089;
-    public static final int group_divider=0x7f08008a;
-    public static final int groups=0x7f08008b;
-    public static final int home=0x7f08008c;
-    public static final int homeAsUp=0x7f08008d;
-    public static final int icon=0x7f08008e;
-    public static final int icon_group=0x7f08008f;
-    public static final int ifRoom=0x7f080090;
-    public static final int image=0x7f080091;
-    public static final int img_meizi=0x7f080092;
-    public static final int img_show=0x7f080093;
-    public static final int indicatorInside=0x7f080094;
-    public static final int info=0x7f080095;
-    public static final int invisible=0x7f080096;
-    public static final int italic=0x7f080097;
-    public static final int item_touch_helper_previous_elevation=0x7f080098;
-    public static final int iv_head=0x7f080099;
-    public static final int iv_qrcode=0x7f08009a;
-    public static final int labeled=0x7f08009b;
-    public static final int largeLabel=0x7f08009c;
-    public static final int left=0x7f08009d;
-    public static final int line1=0x7f08009e;
-    public static final int line3=0x7f08009f;
-    public static final int listMode=0x7f0800a0;
-    public static final int list_item=0x7f0800a1;
-    public static final int list_news=0x7f0800a2;
-    public static final int login=0x7f0800a3;
-    public static final int login_error=0x7f0800a4;
-    public static final int login_layout=0x7f0800a5;
-    public static final int mBigImage=0x7f0800a6;
-    public static final int masked=0x7f0800a7;
-    public static final int matrix=0x7f0800a8;
-    public static final int media_actions=0x7f0800a9;
-    public static final int message=0x7f0800aa;
-    public static final int middle=0x7f0800ab;
-    public static final int mini=0x7f0800ac;
-    public static final int mtrl_child_content_container=0x7f0800ad;
-    public static final int mtrl_internal_children_alpha_tag=0x7f0800ae;
-    public static final int multiply=0x7f0800af;
-    public static final int nav_bar=0x7f0800b0;
-    public static final int navigation_header_container=0x7f0800b1;
-    public static final int never=0x7f0800b2;
-    public static final int none=0x7f0800b3;
-    public static final int normal=0x7f0800b4;
-    public static final int notification_background=0x7f0800b5;
-    public static final int notification_main_column=0x7f0800b6;
-    public static final int notification_main_column_container=0x7f0800b7;
-    public static final int numIndicator=0x7f0800b8;
-    public static final int numIndicatorInside=0x7f0800b9;
-    public static final int onAttachStateChangeListener=0x7f0800ba;
-    public static final int onDateChanged=0x7f0800bb;
-    public static final int one=0x7f0800bc;
-    public static final int outline=0x7f0800bd;
-    public static final int packed=0x7f0800be;
-    public static final int parallax=0x7f0800bf;
-    public static final int parent=0x7f0800c0;
-    public static final int parentPanel=0x7f0800c1;
-    public static final int parent_matrix=0x7f0800c2;
-    public static final int password=0x7f0800c3;
-    public static final int percent=0x7f0800c4;
-    public static final int pin=0x7f0800c5;
-    public static final int progressBar=0x7f0800c6;
-    public static final int progress_circular=0x7f0800c7;
-    public static final int progress_horizontal=0x7f0800c8;
-    public static final int radio=0x7f0800c9;
-    public static final int rb_buy=0x7f0800ca;
-    public static final int rb_home=0x7f0800cb;
-    public static final int rb_hot=0x7f0800cc;
-    public static final int rb_mine=0x7f0800cd;
-    public static final int refreshLayout=0x7f0800ce;
-    public static final int register=0x7f0800cf;
-    public static final int rg_tab_bar=0x7f0800d0;
-    public static final int right=0x7f0800d1;
-    public static final int right_icon=0x7f0800d2;
-    public static final int right_side=0x7f0800d3;
-    public static final int rl_list=0x7f0800d4;
-    public static final int save_image_matrix=0x7f0800d5;
-    public static final int save_non_transition_alpha=0x7f0800d6;
-    public static final int save_scale_type=0x7f0800d7;
-    public static final int sb_hue=0x7f0800d8;
-    public static final int sb_lum=0x7f0800d9;
-    public static final int sb_saturation=0x7f0800da;
-    public static final int screen=0x7f0800db;
-    public static final int scroll=0x7f0800dc;
-    public static final int scrollIndicatorDown=0x7f0800dd;
-    public static final int scrollIndicatorUp=0x7f0800de;
-    public static final int scrollView=0x7f0800df;
-    public static final int scrollable=0x7f0800e0;
-    public static final int search_badge=0x7f0800e1;
-    public static final int search_bar=0x7f0800e2;
-    public static final int search_button=0x7f0800e3;
-    public static final int search_close_btn=0x7f0800e4;
-    public static final int search_edit_frame=0x7f0800e5;
-    public static final int search_go_btn=0x7f0800e6;
-    public static final int search_mag_icon=0x7f0800e7;
-    public static final int search_plate=0x7f0800e8;
-    public static final int search_src_text=0x7f0800e9;
-    public static final int search_voice_btn=0x7f0800ea;
-    public static final int select_dialog_listview=0x7f0800eb;
-    public static final int selected=0x7f0800ec;
-    public static final int shortcut=0x7f0800ed;
-    public static final int showCustom=0x7f0800ee;
-    public static final int showHome=0x7f0800ef;
-    public static final int showTitle=0x7f0800f0;
-    public static final int smallLabel=0x7f0800f1;
-    public static final int snackbar_action=0x7f0800f2;
-    public static final int snackbar_text=0x7f0800f3;
-    public static final int snap=0x7f0800f4;
-    public static final int snapMargins=0x7f0800f5;
-    public static final int spacer=0x7f0800f6;
-    public static final int split_action_bar=0x7f0800f7;
-    public static final int spread=0x7f0800f8;
-    public static final int spread_inside=0x7f0800f9;
-    public static final int src_atop=0x7f0800fa;
-    public static final int src_in=0x7f0800fb;
-    public static final int src_over=0x7f0800fc;
-    public static final int srl_classics_arrow=0x7f0800fd;
-    public static final int srl_classics_center=0x7f0800fe;
-    public static final int srl_classics_progress=0x7f0800ff;
-    public static final int srl_classics_title=0x7f080100;
-    public static final int srl_classics_update=0x7f080101;
-    public static final int standard=0x7f080102;
-    public static final int start=0x7f080103;
-    public static final int status_bar_latest_event_content=0x7f080104;
-    public static final int stretch=0x7f080105;
-    public static final int submenuarrow=0x7f080106;
-    public static final int submit_area=0x7f080107;
-    public static final int tabMode=0x7f080108;
-    public static final int tag_transition_group=0x7f080109;
-    public static final int tag_unhandled_key_event_manager=0x7f08010a;
-    public static final int tag_unhandled_key_listeners=0x7f08010b;
-    public static final int text=0x7f08010c;
-    public static final int text2=0x7f08010d;
-    public static final int textSpacerNoButtons=0x7f08010e;
-    public static final int textSpacerNoTitle=0x7f08010f;
-    public static final int textStart=0x7f080110;
-    public static final int textWatcher=0x7f080111;
-    public static final int text_input_password_toggle=0x7f080112;
-    public static final int textinput_counter=0x7f080113;
-    public static final int textinput_error=0x7f080114;
-    public static final int textinput_helper_text=0x7f080115;
-    public static final int textresult=0x7f080116;
-    public static final int three=0x7f080117;
-    public static final int time=0x7f080118;
-    public static final int title=0x7f080119;
-    public static final int titleDividerNoCustom=0x7f08011a;
-    public static final int titleView=0x7f08011b;
-    public static final int title_template=0x7f08011c;
-    public static final int toolbar=0x7f08011d;
-    public static final int top=0x7f08011e;
-    public static final int topPanel=0x7f08011f;
-    public static final int touch_outside=0x7f080120;
-    public static final int transition_current_scene=0x7f080121;
-    public static final int transition_layout_save=0x7f080122;
-    public static final int transition_position=0x7f080123;
-    public static final int transition_scene_layoutid_cache=0x7f080124;
-    public static final int transition_transform=0x7f080125;
-    public static final int tv_title=0x7f080126;
-    public static final int two=0x7f080127;
-    public static final int txt_hue=0x7f080128;
-    public static final int txt_item_content=0x7f080129;
-    public static final int txt_item_title=0x7f08012a;
-    public static final int txt_lun=0x7f08012b;
-    public static final int txt_saturation=0x7f08012c;
-    public static final int uniform=0x7f08012d;
-    public static final int unlabeled=0x7f08012e;
-    public static final int up=0x7f08012f;
-    public static final int useLogo=0x7f080130;
-    public static final int usecode_layout=0x7f080131;
-    public static final int usename=0x7f080132;
-    public static final int usename_layout=0x7f080133;
-    public static final int view_offset_helper=0x7f080134;
-    public static final int visible=0x7f080135;
-    public static final int vpager=0x7f080136;
-    public static final int withText=0x7f080137;
-    public static final int wrap=0x7f080138;
-    public static final int wrap_content=0x7f080139;
-    public static final int wv_webview=0x7f08013a;
+    public static final int btn_change_volume=0x7f080034;
+    public static final int btn_clean=0x7f080035;
+    public static final int btn_clean_board=0x7f080036;
+    public static final int btn_delete=0x7f080037;
+    public static final int btn_download=0x7f080038;
+    public static final int btn_draw_board=0x7f080039;
+    public static final int btn_higher=0x7f08003a;
+    public static final int btn_insert=0x7f08003b;
+    public static final int btn_location=0x7f08003c;
+    public static final int btn_login=0x7f08003d;
+    public static final int btn_lower=0x7f08003e;
+    public static final int btn_matrix_color=0x7f08003f;
+    public static final int btn_off=0x7f080040;
+    public static final int btn_on=0x7f080041;
+    public static final int btn_preforence=0x7f080042;
+    public static final int btn_qrcode=0x7f080043;
+    public static final int btn_query=0x7f080044;
+    public static final int btn_quite=0x7f080045;
+    public static final int btn_right=0x7f080046;
+    public static final int btn_show_origin=0x7f080047;
+    public static final int btn_start=0x7f080048;
+    public static final int btn_stop=0x7f080049;
+    public static final int btn_update=0x7f08004a;
+    public static final int btn_view_image=0x7f08004b;
+    public static final int btn_view_larger_image=0x7f08004c;
+    public static final int btn_view_webview=0x7f08004d;
+    public static final int btn_wallpapper=0x7f08004e;
+    public static final int btnclean=0x7f08004f;
+    public static final int btndown=0x7f080050;
+    public static final int btnread=0x7f080051;
+    public static final int btnsave=0x7f080052;
+    public static final int btnstop=0x7f080053;
+    public static final int buttonPanel=0x7f080054;
+    public static final int cancel_action=0x7f080055;
+    public static final int center=0x7f080056;
+    public static final int centerCrop=0x7f080057;
+    public static final int centerInside=0x7f080058;
+    public static final int center_crop=0x7f080059;
+    public static final int center_horizontal=0x7f08005a;
+    public static final int center_inside=0x7f08005b;
+    public static final int center_vertical=0x7f08005c;
+    public static final int chains=0x7f08005d;
+    public static final int checkbox=0x7f08005e;
+    public static final int chronometer=0x7f08005f;
+    public static final int circleIndicator=0x7f080060;
+    public static final int clip_horizontal=0x7f080061;
+    public static final int clip_vertical=0x7f080062;
+    public static final int collapseActionView=0x7f080063;
+    public static final int container=0x7f080064;
+    public static final int content=0x7f080065;
+    public static final int contentPanel=0x7f080066;
+    public static final int coordinator=0x7f080067;
+    public static final int custom=0x7f080068;
+    public static final int customPanel=0x7f080069;
+    public static final int dataBinding=0x7f08006a;
+    public static final int decor_content_parent=0x7f08006b;
+    public static final int default_activity_button=0x7f08006c;
+    public static final int design_bottom_sheet=0x7f08006d;
+    public static final int design_menu_item_action_area=0x7f08006e;
+    public static final int design_menu_item_action_area_stub=0x7f08006f;
+    public static final int design_menu_item_text=0x7f080070;
+    public static final int design_navigation_view=0x7f080071;
+    public static final int dimensions=0x7f080072;
+    public static final int direct=0x7f080073;
+    public static final int disableHome=0x7f080074;
+    public static final int div_tab_bar=0x7f080075;
+    public static final int draw_board=0x7f080076;
+    public static final int edit_query=0x7f080077;
+    public static final int editdetail=0x7f080078;
+    public static final int editname=0x7f080079;
+    public static final int editpath=0x7f08007a;
+    public static final int end=0x7f08007b;
+    public static final int end_padder=0x7f08007c;
+    public static final int enterAlways=0x7f08007d;
+    public static final int enterAlwaysCollapsed=0x7f08007e;
+    public static final int exitUntilCollapsed=0x7f08007f;
+    public static final int expand_activities_button=0x7f080080;
+    public static final int expanded_menu=0x7f080081;
+    public static final int fab=0x7f080082;
+    public static final int fg_list=0x7f080083;
+    public static final int fill=0x7f080084;
+    public static final int fill_horizontal=0x7f080085;
+    public static final int fill_vertical=0x7f080086;
+    public static final int filled=0x7f080087;
+    public static final int fingerDragHelper=0x7f080088;
+    public static final int fitBottomStart=0x7f080089;
+    public static final int fitCenter=0x7f08008a;
+    public static final int fitEnd=0x7f08008b;
+    public static final int fitStart=0x7f08008c;
+    public static final int fitXY=0x7f08008d;
+    public static final int fit_center=0x7f08008e;
+    public static final int fit_end=0x7f08008f;
+    public static final int fit_start=0x7f080090;
+    public static final int fit_xy=0x7f080091;
+    public static final int fixed=0x7f080092;
+    public static final int fm_center_progress_container=0x7f080093;
+    public static final int fm_image_show_origin_container=0x7f080094;
+    public static final int focusCrop=0x7f080095;
+    public static final int forever=0x7f080096;
+    public static final int ghost_view=0x7f080097;
+    public static final int gif_view=0x7f080098;
+    public static final int glide_custom_view_target_tag=0x7f080099;
+    public static final int gone=0x7f08009a;
+    public static final int group_divider=0x7f08009b;
+    public static final int groups=0x7f08009c;
+    public static final int home=0x7f08009d;
+    public static final int homeAsUp=0x7f08009e;
+    public static final int icon=0x7f08009f;
+    public static final int icon_group=0x7f0800a0;
+    public static final int ifRoom=0x7f0800a1;
+    public static final int image=0x7f0800a2;
+    public static final int imageView=0x7f0800a3;
+    public static final int imgCloseButton=0x7f0800a4;
+    public static final int img_download=0x7f0800a5;
+    public static final int img_meizi=0x7f0800a6;
+    public static final int img_show=0x7f0800a7;
+    public static final int indicatorInside=0x7f0800a8;
+    public static final int info=0x7f0800a9;
+    public static final int invisible=0x7f0800aa;
+    public static final int italic=0x7f0800ab;
+    public static final int item_touch_helper_previous_elevation=0x7f0800ac;
+    public static final int iv_head=0x7f0800ad;
+    public static final int iv_qrcode=0x7f0800ae;
+    public static final int labeled=0x7f0800af;
+    public static final int largeLabel=0x7f0800b0;
+    public static final int left=0x7f0800b1;
+    public static final int line1=0x7f0800b2;
+    public static final int line3=0x7f0800b3;
+    public static final int listMode=0x7f0800b4;
+    public static final int list_item=0x7f0800b5;
+    public static final int list_news=0x7f0800b6;
+    public static final int login=0x7f0800b7;
+    public static final int login_error=0x7f0800b8;
+    public static final int login_layout=0x7f0800b9;
+    public static final int masked=0x7f0800ba;
+    public static final int matrix=0x7f0800bb;
+    public static final int media_actions=0x7f0800bc;
+    public static final int message=0x7f0800bd;
+    public static final int middle=0x7f0800be;
+    public static final int mini=0x7f0800bf;
+    public static final int mtrl_child_content_container=0x7f0800c0;
+    public static final int mtrl_internal_children_alpha_tag=0x7f0800c1;
+    public static final int multiply=0x7f0800c2;
+    public static final int nav_bar=0x7f0800c3;
+    public static final int navigation_header_container=0x7f0800c4;
+    public static final int never=0x7f0800c5;
+    public static final int none=0x7f0800c6;
+    public static final int normal=0x7f0800c7;
+    public static final int notification_background=0x7f0800c8;
+    public static final int notification_main_column=0x7f0800c9;
+    public static final int notification_main_column_container=0x7f0800ca;
+    public static final int numIndicator=0x7f0800cb;
+    public static final int numIndicatorInside=0x7f0800cc;
+    public static final int onAttachStateChangeListener=0x7f0800cd;
+    public static final int onDateChanged=0x7f0800ce;
+    public static final int one=0x7f0800cf;
+    public static final int outline=0x7f0800d0;
+    public static final int packed=0x7f0800d1;
+    public static final int parallax=0x7f0800d2;
+    public static final int parent=0x7f0800d3;
+    public static final int parentPanel=0x7f0800d4;
+    public static final int parent_matrix=0x7f0800d5;
+    public static final int password=0x7f0800d6;
+    public static final int percent=0x7f0800d7;
+    public static final int photo_view=0x7f0800d8;
+    public static final int pin=0x7f0800d9;
+    public static final int progressBar=0x7f0800da;
+    public static final int progress_circular=0x7f0800db;
+    public static final int progress_horizontal=0x7f0800dc;
+    public static final int progress_view=0x7f0800dd;
+    public static final int radio=0x7f0800de;
+    public static final int rb_buy=0x7f0800df;
+    public static final int rb_home=0x7f0800e0;
+    public static final int rb_hot=0x7f0800e1;
+    public static final int rb_mine=0x7f0800e2;
+    public static final int refreshLayout=0x7f0800e3;
+    public static final int register=0x7f0800e4;
+    public static final int rg_tab_bar=0x7f0800e5;
+    public static final int right=0x7f0800e6;
+    public static final int right_icon=0x7f0800e7;
+    public static final int right_side=0x7f0800e8;
+    public static final int rl_list=0x7f0800e9;
+    public static final int rly_layout=0x7f0800ea;
+    public static final int rootView=0x7f0800eb;
+    public static final int rv_recycler_view=0x7f0800ec;
+    public static final int save_image_matrix=0x7f0800ed;
+    public static final int save_non_transition_alpha=0x7f0800ee;
+    public static final int save_scale_type=0x7f0800ef;
+    public static final int sb_hue=0x7f0800f0;
+    public static final int sb_lum=0x7f0800f1;
+    public static final int sb_saturation=0x7f0800f2;
+    public static final int screen=0x7f0800f3;
+    public static final int scroll=0x7f0800f4;
+    public static final int scrollIndicatorDown=0x7f0800f5;
+    public static final int scrollIndicatorUp=0x7f0800f6;
+    public static final int scrollView=0x7f0800f7;
+    public static final int scrollable=0x7f0800f8;
+    public static final int search_badge=0x7f0800f9;
+    public static final int search_bar=0x7f0800fa;
+    public static final int search_button=0x7f0800fb;
+    public static final int search_close_btn=0x7f0800fc;
+    public static final int search_edit_frame=0x7f0800fd;
+    public static final int search_go_btn=0x7f0800fe;
+    public static final int search_mag_icon=0x7f0800ff;
+    public static final int search_plate=0x7f080100;
+    public static final int search_src_text=0x7f080101;
+    public static final int search_voice_btn=0x7f080102;
+    public static final int select_dialog_listview=0x7f080103;
+    public static final int selected=0x7f080104;
+    public static final int sh_progress_text=0x7f080105;
+    public static final int sh_progress_view=0x7f080106;
+    public static final int shortcut=0x7f080107;
+    public static final int showCustom=0x7f080108;
+    public static final int showHome=0x7f080109;
+    public static final int showTitle=0x7f08010a;
+    public static final int smallLabel=0x7f08010b;
+    public static final int snackbar_action=0x7f08010c;
+    public static final int snackbar_text=0x7f08010d;
+    public static final int snap=0x7f08010e;
+    public static final int snapMargins=0x7f08010f;
+    public static final int spacer=0x7f080110;
+    public static final int split_action_bar=0x7f080111;
+    public static final int spread=0x7f080112;
+    public static final int spread_inside=0x7f080113;
+    public static final int src_atop=0x7f080114;
+    public static final int src_in=0x7f080115;
+    public static final int src_over=0x7f080116;
+    public static final int srl_classics_arrow=0x7f080117;
+    public static final int srl_classics_center=0x7f080118;
+    public static final int srl_classics_progress=0x7f080119;
+    public static final int srl_classics_title=0x7f08011a;
+    public static final int srl_classics_update=0x7f08011b;
+    public static final int standard=0x7f08011c;
+    public static final int start=0x7f08011d;
+    public static final int status_bar_latest_event_content=0x7f08011e;
+    public static final int stretch=0x7f08011f;
+    public static final int submenuarrow=0x7f080120;
+    public static final int submit_area=0x7f080121;
+    public static final int tabMode=0x7f080122;
+    public static final int tag_transition_group=0x7f080123;
+    public static final int tag_unhandled_key_event_manager=0x7f080124;
+    public static final int tag_unhandled_key_listeners=0x7f080125;
+    public static final int text=0x7f080126;
+    public static final int text2=0x7f080127;
+    public static final int textSpacerNoButtons=0x7f080128;
+    public static final int textSpacerNoTitle=0x7f080129;
+    public static final int textStart=0x7f08012a;
+    public static final int textWatcher=0x7f08012b;
+    public static final int text_input_password_toggle=0x7f08012c;
+    public static final int textinput_counter=0x7f08012d;
+    public static final int textinput_error=0x7f08012e;
+    public static final int textinput_helper_text=0x7f08012f;
+    public static final int textresult=0x7f080130;
+    public static final int three=0x7f080131;
+    public static final int time=0x7f080132;
+    public static final int title=0x7f080133;
+    public static final int titleDividerNoCustom=0x7f080134;
+    public static final int titleView=0x7f080135;
+    public static final int title_template=0x7f080136;
+    public static final int top=0x7f080137;
+    public static final int topPanel=0x7f080138;
+    public static final int touch_outside=0x7f080139;
+    public static final int transition_current_scene=0x7f08013a;
+    public static final int transition_layout_save=0x7f08013b;
+    public static final int transition_position=0x7f08013c;
+    public static final int transition_scene_layoutid_cache=0x7f08013d;
+    public static final int transition_transform=0x7f08013e;
+    public static final int tv_indicator=0x7f08013f;
+    public static final int tv_show=0x7f080140;
+    public static final int tv_title=0x7f080141;
+    public static final int two=0x7f080142;
+    public static final int txt_hue=0x7f080143;
+    public static final int txt_item_content=0x7f080144;
+    public static final int txt_item_title=0x7f080145;
+    public static final int txt_lun=0x7f080146;
+    public static final int txt_saturation=0x7f080147;
+    public static final int uniform=0x7f080148;
+    public static final int unlabeled=0x7f080149;
+    public static final int up=0x7f08014a;
+    public static final int useLogo=0x7f08014b;
+    public static final int usecode_layout=0x7f08014c;
+    public static final int usename=0x7f08014d;
+    public static final int usename_layout=0x7f08014e;
+    public static final int viewPager=0x7f08014f;
+    public static final int view_offset_helper=0x7f080150;
+    public static final int visible=0x7f080151;
+    public static final int vpager=0x7f080152;
+    public static final int withText=0x7f080153;
+    public static final int wrap=0x7f080154;
+    public static final int wrap_content=0x7f080155;
+    public static final int wv_webview=0x7f080156;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -6755,64 +6324,70 @@ public final class R {
     public static final int abc_select_dialog_material=0x7f0b001a;
     public static final int abc_tooltip=0x7f0b001b;
     public static final int activity_base=0x7f0b001c;
-    public static final int activity_detail=0x7f0b001d;
-    public static final int activity_download=0x7f0b001e;
-    public static final int activity_draw_board=0x7f0b001f;
-    public static final int activity_image=0x7f0b0020;
-    public static final int activity_larger_image=0x7f0b0021;
-    public static final int activity_login=0x7f0b0022;
-    public static final int activity_main=0x7f0b0023;
-    public static final int activity_matrix=0x7f0b0024;
-    public static final int activity_preforence=0x7f0b0025;
-    public static final int activity_qrcode=0x7f0b0026;
-    public static final int activity_web_view=0x7f0b0027;
-    public static final int banner=0x7f0b0028;
-    public static final int content_base=0x7f0b0029;
-    public static final int content_qrcode=0x7f0b002a;
-    public static final int design_bottom_navigation_item=0x7f0b002b;
-    public static final int design_bottom_sheet_dialog=0x7f0b002c;
-    public static final int design_layout_snackbar=0x7f0b002d;
-    public static final int design_layout_snackbar_include=0x7f0b002e;
-    public static final int design_layout_tab_icon=0x7f0b002f;
-    public static final int design_layout_tab_text=0x7f0b0030;
-    public static final int design_menu_item_action_area=0x7f0b0031;
-    public static final int design_navigation_item=0x7f0b0032;
-    public static final int design_navigation_item_header=0x7f0b0033;
-    public static final int design_navigation_item_separator=0x7f0b0034;
-    public static final int design_navigation_item_subheader=0x7f0b0035;
-    public static final int design_navigation_menu=0x7f0b0036;
-    public static final int design_navigation_menu_item=0x7f0b0037;
-    public static final int design_text_input_password_icon=0x7f0b0038;
-    public static final int fragment_buy=0x7f0b0039;
-    public static final int fragment_home=0x7f0b003a;
-    public static final int fragment_mine=0x7f0b003b;
-    public static final int fragment_newlist=0x7f0b003c;
-    public static final int fregment_content=0x7f0b003d;
-    public static final int list_item=0x7f0b003e;
-    public static final int mtrl_layout_snackbar=0x7f0b003f;
-    public static final int mtrl_layout_snackbar_include=0x7f0b0040;
-    public static final int nav_bar_layout=0x7f0b0041;
-    public static final int notification_action=0x7f0b0042;
-    public static final int notification_action_tombstone=0x7f0b0043;
-    public static final int notification_media_action=0x7f0b0044;
-    public static final int notification_media_cancel_action=0x7f0b0045;
-    public static final int notification_template_big_media=0x7f0b0046;
-    public static final int notification_template_big_media_custom=0x7f0b0047;
-    public static final int notification_template_big_media_narrow=0x7f0b0048;
-    public static final int notification_template_big_media_narrow_custom=0x7f0b0049;
-    public static final int notification_template_custom_big=0x7f0b004a;
-    public static final int notification_template_icon_group=0x7f0b004b;
-    public static final int notification_template_lines_media=0x7f0b004c;
-    public static final int notification_template_media=0x7f0b004d;
-    public static final int notification_template_media_custom=0x7f0b004e;
-    public static final int notification_template_part_chronometer=0x7f0b004f;
-    public static final int notification_template_part_time=0x7f0b0050;
-    public static final int select_dialog_item_material=0x7f0b0051;
-    public static final int select_dialog_multichoice_material=0x7f0b0052;
-    public static final int select_dialog_singlechoice_material=0x7f0b0053;
-    public static final int srl_classics_footer=0x7f0b0054;
-    public static final int srl_classics_header=0x7f0b0055;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b0056;
+    public static final int activity_change_wall_pager=0x7f0b001d;
+    public static final int activity_detail=0x7f0b001e;
+    public static final int activity_download=0x7f0b001f;
+    public static final int activity_draw_board=0x7f0b0020;
+    public static final int activity_image=0x7f0b0021;
+    public static final int activity_larger_image=0x7f0b0022;
+    public static final int activity_location=0x7f0b0023;
+    public static final int activity_login=0x7f0b0024;
+    public static final int activity_main=0x7f0b0025;
+    public static final int activity_matrix=0x7f0b0026;
+    public static final int activity_preforence=0x7f0b0027;
+    public static final int activity_qrcode=0x7f0b0028;
+    public static final int activity_volume=0x7f0b0029;
+    public static final int activity_web_view=0x7f0b002a;
+    public static final int banner=0x7f0b002b;
+    public static final int content_base=0x7f0b002c;
+    public static final int content_qrcode=0x7f0b002d;
+    public static final int design_bottom_navigation_item=0x7f0b002e;
+    public static final int design_bottom_sheet_dialog=0x7f0b002f;
+    public static final int design_layout_snackbar=0x7f0b0030;
+    public static final int design_layout_snackbar_include=0x7f0b0031;
+    public static final int design_layout_tab_icon=0x7f0b0032;
+    public static final int design_layout_tab_text=0x7f0b0033;
+    public static final int design_menu_item_action_area=0x7f0b0034;
+    public static final int design_navigation_item=0x7f0b0035;
+    public static final int design_navigation_item_header=0x7f0b0036;
+    public static final int design_navigation_item_separator=0x7f0b0037;
+    public static final int design_navigation_item_subheader=0x7f0b0038;
+    public static final int design_navigation_menu=0x7f0b0039;
+    public static final int design_navigation_menu_item=0x7f0b003a;
+    public static final int design_text_input_password_icon=0x7f0b003b;
+    public static final int fragment_buy=0x7f0b003c;
+    public static final int fragment_home=0x7f0b003d;
+    public static final int fragment_mine=0x7f0b003e;
+    public static final int fragment_newlist=0x7f0b003f;
+    public static final int fregment_content=0x7f0b0040;
+    public static final int list_item=0x7f0b0041;
+    public static final int mtrl_layout_snackbar=0x7f0b0042;
+    public static final int mtrl_layout_snackbar_include=0x7f0b0043;
+    public static final int nav_bar_layout=0x7f0b0044;
+    public static final int notification_action=0x7f0b0045;
+    public static final int notification_action_tombstone=0x7f0b0046;
+    public static final int notification_media_action=0x7f0b0047;
+    public static final int notification_media_cancel_action=0x7f0b0048;
+    public static final int notification_template_big_media=0x7f0b0049;
+    public static final int notification_template_big_media_custom=0x7f0b004a;
+    public static final int notification_template_big_media_narrow=0x7f0b004b;
+    public static final int notification_template_big_media_narrow_custom=0x7f0b004c;
+    public static final int notification_template_custom_big=0x7f0b004d;
+    public static final int notification_template_icon_group=0x7f0b004e;
+    public static final int notification_template_lines_media=0x7f0b004f;
+    public static final int notification_template_media=0x7f0b0050;
+    public static final int notification_template_media_custom=0x7f0b0051;
+    public static final int notification_template_part_chronometer=0x7f0b0052;
+    public static final int notification_template_part_time=0x7f0b0053;
+    public static final int select_dialog_item_material=0x7f0b0054;
+    public static final int select_dialog_multichoice_material=0x7f0b0055;
+    public static final int select_dialog_singlechoice_material=0x7f0b0056;
+    public static final int sh_default_progress_layout=0x7f0b0057;
+    public static final int sh_item_photoview=0x7f0b0058;
+    public static final int sh_layout_preview=0x7f0b0059;
+    public static final int srl_classics_footer=0x7f0b005a;
+    public static final int srl_classics_header=0x7f0b005b;
+    public static final int support_simple_spinner_dropdown_item=0x7f0b005c;
   }
   public static final class menu {
     public static final int menu=0x7f0c0000;
@@ -6834,7 +6409,8 @@ public final class R {
     public static final int qrcode_default_scan_line=0x7f0d000c;
   }
   public static final class raw {
-    public static final int test=0x7f0e0000;
+    public static final int audio=0x7f0e0000;
+    public static final int test=0x7f0e0001;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0f0000;
@@ -6884,63 +6460,68 @@ public final class R {
     public static final int btnclean=0x7f0f002c;
     public static final int btnread=0x7f0f002d;
     public static final int btnwrite=0x7f0f002e;
-    public static final int character_counter_content_description=0x7f0f002f;
-    public static final int character_counter_pattern=0x7f0f0030;
-    public static final int clean_board=0x7f0f0031;
-    public static final int detailtitle=0x7f0f0032;
-    public static final int download_file=0x7f0f0033;
-    public static final int download_page_title=0x7f0f0034;
-    public static final int download_progress_rate=0x7f0f0035;
-    public static final int download_title=0x7f0f0036;
-    public static final int draw_board=0x7f0f0037;
-    public static final int fab_transformation_scrim_behavior=0x7f0f0038;
-    public static final int fab_transformation_sheet_behavior=0x7f0f0039;
-    public static final int hide_bottom_view_on_scroll_behavior=0x7f0f003a;
-    public static final int load_html=0x7f0f003b;
-    public static final int load_image=0x7f0f003c;
-    public static final int load_webview=0x7f0f003d;
-    public static final int login=0x7f0f003e;
-    public static final int long_press_title=0x7f0f003f;
-    public static final int matrix_color=0x7f0f0040;
-    public static final int mtrl_chip_close_icon_content_description=0x7f0f0041;
-    public static final int nametitle=0x7f0f0042;
-    public static final int password_toggle_content_description=0x7f0f0043;
-    public static final int path_password_eye=0x7f0f0044;
-    public static final int path_password_eye_mask_strike_through=0x7f0f0045;
-    public static final int path_password_eye_mask_visible=0x7f0f0046;
-    public static final int path_password_strike_through=0x7f0f0047;
-    public static final int preforence=0x7f0f0048;
-    public static final int search_menu_title=0x7f0f0049;
-    public static final int srl_component_falsify=0x7f0f004a;
-    public static final int srl_content_empty=0x7f0f004b;
-    public static final int srl_footer_failed=0x7f0f004c;
-    public static final int srl_footer_finish=0x7f0f004d;
-    public static final int srl_footer_loading=0x7f0f004e;
-    public static final int srl_footer_nothing=0x7f0f004f;
-    public static final int srl_footer_pulling=0x7f0f0050;
-    public static final int srl_footer_refreshing=0x7f0f0051;
-    public static final int srl_footer_release=0x7f0f0052;
-    public static final int srl_header_failed=0x7f0f0053;
-    public static final int srl_header_finish=0x7f0f0054;
-    public static final int srl_header_loading=0x7f0f0055;
-    public static final int srl_header_pulling=0x7f0f0056;
-    public static final int srl_header_refreshing=0x7f0f0057;
-    public static final int srl_header_release=0x7f0f0058;
-    public static final int srl_header_secondary=0x7f0f0059;
-    public static final int srl_header_update=0x7f0f005a;
-    public static final int status_bar_notification_info_overflow=0x7f0f005b;
-    public static final int stop_title=0x7f0f005c;
-    public static final int tab_menu_buy=0x7f0f005d;
-    public static final int tab_menu_home=0x7f0f005e;
-    public static final int tab_menu_hot=0x7f0f005f;
-    public static final int tab_menu_mine=0x7f0f0060;
-    public static final int title_activity_base=0x7f0f0061;
-    public static final int title_activity_qrcode=0x7f0f0062;
-    public static final int view_image=0x7f0f0063;
-    public static final int view_larger_image=0x7f0f0064;
-    public static final int view_webview=0x7f0f0065;
-    public static final int webview_clean=0x7f0f0066;
-    public static final int webview_refresh=0x7f0f0067;
+    public static final int change_volume=0x7f0f002f;
+    public static final int character_counter_content_description=0x7f0f0030;
+    public static final int character_counter_pattern=0x7f0f0031;
+    public static final int clean_board=0x7f0f0032;
+    public static final int detailtitle=0x7f0f0033;
+    public static final int download_file=0x7f0f0034;
+    public static final int download_page_title=0x7f0f0035;
+    public static final int download_progress_rate=0x7f0f0036;
+    public static final int download_title=0x7f0f0037;
+    public static final int draw_board=0x7f0f0038;
+    public static final int fab_transformation_scrim_behavior=0x7f0f0039;
+    public static final int fab_transformation_sheet_behavior=0x7f0f003a;
+    public static final int hide_bottom_view_on_scroll_behavior=0x7f0f003b;
+    public static final int indicator=0x7f0f003c;
+    public static final int load_html=0x7f0f003d;
+    public static final int load_image=0x7f0f003e;
+    public static final int load_webview=0x7f0f003f;
+    public static final int location=0x7f0f0040;
+    public static final int login=0x7f0f0041;
+    public static final int long_press_title=0x7f0f0042;
+    public static final int matrix_color=0x7f0f0043;
+    public static final int mtrl_chip_close_icon_content_description=0x7f0f0044;
+    public static final int nametitle=0x7f0f0045;
+    public static final int password_toggle_content_description=0x7f0f0046;
+    public static final int path_password_eye=0x7f0f0047;
+    public static final int path_password_eye_mask_strike_through=0x7f0f0048;
+    public static final int path_password_eye_mask_visible=0x7f0f0049;
+    public static final int path_password_strike_through=0x7f0f004a;
+    public static final int preforence=0x7f0f004b;
+    public static final int qrcode=0x7f0f004c;
+    public static final int search_menu_title=0x7f0f004d;
+    public static final int srl_component_falsify=0x7f0f004e;
+    public static final int srl_content_empty=0x7f0f004f;
+    public static final int srl_footer_failed=0x7f0f0050;
+    public static final int srl_footer_finish=0x7f0f0051;
+    public static final int srl_footer_loading=0x7f0f0052;
+    public static final int srl_footer_nothing=0x7f0f0053;
+    public static final int srl_footer_pulling=0x7f0f0054;
+    public static final int srl_footer_refreshing=0x7f0f0055;
+    public static final int srl_footer_release=0x7f0f0056;
+    public static final int srl_header_failed=0x7f0f0057;
+    public static final int srl_header_finish=0x7f0f0058;
+    public static final int srl_header_loading=0x7f0f0059;
+    public static final int srl_header_pulling=0x7f0f005a;
+    public static final int srl_header_refreshing=0x7f0f005b;
+    public static final int srl_header_release=0x7f0f005c;
+    public static final int srl_header_secondary=0x7f0f005d;
+    public static final int srl_header_update=0x7f0f005e;
+    public static final int status_bar_notification_info_overflow=0x7f0f005f;
+    public static final int stop_title=0x7f0f0060;
+    public static final int tab_menu_buy=0x7f0f0061;
+    public static final int tab_menu_home=0x7f0f0062;
+    public static final int tab_menu_hot=0x7f0f0063;
+    public static final int tab_menu_mine=0x7f0f0064;
+    public static final int title_activity_base=0x7f0f0065;
+    public static final int title_activity_qrcode=0x7f0f0066;
+    public static final int view_image=0x7f0f0067;
+    public static final int view_larger_image=0x7f0f0068;
+    public static final int view_webview=0x7f0f0069;
+    public static final int wallpapper=0x7f0f006a;
+    public static final int webview_clean=0x7f0f006b;
+    public static final int webview_refresh=0x7f0f006c;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f100000;
@@ -7290,169 +6871,170 @@ public final class R {
     public static final int Theme_Design_Light_BottomSheetDialog=0x7f100158;
     public static final int Theme_Design_Light_NoActionBar=0x7f100159;
     public static final int Theme_Design_NoActionBar=0x7f10015a;
-    public static final int Theme_MaterialComponents=0x7f10015b;
-    public static final int Theme_MaterialComponents_BottomSheetDialog=0x7f10015c;
-    public static final int Theme_MaterialComponents_Bridge=0x7f10015d;
-    public static final int Theme_MaterialComponents_CompactMenu=0x7f10015e;
-    public static final int Theme_MaterialComponents_Dialog=0x7f10015f;
-    public static final int Theme_MaterialComponents_Dialog_Alert=0x7f100160;
-    public static final int Theme_MaterialComponents_Dialog_MinWidth=0x7f100161;
-    public static final int Theme_MaterialComponents_DialogWhenLarge=0x7f100162;
-    public static final int Theme_MaterialComponents_Light=0x7f100163;
-    public static final int Theme_MaterialComponents_Light_BottomSheetDialog=0x7f100164;
-    public static final int Theme_MaterialComponents_Light_Bridge=0x7f100165;
-    public static final int Theme_MaterialComponents_Light_DarkActionBar=0x7f100166;
-    public static final int Theme_MaterialComponents_Light_DarkActionBar_Bridge=0x7f100167;
-    public static final int Theme_MaterialComponents_Light_Dialog=0x7f100168;
-    public static final int Theme_MaterialComponents_Light_Dialog_Alert=0x7f100169;
-    public static final int Theme_MaterialComponents_Light_Dialog_MinWidth=0x7f10016a;
-    public static final int Theme_MaterialComponents_Light_DialogWhenLarge=0x7f10016b;
-    public static final int Theme_MaterialComponents_Light_NoActionBar=0x7f10016c;
-    public static final int Theme_MaterialComponents_Light_NoActionBar_Bridge=0x7f10016d;
-    public static final int Theme_MaterialComponents_NoActionBar=0x7f10016e;
-    public static final int Theme_MaterialComponents_NoActionBar_Bridge=0x7f10016f;
-    public static final int ThemeOverlay_AppCompat=0x7f100170;
-    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f100171;
-    public static final int ThemeOverlay_AppCompat_Dark=0x7f100172;
-    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f100173;
-    public static final int ThemeOverlay_AppCompat_Dialog=0x7f100174;
-    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f100175;
-    public static final int ThemeOverlay_AppCompat_Light=0x7f100176;
-    public static final int ThemeOverlay_MaterialComponents=0x7f100177;
-    public static final int ThemeOverlay_MaterialComponents_ActionBar=0x7f100178;
-    public static final int ThemeOverlay_MaterialComponents_Dark=0x7f100179;
-    public static final int ThemeOverlay_MaterialComponents_Dark_ActionBar=0x7f10017a;
-    public static final int ThemeOverlay_MaterialComponents_Dialog=0x7f10017b;
-    public static final int ThemeOverlay_MaterialComponents_Dialog_Alert=0x7f10017c;
-    public static final int ThemeOverlay_MaterialComponents_Light=0x7f10017d;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText=0x7f10017e;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox=0x7f10017f;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense=0x7f100180;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox=0x7f100181;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense=0x7f100182;
-    public static final int Widget_AppCompat_ActionBar=0x7f100183;
-    public static final int Widget_AppCompat_ActionBar_Solid=0x7f100184;
-    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f100185;
-    public static final int Widget_AppCompat_ActionBar_TabText=0x7f100186;
-    public static final int Widget_AppCompat_ActionBar_TabView=0x7f100187;
-    public static final int Widget_AppCompat_ActionButton=0x7f100188;
-    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f100189;
-    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f10018a;
-    public static final int Widget_AppCompat_ActionMode=0x7f10018b;
-    public static final int Widget_AppCompat_ActivityChooserView=0x7f10018c;
-    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f10018d;
-    public static final int Widget_AppCompat_Button=0x7f10018e;
-    public static final int Widget_AppCompat_Button_Borderless=0x7f10018f;
-    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f100190;
-    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f100191;
-    public static final int Widget_AppCompat_Button_Colored=0x7f100192;
-    public static final int Widget_AppCompat_Button_Small=0x7f100193;
-    public static final int Widget_AppCompat_ButtonBar=0x7f100194;
-    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f100195;
-    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f100196;
-    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f100197;
-    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f100198;
-    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f100199;
-    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f10019a;
-    public static final int Widget_AppCompat_EditText=0x7f10019b;
-    public static final int Widget_AppCompat_ImageButton=0x7f10019c;
-    public static final int Widget_AppCompat_Light_ActionBar=0x7f10019d;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f10019e;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f10019f;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f1001a0;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f1001a1;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f1001a2;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f1001a3;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f1001a4;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f1001a5;
-    public static final int Widget_AppCompat_Light_ActionButton=0x7f1001a6;
-    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f1001a7;
-    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f1001a8;
-    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f1001a9;
-    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f1001aa;
-    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f1001ab;
-    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f1001ac;
-    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f1001ad;
-    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f1001ae;
-    public static final int Widget_AppCompat_Light_PopupMenu=0x7f1001af;
-    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f1001b0;
-    public static final int Widget_AppCompat_Light_SearchView=0x7f1001b1;
-    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f1001b2;
-    public static final int Widget_AppCompat_ListMenuView=0x7f1001b3;
-    public static final int Widget_AppCompat_ListPopupWindow=0x7f1001b4;
-    public static final int Widget_AppCompat_ListView=0x7f1001b5;
-    public static final int Widget_AppCompat_ListView_DropDown=0x7f1001b6;
-    public static final int Widget_AppCompat_ListView_Menu=0x7f1001b7;
-    public static final int Widget_AppCompat_PopupMenu=0x7f1001b8;
-    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f1001b9;
-    public static final int Widget_AppCompat_PopupWindow=0x7f1001ba;
-    public static final int Widget_AppCompat_ProgressBar=0x7f1001bb;
-    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f1001bc;
-    public static final int Widget_AppCompat_RatingBar=0x7f1001bd;
-    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f1001be;
-    public static final int Widget_AppCompat_RatingBar_Small=0x7f1001bf;
-    public static final int Widget_AppCompat_SearchView=0x7f1001c0;
-    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f1001c1;
-    public static final int Widget_AppCompat_SeekBar=0x7f1001c2;
-    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f1001c3;
-    public static final int Widget_AppCompat_Spinner=0x7f1001c4;
-    public static final int Widget_AppCompat_Spinner_DropDown=0x7f1001c5;
-    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f1001c6;
-    public static final int Widget_AppCompat_Spinner_Underlined=0x7f1001c7;
-    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f1001c8;
-    public static final int Widget_AppCompat_Toolbar=0x7f1001c9;
-    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f1001ca;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f1001cb;
-    public static final int Widget_Compat_NotificationActionText=0x7f1001cc;
-    public static final int Widget_Design_AppBarLayout=0x7f1001cd;
-    public static final int Widget_Design_BottomNavigationView=0x7f1001ce;
-    public static final int Widget_Design_BottomSheet_Modal=0x7f1001cf;
-    public static final int Widget_Design_CollapsingToolbar=0x7f1001d0;
-    public static final int Widget_Design_FloatingActionButton=0x7f1001d1;
-    public static final int Widget_Design_NavigationView=0x7f1001d2;
-    public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f1001d3;
-    public static final int Widget_Design_Snackbar=0x7f1001d4;
-    public static final int Widget_Design_TabLayout=0x7f1001d5;
-    public static final int Widget_Design_TextInputLayout=0x7f1001d6;
-    public static final int Widget_MaterialComponents_BottomAppBar=0x7f1001d7;
-    public static final int Widget_MaterialComponents_BottomAppBar_Colored=0x7f1001d8;
-    public static final int Widget_MaterialComponents_BottomNavigationView=0x7f1001d9;
-    public static final int Widget_MaterialComponents_BottomNavigationView_Colored=0x7f1001da;
-    public static final int Widget_MaterialComponents_BottomSheet_Modal=0x7f1001db;
-    public static final int Widget_MaterialComponents_Button=0x7f1001dc;
-    public static final int Widget_MaterialComponents_Button_Icon=0x7f1001dd;
-    public static final int Widget_MaterialComponents_Button_OutlinedButton=0x7f1001de;
-    public static final int Widget_MaterialComponents_Button_OutlinedButton_Icon=0x7f1001df;
-    public static final int Widget_MaterialComponents_Button_TextButton=0x7f1001e0;
-    public static final int Widget_MaterialComponents_Button_TextButton_Dialog=0x7f1001e1;
-    public static final int Widget_MaterialComponents_Button_TextButton_Dialog_Icon=0x7f1001e2;
-    public static final int Widget_MaterialComponents_Button_TextButton_Icon=0x7f1001e3;
-    public static final int Widget_MaterialComponents_Button_UnelevatedButton=0x7f1001e4;
-    public static final int Widget_MaterialComponents_Button_UnelevatedButton_Icon=0x7f1001e5;
-    public static final int Widget_MaterialComponents_CardView=0x7f1001e6;
-    public static final int Widget_MaterialComponents_Chip_Action=0x7f1001e7;
-    public static final int Widget_MaterialComponents_Chip_Choice=0x7f1001e8;
-    public static final int Widget_MaterialComponents_Chip_Entry=0x7f1001e9;
-    public static final int Widget_MaterialComponents_Chip_Filter=0x7f1001ea;
-    public static final int Widget_MaterialComponents_ChipGroup=0x7f1001eb;
-    public static final int Widget_MaterialComponents_FloatingActionButton=0x7f1001ec;
-    public static final int Widget_MaterialComponents_NavigationView=0x7f1001ed;
-    public static final int Widget_MaterialComponents_Snackbar=0x7f1001ee;
-    public static final int Widget_MaterialComponents_Snackbar_FullWidth=0x7f1001ef;
-    public static final int Widget_MaterialComponents_TabLayout=0x7f1001f0;
-    public static final int Widget_MaterialComponents_TabLayout_Colored=0x7f1001f1;
-    public static final int Widget_MaterialComponents_TextInputEditText_FilledBox=0x7f1001f2;
-    public static final int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense=0x7f1001f3;
-    public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox=0x7f1001f4;
-    public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense=0x7f1001f5;
-    public static final int Widget_MaterialComponents_TextInputLayout_FilledBox=0x7f1001f6;
-    public static final int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense=0x7f1001f7;
-    public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox=0x7f1001f8;
-    public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense=0x7f1001f9;
-    public static final int Widget_MaterialComponents_Toolbar=0x7f1001fa;
-    public static final int Widget_Support_CoordinatorLayout=0x7f1001fb;
-    public static final int activityAnimation=0x7f1001fc;
-    public static final int tab_menu_item=0x7f1001fd;
+    public static final int Theme_ImagePreview=0x7f10015b;
+    public static final int Theme_MaterialComponents=0x7f10015c;
+    public static final int Theme_MaterialComponents_BottomSheetDialog=0x7f10015d;
+    public static final int Theme_MaterialComponents_Bridge=0x7f10015e;
+    public static final int Theme_MaterialComponents_CompactMenu=0x7f10015f;
+    public static final int Theme_MaterialComponents_Dialog=0x7f100160;
+    public static final int Theme_MaterialComponents_Dialog_Alert=0x7f100161;
+    public static final int Theme_MaterialComponents_Dialog_MinWidth=0x7f100162;
+    public static final int Theme_MaterialComponents_DialogWhenLarge=0x7f100163;
+    public static final int Theme_MaterialComponents_Light=0x7f100164;
+    public static final int Theme_MaterialComponents_Light_BottomSheetDialog=0x7f100165;
+    public static final int Theme_MaterialComponents_Light_Bridge=0x7f100166;
+    public static final int Theme_MaterialComponents_Light_DarkActionBar=0x7f100167;
+    public static final int Theme_MaterialComponents_Light_DarkActionBar_Bridge=0x7f100168;
+    public static final int Theme_MaterialComponents_Light_Dialog=0x7f100169;
+    public static final int Theme_MaterialComponents_Light_Dialog_Alert=0x7f10016a;
+    public static final int Theme_MaterialComponents_Light_Dialog_MinWidth=0x7f10016b;
+    public static final int Theme_MaterialComponents_Light_DialogWhenLarge=0x7f10016c;
+    public static final int Theme_MaterialComponents_Light_NoActionBar=0x7f10016d;
+    public static final int Theme_MaterialComponents_Light_NoActionBar_Bridge=0x7f10016e;
+    public static final int Theme_MaterialComponents_NoActionBar=0x7f10016f;
+    public static final int Theme_MaterialComponents_NoActionBar_Bridge=0x7f100170;
+    public static final int ThemeOverlay_AppCompat=0x7f100171;
+    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f100172;
+    public static final int ThemeOverlay_AppCompat_Dark=0x7f100173;
+    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f100174;
+    public static final int ThemeOverlay_AppCompat_Dialog=0x7f100175;
+    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f100176;
+    public static final int ThemeOverlay_AppCompat_Light=0x7f100177;
+    public static final int ThemeOverlay_MaterialComponents=0x7f100178;
+    public static final int ThemeOverlay_MaterialComponents_ActionBar=0x7f100179;
+    public static final int ThemeOverlay_MaterialComponents_Dark=0x7f10017a;
+    public static final int ThemeOverlay_MaterialComponents_Dark_ActionBar=0x7f10017b;
+    public static final int ThemeOverlay_MaterialComponents_Dialog=0x7f10017c;
+    public static final int ThemeOverlay_MaterialComponents_Dialog_Alert=0x7f10017d;
+    public static final int ThemeOverlay_MaterialComponents_Light=0x7f10017e;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText=0x7f10017f;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox=0x7f100180;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense=0x7f100181;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox=0x7f100182;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense=0x7f100183;
+    public static final int Widget_AppCompat_ActionBar=0x7f100184;
+    public static final int Widget_AppCompat_ActionBar_Solid=0x7f100185;
+    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f100186;
+    public static final int Widget_AppCompat_ActionBar_TabText=0x7f100187;
+    public static final int Widget_AppCompat_ActionBar_TabView=0x7f100188;
+    public static final int Widget_AppCompat_ActionButton=0x7f100189;
+    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f10018a;
+    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f10018b;
+    public static final int Widget_AppCompat_ActionMode=0x7f10018c;
+    public static final int Widget_AppCompat_ActivityChooserView=0x7f10018d;
+    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f10018e;
+    public static final int Widget_AppCompat_Button=0x7f10018f;
+    public static final int Widget_AppCompat_Button_Borderless=0x7f100190;
+    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f100191;
+    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f100192;
+    public static final int Widget_AppCompat_Button_Colored=0x7f100193;
+    public static final int Widget_AppCompat_Button_Small=0x7f100194;
+    public static final int Widget_AppCompat_ButtonBar=0x7f100195;
+    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f100196;
+    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f100197;
+    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f100198;
+    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f100199;
+    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f10019a;
+    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f10019b;
+    public static final int Widget_AppCompat_EditText=0x7f10019c;
+    public static final int Widget_AppCompat_ImageButton=0x7f10019d;
+    public static final int Widget_AppCompat_Light_ActionBar=0x7f10019e;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f10019f;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f1001a0;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f1001a1;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f1001a2;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f1001a3;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f1001a4;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f1001a5;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f1001a6;
+    public static final int Widget_AppCompat_Light_ActionButton=0x7f1001a7;
+    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f1001a8;
+    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f1001a9;
+    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f1001aa;
+    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f1001ab;
+    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f1001ac;
+    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f1001ad;
+    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f1001ae;
+    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f1001af;
+    public static final int Widget_AppCompat_Light_PopupMenu=0x7f1001b0;
+    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f1001b1;
+    public static final int Widget_AppCompat_Light_SearchView=0x7f1001b2;
+    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f1001b3;
+    public static final int Widget_AppCompat_ListMenuView=0x7f1001b4;
+    public static final int Widget_AppCompat_ListPopupWindow=0x7f1001b5;
+    public static final int Widget_AppCompat_ListView=0x7f1001b6;
+    public static final int Widget_AppCompat_ListView_DropDown=0x7f1001b7;
+    public static final int Widget_AppCompat_ListView_Menu=0x7f1001b8;
+    public static final int Widget_AppCompat_PopupMenu=0x7f1001b9;
+    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f1001ba;
+    public static final int Widget_AppCompat_PopupWindow=0x7f1001bb;
+    public static final int Widget_AppCompat_ProgressBar=0x7f1001bc;
+    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f1001bd;
+    public static final int Widget_AppCompat_RatingBar=0x7f1001be;
+    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f1001bf;
+    public static final int Widget_AppCompat_RatingBar_Small=0x7f1001c0;
+    public static final int Widget_AppCompat_SearchView=0x7f1001c1;
+    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f1001c2;
+    public static final int Widget_AppCompat_SeekBar=0x7f1001c3;
+    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f1001c4;
+    public static final int Widget_AppCompat_Spinner=0x7f1001c5;
+    public static final int Widget_AppCompat_Spinner_DropDown=0x7f1001c6;
+    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f1001c7;
+    public static final int Widget_AppCompat_Spinner_Underlined=0x7f1001c8;
+    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f1001c9;
+    public static final int Widget_AppCompat_Toolbar=0x7f1001ca;
+    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f1001cb;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f1001cc;
+    public static final int Widget_Compat_NotificationActionText=0x7f1001cd;
+    public static final int Widget_Design_AppBarLayout=0x7f1001ce;
+    public static final int Widget_Design_BottomNavigationView=0x7f1001cf;
+    public static final int Widget_Design_BottomSheet_Modal=0x7f1001d0;
+    public static final int Widget_Design_CollapsingToolbar=0x7f1001d1;
+    public static final int Widget_Design_FloatingActionButton=0x7f1001d2;
+    public static final int Widget_Design_NavigationView=0x7f1001d3;
+    public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f1001d4;
+    public static final int Widget_Design_Snackbar=0x7f1001d5;
+    public static final int Widget_Design_TabLayout=0x7f1001d6;
+    public static final int Widget_Design_TextInputLayout=0x7f1001d7;
+    public static final int Widget_MaterialComponents_BottomAppBar=0x7f1001d8;
+    public static final int Widget_MaterialComponents_BottomAppBar_Colored=0x7f1001d9;
+    public static final int Widget_MaterialComponents_BottomNavigationView=0x7f1001da;
+    public static final int Widget_MaterialComponents_BottomNavigationView_Colored=0x7f1001db;
+    public static final int Widget_MaterialComponents_BottomSheet_Modal=0x7f1001dc;
+    public static final int Widget_MaterialComponents_Button=0x7f1001dd;
+    public static final int Widget_MaterialComponents_Button_Icon=0x7f1001de;
+    public static final int Widget_MaterialComponents_Button_OutlinedButton=0x7f1001df;
+    public static final int Widget_MaterialComponents_Button_OutlinedButton_Icon=0x7f1001e0;
+    public static final int Widget_MaterialComponents_Button_TextButton=0x7f1001e1;
+    public static final int Widget_MaterialComponents_Button_TextButton_Dialog=0x7f1001e2;
+    public static final int Widget_MaterialComponents_Button_TextButton_Dialog_Icon=0x7f1001e3;
+    public static final int Widget_MaterialComponents_Button_TextButton_Icon=0x7f1001e4;
+    public static final int Widget_MaterialComponents_Button_UnelevatedButton=0x7f1001e5;
+    public static final int Widget_MaterialComponents_Button_UnelevatedButton_Icon=0x7f1001e6;
+    public static final int Widget_MaterialComponents_CardView=0x7f1001e7;
+    public static final int Widget_MaterialComponents_Chip_Action=0x7f1001e8;
+    public static final int Widget_MaterialComponents_Chip_Choice=0x7f1001e9;
+    public static final int Widget_MaterialComponents_Chip_Entry=0x7f1001ea;
+    public static final int Widget_MaterialComponents_Chip_Filter=0x7f1001eb;
+    public static final int Widget_MaterialComponents_ChipGroup=0x7f1001ec;
+    public static final int Widget_MaterialComponents_FloatingActionButton=0x7f1001ed;
+    public static final int Widget_MaterialComponents_NavigationView=0x7f1001ee;
+    public static final int Widget_MaterialComponents_Snackbar=0x7f1001ef;
+    public static final int Widget_MaterialComponents_Snackbar_FullWidth=0x7f1001f0;
+    public static final int Widget_MaterialComponents_TabLayout=0x7f1001f1;
+    public static final int Widget_MaterialComponents_TabLayout_Colored=0x7f1001f2;
+    public static final int Widget_MaterialComponents_TextInputEditText_FilledBox=0x7f1001f3;
+    public static final int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense=0x7f1001f4;
+    public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox=0x7f1001f5;
+    public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense=0x7f1001f6;
+    public static final int Widget_MaterialComponents_TextInputLayout_FilledBox=0x7f1001f7;
+    public static final int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense=0x7f1001f8;
+    public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox=0x7f1001f9;
+    public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense=0x7f1001fa;
+    public static final int Widget_MaterialComponents_Toolbar=0x7f1001fb;
+    public static final int Widget_Support_CoordinatorLayout=0x7f1001fc;
+    public static final int activityAnimation=0x7f1001fd;
+    public static final int tab_menu_item=0x7f1001fe;
   }
   public static final class styleable {
     /**
@@ -7462,39 +7044,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.erik.android.androidlean:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.erik.android.androidlean:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.erik.android.androidlean:backgroundStacked}</code></td><td>Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.erik.android.androidlean:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.erik.android.androidlean:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
-     * are present.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.erik.android.androidlean:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.erik.android.androidlean:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.erik.android.androidlean:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.erik.android.androidlean:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
-     * is present, such as the Up button.</td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.erik.android.androidlean:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.erik.android.androidlean:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.erik.android.androidlean:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.erik.android.androidlean:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.erik.android.androidlean:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.erik.android.androidlean:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.erik.android.androidlean:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.erik.android.androidlean:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.erik.android.androidlean:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.erik.android.androidlean:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.erik.android.androidlean:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.erik.android.androidlean:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.erik.android.androidlean:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.erik.android.androidlean:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.erik.android.androidlean:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.erik.android.androidlean:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.erik.android.androidlean:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #ActionBar_height com.erik.android.androidlean:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.erik.android.androidlean:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.erik.android.androidlean:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.erik.android.androidlean:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.erik.android.androidlean:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.erik.android.androidlean:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.erik.android.androidlean:homeLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #ActionBar_icon com.erik.android.androidlean:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.erik.android.androidlean:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.erik.android.androidlean:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
-     * system-provided items in the bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.erik.android.androidlean:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.erik.android.androidlean:navigationMode}</code></td><td>The type of navigation to use.</td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.erik.android.androidlean:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
-     * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.erik.android.androidlean:progressBarPadding}</code></td><td>Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.erik.android.androidlean:progressBarStyle}</code></td><td>Specifies a style resource to use for an embedded progress bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.erik.android.androidlean:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.erik.android.androidlean:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.erik.android.androidlean:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.erik.android.androidlean:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.erik.android.androidlean:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.erik.android.androidlean:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.erik.android.androidlean:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.erik.android.androidlean:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.erik.android.androidlean:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.erik.android.androidlean:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.erik.android.androidlean:subtitleTextStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #ActionBar_title com.erik.android.androidlean:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.erik.android.androidlean:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.erik.android.androidlean:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -7537,9 +7115,8 @@ public final class R {
       0x7f030299
     };
     /**
-     * <p>
-     * @attr description
-     * Specifies a background drawable for the action bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#background}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7550,9 +7127,8 @@ public final class R {
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>
-     * @attr description
-     * Specifies a background drawable for the bottom component of a split action bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundSplit}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7566,9 +7142,8 @@ public final class R {
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>
-     * @attr description
-     * Specifies a background drawable for a second stacked row of the action bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundStacked}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7582,10 +7157,8 @@ public final class R {
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetEnd}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7597,10 +7170,8 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar when actions from a menu
-     * are present. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetEndWithActions}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7612,10 +7183,8 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetLeft}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7627,10 +7196,8 @@ public final class R {
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetRight}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7642,10 +7209,8 @@ public final class R {
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetStart}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7657,10 +7222,8 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar when a navigation button
-     * is present, such as the Up button. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetStartWithNavigation}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7672,9 +7235,8 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>
-     * @attr description
-     * Specifies a layout for custom navigation. Overrides navigationMode.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#customNavigationLayout}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7685,9 +7247,8 @@ public final class R {
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>
-     * @attr description
-     * Options affecting how the action bar is displayed.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#displayOptions}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -7708,9 +7269,8 @@ public final class R {
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>
-     * @attr description
-     * Specifies the drawable used for item dividers.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#divider}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7721,9 +7281,8 @@ public final class R {
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#elevation}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7735,9 +7294,8 @@ public final class R {
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>
-     * @attr description
-     * Specifies a fixed height.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#height}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7749,9 +7307,8 @@ public final class R {
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>
-     * @attr description
-     * Set true to hide the action bar on a vertical nested scroll of content.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#hideOnContentScroll}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -7760,9 +7317,8 @@ public final class R {
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>
-     * @attr description
-     * Up navigation glyph
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#homeAsUpIndicator}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7773,9 +7329,8 @@ public final class R {
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>
-     * @attr description
-     * Specifies a layout to use for the "home" section of the action bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#homeLayout}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7786,9 +7341,8 @@ public final class R {
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>
-     * @attr description
-     * Specifies the drawable used for the application icon.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#icon}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7799,9 +7353,8 @@ public final class R {
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>
-     * @attr description
-     * Specifies a style resource to use for an indeterminate progress spinner.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#indeterminateProgressStyle}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7812,10 +7365,8 @@ public final class R {
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>
-     * @attr description
-     * Specifies padding that should be applied to the left and right sides of
-     * system-provided items in the bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#itemPadding}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7827,9 +7378,8 @@ public final class R {
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>
-     * @attr description
-     * Specifies the drawable used for the application logo.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#logo}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7840,9 +7390,8 @@ public final class R {
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>
-     * @attr description
-     * The type of navigation to use.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#navigationMode}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -7850,19 +7399,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>listMode</td><td>1</td><td>The action bar will use a selection list for navigation.</td></tr>
-     * <tr><td>normal</td><td>0</td><td>Normal static title text</td></tr>
-     * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
+     * <tr><td>listMode</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>
-     * @attr description
-     * Reference to a theme that should be used to inflate popups
-     * shown by widgets in the action bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#popupTheme}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7873,9 +7420,8 @@ public final class R {
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>
-     * @attr description
-     * Specifies the horizontal padding on either end for an embedded progress bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#progressBarPadding}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7887,9 +7433,8 @@ public final class R {
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>
-     * @attr description
-     * Specifies a style resource to use for an embedded progress bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#progressBarStyle}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7900,9 +7445,8 @@ public final class R {
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>
-     * @attr description
-     * Specifies subtitle text used for navigationMode="normal"
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#subtitle}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -7911,9 +7455,8 @@ public final class R {
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>
-     * @attr description
-     * Specifies a style to use for subtitle text.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#subtitleTextStyle}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7924,9 +7467,8 @@ public final class R {
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>
-     * @attr description
-     * Specifies title text used for navigationMode="normal"
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#title}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -7935,9 +7477,8 @@ public final class R {
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>
-     * @attr description
-     * Specifies a style to use for title text.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleTextStyle}
+     * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8026,12 +7567,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.erik.android.androidlean:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.erik.android.androidlean:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.erik.android.androidlean:closeItemLayout}</code></td><td>Specifies a layout to use for the "close" item at the starting edge.</td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.erik.android.androidlean:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.erik.android.androidlean:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.erik.android.androidlean:closeItemLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #ActionMode_height com.erik.android.androidlean:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.erik.android.androidlean:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.erik.android.androidlean:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.erik.android.androidlean:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.erik.android.androidlean:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -8045,9 +7586,8 @@ public final class R {
       0x7f030246, 0x7f030299
     };
     /**
-     * <p>
-     * @attr description
-     * Specifies a background for the action mode bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#background}
+     * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8058,9 +7598,8 @@ public final class R {
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>
-     * @attr description
-     * Specifies a background for the split action mode bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundSplit}
+     * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8074,9 +7613,8 @@ public final class R {
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>
-     * @attr description
-     * Specifies a layout to use for the "close" item at the starting edge.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#closeItemLayout}
+     * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8087,9 +7625,8 @@ public final class R {
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>
-     * @attr description
-     * Specifies a fixed height for the action mode bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#height}
+     * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8101,9 +7638,8 @@ public final class R {
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>
-     * @attr description
-     * Specifies a style to use for subtitle text.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#subtitleTextStyle}
+     * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8114,9 +7650,8 @@ public final class R {
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>
-     * @attr description
-     * Specifies a style to use for title text.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleTextStyle}
+     * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8133,8 +7668,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.erik.android.androidlean:expandActivityOverflowButtonDrawable}</code></td><td>The drawable to show in the button for expanding the activities overflow popup.</td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.erik.android.androidlean:initialActivityCount}</code></td><td>The maximal number of items initially shown in the activity list.</td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.erik.android.androidlean:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.erik.android.androidlean:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -8143,13 +7678,8 @@ public final class R {
       0x7f0300c9, 0x7f030111
     };
     /**
-     * <p>
-     * @attr description
-     * The drawable to show in the button for expanding the activities overflow popup.
-     * <strong>Note:</strong> Clients would like to set this drawable
-     * as a clue about the action the chosen activity will perform. For
-     * example, if share activity is to be chosen the drawable should
-     * give a clue that sharing is to be performed.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#expandActivityOverflowButtonDrawable}
+     * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8160,9 +7690,8 @@ public final class R {
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>
-     * @attr description
-     * The maximal number of items initially shown in the activity list.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#initialActivityCount}
+     * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -8320,11 +7849,8 @@ public final class R {
       0x0101030c, 0x0101030d
     };
     /**
-     * <p>
-     * @attr description
-     * Enables or disables dithering of the bitmap if the bitmap does not have the
-     * same pixel configuration as the screen (for instance: a ARGB 8888 bitmap with
-     * an RGB 565 screen).
+     * <p>This symbol is the offset where the {@link android.R.attr#dither}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8333,9 +7859,8 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_dither=0;
     /**
-     * <p>
-     * @attr description
-     * Indicates whether the drawable should be initially visible.
+     * <p>This symbol is the offset where the {@link android.R.attr#visible}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8344,14 +7869,8 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_visible=1;
     /**
-     * <p>
-     * @attr description
-     * If true, allows the drawable's padding to change based on the
-     * current state that is selected.  If false, the padding will
-     * stay the same (based on the maximum padding of all the states).
-     * Enabling this feature requires that the owner of the drawable
-     * deal with performing layout when the state changes, which is
-     * often not supported.
+     * <p>This symbol is the offset where the {@link android.R.attr#variablePadding}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8360,12 +7879,8 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_variablePadding=2;
     /**
-     * <p>
-     * @attr description
-     * If true, the drawable's reported internal size will remain
-     * constant as the state changes; the size is the maximum of all
-     * of the states.  If false, the size will vary based on the
-     * current state.
+     * <p>This symbol is the offset where the {@link android.R.attr#constantSize}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8374,9 +7889,8 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_constantSize=3;
     /**
-     * <p>
-     * @attr description
-     * Amount of time (in milliseconds) to fade in a new state drawable.
+     * <p>This symbol is the offset where the {@link android.R.attr#enterFadeDuration}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -8384,9 +7898,8 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_enterFadeDuration=4;
     /**
-     * <p>
-     * @attr description
-     * Amount of time (in milliseconds) to fade out an old state drawable.
+     * <p>This symbol is the offset where the {@link android.R.attr#exitFadeDuration}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -8410,9 +7923,8 @@ public final class R {
       0x010100d0, 0x01010199
     };
     /**
-     * <p>
-     * @attr description
-     * Keyframe identifier for use in specifying transitions.
+     * <p>This symbol is the offset where the {@link android.R.attr#id}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableItem} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8423,10 +7935,8 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableItem_android_id=0;
     /**
-     * <p>
-     * @attr description
-     * Reference to a drawable resource to use for the frame.  If not
-     * given, the drawable must be defined by the first child tag.
+     * <p>This symbol is the offset where the {@link android.R.attr#drawable}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableItem} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8457,10 +7967,8 @@ public final class R {
       0x01010199, 0x01010449, 0x0101044a, 0x0101044b
     };
     /**
-     * <p>
-     * @attr description
-     * Reference to a animation drawable resource to use for the frame.  If not
-     * given, the animation drawable must be defined by the first child tag.
+     * <p>This symbol is the offset where the {@link android.R.attr#drawable}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8471,9 +7979,8 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableTransition_android_drawable=0;
     /**
-     * <p>
-     * @attr description
-     * Keyframe identifier for the ending state.
+     * <p>This symbol is the offset where the {@link android.R.attr#toId}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8484,9 +7991,8 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableTransition_android_toId=1;
     /**
-     * <p>
-     * @attr description
-     * Keyframe identifier for the starting state.
+     * <p>This symbol is the offset where the {@link android.R.attr#fromId}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8497,9 +8003,8 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableTransition_android_fromId=2;
     /**
-     * <p>
-     * @attr description
-     * Whether this transition is reversible.
+     * <p>This symbol is the offset where the {@link android.R.attr#reversible}
+     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8517,7 +8022,7 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.erik.android.androidlean:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.erik.android.androidlean:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_expanded com.erik.android.androidlean:expanded}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.erik.android.androidlean:liftOnScroll}</code></td><td></td></tr>
      * </table>
@@ -8568,9 +8073,8 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#elevation}
+     * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8718,9 +8222,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.erik.android.androidlean:srcCompat}</code></td><td>Sets a drawable as the content of this ImageView.</td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.erik.android.androidlean:tint}</code></td><td>Tint to apply to the image source.</td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.erik.android.androidlean:tintMode}</code></td><td>Blending mode used to apply the image source tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.erik.android.androidlean:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.erik.android.androidlean:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.erik.android.androidlean:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -8746,10 +8250,8 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>
-     * @attr description
-     * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
-     * when running on older versions of the platform.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#srcCompat}
+     * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8760,9 +8262,8 @@ public final class R {
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the image source.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#tint}
+     * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -8772,9 +8273,8 @@ public final class R {
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the image source tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#tintMode}
+     * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8782,17 +8282,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:tintMode
@@ -8806,9 +8301,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.erik.android.androidlean:tickMark}</code></td><td>Drawable displayed at each progress position on a seekbar.</td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.erik.android.androidlean:tickMarkTint}</code></td><td>Tint to apply to the tick mark drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.erik.android.androidlean:tickMarkTintMode}</code></td><td>Blending mode used to apply the tick mark tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.erik.android.androidlean:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.erik.android.androidlean:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.erik.android.androidlean:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -8831,9 +8326,8 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>
-     * @attr description
-     * Drawable displayed at each progress position on a seekbar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#tickMark}
+     * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8844,9 +8338,8 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the tick mark drawable.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#tickMarkTint}
+     * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -8856,9 +8349,8 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the tick mark tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#tickMarkTintMode}
+     * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8866,17 +8358,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:tickMarkTintMode
@@ -9019,18 +8506,16 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.erik.android.androidlean:autoSizeMaxTextSize}</code></td><td>The maximum text size constraint to be used when auto-sizing text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.erik.android.androidlean:autoSizeMinTextSize}</code></td><td>The minimum text size constraint to be used when auto-sizing text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.erik.android.androidlean:autoSizePresetSizes}</code></td><td>Resource array of dimensions to be used in conjunction with
-     * <code>autoSizeTextType</code> set to <code>uniform</code>.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.erik.android.androidlean:autoSizeStepGranularity}</code></td><td>Specify the auto-size step size if <code>autoSizeTextType</code> is set to
-     * <code>uniform</code>.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.erik.android.androidlean:autoSizeTextType}</code></td><td>Specify the type of auto-size.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.erik.android.androidlean:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.erik.android.androidlean:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.erik.android.androidlean:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.erik.android.androidlean:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.erik.android.androidlean:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.erik.android.androidlean:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.erik.android.androidlean:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.erik.android.androidlean:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.erik.android.androidlean:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.erik.android.androidlean:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.erik.android.androidlean:firstBaselineToTopHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.erik.android.androidlean:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.erik.android.androidlean:lastBaselineToBottomHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.erik.android.androidlean:lineHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.erik.android.androidlean:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -9062,9 +8547,8 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>
-     * @attr description
-     * The maximum text size constraint to be used when auto-sizing text.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#autoSizeMaxTextSize}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9076,9 +8560,8 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>
-     * @attr description
-     * The minimum text size constraint to be used when auto-sizing text.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#autoSizeMinTextSize}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9090,11 +8573,8 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>
-     * @attr description
-     * Resource array of dimensions to be used in conjunction with
-     * <code>autoSizeTextType</code> set to <code>uniform</code>. Overrides
-     * <code>autoSizeStepGranularity</code> if set.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#autoSizePresetSizes}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9105,11 +8585,8 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>
-     * @attr description
-     * Specify the auto-size step size if <code>autoSizeTextType</code> is set to
-     * <code>uniform</code>. The default is 1px. Overwrites
-     * <code>autoSizePresetSizes</code> if set.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#autoSizeStepGranularity}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9121,10 +8598,8 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>
-     * @attr description
-     * Specify the type of auto-size. Note that this feature is not supported by EditText,
-     * works only for TextView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#autoSizeTextType}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -9132,19 +8607,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td>No auto-sizing (default).</td></tr>
-     * <tr><td>uniform</td><td>1</td><td>Uniform horizontal and vertical text size scaling to fit within the
-     * container.</td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>
-     * @attr description
-     * Distance from the top of the TextView to the first text baseline. If set, this
-     * overrides the value set for paddingTop.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#firstBaselineToTopHeight}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9156,9 +8628,8 @@ public final class R {
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=6;
     /**
-     * <p>
-     * @attr description
-     * The attribute for the font family.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontFamily}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -9167,10 +8638,8 @@ public final class R {
      */
     public static final int AppCompatTextView_fontFamily=7;
     /**
-     * <p>
-     * @attr description
-     * Distance from the bottom of the TextView to the last text baseline. If set, this
-     * overrides the value set for paddingBottom.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#lastBaselineToBottomHeight}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9182,10 +8651,8 @@ public final class R {
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
     /**
-     * <p>
-     * @attr description
-     * Explicit height between lines of text. If set, this will override the values set
-     * for lineSpacingExtra and lineSpacingMultiplier.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#lineHeight}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9197,9 +8664,8 @@ public final class R {
      */
     public static final int AppCompatTextView_lineHeight=9;
     /**
-     * <p>
-     * @attr description
-     * Present the text in ALL CAPS. This may use a small-caps form when available.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAllCaps}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9220,142 +8686,125 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.erik.android.androidlean:actionBarDivider}</code></td><td>Custom divider drawable to use for elements in the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.erik.android.androidlean:actionBarItemBackground}</code></td><td>Custom item state list drawable background for action bar items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.erik.android.androidlean:actionBarPopupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
-     * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.erik.android.androidlean:actionBarSize}</code></td><td>Size of the Action Bar, including the contextual
-     * bar used to present Action Modes.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.erik.android.androidlean:actionBarSplitStyle}</code></td><td>Reference to a style for the split Action Bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.erik.android.androidlean:actionBarStyle}</code></td><td>Reference to a style for the Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.erik.android.androidlean:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.erik.android.androidlean:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.erik.android.androidlean:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.erik.android.androidlean:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.erik.android.androidlean:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.erik.android.androidlean:actionBarStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.erik.android.androidlean:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.erik.android.androidlean:actionBarTabStyle}</code></td><td>Default style for tabs within an action bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.erik.android.androidlean:actionBarTabStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.erik.android.androidlean:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.erik.android.androidlean:actionBarTheme}</code></td><td>Reference to a theme that should be used to inflate the
-     * action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.erik.android.androidlean:actionBarWidgetTheme}</code></td><td>Reference to a theme that should be used to inflate widgets
-     * and layouts destined for the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.erik.android.androidlean:actionButtonStyle}</code></td><td>Default action button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.erik.android.androidlean:actionDropDownStyle}</code></td><td>Default ActionBar dropdown style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.erik.android.androidlean:actionMenuTextAppearance}</code></td><td>TextAppearance style that will be applied to text that
-     * appears within action menu items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.erik.android.androidlean:actionMenuTextColor}</code></td><td>Color for text that appears within action menu items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.erik.android.androidlean:actionModeBackground}</code></td><td>Background drawable to use for action mode UI</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.erik.android.androidlean:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.erik.android.androidlean:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.erik.android.androidlean:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.erik.android.androidlean:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.erik.android.androidlean:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.erik.android.androidlean:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.erik.android.androidlean:actionModeBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.erik.android.androidlean:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.erik.android.androidlean:actionModeCloseDrawable}</code></td><td>Drawable to use for the close action mode button</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.erik.android.androidlean:actionModeCopyDrawable}</code></td><td>Drawable to use for the Copy action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.erik.android.androidlean:actionModeCutDrawable}</code></td><td>Drawable to use for the Cut action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.erik.android.androidlean:actionModeFindDrawable}</code></td><td>Drawable to use for the Find action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.erik.android.androidlean:actionModePasteDrawable}</code></td><td>Drawable to use for the Paste action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.erik.android.androidlean:actionModePopupWindowStyle}</code></td><td>PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.erik.android.androidlean:actionModeSelectAllDrawable}</code></td><td>Drawable to use for the Select all action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.erik.android.androidlean:actionModeShareDrawable}</code></td><td>Drawable to use for the Share action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.erik.android.androidlean:actionModeSplitBackground}</code></td><td>Background drawable to use for action mode UI in the lower split bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.erik.android.androidlean:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.erik.android.androidlean:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.erik.android.androidlean:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.erik.android.androidlean:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.erik.android.androidlean:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.erik.android.androidlean:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.erik.android.androidlean:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.erik.android.androidlean:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.erik.android.androidlean:actionModeSplitBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.erik.android.androidlean:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.erik.android.androidlean:actionModeWebSearchDrawable}</code></td><td>Drawable to use for the Web Search action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.erik.android.androidlean:actionModeWebSearchDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.erik.android.androidlean:actionOverflowButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.erik.android.androidlean:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.erik.android.androidlean:activityChooserViewStyle}</code></td><td>Default ActivityChooserView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.erik.android.androidlean:activityChooserViewStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.erik.android.androidlean:alertDialogButtonGroupStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.erik.android.androidlean:alertDialogCenterButtons}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.erik.android.androidlean:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.erik.android.androidlean:alertDialogTheme}</code></td><td>Theme to use for alert dialogs spawned from this theme.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.erik.android.androidlean:autoCompleteTextViewStyle}</code></td><td>Default AutoCompleteTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.erik.android.androidlean:borderlessButtonStyle}</code></td><td>Style for buttons without an explicit border, often used in groups.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.erik.android.androidlean:buttonBarButtonStyle}</code></td><td>Style for buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.erik.android.androidlean:buttonBarNegativeButtonStyle}</code></td><td>Style for the "negative" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.erik.android.androidlean:buttonBarNeutralButtonStyle}</code></td><td>Style for the "neutral" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.erik.android.androidlean:buttonBarPositiveButtonStyle}</code></td><td>Style for the "positive" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.erik.android.androidlean:buttonBarStyle}</code></td><td>Style for button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.erik.android.androidlean:buttonStyle}</code></td><td>Normal Button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.erik.android.androidlean:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.erik.android.androidlean:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.erik.android.androidlean:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.erik.android.androidlean:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.erik.android.androidlean:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.erik.android.androidlean:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.erik.android.androidlean:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.erik.android.androidlean:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.erik.android.androidlean:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.erik.android.androidlean:colorError}</code></td><td>Color used for error states and things that need to be drawn to
-     * the user's attention.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.erik.android.androidlean:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.erik.android.androidlean:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.erik.android.androidlean:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.erik.android.androidlean:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.erik.android.androidlean:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.erik.android.androidlean:dialogPreferredPadding}</code></td><td>Preferred padding for dialog content.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.erik.android.androidlean:dialogTheme}</code></td><td>Theme to use for dialogs spawned from this theme.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.erik.android.androidlean:dividerHorizontal}</code></td><td>A drawable that may be used as a horizontal divider between visual elements.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.erik.android.androidlean:dividerVertical}</code></td><td>A drawable that may be used as a vertical divider between visual elements.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.erik.android.androidlean:dropDownListViewStyle}</code></td><td>ListPopupWindow compatibility</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.erik.android.androidlean:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.erik.android.androidlean:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.erik.android.androidlean:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.erik.android.androidlean:editTextStyle}</code></td><td>Default EditText style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.erik.android.androidlean:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.erik.android.androidlean:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.erik.android.androidlean:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.erik.android.androidlean:listDividerAlertDialog}</code></td><td>The list divider used in alert dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.erik.android.androidlean:listMenuViewStyle}</code></td><td>Default menu-style ListView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.erik.android.androidlean:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.erik.android.androidlean:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.erik.android.androidlean:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.erik.android.androidlean:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.erik.android.androidlean:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.erik.android.androidlean:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.erik.android.androidlean:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.erik.android.androidlean:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.erik.android.androidlean:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.erik.android.androidlean:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.erik.android.androidlean:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.erik.android.androidlean:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.erik.android.androidlean:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.erik.android.androidlean:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.erik.android.androidlean:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.erik.android.androidlean:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.erik.android.androidlean:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.erik.android.androidlean:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.erik.android.androidlean:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.erik.android.androidlean:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.erik.android.androidlean:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.erik.android.androidlean:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.erik.android.androidlean:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.erik.android.androidlean:dialogCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.erik.android.androidlean:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.erik.android.androidlean:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.erik.android.androidlean:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.erik.android.androidlean:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.erik.android.androidlean:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.erik.android.androidlean:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.erik.android.androidlean:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.erik.android.androidlean:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.erik.android.androidlean:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.erik.android.androidlean:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.erik.android.androidlean:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.erik.android.androidlean:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.erik.android.androidlean:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.erik.android.androidlean:listMenuViewStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.erik.android.androidlean:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.erik.android.androidlean:listPreferredItemHeight}</code></td><td>The preferred list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.erik.android.androidlean:listPreferredItemHeightLarge}</code></td><td>A larger, more robust list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.erik.android.androidlean:listPreferredItemHeightSmall}</code></td><td>A smaller, sleeker list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.erik.android.androidlean:listPreferredItemPaddingLeft}</code></td><td>The preferred padding along the left edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.erik.android.androidlean:listPreferredItemPaddingRight}</code></td><td>The preferred padding along the right edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.erik.android.androidlean:panelBackground}</code></td><td>The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.erik.android.androidlean:panelMenuListTheme}</code></td><td>Default Panel Menu style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.erik.android.androidlean:panelMenuListWidth}</code></td><td>Default Panel Menu width.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.erik.android.androidlean:popupMenuStyle}</code></td><td>Default PopupMenu style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.erik.android.androidlean:popupWindowStyle}</code></td><td>Default PopupWindow style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.erik.android.androidlean:radioButtonStyle}</code></td><td>Default RadioButton style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.erik.android.androidlean:ratingBarStyle}</code></td><td>Default RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.erik.android.androidlean:ratingBarStyleIndicator}</code></td><td>Indicator RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.erik.android.androidlean:ratingBarStyleSmall}</code></td><td>Small indicator RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.erik.android.androidlean:searchViewStyle}</code></td><td>Style for the search query widget.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.erik.android.androidlean:seekBarStyle}</code></td><td>Default SeekBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.erik.android.androidlean:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
-     * that should react to pressed and focus states, but that do not
-     * have a clear visual border along the edges.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.erik.android.androidlean:selectableItemBackgroundBorderless}</code></td><td>Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.erik.android.androidlean:spinnerDropDownItemStyle}</code></td><td>Default Spinner style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.erik.android.androidlean:spinnerStyle}</code></td><td>Default Spinner style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.erik.android.androidlean:switchStyle}</code></td><td>Default style for the Switch widget.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.erik.android.androidlean:textAppearanceLargePopupMenu}</code></td><td>Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.erik.android.androidlean:textAppearanceListItem}</code></td><td>The preferred TextAppearance for the primary text of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.erik.android.androidlean:textAppearanceListItemSecondary}</code></td><td>The preferred TextAppearance for the secondary text of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.erik.android.androidlean:textAppearanceListItemSmall}</code></td><td>The preferred TextAppearance for the primary text of small list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.erik.android.androidlean:textAppearancePopupMenuHeader}</code></td><td>Text color, typeface, size, and style for header text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.erik.android.androidlean:textAppearanceSearchResultSubtitle}</code></td><td>Text color, typeface, size, and style for system search result subtitle.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.erik.android.androidlean:textAppearanceSearchResultTitle}</code></td><td>Text color, typeface, size, and style for system search result title.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.erik.android.androidlean:textAppearanceSmallPopupMenu}</code></td><td>Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.erik.android.androidlean:textColorAlertDialogListItem}</code></td><td>Color of list item text in alert dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.erik.android.androidlean:textColorSearchUrl}</code></td><td>Text color for urls in search suggestions, used by things like global search</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.erik.android.androidlean:toolbarNavigationButtonStyle}</code></td><td>Default Toolar NavigationButtonStyle</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.erik.android.androidlean:toolbarStyle}</code></td><td>Default Toolbar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.erik.android.androidlean:tooltipForegroundColor}</code></td><td>Foreground color to use for tooltips</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.erik.android.androidlean:tooltipFrameBackground}</code></td><td>Background to use for tooltips</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.erik.android.androidlean:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.erik.android.androidlean:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.erik.android.androidlean:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.erik.android.androidlean:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.erik.android.androidlean:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.erik.android.androidlean:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.erik.android.androidlean:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.erik.android.androidlean:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.erik.android.androidlean:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.erik.android.androidlean:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.erik.android.androidlean:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.erik.android.androidlean:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.erik.android.androidlean:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.erik.android.androidlean:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.erik.android.androidlean:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.erik.android.androidlean:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.erik.android.androidlean:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.erik.android.androidlean:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.erik.android.androidlean:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.erik.android.androidlean:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.erik.android.androidlean:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.erik.android.androidlean:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.erik.android.androidlean:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.erik.android.androidlean:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.erik.android.androidlean:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.erik.android.androidlean:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.erik.android.androidlean:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.erik.android.androidlean:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.erik.android.androidlean:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.erik.android.androidlean:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.erik.android.androidlean:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.erik.android.androidlean:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.erik.android.androidlean:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.erik.android.androidlean:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.erik.android.androidlean:tooltipFrameBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.erik.android.androidlean:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.erik.android.androidlean:windowActionBar}</code></td><td>Flag indicating whether this window should have an Action Bar
-     * in place of the usual title bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.erik.android.androidlean:windowActionBarOverlay}</code></td><td>Flag indicating whether this window's Action Bar should overlay
-     * application content.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.erik.android.androidlean:windowActionModeOverlay}</code></td><td>Flag indicating whether action modes should overlay window content
-     * when there is not reserved space for their UI (such as an Action Bar).</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.erik.android.androidlean:windowFixedHeightMajor}</code></td><td>A fixed height for the window along the major axis of the screen,
-     * that is, when in portrait.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.erik.android.androidlean:windowFixedHeightMinor}</code></td><td>A fixed height for the window along the minor axis of the screen,
-     * that is, when in landscape.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.erik.android.androidlean:windowFixedWidthMajor}</code></td><td>A fixed width for the window along the major axis of the screen,
-     * that is, when in landscape.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.erik.android.androidlean:windowFixedWidthMinor}</code></td><td>A fixed width for the window along the minor axis of the screen,
-     * that is, when in portrait.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.erik.android.androidlean:windowMinWidthMajor}</code></td><td>The minimum width the window is allowed to be, along the major
-     * axis of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.erik.android.androidlean:windowMinWidthMinor}</code></td><td>The minimum width the window is allowed to be, along the minor
-     * axis of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.erik.android.androidlean:windowNoTitle}</code></td><td>Flag indicating whether there should be no title on this window.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.erik.android.androidlean:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.erik.android.androidlean:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.erik.android.androidlean:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.erik.android.androidlean:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.erik.android.androidlean:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.erik.android.androidlean:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.erik.android.androidlean:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.erik.android.androidlean:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.erik.android.androidlean:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.erik.android.androidlean:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -9535,9 +8984,8 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>
-     * @attr description
-     * Custom divider drawable to use for elements in the action bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionBarDivider}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9548,9 +8996,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>
-     * @attr description
-     * Custom item state list drawable background for action bar items.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionBarItemBackground}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9561,10 +9008,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>
-     * @attr description
-     * Reference to a theme that should be used to inflate popups
-     * shown by widgets in the action bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionBarPopupTheme}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9575,10 +9020,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>
-     * @attr description
-     * Size of the Action Bar, including the contextual
-     * bar used to present Action Modes.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionBarSize}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9598,12 +9041,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>
-     * @attr description
-     * Reference to a style for the split Action Bar. This style
-     * controls the split component that holds the menu/action
-     * buttons. actionBarStyle is still used for the primary
-     * bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionBarSplitStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9614,9 +9053,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>
-     * @attr description
-     * Reference to a style for the Action Bar
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionBarStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9639,9 +9077,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>
-     * @attr description
-     * Default style for tabs within an action bar
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionBarTabStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9664,11 +9101,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>
-     * @attr description
-     * Reference to a theme that should be used to inflate the
-     * action bar. This will be inherited by any widget inflated
-     * into the action bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionBarTheme}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9679,15 +9113,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>
-     * @attr description
-     * Reference to a theme that should be used to inflate widgets
-     * and layouts destined for the action bar. Most of the time
-     * this will be a reference to the current theme, but when
-     * the action bar has a significantly different contrast
-     * profile than the rest of the activity the difference
-     * can become important. If this is set to @null the current
-     * theme will be used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionBarWidgetTheme}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9698,9 +9125,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>
-     * @attr description
-     * Default action button style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionButtonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9711,9 +9137,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>
-     * @attr description
-     * Default ActionBar dropdown style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionDropDownStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9724,10 +9149,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>
-     * @attr description
-     * TextAppearance style that will be applied to text that
-     * appears within action menu items.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionMenuTextAppearance}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9738,9 +9161,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>
-     * @attr description
-     * Color for text that appears within action menu items.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionMenuTextColor}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9754,9 +9176,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>
-     * @attr description
-     * Background drawable to use for action mode UI
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModeBackground}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9779,9 +9200,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use for the close action mode button
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModeCloseDrawable}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9792,9 +9212,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use for the Copy action button in Contextual Action Bar
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModeCopyDrawable}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9805,9 +9224,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use for the Cut action button in Contextual Action Bar
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModeCutDrawable}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9818,9 +9236,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use for the Find action button in WebView selection action modes
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModeFindDrawable}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9831,9 +9248,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use for the Paste action button in Contextual Action Bar
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModePasteDrawable}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9844,9 +9260,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>
-     * @attr description
-     * PopupWindow style to use for action modes when showing as a window overlay.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModePopupWindowStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9857,9 +9272,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use for the Select all action button in Contextual Action Bar
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModeSelectAllDrawable}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9870,9 +9284,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use for the Share action button in WebView selection action modes
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModeShareDrawable}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9883,9 +9296,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>
-     * @attr description
-     * Background drawable to use for action mode UI in the lower split bar
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModeSplitBackground}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9908,9 +9320,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use for the Web Search action button in WebView selection action modes
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionModeWebSearchDrawable}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9945,9 +9356,8 @@ public final class R {
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>
-     * @attr description
-     * Default ActivityChooserView style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#activityChooserViewStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9992,9 +9402,8 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>
-     * @attr description
-     * Theme to use for alert dialogs spawned from this theme.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#alertDialogTheme}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10005,9 +9414,8 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>
-     * @attr description
-     * Default AutoCompleteTextView style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#autoCompleteTextViewStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10018,9 +9426,8 @@ public final class R {
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>
-     * @attr description
-     * Style for buttons without an explicit border, often used in groups.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#borderlessButtonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10031,9 +9438,8 @@ public final class R {
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>
-     * @attr description
-     * Style for buttons within button bars
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#buttonBarButtonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10044,9 +9450,8 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>
-     * @attr description
-     * Style for the "negative" buttons within button bars
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#buttonBarNegativeButtonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10057,9 +9462,8 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>
-     * @attr description
-     * Style for the "neutral" buttons within button bars
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#buttonBarNeutralButtonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10070,9 +9474,8 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>
-     * @attr description
-     * Style for the "positive" buttons within button bars
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#buttonBarPositiveButtonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10083,9 +9486,8 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>
-     * @attr description
-     * Style for button bars
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#buttonBarStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10096,9 +9498,8 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>
-     * @attr description
-     * Normal Button style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#buttonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10109,9 +9510,8 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>
-     * @attr description
-     * Small Button style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#buttonStyleSmall}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10122,9 +9522,8 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>
-     * @attr description
-     * Default Checkbox style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#checkboxStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10135,9 +9534,8 @@ public final class R {
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>
-     * @attr description
-     * Default CheckedTextView style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#checkedTextViewStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10148,10 +9546,8 @@ public final class R {
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>
-     * @attr description
-     * Bright complement to the primary branding color. By default, this is the color applied
-     * to framework controls (via colorControlActivated).
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorAccent}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10161,9 +9557,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>
-     * @attr description
-     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorBackgroundFloating}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10173,9 +9568,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>
-     * @attr description
-     * The color applied to framework buttons in their normal state.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorButtonNormal}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10185,9 +9579,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>
-     * @attr description
-     * The color applied to framework controls in their activated (ex. checked) state.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorControlActivated}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10197,9 +9590,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>
-     * @attr description
-     * The color applied to framework control highlights (ex. ripples, list selectors).
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorControlHighlight}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10209,9 +9601,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>
-     * @attr description
-     * The color applied to framework controls in their normal state.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorControlNormal}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10221,10 +9612,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>
-     * @attr description
-     * Color used for error states and things that need to be drawn to
-     * the user's attention.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorError}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10238,10 +9627,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>
-     * @attr description
-     * The primary branding color for the app. By default, this is the color applied to the
-     * action bar background.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorPrimary}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10251,10 +9638,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>
-     * @attr description
-     * Dark variant of the primary branding color. By default, this is the color applied to
-     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorPrimaryDark}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10264,9 +9649,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>
-     * @attr description
-     * The color applied to framework switch thumbs in their normal state.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorSwitchThumbNormal}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10276,9 +9660,8 @@ public final class R {
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>
-     * @attr description
-     * The background used by framework controls.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#controlBackground}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10289,9 +9672,8 @@ public final class R {
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>
-     * @attr description
-     * Preferred corner radius of dialogs.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#dialogCornerRadius}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10303,9 +9685,8 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
-     * <p>
-     * @attr description
-     * Preferred padding for dialog content.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#dialogPreferredPadding}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10317,9 +9698,8 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
-     * <p>
-     * @attr description
-     * Theme to use for dialogs spawned from this theme.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#dialogTheme}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10330,9 +9710,8 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
-     * <p>
-     * @attr description
-     * A drawable that may be used as a horizontal divider between visual elements.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#dividerHorizontal}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10343,9 +9722,8 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
-     * <p>
-     * @attr description
-     * A drawable that may be used as a vertical divider between visual elements.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#dividerVertical}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10356,9 +9734,8 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
-     * <p>
-     * @attr description
-     * ListPopupWindow compatibility
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#dropDownListViewStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10369,9 +9746,8 @@ public final class R {
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
-     * <p>
-     * @attr description
-     * The preferred item height for dropdown lists.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#dropdownListPreferredItemHeight}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10383,9 +9759,8 @@ public final class R {
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
-     * <p>
-     * @attr description
-     * EditText background drawable.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#editTextBackground}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10396,9 +9771,8 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
-     * <p>
-     * @attr description
-     * EditText text foreground color.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#editTextColor}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10412,9 +9786,8 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
-     * <p>
-     * @attr description
-     * Default EditText style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#editTextStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10425,9 +9798,8 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
-     * <p>
-     * @attr description
-     * Specifies a drawable to use for the 'home as up' indicator.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#homeAsUpIndicator}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10438,9 +9810,8 @@ public final class R {
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
-     * <p>
-     * @attr description
-     * ImageButton background drawable.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#imageButtonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10451,9 +9822,8 @@ public final class R {
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
-     * <p>
-     * @attr description
-     * Drawable used as a background for selected list items.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#listChoiceBackgroundIndicator}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10464,9 +9834,8 @@ public final class R {
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
-     * <p>
-     * @attr description
-     * The list divider used in alert dialogs.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#listDividerAlertDialog}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10477,9 +9846,8 @@ public final class R {
      */
     public static final int AppCompatTheme_listDividerAlertDialog=72;
     /**
-     * <p>
-     * @attr description
-     * Default menu-style ListView style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#listMenuViewStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10502,9 +9870,8 @@ public final class R {
      */
     public static final int AppCompatTheme_listPopupWindowStyle=74;
     /**
-     * <p>
-     * @attr description
-     * The preferred list item height.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#listPreferredItemHeight}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10516,9 +9883,8 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeight=75;
     /**
-     * <p>
-     * @attr description
-     * A larger, more robust list item height.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#listPreferredItemHeightLarge}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10530,9 +9896,8 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
     /**
-     * <p>
-     * @attr description
-     * A smaller, sleeker list item height.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#listPreferredItemHeightSmall}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10544,9 +9909,8 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
     /**
-     * <p>
-     * @attr description
-     * The preferred padding along the left edge of list items.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#listPreferredItemPaddingLeft}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10558,9 +9922,8 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
     /**
-     * <p>
-     * @attr description
-     * The preferred padding along the right edge of list items.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#listPreferredItemPaddingRight}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10572,9 +9935,8 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
     /**
-     * <p>
-     * @attr description
-     * The background of a panel when it is inset from the left and right edges of the screen.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#panelBackground}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10585,9 +9947,8 @@ public final class R {
      */
     public static final int AppCompatTheme_panelBackground=80;
     /**
-     * <p>
-     * @attr description
-     * Default Panel Menu style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#panelMenuListTheme}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10598,9 +9959,8 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListTheme=81;
     /**
-     * <p>
-     * @attr description
-     * Default Panel Menu width.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#panelMenuListWidth}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10612,9 +9972,8 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListWidth=82;
     /**
-     * <p>
-     * @attr description
-     * Default PopupMenu style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#popupMenuStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10625,9 +9984,8 @@ public final class R {
      */
     public static final int AppCompatTheme_popupMenuStyle=83;
     /**
-     * <p>
-     * @attr description
-     * Default PopupWindow style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#popupWindowStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10638,9 +9996,8 @@ public final class R {
      */
     public static final int AppCompatTheme_popupWindowStyle=84;
     /**
-     * <p>
-     * @attr description
-     * Default RadioButton style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#radioButtonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10651,9 +10008,8 @@ public final class R {
      */
     public static final int AppCompatTheme_radioButtonStyle=85;
     /**
-     * <p>
-     * @attr description
-     * Default RatingBar style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#ratingBarStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10664,9 +10020,8 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyle=86;
     /**
-     * <p>
-     * @attr description
-     * Indicator RatingBar style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#ratingBarStyleIndicator}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10677,9 +10032,8 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=87;
     /**
-     * <p>
-     * @attr description
-     * Small indicator RatingBar style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#ratingBarStyleSmall}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10690,9 +10044,8 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=88;
     /**
-     * <p>
-     * @attr description
-     * Style for the search query widget.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#searchViewStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10703,9 +10056,8 @@ public final class R {
      */
     public static final int AppCompatTheme_searchViewStyle=89;
     /**
-     * <p>
-     * @attr description
-     * Default SeekBar style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#seekBarStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10716,11 +10068,8 @@ public final class R {
      */
     public static final int AppCompatTheme_seekBarStyle=90;
     /**
-     * <p>
-     * @attr description
-     * A style that may be applied to buttons or other selectable items
-     * that should react to pressed and focus states, but that do not
-     * have a clear visual border along the edges.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#selectableItemBackground}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10731,9 +10080,8 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackground=91;
     /**
-     * <p>
-     * @attr description
-     * Background drawable for borderless standalone items that need focus/pressed states.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#selectableItemBackgroundBorderless}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10744,9 +10092,8 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
     /**
-     * <p>
-     * @attr description
-     * Default Spinner style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#spinnerDropDownItemStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10757,9 +10104,8 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
     /**
-     * <p>
-     * @attr description
-     * Default Spinner style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#spinnerStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10770,9 +10116,8 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerStyle=94;
     /**
-     * <p>
-     * @attr description
-     * Default style for the Switch widget.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#switchStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10783,9 +10128,8 @@ public final class R {
      */
     public static final int AppCompatTheme_switchStyle=95;
     /**
-     * <p>
-     * @attr description
-     * Text color, typeface, size, and style for the text inside of a popup menu.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAppearanceLargePopupMenu}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10796,9 +10140,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
     /**
-     * <p>
-     * @attr description
-     * The preferred TextAppearance for the primary text of list items.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAppearanceListItem}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10809,9 +10152,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItem=97;
     /**
-     * <p>
-     * @attr description
-     * The preferred TextAppearance for the secondary text of list items.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAppearanceListItemSecondary}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10822,9 +10164,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
     /**
-     * <p>
-     * @attr description
-     * The preferred TextAppearance for the primary text of small list items.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAppearanceListItemSmall}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10835,9 +10176,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=99;
     /**
-     * <p>
-     * @attr description
-     * Text color, typeface, size, and style for header text inside of a popup menu.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAppearancePopupMenuHeader}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10848,9 +10188,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
     /**
-     * <p>
-     * @attr description
-     * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAppearanceSearchResultSubtitle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10861,9 +10200,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
     /**
-     * <p>
-     * @attr description
-     * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAppearanceSearchResultTitle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10874,9 +10212,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
     /**
-     * <p>
-     * @attr description
-     * Text color, typeface, size, and style for small text inside of a popup menu.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAppearanceSmallPopupMenu}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10887,9 +10224,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
     /**
-     * <p>
-     * @attr description
-     * Color of list item text in alert dialogs.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textColorAlertDialogListItem}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10903,9 +10239,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=104;
     /**
-     * <p>
-     * @attr description
-     * Text color for urls in search suggestions, used by things like global search
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textColorSearchUrl}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10919,9 +10254,8 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorSearchUrl=105;
     /**
-     * <p>
-     * @attr description
-     * Default Toolar NavigationButtonStyle
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#toolbarNavigationButtonStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10932,9 +10266,8 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
     /**
-     * <p>
-     * @attr description
-     * Default Toolbar style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#toolbarStyle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10945,9 +10278,8 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarStyle=107;
     /**
-     * <p>
-     * @attr description
-     * Foreground color to use for tooltips
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#tooltipForegroundColor}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10961,9 +10293,8 @@ public final class R {
      */
     public static final int AppCompatTheme_tooltipForegroundColor=108;
     /**
-     * <p>
-     * @attr description
-     * Background to use for tooltips
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#tooltipFrameBackground}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10984,10 +10315,8 @@ public final class R {
      */
     public static final int AppCompatTheme_viewInflaterClass=110;
     /**
-     * <p>
-     * @attr description
-     * Flag indicating whether this window should have an Action Bar
-     * in place of the usual title bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowActionBar}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10996,11 +10325,8 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBar=111;
     /**
-     * <p>
-     * @attr description
-     * Flag indicating whether this window's Action Bar should overlay
-     * application content. Does nothing if the window would not
-     * have an Action Bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowActionBarOverlay}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11009,10 +10335,8 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBarOverlay=112;
     /**
-     * <p>
-     * @attr description
-     * Flag indicating whether action modes should overlay window content
-     * when there is not reserved space for their UI (such as an Action Bar).
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowActionModeOverlay}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11021,11 +10345,8 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionModeOverlay=113;
     /**
-     * <p>
-     * @attr description
-     * A fixed height for the window along the major axis of the screen,
-     * that is, when in portrait. Can be either an absolute dimension
-     * or a fraction of the screen size in that dimension.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowFixedHeightMajor}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11041,11 +10362,8 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=114;
     /**
-     * <p>
-     * @attr description
-     * A fixed height for the window along the minor axis of the screen,
-     * that is, when in landscape. Can be either an absolute dimension
-     * or a fraction of the screen size in that dimension.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowFixedHeightMinor}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11061,11 +10379,8 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=115;
     /**
-     * <p>
-     * @attr description
-     * A fixed width for the window along the major axis of the screen,
-     * that is, when in landscape. Can be either an absolute dimension
-     * or a fraction of the screen size in that dimension.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowFixedWidthMajor}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11081,11 +10396,8 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=116;
     /**
-     * <p>
-     * @attr description
-     * A fixed width for the window along the minor axis of the screen,
-     * that is, when in portrait. Can be either an absolute dimension
-     * or a fraction of the screen size in that dimension.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowFixedWidthMinor}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11101,12 +10413,8 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=117;
     /**
-     * <p>
-     * @attr description
-     * The minimum width the window is allowed to be, along the major
-     * axis of the screen.  That is, when in landscape.  Can be either
-     * an absolute dimension or a fraction of the screen size in that
-     * dimension.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowMinWidthMajor}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11122,12 +10430,8 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMajor=118;
     /**
-     * <p>
-     * @attr description
-     * The minimum width the window is allowed to be, along the minor
-     * axis of the screen.  That is, when in portrait.  Can be either
-     * an absolute dimension or a fraction of the screen size in that
-     * dimension.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowMinWidthMinor}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11143,9 +10447,8 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMinor=119;
     /**
-     * <p>
-     * @attr description
-     * Flag indicating whether there should be no title on this window.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#windowNoTitle}
+     * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11192,8 +10495,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
@@ -11503,7 +10806,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BigImageView_failureImage com.erik.android.androidlean:failureImage}</code></td><td>A drawable to be be used as a failure image.</td></tr>
+     * <tr><td><code>{@link #BigImageView_failureImage com.erik.android.androidlean:failureImage}</code></td><td></td></tr>
      * <tr><td><code>{@link #BigImageView_failureImageInitScaleType com.erik.android.androidlean:failureImageInitScaleType}</code></td><td></td></tr>
      * <tr><td><code>{@link #BigImageView_initScaleType com.erik.android.androidlean:initScaleType}</code></td><td></td></tr>
      * <tr><td><code>{@link #BigImageView_optimizeDisplay com.erik.android.androidlean:optimizeDisplay}</code></td><td></td></tr>
@@ -11522,9 +10825,8 @@ public final class R {
       0x7f030266, 0x7f030287
     };
     /**
-     * <p>
-     * @attr description
-     * A drawable to be be used as a failure image.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#failureImage}
+     * attribute's value can be found in the {@link #BigImageView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11629,7 +10931,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.erik.android.androidlean:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.erik.android.androidlean:backgroundTint}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.erik.android.androidlean:fabAlignmentMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.erik.android.androidlean:fabCradleMargin}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.erik.android.androidlean:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
@@ -11648,9 +10950,8 @@ public final class R {
       0x7f0300d5, 0x7f0300f8
     };
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the background.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundTint}
+     * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11732,7 +11033,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.erik.android.androidlean:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.erik.android.androidlean:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemBackground com.erik.android.androidlean:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.erik.android.androidlean:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.erik.android.androidlean:itemIconSize}</code></td><td></td></tr>
@@ -11760,9 +11061,8 @@ public final class R {
       0x7f030122, 0x7f03017c
     };
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#elevation}
+     * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11963,8 +11263,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.erik.android.androidlean:allowStacking}</code></td><td>Whether to automatically stack the buttons when there is not
-     * enough space to lay them out side-by-side.</td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.erik.android.androidlean:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -11972,10 +11271,8 @@ public final class R {
       0x7f030029
     };
     /**
-     * <p>
-     * @attr description
-     * Whether to automatically stack the buttons when there is not
-     * enough space to lay them out side-by-side.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#allowStacking}
+     * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11992,17 +11289,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.erik.android.androidlean:cardBackgroundColor}</code></td><td>Background color for CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.erik.android.androidlean:cardCornerRadius}</code></td><td>Corner radius for CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.erik.android.androidlean:cardElevation}</code></td><td>Elevation for CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.erik.android.androidlean:cardMaxElevation}</code></td><td>Maximum Elevation for CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.erik.android.androidlean:cardPreventCornerOverlap}</code></td><td>Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.</td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.erik.android.androidlean:cardUseCompatPadding}</code></td><td>Add padding in API v21+ as well to have the same measurements with previous versions.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.erik.android.androidlean:contentPadding}</code></td><td>Inner padding between the edges of the Card and children of the CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.erik.android.androidlean:contentPaddingBottom}</code></td><td>Inner padding between the bottom edge of the Card and children of the CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.erik.android.androidlean:contentPaddingLeft}</code></td><td>Inner padding between the left edge of the Card and children of the CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.erik.android.androidlean:contentPaddingRight}</code></td><td>Inner padding between the right edge of the Card and children of the CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.erik.android.androidlean:contentPaddingTop}</code></td><td>Inner padding between the top edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.erik.android.androidlean:cardBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.erik.android.androidlean:cardCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.erik.android.androidlean:cardElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.erik.android.androidlean:cardMaxElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.erik.android.androidlean:cardPreventCornerOverlap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.erik.android.androidlean:cardUseCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.erik.android.androidlean:contentPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.erik.android.androidlean:contentPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.erik.android.androidlean:contentPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.erik.android.androidlean:contentPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.erik.android.androidlean:contentPaddingTop}</code></td><td></td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -12025,9 +11322,8 @@ public final class R {
       0x7f0300a8
     };
     /**
-     * <p>
-     * @attr description
-     * Workaround to read user defined minimum width
+     * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12039,9 +11335,8 @@ public final class R {
      */
     public static final int CardView_android_minWidth=0;
     /**
-     * <p>
-     * @attr description
-     * Workaround to read user defined minimum height
+     * <p>This symbol is the offset where the {@link android.R.attr#minHeight}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12053,9 +11348,8 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>
-     * @attr description
-     * Background color for CardView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#cardBackgroundColor}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12065,9 +11359,8 @@ public final class R {
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>
-     * @attr description
-     * Corner radius for CardView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#cardCornerRadius}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12079,9 +11372,8 @@ public final class R {
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>
-     * @attr description
-     * Elevation for CardView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#cardElevation}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12093,9 +11385,8 @@ public final class R {
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>
-     * @attr description
-     * Maximum Elevation for CardView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#cardMaxElevation}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12107,9 +11398,8 @@ public final class R {
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>
-     * @attr description
-     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#cardPreventCornerOverlap}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12118,9 +11408,8 @@ public final class R {
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>
-     * @attr description
-     * Add padding in API v21+ as well to have the same measurements with previous versions.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#cardUseCompatPadding}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12129,9 +11418,8 @@ public final class R {
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>
-     * @attr description
-     * Inner padding between the edges of the Card and children of the CardView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentPadding}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12143,9 +11431,8 @@ public final class R {
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>
-     * @attr description
-     * Inner padding between the bottom edge of the Card and children of the CardView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentPaddingBottom}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12157,9 +11444,8 @@ public final class R {
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>
-     * @attr description
-     * Inner padding between the left edge of the Card and children of the CardView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentPaddingLeft}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12171,9 +11457,8 @@ public final class R {
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>
-     * @attr description
-     * Inner padding between the right edge of the Card and children of the CardView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentPaddingRight}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12185,9 +11470,8 @@ public final class R {
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>
-     * @attr description
-     * Inner padding between the top edge of the Card and children of the CardView.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentPaddingTop}
+     * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12225,7 +11509,7 @@ public final class R {
      * <tr><td><code>{@link #Chip_chipStartPadding com.erik.android.androidlean:chipStartPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeColor com.erik.android.androidlean:chipStrokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeWidth com.erik.android.androidlean:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.erik.android.androidlean:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.erik.android.androidlean:closeIcon}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconEnabled com.erik.android.androidlean:closeIconEnabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconEndPadding com.erik.android.androidlean:closeIconEndPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconSize com.erik.android.androidlean:closeIconSize}</code></td><td></td></tr>
@@ -12527,9 +11811,8 @@ public final class R {
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>
-     * @attr description
-     * Close button icon
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#closeIcon}
+     * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12865,8 +12148,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
@@ -13134,8 +12417,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
@@ -13681,7 +12964,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.erik.android.androidlean:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.erik.android.androidlean:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -13691,9 +12974,8 @@ public final class R {
       0x010101a5, 0x0101031f, 0x7f03002a
     };
     /**
-     * <p>
-     * @attr description
-     * Base color for this state.
+     * <p>This symbol is the offset where the {@link android.R.attr#color}
+     * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13712,9 +12994,8 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>
-     * @attr description
-     * Alpha multiplier applied to the base color.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#alpha}
+     * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -13729,8 +13010,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.erik.android.androidlean:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.erik.android.androidlean:buttonTintMode}</code></td><td>Blending mode used to apply the button tint.</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.erik.android.androidlean:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.erik.android.androidlean:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -13752,9 +13033,8 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the button drawable.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#buttonTint}
+     * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13764,9 +13044,8 @@ public final class R {
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the button tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#buttonTintMode}
+     * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -13774,17 +13053,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:buttonTintMode
@@ -14799,7 +14073,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -16175,9 +15449,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.erik.android.androidlean:keylines}</code></td><td>A reference to an array of integers representing the
-     * locations of horizontal keylines in dp from the starting edge.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.erik.android.androidlean:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.erik.android.androidlean:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.erik.android.androidlean:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -16186,13 +15459,8 @@ public final class R {
       0x7f030121, 0x7f03023d
     };
     /**
-     * <p>
-     * @attr description
-     * A reference to an array of integers representing the
-     * locations of horizontal keylines in dp from the starting edge.
-     * Child views can refer to these keylines for alignment using
-     * layout_keyline="index" where index is a 0-based index into
-     * this array.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#keylines}
+     * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16203,9 +15471,8 @@ public final class R {
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>
-     * @attr description
-     * Drawable to display behind the status bar when the view is set to draw behind it.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#statusBarBackground}
+     * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16226,15 +15493,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.erik.android.androidlean:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.erik.android.androidlean:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
-     * within its parent's bounds.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.erik.android.androidlean:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
-     * for this child view.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.erik.android.androidlean:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.erik.android.androidlean:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
-     * dodge it.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.erik.android.androidlean:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.erik.android.androidlean:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.erik.android.androidlean:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.erik.android.androidlean:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.erik.android.androidlean:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.erik.android.androidlean:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.erik.android.androidlean:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -16278,9 +15542,8 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>
-     * @attr description
-     * The id of an anchor view that this view should position relative to.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#layout_anchor}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16291,10 +15554,8 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>
-     * @attr description
-     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
-     * within its parent's bounds.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#layout_anchorGravity}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -16302,36 +15563,28 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the horizontal gravity: a left gravity will clip the right
-     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
-     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
-     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>center</td><td>11</td><td></td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>fill</td><td>77</td><td></td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>
-     * @attr description
-     * The class name of a Behavior class defining special runtime behavior
-     * for this child view.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#layout_behavior}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16340,9 +15593,8 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>
-     * @attr description
-     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#layout_dodgeInsetEdges}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -16350,24 +15602,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
-     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
-     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
+     * <tr><td>all</td><td>77</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>
-     * @attr description
-     * Specifies how this view insets the CoordinatorLayout and make some other views
-     * dodge it.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#layout_insetEdge}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -16375,24 +15625,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>
-     * @attr description
-     * The index of a keyline this view should position relative to.
-     * android:layout_gravity will affect how the view aligns to the
-     * specified keyline.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#layout_keyline}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -16534,14 +15781,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.erik.android.androidlean:arrowHeadLength}</code></td><td>The length of the arrow head when formed to make an arrow</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.erik.android.androidlean:arrowShaftLength}</code></td><td>The length of the shaft when formed to make an arrow</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.erik.android.androidlean:barLength}</code></td><td>The length of the bars when they are parallel to each other</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.erik.android.androidlean:color}</code></td><td>The drawing color for the bars</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.erik.android.androidlean:drawableSize}</code></td><td>The total size of the drawable</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.erik.android.androidlean:gapBetweenBars}</code></td><td>The max gap between the bars when they are parallel to each other</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.erik.android.androidlean:spinBars}</code></td><td>Whether bars should rotate or not during transition</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.erik.android.androidlean:thickness}</code></td><td>The thickness (stroke size) for the bar paint</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.erik.android.androidlean:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.erik.android.androidlean:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.erik.android.androidlean:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.erik.android.androidlean:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.erik.android.androidlean:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.erik.android.androidlean:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.erik.android.androidlean:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.erik.android.androidlean:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -16557,9 +15804,8 @@ public final class R {
       0x7f0300bc, 0x7f0300ef, 0x7f0301f0, 0x7f030283
     };
     /**
-     * <p>
-     * @attr description
-     * The length of the arrow head when formed to make an arrow
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#arrowHeadLength}
+     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16571,9 +15817,8 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>
-     * @attr description
-     * The length of the shaft when formed to make an arrow
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#arrowShaftLength}
+     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16585,9 +15830,8 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>
-     * @attr description
-     * The length of the bars when they are parallel to each other
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#barLength}
+     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16599,9 +15843,8 @@ public final class R {
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>
-     * @attr description
-     * The drawing color for the bars
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#color}
+     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -16611,9 +15854,8 @@ public final class R {
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>
-     * @attr description
-     * The total size of the drawable
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#drawableSize}
+     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16625,9 +15867,8 @@ public final class R {
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>
-     * @attr description
-     * The max gap between the bars when they are parallel to each other
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#gapBetweenBars}
+     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16639,9 +15880,8 @@ public final class R {
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>
-     * @attr description
-     * Whether bars should rotate or not during transition
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#spinBars}
+     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16650,9 +15890,8 @@ public final class R {
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>
-     * @attr description
-     * The thickness (stroke size) for the bar paint
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#thickness}
+     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16670,10 +15909,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.erik.android.androidlean:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.erik.android.androidlean:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.erik.android.androidlean:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.erik.android.androidlean:backgroundTintMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_borderWidth com.erik.android.androidlean:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.erik.android.androidlean:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.erik.android.androidlean:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.erik.android.androidlean:fabCustomSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_fabSize com.erik.android.androidlean:fabSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.erik.android.androidlean:hideMotionSpec}</code></td><td></td></tr>
@@ -16705,9 +15944,8 @@ public final class R {
       0x7f0302a8
     };
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the background.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundTint}
+     * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -16717,9 +15955,8 @@ public final class R {
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the background tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundTintMode}
+     * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -16727,17 +15964,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:backgroundTintMode
@@ -16757,9 +15989,8 @@ public final class R {
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#elevation}
+     * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16958,12 +16189,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.erik.android.androidlean:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.erik.android.androidlean:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.erik.android.androidlean:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.erik.android.androidlean:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.erik.android.androidlean:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.erik.android.androidlean:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.erik.android.androidlean:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.erik.android.androidlean:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.erik.android.androidlean:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.erik.android.androidlean:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.erik.android.androidlean:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.erik.android.androidlean:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -16977,9 +16208,8 @@ public final class R {
       0x7f0300e9, 0x7f0300ea
     };
     /**
-     * <p>
-     * @attr description
-     * The authority of the Font Provider to be used for the request.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontProviderAuthority}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16988,13 +16218,8 @@ public final class R {
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>
-     * @attr description
-     * The sets of hashes for the certificates the provider should be signed with. This is
-     * used to verify the identity of the provider, and is only required if the provider is not
-     * part of the system image. This value may point to one list or a list of lists, where each
-     * individual list represents one collection of signature hashes. Refer to your font provider's
-     * documentation for these values.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontProviderCerts}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17005,15 +16230,8 @@ public final class R {
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>
-     * @attr description
-     * The strategy to be used when fetching font data from a font provider in XML layouts.
-     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
-     * choice of API between {@link
-     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
-     * {@link
-     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
-     * (async).
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontProviderFetchStrategy}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17021,25 +16239,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
-     * First, check the local cache, then if the requeted font is not cached, trigger a
-     * request the font and continue with layout inflation. Once the font fetch succeeds, the
-     * target text view will be refreshed with the downloaded font data. The
-     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
-     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
-     * First, check the local cache, then if the requested font is not cached, request the
-     * font from the provider and wait until it is finished.  You can change the length of
-     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
-     * default typeface will be used instead.</td></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>
-     * @attr description
-     * The length of the timeout during fetching.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontProviderFetchTimeout}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -17048,18 +16257,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
-     * timeout and wait until a reply is received from the font provider.</td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>
-     * @attr description
-     * The package for the Font Provider to be used for the request. This is used to verify
-     * the identity of the provider.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontProviderPackage}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17068,10 +16274,8 @@ public final class R {
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>
-     * @attr description
-     * The query to be sent over to the provider. Refer to your font provider's documentation
-     * on the format of this string.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontProviderQuery}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17091,11 +16295,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.erik.android.androidlean:font}</code></td><td>The reference to the font file to be used.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.erik.android.androidlean:fontStyle}</code></td><td>The style of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.erik.android.androidlean:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.erik.android.androidlean:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.erik.android.androidlean:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.erik.android.androidlean:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.erik.android.androidlean:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.erik.android.androidlean:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.erik.android.androidlean:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.erik.android.androidlean:ttcIndex}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -17135,9 +16339,8 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontWeight=1;
     /**
-     * <p>
-     * @attr description
-     * References to the framework attrs
+     * <p>This symbol is the offset where the {@link android.R.attr#fontStyle}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17172,10 +16375,8 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>
-     * @attr description
-     * The reference to the font file to be used. This should be a file in the res/font folder
-     * and should therefore have an R reference value. E.g. @font/myfont
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#font}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17186,11 +16387,8 @@ public final class R {
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>
-     * @attr description
-     * The style of the given font file. This will be used when the font is being loaded into
-     * the font stack and will override any style information in the font's header tables. If
-     * unspecified, the value in the font's header tables will be used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontStyle}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17206,12 +16404,8 @@ public final class R {
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>
-     * @attr description
-     * The variation settings to be applied to the font. The string should be in the following
-     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
-     * used, or the font used does not support variation settings, this attribute needs not be
-     * specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontVariationSettings}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17220,13 +16414,8 @@ public final class R {
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>
-     * @attr description
-     * The weight of the given font file. This will be used when the font is being loaded into
-     * the font stack and will override any weight information in the font's header tables. Must
-     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
-     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
-     * in the font's header tables will be used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontWeight}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -17234,10 +16423,8 @@ public final class R {
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>
-     * @attr description
-     * The index of the font in the tcc font file. If the font file referenced is not in the
-     * tcc format, this attribute needs not be specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#ttcIndex}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -17321,35 +16508,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_actualImageScaleType com.erik.android.androidlean:actualImageScaleType}</code></td><td>Scale type of the actual image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_backgroundImage com.erik.android.androidlean:backgroundImage}</code></td><td>A drawable or color to be used as a background.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_fadeDuration com.erik.android.androidlean:fadeDuration}</code></td><td>Fade duration in milliseconds.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImage com.erik.android.androidlean:failureImage}</code></td><td>A drawable to be be used as a failure image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImageScaleType com.erik.android.androidlean:failureImageScaleType}</code></td><td>Scale type of the failure image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_overlayImage com.erik.android.androidlean:overlayImage}</code></td><td>A drawable or color to be used as an overlay.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImage com.erik.android.androidlean:placeholderImage}</code></td><td>A drawable or color to be be used as a placeholder.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImageScaleType com.erik.android.androidlean:placeholderImageScaleType}</code></td><td>Scale type of the placeholder image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_pressedStateOverlayImage com.erik.android.androidlean:pressedStateOverlayImage}</code></td><td>A drawable or color to be used as a pressed-state-overlay</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarAutoRotateInterval com.erik.android.androidlean:progressBarAutoRotateInterval}</code></td><td>Progress bar Auto Rotate interval in milliseconds</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImage com.erik.android.androidlean:progressBarImage}</code></td><td>A drawable to be be used as a progress bar.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImageScaleType com.erik.android.androidlean:progressBarImageScaleType}</code></td><td>Scale type of the progress bar.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImage com.erik.android.androidlean:retryImage}</code></td><td>A drawable to be be used as a retry image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImageScaleType com.erik.android.androidlean:retryImageScaleType}</code></td><td>Scale type of the retry image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundAsCircle com.erik.android.androidlean:roundAsCircle}</code></td><td>Round as circle.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomEnd com.erik.android.androidlean:roundBottomEnd}</code></td><td>Round the bottom-end edge.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomLeft com.erik.android.androidlean:roundBottomLeft}</code></td><td>Round the bottom-left corner.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomRight com.erik.android.androidlean:roundBottomRight}</code></td><td>Round the bottom-right corner.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomStart com.erik.android.androidlean:roundBottomStart}</code></td><td>Round the bottom-start edge.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopEnd com.erik.android.androidlean:roundTopEnd}</code></td><td>Round the top-end edge.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopLeft com.erik.android.androidlean:roundTopLeft}</code></td><td>Round the top-left corner.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopRight com.erik.android.androidlean:roundTopRight}</code></td><td>Round the top-right corner.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopStart com.erik.android.androidlean:roundTopStart}</code></td><td>Round the top-start edge.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundWithOverlayColor com.erik.android.androidlean:roundWithOverlayColor}</code></td><td>Round by overlying color.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundedCornerRadius com.erik.android.androidlean:roundedCornerRadius}</code></td><td>Rounded corner radius.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderColor com.erik.android.androidlean:roundingBorderColor}</code></td><td>Rounding border color</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderPadding com.erik.android.androidlean:roundingBorderPadding}</code></td><td>Rounding border padding</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderWidth com.erik.android.androidlean:roundingBorderWidth}</code></td><td>Rounding border width</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_viewAspectRatio com.erik.android.androidlean:viewAspectRatio}</code></td><td>Aspect ratio (width / height) of the view, not necessarily of the images.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_actualImageScaleType com.erik.android.androidlean:actualImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_backgroundImage com.erik.android.androidlean:backgroundImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_fadeDuration com.erik.android.androidlean:fadeDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImage com.erik.android.androidlean:failureImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImageScaleType com.erik.android.androidlean:failureImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_overlayImage com.erik.android.androidlean:overlayImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImage com.erik.android.androidlean:placeholderImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImageScaleType com.erik.android.androidlean:placeholderImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_pressedStateOverlayImage com.erik.android.androidlean:pressedStateOverlayImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarAutoRotateInterval com.erik.android.androidlean:progressBarAutoRotateInterval}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImage com.erik.android.androidlean:progressBarImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImageScaleType com.erik.android.androidlean:progressBarImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImage com.erik.android.androidlean:retryImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImageScaleType com.erik.android.androidlean:retryImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundAsCircle com.erik.android.androidlean:roundAsCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomEnd com.erik.android.androidlean:roundBottomEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomLeft com.erik.android.androidlean:roundBottomLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomRight com.erik.android.androidlean:roundBottomRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomStart com.erik.android.androidlean:roundBottomStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopEnd com.erik.android.androidlean:roundTopEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopLeft com.erik.android.androidlean:roundTopLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopRight com.erik.android.androidlean:roundTopRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopStart com.erik.android.androidlean:roundTopStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundWithOverlayColor com.erik.android.androidlean:roundWithOverlayColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundedCornerRadius com.erik.android.androidlean:roundedCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderColor com.erik.android.androidlean:roundingBorderColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderPadding com.erik.android.androidlean:roundingBorderPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderWidth com.erik.android.androidlean:roundingBorderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_viewAspectRatio com.erik.android.androidlean:viewAspectRatio}</code></td><td></td></tr>
      * </table>
      * @see #GenericDraweeHierarchy_actualImageScaleType
      * @see #GenericDraweeHierarchy_backgroundImage
@@ -17392,9 +16579,8 @@ public final class R {
       0x7f0302a9
     };
     /**
-     * <p>
-     * @attr description
-     * Scale type of the actual image.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actualImageScaleType}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17418,9 +16604,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_actualImageScaleType=0;
     /**
-     * <p>
-     * @attr description
-     * A drawable or color to be used as a background.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundImage}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17431,9 +16616,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_backgroundImage=1;
     /**
-     * <p>
-     * @attr description
-     * Fade duration in milliseconds.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fadeDuration}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -17441,9 +16625,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_fadeDuration=2;
     /**
-     * <p>
-     * @attr description
-     * A drawable to be be used as a failure image.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#failureImage}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17454,9 +16637,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_failureImage=3;
     /**
-     * <p>
-     * @attr description
-     * Scale type of the failure image. Ignored if failureImage is not specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#failureImageScaleType}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17480,9 +16662,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_failureImageScaleType=4;
     /**
-     * <p>
-     * @attr description
-     * A drawable or color to be used as an overlay.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#overlayImage}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17493,9 +16674,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_overlayImage=5;
     /**
-     * <p>
-     * @attr description
-     * A drawable or color to be be used as a placeholder.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#placeholderImage}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17506,9 +16686,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_placeholderImage=6;
     /**
-     * <p>
-     * @attr description
-     * Scale type of the placeholder image. Ignored if placeholderImage is not specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#placeholderImageScaleType}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17532,9 +16711,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_placeholderImageScaleType=7;
     /**
-     * <p>
-     * @attr description
-     * A drawable or color to be used as a pressed-state-overlay
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#pressedStateOverlayImage}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17545,9 +16723,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_pressedStateOverlayImage=8;
     /**
-     * <p>
-     * @attr description
-     * Progress bar Auto Rotate interval in milliseconds
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#progressBarAutoRotateInterval}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -17555,9 +16732,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_progressBarAutoRotateInterval=9;
     /**
-     * <p>
-     * @attr description
-     * A drawable to be be used as a progress bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#progressBarImage}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17568,9 +16744,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_progressBarImage=10;
     /**
-     * <p>
-     * @attr description
-     * Scale type of the progress bar. Ignored if progressBarImage is not specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#progressBarImageScaleType}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17594,9 +16769,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_progressBarImageScaleType=11;
     /**
-     * <p>
-     * @attr description
-     * A drawable to be be used as a retry image.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#retryImage}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17607,9 +16781,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_retryImage=12;
     /**
-     * <p>
-     * @attr description
-     * Scale type of the retry image. Ignored if retryImage is not specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#retryImageScaleType}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17633,9 +16806,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_retryImageScaleType=13;
     /**
-     * <p>
-     * @attr description
-     * Round as circle.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundAsCircle}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17644,9 +16816,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundAsCircle=14;
     /**
-     * <p>
-     * @attr description
-     * Round the bottom-end edge. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundBottomEnd}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17655,9 +16826,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundBottomEnd=15;
     /**
-     * <p>
-     * @attr description
-     * Round the bottom-left corner. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundBottomLeft}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17666,9 +16836,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundBottomLeft=16;
     /**
-     * <p>
-     * @attr description
-     * Round the bottom-right corner. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundBottomRight}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17677,9 +16846,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundBottomRight=17;
     /**
-     * <p>
-     * @attr description
-     * Round the bottom-start edge. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundBottomStart}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17688,9 +16856,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundBottomStart=18;
     /**
-     * <p>
-     * @attr description
-     * Round the top-end edge. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundTopEnd}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17699,9 +16866,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundTopEnd=19;
     /**
-     * <p>
-     * @attr description
-     * Round the top-left corner. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundTopLeft}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17710,9 +16876,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundTopLeft=20;
     /**
-     * <p>
-     * @attr description
-     * Round the top-right corner. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundTopRight}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17721,9 +16886,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundTopRight=21;
     /**
-     * <p>
-     * @attr description
-     * Round the top-start edge. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundTopStart}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17732,9 +16896,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundTopStart=22;
     /**
-     * <p>
-     * @attr description
-     * Round by overlying color.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundWithOverlayColor}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17744,9 +16907,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundWithOverlayColor=23;
     /**
-     * <p>
-     * @attr description
-     * Rounded corner radius. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundedCornerRadius}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17758,9 +16920,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundedCornerRadius=24;
     /**
-     * <p>
-     * @attr description
-     * Rounding border color
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundingBorderColor}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17770,9 +16931,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundingBorderColor=25;
     /**
-     * <p>
-     * @attr description
-     * Rounding border padding
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundingBorderPadding}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17784,9 +16944,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundingBorderPadding=26;
     /**
-     * <p>
-     * @attr description
-     * Rounding border width
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundingBorderWidth}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17798,9 +16957,8 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundingBorderWidth=27;
     /**
-     * <p>
-     * @attr description
-     * Aspect ratio (width / height) of the view, not necessarily of the images.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#viewAspectRatio}
+     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17846,9 +17004,8 @@ public final class R {
       0x01010510, 0x01010511, 0x01010512, 0x01010513
     };
     /**
-     * <p>
-     * @attr description
-     * Start color of the gradient.
+     * <p>This symbol is the offset where the {@link android.R.attr#startColor}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17858,9 +17015,8 @@ public final class R {
      */
     public static final int GradientColor_android_startColor=0;
     /**
-     * <p>
-     * @attr description
-     * End color of the gradient.
+     * <p>This symbol is the offset where the {@link android.R.attr#endColor}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17870,9 +17026,8 @@ public final class R {
      */
     public static final int GradientColor_android_endColor=1;
     /**
-     * <p>
-     * @attr description
-     * Type of gradient. The default type is linear.
+     * <p>This symbol is the offset where the {@link android.R.attr#type}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17889,9 +17044,8 @@ public final class R {
      */
     public static final int GradientColor_android_type=2;
     /**
-     * <p>
-     * @attr description
-     * X coordinate of the center of the gradient within the path.
+     * <p>This symbol is the offset where the {@link android.R.attr#centerX}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -17903,9 +17057,8 @@ public final class R {
      */
     public static final int GradientColor_android_centerX=3;
     /**
-     * <p>
-     * @attr description
-     * Y coordinate of the center of the gradient within the path.
+     * <p>This symbol is the offset where the {@link android.R.attr#centerY}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -17917,9 +17070,8 @@ public final class R {
      */
     public static final int GradientColor_android_centerY=4;
     /**
-     * <p>
-     * @attr description
-     * Radius of the gradient, used only with radial gradient.
+     * <p>This symbol is the offset where the {@link android.R.attr#gradientRadius}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17936,9 +17088,8 @@ public final class R {
      */
     public static final int GradientColor_android_gradientRadius=5;
     /**
-     * <p>
-     * @attr description
-     * Defines the tile mode of the gradient. SweepGradient doesn't support tiling.
+     * <p>This symbol is the offset where the {@link android.R.attr#tileMode}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17956,9 +17107,8 @@ public final class R {
      */
     public static final int GradientColor_android_tileMode=6;
     /**
-     * <p>
-     * @attr description
-     * Optional center color.
+     * <p>This symbol is the offset where the {@link android.R.attr#centerColor}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17968,10 +17118,8 @@ public final class R {
      */
     public static final int GradientColor_android_centerColor=7;
     /**
-     * <p>
-     * @attr description
-     * X coordinate of the start point origin of the gradient.
-     * Defined in same coordinates as the path itself
+     * <p>This symbol is the offset where the {@link android.R.attr#startX}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17979,10 +17127,8 @@ public final class R {
      */
     public static final int GradientColor_android_startX=8;
     /**
-     * <p>
-     * @attr description
-     * Y coordinate of the start point of the gradient within the shape.
-     * Defined in same coordinates as the path itself
+     * <p>This symbol is the offset where the {@link android.R.attr#startY}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17990,10 +17136,8 @@ public final class R {
      */
     public static final int GradientColor_android_startY=9;
     /**
-     * <p>
-     * @attr description
-     * X coordinate of the end point origin of the gradient.
-     * Defined in same coordinates as the path itself
+     * <p>This symbol is the offset where the {@link android.R.attr#endX}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -18001,10 +17145,8 @@ public final class R {
      */
     public static final int GradientColor_android_endX=10;
     /**
-     * <p>
-     * @attr description
-     * Y coordinate of the end point of the gradient within the shape.
-     * Defined in same coordinates as the path itself
+     * <p>This symbol is the offset where the {@link android.R.attr#endY}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -18028,9 +17170,8 @@ public final class R {
       0x010101a5, 0x01010514
     };
     /**
-     * <p>
-     * @attr description
-     * The current color for the offset inside the gradient.
+     * <p>This symbol is the offset where the {@link android.R.attr#color}
+     * attribute's value can be found in the {@link #GradientColorItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18040,10 +17181,8 @@ public final class R {
      */
     public static final int GradientColorItem_android_color=0;
     /**
-     * <p>
-     * @attr description
-     * The offset (or ratio) of this current color item inside the gradient.
-     * The value is only meaningful when it is between 0 and 1.
+     * <p>This symbol is the offset where the {@link android.R.attr#offset}
+     * attribute's value can be found in the {@link #GradientColorItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -18093,11 +17232,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.erik.android.androidlean:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.erik.android.androidlean:dividerPadding}</code></td><td>Size of padding on either end of a divider.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.erik.android.androidlean:measureWithLargestChild}</code></td><td>When set to true, all children with a weight will be considered having
-     * the minimum size of the largest child.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.erik.android.androidlean:showDividers}</code></td><td>Setting for which dividers to show.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.erik.android.androidlean:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.erik.android.androidlean:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.erik.android.androidlean:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.erik.android.androidlean:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -18144,11 +17282,8 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_gravity=0;
     /**
-     * <p>
-     * @attr description
-     * Should the layout be a column or a row?  Use "horizontal"
-     * for a row, "vertical" for a column.  The default is
-     * horizontal.
+     * <p>This symbol is the offset where the {@link android.R.attr#orientation}
+     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18164,11 +17299,8 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_orientation=1;
     /**
-     * <p>
-     * @attr description
-     * When set to false, prevents the layout from aligning its children's
-     * baselines. This attribute is particularly useful when the children
-     * use different values for gravity. The default value is true.
+     * <p>This symbol is the offset where the {@link android.R.attr#baselineAligned}
+     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18177,11 +17309,8 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_baselineAligned=2;
     /**
-     * <p>
-     * @attr description
-     * When a linear layout is part of another layout that is baseline
-     * aligned, it can specify which of its children to baseline align to
-     * (that is, which child TextView).
+     * <p>This symbol is the offset where the {@link android.R.attr#baselineAlignedChildIndex}
+     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -18189,13 +17318,8 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_baselineAlignedChildIndex=3;
     /**
-     * <p>
-     * @attr description
-     * Defines the maximum weight sum. If unspecified, the sum is computed
-     * by adding the layout_weight of all of the children. This can be
-     * used for instance to give a single child 50% of the total available
-     * space by giving it a layout_weight of 0.5 and setting the weightSum
-     * to 1.0.
+     * <p>This symbol is the offset where the {@link android.R.attr#weightSum}
+     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -18203,9 +17327,8 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use as a vertical divider between buttons.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#divider}
+     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18216,9 +17339,8 @@ public final class R {
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>
-     * @attr description
-     * Size of padding on either end of a divider.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#dividerPadding}
+     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18230,11 +17352,8 @@ public final class R {
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>
-     * @attr description
-     * When set to true, all children with a weight will be considered having
-     * the minimum size of the largest child. If false, all children are
-     * measured normally.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#measureWithLargestChild}
+     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18243,9 +17362,8 @@ public final class R {
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>
-     * @attr description
-     * Setting for which dividers to show.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#showDividers}
+     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -18383,9 +17501,8 @@ public final class R {
       0x010102ac, 0x010102ad
     };
     /**
-     * <p>
-     * @attr description
-     * Amount of pixels by which the drop down should be offset horizontally.
+     * <p>This symbol is the offset where the {@link android.R.attr#dropDownHorizontalOffset}
+     * attribute's value can be found in the {@link #ListPopupWindow} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18397,9 +17514,8 @@ public final class R {
      */
     public static final int ListPopupWindow_android_dropDownHorizontalOffset=0;
     /**
-     * <p>
-     * @attr description
-     * Amount of pixels by which the drop down should be offset vertically.
+     * <p>This symbol is the offset where the {@link android.R.attr#dropDownVerticalOffset}
+     * attribute's value can be found in the {@link #ListPopupWindow} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18421,15 +17537,15 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint com.erik.android.androidlean:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.erik.android.androidlean:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint com.erik.android.androidlean:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.erik.android.androidlean:backgroundTintMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_cornerRadius com.erik.android.androidlean:cornerRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_icon com.erik.android.androidlean:icon}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconGravity com.erik.android.androidlean:iconGravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconPadding com.erik.android.androidlean:iconPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconSize com.erik.android.androidlean:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.erik.android.androidlean:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode com.erik.android.androidlean:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.erik.android.androidlean:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode com.erik.android.androidlean:iconTintMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_rippleColor com.erik.android.androidlean:rippleColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeColor com.erik.android.androidlean:strokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeWidth com.erik.android.androidlean:strokeWidth}</code></td><td></td></tr>
@@ -18526,9 +17642,8 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the background.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundTint}
+     * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18538,9 +17653,8 @@ public final class R {
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the background tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundTintMode}
+     * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18548,17 +17662,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:backgroundTintMode
@@ -18633,9 +17742,8 @@ public final class R {
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the icon.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#iconTint}
+     * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18645,9 +17753,8 @@ public final class R {
      */
     public static final int MaterialButton_iconTint=11;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the icon tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#iconTintMode}
+     * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18655,17 +17762,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the icon with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the icon, but with the icon’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the icon. The icon’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the icon.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:iconTintMode
@@ -18758,12 +17860,12 @@ public final class R {
      * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.erik.android.androidlean:chipGroupStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.erik.android.androidlean:chipStandaloneStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.erik.android.androidlean:chipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.erik.android.androidlean:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.erik.android.androidlean:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.erik.android.androidlean:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.erik.android.androidlean:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.erik.android.androidlean:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.erik.android.androidlean:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.erik.android.androidlean:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.erik.android.androidlean:colorPrimaryDark}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.erik.android.androidlean:colorSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.erik.android.androidlean:editTextStyle}</code></td><td>Default EditText style.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.erik.android.androidlean:editTextStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.erik.android.androidlean:floatingActionButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.erik.android.androidlean:materialButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.erik.android.androidlean:materialCardViewStyle}</code></td><td></td></tr>
@@ -18890,10 +17992,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
-     * <p>
-     * @attr description
-     * Bright complement to the primary branding color. By default, this is the color applied
-     * to framework controls (via colorControlActivated).
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorAccent}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18903,9 +18003,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
-     * <p>
-     * @attr description
-     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorBackgroundFloating}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18915,10 +18014,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
-     * <p>
-     * @attr description
-     * The primary branding color for the app. By default, this is the color applied to the
-     * action bar background.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorPrimary}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18928,10 +18025,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
-     * <p>
-     * @attr description
-     * Dark variant of the primary branding color. By default, this is the color applied to
-     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#colorPrimaryDark}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18952,9 +18047,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
-     * <p>
-     * @attr description
-     * Default EditText style.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#editTextStyle}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19263,9 +18357,8 @@ public final class R {
       0x010101df, 0x010101e0
     };
     /**
-     * <p>
-     * @attr description
-     * Whether the items are enabled.
+     * <p>This symbol is the offset where the {@link android.R.attr#enabled}
+     * attribute's value can be found in the {@link #MenuGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19274,9 +18367,8 @@ public final class R {
      */
     public static final int MenuGroup_android_enabled=0;
     /**
-     * <p>
-     * @attr description
-     * The ID of the group.
+     * <p>This symbol is the offset where the {@link android.R.attr#id}
+     * attribute's value can be found in the {@link #MenuGroup} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19287,9 +18379,8 @@ public final class R {
      */
     public static final int MenuGroup_android_id=1;
     /**
-     * <p>
-     * @attr description
-     * Whether the items are shown/visible.
+     * <p>This symbol is the offset where the {@link android.R.attr#visible}
+     * attribute's value can be found in the {@link #MenuGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19298,10 +18389,8 @@ public final class R {
      */
     public static final int MenuGroup_android_visible=2;
     /**
-     * <p>
-     * @attr description
-     * The category applied to all items within this group.
-     * (This will be or'ed with the orderInCategory attribute.)
+     * <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
+     * attribute's value can be found in the {@link #MenuGroup} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -19319,10 +18408,8 @@ public final class R {
      */
     public static final int MenuGroup_android_menuCategory=3;
     /**
-     * <p>
-     * @attr description
-     * The order within the category applied to all items within this group.
-     * (This will be or'ed with the category attribute.)
+     * <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
+     * attribute's value can be found in the {@link #MenuGroup} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -19330,9 +18417,8 @@ public final class R {
      */
     public static final int MenuGroup_android_orderInCategory=4;
     /**
-     * <p>
-     * @attr description
-     * Whether the items are capable of displaying a check mark.
+     * <p>This symbol is the offset where the {@link android.R.attr#checkableBehavior}
+     * attribute's value can be found in the {@link #MenuGroup} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -19368,18 +18454,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.erik.android.androidlean:actionLayout}</code></td><td>An optional layout to be used as an action view.</td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.erik.android.androidlean:actionProviderClass}</code></td><td>The name of an optional ActionProvider class to instantiate an action view
-     * and perform operations such as default action for that menu item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.erik.android.androidlean:actionViewClass}</code></td><td>The name of an optional View class to instantiate and use as an
-     * action view.</td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.erik.android.androidlean:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.erik.android.androidlean:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.erik.android.androidlean:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.erik.android.androidlean:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.erik.android.androidlean:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.erik.android.androidlean:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.erik.android.androidlean:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.erik.android.androidlean:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.erik.android.androidlean:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.erik.android.androidlean:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.erik.android.androidlean:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.erik.android.androidlean:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.erik.android.androidlean:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.erik.android.androidlean:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.erik.android.androidlean:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.erik.android.androidlean:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.erik.android.androidlean:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -19414,10 +18498,8 @@ public final class R {
       0x7f030182, 0x7f0301e5, 0x7f0302a3
     };
     /**
-     * <p>
-     * @attr description
-     * The icon associated with this item.  This icon will not always be shown, so
-     * the title should be sufficient in describing this item.
+     * <p>This symbol is the offset where the {@link android.R.attr#icon}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19428,9 +18510,8 @@ public final class R {
      */
     public static final int MenuItem_android_icon=0;
     /**
-     * <p>
-     * @attr description
-     * Whether the item is enabled.
+     * <p>This symbol is the offset where the {@link android.R.attr#enabled}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19439,9 +18520,8 @@ public final class R {
      */
     public static final int MenuItem_android_enabled=1;
     /**
-     * <p>
-     * @attr description
-     * The ID of the item.
+     * <p>This symbol is the offset where the {@link android.R.attr#id}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19452,10 +18532,8 @@ public final class R {
      */
     public static final int MenuItem_android_id=2;
     /**
-     * <p>
-     * @attr description
-     * Whether the item is checked.  Note that you must first have enabled checking with
-     * the checkable attribute or else the check mark will not appear.
+     * <p>This symbol is the offset where the {@link android.R.attr#checked}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19464,9 +18542,8 @@ public final class R {
      */
     public static final int MenuItem_android_checked=3;
     /**
-     * <p>
-     * @attr description
-     * Whether the item is shown/visible.
+     * <p>This symbol is the offset where the {@link android.R.attr#visible}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19475,10 +18552,8 @@ public final class R {
      */
     public static final int MenuItem_android_visible=4;
     /**
-     * <p>
-     * @attr description
-     * The category applied to the item.
-     * (This will be or'ed with the orderInCategory attribute.)
+     * <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -19496,10 +18571,8 @@ public final class R {
      */
     public static final int MenuItem_android_menuCategory=5;
     /**
-     * <p>
-     * @attr description
-     * The order within the category applied to the item.
-     * (This will be or'ed with the category attribute.)
+     * <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -19507,9 +18580,8 @@ public final class R {
      */
     public static final int MenuItem_android_orderInCategory=6;
     /**
-     * <p>
-     * @attr description
-     * The title associated with the item.
+     * <p>This symbol is the offset where the {@link android.R.attr#title}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19518,10 +18590,8 @@ public final class R {
      */
     public static final int MenuItem_android_title=7;
     /**
-     * <p>
-     * @attr description
-     * The condensed title associated with the item.  This is used in situations where the
-     * normal title may be too long to be displayed.
+     * <p>This symbol is the offset where the {@link android.R.attr#titleCondensed}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19530,10 +18600,8 @@ public final class R {
      */
     public static final int MenuItem_android_titleCondensed=8;
     /**
-     * <p>
-     * @attr description
-     * The alphabetic shortcut key.  This is the shortcut when using a keyboard
-     * with alphabetic keys.
+     * <p>This symbol is the offset where the {@link android.R.attr#alphabeticShortcut}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19542,10 +18610,8 @@ public final class R {
      */
     public static final int MenuItem_android_alphabeticShortcut=9;
     /**
-     * <p>
-     * @attr description
-     * The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
-     * keyboard.
+     * <p>This symbol is the offset where the {@link android.R.attr#numericShortcut}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19554,9 +18620,8 @@ public final class R {
      */
     public static final int MenuItem_android_numericShortcut=10;
     /**
-     * <p>
-     * @attr description
-     * Whether the item is capable of displaying a check mark.
+     * <p>This symbol is the offset where the {@link android.R.attr#checkable}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19565,10 +18630,8 @@ public final class R {
      */
     public static final int MenuItem_android_checkable=11;
     /**
-     * <p>
-     * @attr description
-     * Name of a method on the Context used to inflate the menu that will be
-     * called when the item is clicked.
+     * <p>This symbol is the offset where the {@link android.R.attr#onClick}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19577,11 +18640,8 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>
-     * @attr description
-     * An optional layout to be used as an action view.
-     * See {@link android.view.MenuItem#setActionView(android.view.View)}
-     * for more info.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionLayout}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19592,12 +18652,8 @@ public final class R {
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>
-     * @attr description
-     * The name of an optional ActionProvider class to instantiate an action view
-     * and perform operations such as default action for that menu item.
-     * See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
-     * for more info.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionProviderClass}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19606,11 +18662,8 @@ public final class R {
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>
-     * @attr description
-     * The name of an optional View class to instantiate and use as an
-     * action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
-     * for more info.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actionViewClass}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19619,10 +18672,8 @@ public final class R {
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>
-     * @attr description
-     * The alphabetic modifier key. This is the modifier when using a keyboard
-     * with alphabetic keys. The values should be kept in sync with KeyEvent
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#alphabeticModifiers}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -19642,9 +18693,8 @@ public final class R {
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>
-     * @attr description
-     * The content description associated with the item.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentDescription}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19653,9 +18703,8 @@ public final class R {
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the icon.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#iconTint}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -19665,9 +18714,8 @@ public final class R {
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the icon tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#iconTintMode}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -19675,27 +18723,20 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the icon with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the icon, but with the icon’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the icon. The icon’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the icon.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>
-     * @attr description
-     * The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
-     * keyboard. The values should be kept in sync with KeyEvent
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#numericModifiers}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -19715,9 +18756,8 @@ public final class R {
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>
-     * @attr description
-     * How this item should display in the Action Bar, if present.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#showAsAction}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -19725,29 +18765,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>always</td><td>2</td><td>Always show this item in an actionbar, even if it would override
-     * the system's limits of how much stuff to put there. This may make
-     * your action bar look bad on some screens. In most cases you should
-     * use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never".</td></tr>
-     * <tr><td>collapseActionView</td><td>8</td><td>This item's action view collapses to a normal menu
-     * item. When expanded, the action view takes over a
-     * larger segment of its container.</td></tr>
-     * <tr><td>ifRoom</td><td>1</td><td>Show this item in an action bar if there is room for it as determined
-     * by the system. Favor this option over "always" where possible.
-     * Mutually exclusive with "never" and "always".</td></tr>
-     * <tr><td>never</td><td>0</td><td>Never show this item in an action bar, show it in the overflow menu instead.
-     * Mutually exclusive with "ifRoom" and "always".</td></tr>
-     * <tr><td>withText</td><td>4</td><td>When this item is shown as an action in the action bar, show a text
-     * label with it even if it has an icon representation.</td></tr>
+     * <tr><td>always</td><td>2</td><td></td></tr>
+     * <tr><td>collapseActionView</td><td>8</td><td></td></tr>
+     * <tr><td>ifRoom</td><td>1</td><td></td></tr>
+     * <tr><td>never</td><td>0</td><td></td></tr>
+     * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>
-     * @attr description
-     * The tooltip text associated with the item.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#tooltipText}
+     * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19769,8 +18799,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.erik.android.androidlean:preserveIconSpacing}</code></td><td>Whether space should be reserved in layout when an icon is missing.</td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.erik.android.androidlean:subMenuArrow}</code></td><td>Drawable for the arrow icon indicating a particular item is a submenu.</td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.erik.android.androidlean:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.erik.android.androidlean:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -19788,9 +18818,8 @@ public final class R {
       0x7f030241
     };
     /**
-     * <p>
-     * @attr description
-     * Default animations for the menu.
+     * <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
+     * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19801,9 +18830,8 @@ public final class R {
      */
     public static final int MenuView_android_windowAnimationStyle=0;
     /**
-     * <p>
-     * @attr description
-     * Default appearance of menu item text.
+     * <p>This symbol is the offset where the {@link android.R.attr#itemTextAppearance}
+     * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19814,9 +18842,8 @@ public final class R {
      */
     public static final int MenuView_android_itemTextAppearance=1;
     /**
-     * <p>
-     * @attr description
-     * Default horizontal divider between rows of menu items.
+     * <p>This symbol is the offset where the {@link android.R.attr#horizontalDivider}
+     * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19827,9 +18854,8 @@ public final class R {
      */
     public static final int MenuView_android_horizontalDivider=2;
     /**
-     * <p>
-     * @attr description
-     * Default vertical divider between menu items.
+     * <p>This symbol is the offset where the {@link android.R.attr#verticalDivider}
+     * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19840,9 +18866,8 @@ public final class R {
      */
     public static final int MenuView_android_verticalDivider=3;
     /**
-     * <p>
-     * @attr description
-     * Default background for the menu header.
+     * <p>This symbol is the offset where the {@link android.R.attr#headerBackground}
+     * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19856,9 +18881,8 @@ public final class R {
      */
     public static final int MenuView_android_headerBackground=4;
     /**
-     * <p>
-     * @attr description
-     * Default background for each menu item.
+     * <p>This symbol is the offset where the {@link android.R.attr#itemBackground}
+     * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19872,9 +18896,8 @@ public final class R {
      */
     public static final int MenuView_android_itemBackground=5;
     /**
-     * <p>
-     * @attr description
-     * Default disabled icon alpha for each menu item that shows an icon.
+     * <p>This symbol is the offset where the {@link android.R.attr#itemIconDisabledAlpha}
+     * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -19882,9 +18905,8 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>
-     * @attr description
-     * Whether space should be reserved in layout when an icon is missing.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#preserveIconSpacing}
+     * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19893,9 +18915,8 @@ public final class R {
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>
-     * @attr description
-     * Drawable for the arrow icon indicating a particular item is a submenu.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#subMenuArrow}
+     * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19939,7 +18960,7 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.erik.android.androidlean:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.erik.android.androidlean:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_headerLayout com.erik.android.androidlean:headerLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemBackground com.erik.android.androidlean:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.erik.android.androidlean:itemHorizontalPadding}</code></td><td></td></tr>
@@ -20006,9 +19027,8 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#elevation}
+     * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20124,7 +19144,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.erik.android.androidlean:overlapAnchor}</code></td><td>Whether the popup window should overlap its anchor view.</td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.erik.android.androidlean:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -20161,9 +19181,8 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>
-     * @attr description
-     * Whether the popup window should overlap its anchor view.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#overlapAnchor}
+     * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -20178,7 +19197,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.erik.android.androidlean:state_above_anchor}</code></td><td>State identifier indicating the popup will be above the anchor.</td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.erik.android.androidlean:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -20186,9 +19205,8 @@ public final class R {
       0x7f030238
     };
     /**
-     * <p>
-     * @attr description
-     * State identifier indicating the popup will be above the anchor.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#state_above_anchor}
+     * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -20712,8 +19730,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.erik.android.androidlean:paddingBottomNoButtons}</code></td><td>Bottom padding to use when no buttons are present.</td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.erik.android.androidlean:paddingTopNoTitle}</code></td><td>Top padding to use when no title is present.</td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.erik.android.androidlean:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.erik.android.androidlean:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -20722,9 +19740,8 @@ public final class R {
       0x7f030186, 0x7f030189
     };
     /**
-     * <p>
-     * @attr description
-     * Bottom padding to use when no buttons are present.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#paddingBottomNoButtons}
+     * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20736,9 +19753,8 @@ public final class R {
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>
-     * @attr description
-     * Top padding to use when no title is present.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#paddingTopNoTitle}
+     * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20763,7 +19779,7 @@ public final class R {
      * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.erik.android.androidlean:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.erik.android.androidlean:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.erik.android.androidlean:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.erik.android.androidlean:layoutManager}</code></td><td>Class name of the Layout Manager to be used.</td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.erik.android.androidlean:layoutManager}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_reverseLayout com.erik.android.androidlean:reverseLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_spanCount com.erik.android.androidlean:spanCount}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_stackFromEnd com.erik.android.androidlean:stackFromEnd}</code></td><td></td></tr>
@@ -20879,17 +19895,8 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>
-     * @attr description
-     * Class name of the Layout Manager to be used.
-     * <p/>
-     * The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
-     * and have either a default constructor or constructor with the signature
-     * (android.content.Context, android.util.AttributeSet, int, int).
-     * <p/>
-     * If the name starts with a '.', application package is prefixed.
-     * Else, if the name contains a '.', the classname is assumed to be a full class name.
-     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#layoutManager}
+     * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -20993,20 +20000,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.erik.android.androidlean:closeIcon}</code></td><td>Close button icon</td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.erik.android.androidlean:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.erik.android.androidlean:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
-     * the search view's {@code SearchableInfo} does not provide a hint.</td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.erik.android.androidlean:goIcon}</code></td><td>Go button icon</td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.erik.android.androidlean:iconifiedByDefault}</code></td><td>The default state of the SearchView.</td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.erik.android.androidlean:layout}</code></td><td>The layout to use for the search view.</td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.erik.android.androidlean:queryBackground}</code></td><td>Background for the section containing the search query</td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.erik.android.androidlean:queryHint}</code></td><td>An optional user-defined query hint string to be displayed in the empty query field.</td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.erik.android.androidlean:searchHintIcon}</code></td><td>Search icon displayed as a text field hint</td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.erik.android.androidlean:searchIcon}</code></td><td>Search icon</td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.erik.android.androidlean:submitBackground}</code></td><td>Background for the section containing the action (e.g.</td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.erik.android.androidlean:suggestionRowLayout}</code></td><td>Layout for query suggestion rows</td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.erik.android.androidlean:voiceIcon}</code></td><td>Voice button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.erik.android.androidlean:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.erik.android.androidlean:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.erik.android.androidlean:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.erik.android.androidlean:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.erik.android.androidlean:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.erik.android.androidlean:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.erik.android.androidlean:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.erik.android.androidlean:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.erik.android.androidlean:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.erik.android.androidlean:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.erik.android.androidlean:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.erik.android.androidlean:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.erik.android.androidlean:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -21052,9 +20058,8 @@ public final class R {
      */
     public static final int SearchView_android_focusable=0;
     /**
-     * <p>
-     * @attr description
-     * An optional maximum width of the SearchView.
+     * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21066,9 +20071,8 @@ public final class R {
      */
     public static final int SearchView_android_maxWidth=1;
     /**
-     * <p>
-     * @attr description
-     * The input type to set on the query text field.
+     * <p>This symbol is the offset where the {@link android.R.attr#inputType}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -21114,9 +20118,8 @@ public final class R {
      */
     public static final int SearchView_android_inputType=2;
     /**
-     * <p>
-     * @attr description
-     * The IME options to set on the query text field.
+     * <p>This symbol is the offset where the {@link android.R.attr#imeOptions}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -21147,9 +20150,8 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>
-     * @attr description
-     * Close button icon
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#closeIcon}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21160,9 +20162,8 @@ public final class R {
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>
-     * @attr description
-     * Commit icon shown in the query suggestion row
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#commitIcon}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21173,10 +20174,8 @@ public final class R {
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>
-     * @attr description
-     * Default query hint used when {@code queryHint} is undefined and
-     * the search view's {@code SearchableInfo} does not provide a hint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#defaultQueryHint}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -21185,9 +20184,8 @@ public final class R {
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>
-     * @attr description
-     * Go button icon
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#goIcon}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21198,10 +20196,8 @@ public final class R {
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>
-     * @attr description
-     * The default state of the SearchView. If true, it will be iconified when not in
-     * use and expanded when clicked.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#iconifiedByDefault}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21210,9 +20206,8 @@ public final class R {
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>
-     * @attr description
-     * The layout to use for the search view.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#layout}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21223,9 +20218,8 @@ public final class R {
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>
-     * @attr description
-     * Background for the section containing the search query
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#queryBackground}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21236,9 +20230,8 @@ public final class R {
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>
-     * @attr description
-     * An optional user-defined query hint string to be displayed in the empty query field.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#queryHint}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -21247,9 +20240,8 @@ public final class R {
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>
-     * @attr description
-     * Search icon displayed as a text field hint
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#searchHintIcon}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21260,9 +20252,8 @@ public final class R {
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>
-     * @attr description
-     * Search icon
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#searchIcon}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21273,9 +20264,8 @@ public final class R {
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>
-     * @attr description
-     * Background for the section containing the action (e.g. voice search)
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#submitBackground}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21286,9 +20276,8 @@ public final class R {
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>
-     * @attr description
-     * Layout for query suggestion rows
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#suggestionRowLayout}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21299,9 +20288,8 @@ public final class R {
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>
-     * @attr description
-     * Voice button icon
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#voiceIcon}
+     * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21318,37 +20306,37 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_actualImageResource com.erik.android.androidlean:actualImageResource}</code></td><td>An image reference</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_actualImageScaleType com.erik.android.androidlean:actualImageScaleType}</code></td><td>Scale type of the actual image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_actualImageUri com.erik.android.androidlean:actualImageUri}</code></td><td>An image uri .</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_backgroundImage com.erik.android.androidlean:backgroundImage}</code></td><td>A drawable or color to be used as a background.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_fadeDuration com.erik.android.androidlean:fadeDuration}</code></td><td>Fade duration in milliseconds.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_failureImage com.erik.android.androidlean:failureImage}</code></td><td>A drawable to be be used as a failure image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_failureImageScaleType com.erik.android.androidlean:failureImageScaleType}</code></td><td>Scale type of the failure image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_overlayImage com.erik.android.androidlean:overlayImage}</code></td><td>A drawable or color to be used as an overlay.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_placeholderImage com.erik.android.androidlean:placeholderImage}</code></td><td>A drawable or color to be be used as a placeholder.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_placeholderImageScaleType com.erik.android.androidlean:placeholderImageScaleType}</code></td><td>Scale type of the placeholder image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_pressedStateOverlayImage com.erik.android.androidlean:pressedStateOverlayImage}</code></td><td>A drawable or color to be used as a pressed-state-overlay</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_progressBarAutoRotateInterval com.erik.android.androidlean:progressBarAutoRotateInterval}</code></td><td>Progress bar Auto Rotate interval in milliseconds</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_progressBarImage com.erik.android.androidlean:progressBarImage}</code></td><td>A drawable to be be used as a progress bar.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_progressBarImageScaleType com.erik.android.androidlean:progressBarImageScaleType}</code></td><td>Scale type of the progress bar.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_retryImage com.erik.android.androidlean:retryImage}</code></td><td>A drawable to be be used as a retry image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_retryImageScaleType com.erik.android.androidlean:retryImageScaleType}</code></td><td>Scale type of the retry image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundAsCircle com.erik.android.androidlean:roundAsCircle}</code></td><td>Round as circle.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomEnd com.erik.android.androidlean:roundBottomEnd}</code></td><td>Round the bottom-end edge.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomLeft com.erik.android.androidlean:roundBottomLeft}</code></td><td>Round the bottom-left corner.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomRight com.erik.android.androidlean:roundBottomRight}</code></td><td>Round the bottom-right corner.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomStart com.erik.android.androidlean:roundBottomStart}</code></td><td>Round the bottom-start edge.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopEnd com.erik.android.androidlean:roundTopEnd}</code></td><td>Round the top-end edge.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopLeft com.erik.android.androidlean:roundTopLeft}</code></td><td>Round the top-left corner.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopRight com.erik.android.androidlean:roundTopRight}</code></td><td>Round the top-right corner.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopStart com.erik.android.androidlean:roundTopStart}</code></td><td>Round the top-start edge.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundWithOverlayColor com.erik.android.androidlean:roundWithOverlayColor}</code></td><td>Round by overlying color.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundedCornerRadius com.erik.android.androidlean:roundedCornerRadius}</code></td><td>Rounded corner radius.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderColor com.erik.android.androidlean:roundingBorderColor}</code></td><td>Rounding border color</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderPadding com.erik.android.androidlean:roundingBorderPadding}</code></td><td>Rounding border padding</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderWidth com.erik.android.androidlean:roundingBorderWidth}</code></td><td>Rounding border width</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_viewAspectRatio com.erik.android.androidlean:viewAspectRatio}</code></td><td>Aspect ratio (width / height) of the view, not necessarily of the images.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_actualImageResource com.erik.android.androidlean:actualImageResource}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_actualImageScaleType com.erik.android.androidlean:actualImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_actualImageUri com.erik.android.androidlean:actualImageUri}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_backgroundImage com.erik.android.androidlean:backgroundImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_fadeDuration com.erik.android.androidlean:fadeDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_failureImage com.erik.android.androidlean:failureImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_failureImageScaleType com.erik.android.androidlean:failureImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_overlayImage com.erik.android.androidlean:overlayImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_placeholderImage com.erik.android.androidlean:placeholderImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_placeholderImageScaleType com.erik.android.androidlean:placeholderImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_pressedStateOverlayImage com.erik.android.androidlean:pressedStateOverlayImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_progressBarAutoRotateInterval com.erik.android.androidlean:progressBarAutoRotateInterval}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_progressBarImage com.erik.android.androidlean:progressBarImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_progressBarImageScaleType com.erik.android.androidlean:progressBarImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_retryImage com.erik.android.androidlean:retryImage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_retryImageScaleType com.erik.android.androidlean:retryImageScaleType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundAsCircle com.erik.android.androidlean:roundAsCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomEnd com.erik.android.androidlean:roundBottomEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomLeft com.erik.android.androidlean:roundBottomLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomRight com.erik.android.androidlean:roundBottomRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomStart com.erik.android.androidlean:roundBottomStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopEnd com.erik.android.androidlean:roundTopEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopLeft com.erik.android.androidlean:roundTopLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopRight com.erik.android.androidlean:roundTopRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopStart com.erik.android.androidlean:roundTopStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundWithOverlayColor com.erik.android.androidlean:roundWithOverlayColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundedCornerRadius com.erik.android.androidlean:roundedCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderColor com.erik.android.androidlean:roundingBorderColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderPadding com.erik.android.androidlean:roundingBorderPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderWidth com.erik.android.androidlean:roundingBorderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_viewAspectRatio com.erik.android.androidlean:viewAspectRatio}</code></td><td></td></tr>
      * </table>
      * @see #SimpleDraweeView_actualImageResource
      * @see #SimpleDraweeView_actualImageScaleType
@@ -21393,9 +20381,8 @@ public final class R {
       0x7f0301d9, 0x7f0301da, 0x7f0302a9
     };
     /**
-     * <p>
-     * @attr description
-     * An image reference
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actualImageResource}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21406,9 +20393,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_actualImageResource=0;
     /**
-     * <p>
-     * @attr description
-     * Scale type of the actual image.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actualImageScaleType}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -21432,9 +20418,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_actualImageScaleType=1;
     /**
-     * <p>
-     * @attr description
-     * An image uri .
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#actualImageUri}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -21443,9 +20428,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_actualImageUri=2;
     /**
-     * <p>
-     * @attr description
-     * A drawable or color to be used as a background.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundImage}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21456,9 +20440,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_backgroundImage=3;
     /**
-     * <p>
-     * @attr description
-     * Fade duration in milliseconds.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fadeDuration}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -21466,9 +20449,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_fadeDuration=4;
     /**
-     * <p>
-     * @attr description
-     * A drawable to be be used as a failure image.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#failureImage}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21479,9 +20461,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_failureImage=5;
     /**
-     * <p>
-     * @attr description
-     * Scale type of the failure image. Ignored if failureImage is not specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#failureImageScaleType}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -21505,9 +20486,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_failureImageScaleType=6;
     /**
-     * <p>
-     * @attr description
-     * A drawable or color to be used as an overlay.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#overlayImage}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21518,9 +20498,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_overlayImage=7;
     /**
-     * <p>
-     * @attr description
-     * A drawable or color to be be used as a placeholder.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#placeholderImage}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21531,9 +20510,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_placeholderImage=8;
     /**
-     * <p>
-     * @attr description
-     * Scale type of the placeholder image. Ignored if placeholderImage is not specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#placeholderImageScaleType}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -21557,9 +20535,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_placeholderImageScaleType=9;
     /**
-     * <p>
-     * @attr description
-     * A drawable or color to be used as a pressed-state-overlay
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#pressedStateOverlayImage}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21570,9 +20547,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_pressedStateOverlayImage=10;
     /**
-     * <p>
-     * @attr description
-     * Progress bar Auto Rotate interval in milliseconds
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#progressBarAutoRotateInterval}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -21580,9 +20556,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_progressBarAutoRotateInterval=11;
     /**
-     * <p>
-     * @attr description
-     * A drawable to be be used as a progress bar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#progressBarImage}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21593,9 +20568,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_progressBarImage=12;
     /**
-     * <p>
-     * @attr description
-     * Scale type of the progress bar. Ignored if progressBarImage is not specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#progressBarImageScaleType}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -21619,9 +20593,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_progressBarImageScaleType=13;
     /**
-     * <p>
-     * @attr description
-     * A drawable to be be used as a retry image.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#retryImage}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21632,9 +20605,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_retryImage=14;
     /**
-     * <p>
-     * @attr description
-     * Scale type of the retry image. Ignored if retryImage is not specified.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#retryImageScaleType}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -21658,9 +20630,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_retryImageScaleType=15;
     /**
-     * <p>
-     * @attr description
-     * Round as circle.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundAsCircle}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21669,9 +20640,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundAsCircle=16;
     /**
-     * <p>
-     * @attr description
-     * Round the bottom-end edge. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundBottomEnd}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21680,9 +20650,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundBottomEnd=17;
     /**
-     * <p>
-     * @attr description
-     * Round the bottom-left corner. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundBottomLeft}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21691,9 +20660,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundBottomLeft=18;
     /**
-     * <p>
-     * @attr description
-     * Round the bottom-right corner. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundBottomRight}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21702,9 +20670,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundBottomRight=19;
     /**
-     * <p>
-     * @attr description
-     * Round the bottom-start edge. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundBottomStart}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21713,9 +20680,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundBottomStart=20;
     /**
-     * <p>
-     * @attr description
-     * Round the top-end edge. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundTopEnd}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21724,9 +20690,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundTopEnd=21;
     /**
-     * <p>
-     * @attr description
-     * Round the top-left corner. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundTopLeft}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21735,9 +20700,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundTopLeft=22;
     /**
-     * <p>
-     * @attr description
-     * Round the top-right corner. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundTopRight}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21746,9 +20710,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundTopRight=23;
     /**
-     * <p>
-     * @attr description
-     * Round the top-start edge. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundTopStart}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21757,9 +20720,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundTopStart=24;
     /**
-     * <p>
-     * @attr description
-     * Round by overlying color.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundWithOverlayColor}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21769,9 +20731,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundWithOverlayColor=25;
     /**
-     * <p>
-     * @attr description
-     * Rounded corner radius. Ignored if roundAsCircle is used.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundedCornerRadius}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21783,9 +20744,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundedCornerRadius=26;
     /**
-     * <p>
-     * @attr description
-     * Rounding border color
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundingBorderColor}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21795,9 +20755,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundingBorderColor=27;
     /**
-     * <p>
-     * @attr description
-     * Rounding border padding
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundingBorderPadding}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21809,9 +20768,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundingBorderPadding=28;
     /**
-     * <p>
-     * @attr description
-     * Rounding border width
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#roundingBorderWidth}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21823,9 +20781,8 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundingBorderWidth=29;
     /**
-     * <p>
-     * @attr description
-     * Aspect ratio (width / height) of the view, not necessarily of the images.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#viewAspectRatio}
+     * attribute's value can be found in the {@link #SimpleDraweeView} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -22350,10 +21307,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>FixedFront</td><td>3</td><td>固定在背后</td></tr>
-     * <tr><td>MatchLayout</td><td>4</td><td>固定在前面</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>FixedFront</td><td>3</td><td></td></tr>
+     * <tr><td>MatchLayout</td><td>4</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
@@ -22408,7 +21365,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.erik.android.androidlean:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.erik.android.androidlean:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.erik.android.androidlean:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
@@ -22432,9 +21389,8 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#elevation}
+     * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22469,8 +21425,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.erik.android.androidlean:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
-     * shown by widgets in the action bar.</td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.erik.android.androidlean:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -22483,9 +21438,8 @@ public final class R {
       0x7f030196
     };
     /**
-     * <p>
-     * @attr description
-     * Reference to an array resource that will populate the Spinner.
+     * <p>This symbol is the offset where the {@link android.R.attr#entries}
+     * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22496,9 +21450,8 @@ public final class R {
      */
     public static final int Spinner_android_entries=0;
     /**
-     * <p>
-     * @attr description
-     * Background drawable to use for the dropdown in spinnerMode="dropdown".
+     * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
+     * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22512,9 +21465,8 @@ public final class R {
      */
     public static final int Spinner_android_popupBackground=1;
     /**
-     * <p>
-     * @attr description
-     * The prompt to display when the spinner's dialog is shown.
+     * <p>This symbol is the offset where the {@link android.R.attr#prompt}
+     * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22525,9 +21477,8 @@ public final class R {
      */
     public static final int Spinner_android_prompt=2;
     /**
-     * <p>
-     * @attr description
-     * Width of the dropdown in spinnerMode="dropdown".
+     * <p>This symbol is the offset where the {@link android.R.attr#dropDownWidth}
+     * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22549,9 +21500,8 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>
-     * @attr description
-     * Theme to use for the drop-down or dialog popup window.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#popupTheme}
+     * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22587,11 +21537,8 @@ public final class R {
       0x0101030c, 0x0101030d
     };
     /**
-     * <p>
-     * @attr description
-     * Enables or disables dithering of the bitmap if the bitmap does not have the
-     * same pixel configuration as the screen (for instance: a ARGB 8888 bitmap with
-     * an RGB 565 screen).
+     * <p>This symbol is the offset where the {@link android.R.attr#dither}
+     * attribute's value can be found in the {@link #StateListDrawable} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22600,9 +21547,8 @@ public final class R {
      */
     public static final int StateListDrawable_android_dither=0;
     /**
-     * <p>
-     * @attr description
-     * Indicates whether the drawable should be initially visible.
+     * <p>This symbol is the offset where the {@link android.R.attr#visible}
+     * attribute's value can be found in the {@link #StateListDrawable} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22611,14 +21557,8 @@ public final class R {
      */
     public static final int StateListDrawable_android_visible=1;
     /**
-     * <p>
-     * @attr description
-     * If true, allows the drawable's padding to change based on the
-     * current state that is selected.  If false, the padding will
-     * stay the same (based on the maximum padding of all the states).
-     * Enabling this feature requires that the owner of the drawable
-     * deal with performing layout when the state changes, which is
-     * often not supported.
+     * <p>This symbol is the offset where the {@link android.R.attr#variablePadding}
+     * attribute's value can be found in the {@link #StateListDrawable} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22627,12 +21567,8 @@ public final class R {
      */
     public static final int StateListDrawable_android_variablePadding=2;
     /**
-     * <p>
-     * @attr description
-     * If true, the drawable's reported internal size will remain
-     * constant as the state changes; the size is the maximum of all
-     * of the states.  If false, the size will vary based on the
-     * current state.
+     * <p>This symbol is the offset where the {@link android.R.attr#constantSize}
+     * attribute's value can be found in the {@link #StateListDrawable} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22641,9 +21577,8 @@ public final class R {
      */
     public static final int StateListDrawable_android_constantSize=3;
     /**
-     * <p>
-     * @attr description
-     * Amount of time (in milliseconds) to fade in a new state drawable.
+     * <p>This symbol is the offset where the {@link android.R.attr#enterFadeDuration}
+     * attribute's value can be found in the {@link #StateListDrawable} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -22651,9 +21586,8 @@ public final class R {
      */
     public static final int StateListDrawable_android_enterFadeDuration=4;
     /**
-     * <p>
-     * @attr description
-     * Amount of time (in milliseconds) to fade out an old state drawable.
+     * <p>This symbol is the offset where the {@link android.R.attr#exitFadeDuration}
+     * attribute's value can be found in the {@link #StateListDrawable} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -22675,10 +21609,8 @@ public final class R {
       0x01010199
     };
     /**
-     * <p>
-     * @attr description
-     * Reference to a drawable resource to use for the state. If not
-     * given, the drawable must be defined by the first child tag.
+     * <p>This symbol is the offset where the {@link android.R.attr#drawable}
+     * attribute's value can be found in the {@link #StateListDrawableItem} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22786,17 +21718,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.erik.android.androidlean:showText}</code></td><td>Whether to draw on/off text.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.erik.android.androidlean:splitTrack}</code></td><td>Whether to split the track and leave a gap for the thumb drawable.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.erik.android.androidlean:switchMinWidth}</code></td><td>Minimum width for the switch component</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.erik.android.androidlean:switchPadding}</code></td><td>Minimum space between the switch and caption text</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.erik.android.androidlean:switchTextAppearance}</code></td><td>TextAppearance style for text displayed on the switch thumb.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.erik.android.androidlean:thumbTextPadding}</code></td><td>Amount of padding on either side of text within the switch thumb.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.erik.android.androidlean:thumbTint}</code></td><td>Tint to apply to the thumb drawable.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.erik.android.androidlean:thumbTintMode}</code></td><td>Blending mode used to apply the thumb tint.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.erik.android.androidlean:track}</code></td><td>Drawable to use as the "track" that the switch thumb slides within.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.erik.android.androidlean:trackTint}</code></td><td>Tint to apply to the track.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.erik.android.androidlean:trackTintMode}</code></td><td>Blending mode used to apply the track tint.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.erik.android.androidlean:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.erik.android.androidlean:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.erik.android.androidlean:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.erik.android.androidlean:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.erik.android.androidlean:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.erik.android.androidlean:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.erik.android.androidlean:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.erik.android.androidlean:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.erik.android.androidlean:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.erik.android.androidlean:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.erik.android.androidlean:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -22820,9 +21752,8 @@ public final class R {
       0x7f0302a5, 0x7f0302a6
     };
     /**
-     * <p>
-     * @attr description
-     * Text to use when the switch is in the checked/"on" state.
+     * <p>This symbol is the offset where the {@link android.R.attr#textOn}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -22831,9 +21762,8 @@ public final class R {
      */
     public static final int SwitchCompat_android_textOn=0;
     /**
-     * <p>
-     * @attr description
-     * Text to use when the switch is in the unchecked/"off" state.
+     * <p>This symbol is the offset where the {@link android.R.attr#textOff}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -22842,9 +21772,8 @@ public final class R {
      */
     public static final int SwitchCompat_android_textOff=1;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use as the "thumb" that switches back and forth.
+     * <p>This symbol is the offset where the {@link android.R.attr#thumb}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22855,9 +21784,8 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>
-     * @attr description
-     * Whether to draw on/off text.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#showText}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22866,9 +21794,8 @@ public final class R {
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>
-     * @attr description
-     * Whether to split the track and leave a gap for the thumb drawable.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#splitTrack}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22877,9 +21804,8 @@ public final class R {
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>
-     * @attr description
-     * Minimum width for the switch component
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#switchMinWidth}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22891,9 +21817,8 @@ public final class R {
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>
-     * @attr description
-     * Minimum space between the switch and caption text
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#switchPadding}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22905,9 +21830,8 @@ public final class R {
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>
-     * @attr description
-     * TextAppearance style for text displayed on the switch thumb.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#switchTextAppearance}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22918,9 +21842,8 @@ public final class R {
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>
-     * @attr description
-     * Amount of padding on either side of text within the switch thumb.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#thumbTextPadding}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22932,9 +21855,8 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the thumb drawable.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#thumbTint}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -22944,9 +21866,8 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the thumb tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#thumbTintMode}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -22954,26 +21875,20 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>
-     * @attr description
-     * Drawable to use as the "track" that the switch thumb slides within.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#track}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22984,9 +21899,8 @@ public final class R {
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the track.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#trackTint}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -22996,9 +21910,8 @@ public final class R {
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the track tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#trackTintMode}
+     * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -23006,17 +21919,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:trackTintMode
@@ -23481,8 +22389,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.erik.android.androidlean:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.erik.android.androidlean:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.erik.android.androidlean:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.erik.android.androidlean:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -23648,9 +22556,8 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>
-     * @attr description
-     * The attribute for the font family.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#fontFamily}
+     * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23659,9 +22566,8 @@ public final class R {
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>
-     * @attr description
-     * Present the text in ALL CAPS. This may use a small-caps form when available.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#textAllCaps}
+     * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24142,39 +23048,32 @@ public final class R {
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_buttonGravity com.erik.android.androidlean:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.erik.android.androidlean:collapseContentDescription}</code></td><td>Text to set as the content description for the collapse button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.erik.android.androidlean:collapseIcon}</code></td><td>Icon drawable to use for the collapse button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.erik.android.androidlean:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.erik.android.androidlean:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
-     * are present.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.erik.android.androidlean:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.erik.android.androidlean:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.erik.android.androidlean:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.erik.android.androidlean:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
-     * is present, such as the Up button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.erik.android.androidlean:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.erik.android.androidlean:logoDescription}</code></td><td>A content description string to describe the appearance of the
-     * associated logo image.</td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.erik.android.androidlean:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.erik.android.androidlean:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.erik.android.androidlean:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.erik.android.androidlean:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.erik.android.androidlean:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.erik.android.androidlean:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.erik.android.androidlean:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.erik.android.androidlean:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.erik.android.androidlean:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.erik.android.androidlean:logoDescription}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_maxButtonHeight com.erik.android.androidlean:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.erik.android.androidlean:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
-     * located at the start of the toolbar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.erik.android.androidlean:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at
-     * the start of the toolbar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.erik.android.androidlean:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
-     * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.erik.android.androidlean:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.erik.android.androidlean:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.erik.android.androidlean:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.erik.android.androidlean:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.erik.android.androidlean:subtitle}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.erik.android.androidlean:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.erik.android.androidlean:subtitleTextColor}</code></td><td>A color to apply to the subtitle string.</td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.erik.android.androidlean:subtitleTextColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_title com.erik.android.androidlean:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.erik.android.androidlean:titleMargin}</code></td><td>Specifies extra space on the left, start, right and end sides
-     * of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.erik.android.androidlean:titleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.erik.android.androidlean:titleMarginEnd}</code></td><td>Specifies extra space on the end side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.erik.android.androidlean:titleMarginStart}</code></td><td>Specifies extra space on the start side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.erik.android.androidlean:titleMarginTop}</code></td><td>Specifies extra space on the top side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.erik.android.androidlean:titleMargins}</code></td><td>{@deprecated Use titleMargin}</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.erik.android.androidlean:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.erik.android.androidlean:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.erik.android.androidlean:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.erik.android.androidlean:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.erik.android.androidlean:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.erik.android.androidlean:titleMargins}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_titleTextAppearance com.erik.android.androidlean:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.erik.android.androidlean:titleTextColor}</code></td><td>A color to apply to the title string.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.erik.android.androidlean:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -24206,7 +23105,6 @@ public final class R {
      * @see #Toolbar_titleTextAppearance
      * @see #Toolbar_titleTextColor
      */
-    @Deprecated
     public static final int[] Toolbar={
       0x010100af, 0x01010140, 0x7f03005a, 0x7f030089, 
       0x7f03008a, 0x7f03009e, 0x7f03009f, 0x7f0300a0, 
@@ -24269,17 +23167,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>
-     * @attr description
-     * Text to set as the content description for the collapse button.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#collapseContentDescription}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -24288,9 +23185,8 @@ public final class R {
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>
-     * @attr description
-     * Icon drawable to use for the collapse button.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#collapseIcon}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24301,10 +23197,8 @@ public final class R {
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetEnd}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24316,10 +23210,8 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar when actions from a menu
-     * are present. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetEndWithActions}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24331,10 +23223,8 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetLeft}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24346,10 +23236,8 @@ public final class R {
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetRight}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24361,10 +23249,8 @@ public final class R {
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar. Navigation buttons and
-     * menu views are excepted. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetStart}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24376,10 +23262,8 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>
-     * @attr description
-     * Minimum inset for content views within a bar when a navigation button
-     * is present, such as the Up button. Only valid for some themes and configurations.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#contentInsetStartWithNavigation}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24391,10 +23275,8 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>
-     * @attr description
-     * Drawable to set as the logo that appears at the starting side of
-     * the Toolbar, just after the navigation button.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#logo}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24405,10 +23287,8 @@ public final class R {
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>
-     * @attr description
-     * A content description string to describe the appearance of the
-     * associated logo image.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#logoDescription}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -24430,10 +23310,8 @@ public final class R {
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>
-     * @attr description
-     * Text to set as the content description for the navigation button
-     * located at the start of the toolbar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#navigationContentDescription}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -24442,10 +23320,8 @@ public final class R {
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>
-     * @attr description
-     * Icon drawable to use for the navigation button located at
-     * the start of the toolbar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#navigationIcon}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24456,10 +23332,8 @@ public final class R {
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>
-     * @attr description
-     * Reference to a theme that should be used to inflate popups
-     * shown by widgets in the toolbar.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#popupTheme}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24470,9 +23344,8 @@ public final class R {
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>
-     * @attr description
-     * Specifies subtitle text used for navigationMode="normal"
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#subtitle}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -24493,9 +23366,8 @@ public final class R {
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>
-     * @attr description
-     * A color to apply to the subtitle string.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#subtitleTextColor}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -24515,10 +23387,8 @@ public final class R {
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>
-     * @attr description
-     * Specifies extra space on the left, start, right and end sides
-     * of the toolbar's title. Margin values should be positive.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleMargin}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24530,11 +23400,8 @@ public final class R {
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>
-     * @attr description
-     * Specifies extra space on the bottom side of the toolbar's title.
-     * If both this attribute and titleMargin are specified, then this
-     * attribute takes precedence. Margin values should be positive.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleMarginBottom}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24546,11 +23413,8 @@ public final class R {
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>
-     * @attr description
-     * Specifies extra space on the end side of the toolbar's title.
-     * If both this attribute and titleMargin are specified, then this
-     * attribute takes precedence. Margin values should be positive.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleMarginEnd}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24562,11 +23426,8 @@ public final class R {
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>
-     * @attr description
-     * Specifies extra space on the start side of the toolbar's title.
-     * If both this attribute and titleMargin are specified, then this
-     * attribute takes precedence. Margin values should be positive.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleMarginStart}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24578,11 +23439,8 @@ public final class R {
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>
-     * @attr description
-     * Specifies extra space on the top side of the toolbar's title.
-     * If both this attribute and titleMargin are specified, then this
-     * attribute takes precedence. Margin values should be positive.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleMarginTop}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24594,9 +23452,8 @@ public final class R {
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>
-     * @attr description
-     * {@deprecated Use titleMargin}
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleMargins}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24606,7 +23463,6 @@ public final class R {
      *
      * @attr name com.erik.android.androidlean:titleMargins
      */
-    @Deprecated
     public static final int Toolbar_titleMargins=26;
     /**
      * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleTextAppearance}
@@ -24621,9 +23477,8 @@ public final class R {
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>
-     * @attr description
-     * A color to apply to the title string.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#titleTextColor}
+     * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -24722,9 +23577,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.erik.android.androidlean:paddingEnd}</code></td><td>Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.erik.android.androidlean:paddingStart}</code></td><td>Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
-     * <tr><td><code>{@link #View_theme com.erik.android.androidlean:theme}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.erik.android.androidlean:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.erik.android.androidlean:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme com.erik.android.androidlean:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -24737,11 +23592,8 @@ public final class R {
       0x7f030282
     };
     /**
-     * <p>
-     * @attr description
-     * Specifies a theme override for a view. When a theme override is set, the
-     * view will be inflated using a {@link android.content.Context} themed with
-     * the specified resource.
+     * <p>This symbol is the offset where the {@link android.R.attr#theme}
+     * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24752,14 +23604,8 @@ public final class R {
      */
     public static final int View_android_theme=0;
     /**
-     * <p>
-     * @attr description
-     * Boolean that controls whether a view can take focus.  By default the user can not
-     * move focus to a view; by setting this attribute to true the view is
-     * allowed to take focus.  This value does not impact the behavior of
-     * directly calling {@link android.view.View#requestFocus}, which will
-     * always request focus regardless of this view.  It only impacts where
-     * focus navigation will try to move focus.
+     * <p>This symbol is the offset where the {@link android.R.attr#focusable}
+     * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -24776,9 +23622,8 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>
-     * @attr description
-     * Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#paddingEnd}
+     * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24790,9 +23635,8 @@ public final class R {
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>
-     * @attr description
-     * Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#paddingStart}
+     * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24804,9 +23648,8 @@ public final class R {
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>
-     * @attr description
-     * Deprecated.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#theme}
+     * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24824,8 +23667,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.erik.android.androidlean:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.erik.android.androidlean:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.erik.android.androidlean:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.erik.android.androidlean:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -24850,9 +23693,8 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the background.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundTint}
+     * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -24862,9 +23704,8 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the background tint.
+     * <p>This symbol is the offset where the {@link com.erik.android.androidlean.R.attr#backgroundTintMode}
+     * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -24872,17 +23713,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
-     * result to valid color values. Saturate(S + D)</td></tr>
-     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
-     * the tint. [Sa * Da, Sc * Dc]</td></tr>
-     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
-     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
-     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
-     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
-     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
-     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
-     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * <tr><td>add</td><td>10</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td></td></tr>
+     * <tr><td>screen</td><td>f</td><td></td></tr>
+     * <tr><td>src_atop</td><td>9</td><td></td></tr>
+     * <tr><td>src_in</td><td>5</td><td></td></tr>
+     * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
      * @attr name com.erik.android.androidlean:backgroundTintMode
@@ -24919,11 +23755,8 @@ public final class R {
      */
     public static final int ViewStubCompat_android_id=0;
     /**
-     * <p>
-     * @attr description
-     * Supply an identifier for the layout resource to inflate when the ViewStub
-     * becomes visible or when forced to do so. The layout resource must be a
-     * valid reference to a layout.
+     * <p>This symbol is the offset where the {@link android.R.attr#layout}
+     * attribute's value can be found in the {@link #ViewStubCompat} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24934,9 +23767,8 @@ public final class R {
      */
     public static final int ViewStubCompat_android_layout=1;
     /**
-     * <p>
-     * @attr description
-     * Overrides the id of the inflated View with this value.
+     * <p>This symbol is the offset where the {@link android.R.attr#inflatedId}
+     * attribute's value can be found in the {@link #ViewStubCompat} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme

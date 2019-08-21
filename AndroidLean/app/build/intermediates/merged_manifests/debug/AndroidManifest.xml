@@ -15,6 +15,10 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name="com.erik.android.androidlean.ohter.TestApplication"
@@ -28,6 +32,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppNewTheme" >
+        <activity android:name="com.erik.android.androidlean.activity.LocationActivity" />
+
+        <service android:name="com.erik.android.androidlean.ohter.WallPaperService" />
+
+        <activity android:name="com.erik.android.androidlean.activity.ChangeWallPagerActivity" />
+        <activity android:name="com.erik.android.androidlean.activity.QRCodeActivity" />
+        <activity android:name="com.erik.android.androidlean.activity.VolumeActivity" />
         <activity android:name="com.erik.android.androidlean.activity.LargerImageActivity" />
         <activity
             android:name="com.erik.android.androidlean.activity.MainActivity"
@@ -92,6 +103,10 @@
         <meta-data
             android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
             android:value="GlideModule" />
+
+        <activity
+            android:name="cc.shinichi.library.view.ImagePreviewActivity"
+            android:theme="@style/Theme.ImagePreview" />
     </application>
 
 </manifest>

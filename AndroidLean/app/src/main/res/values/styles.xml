@@ -32,6 +32,7 @@
         <item name="android:windowIsTranslucent">true</item>
         <!--设置窗体切换动画-->
         <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="android:listDivider">@drawable/list_line</item>
     </style>
 
     <!--Activity进入和退出动画-->

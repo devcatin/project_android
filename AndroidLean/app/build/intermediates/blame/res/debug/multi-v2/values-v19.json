@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v19/values-v19.xml",
+            "map": [
+                {
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/397b44834e7186529f9db7622a473dd5/res/values-v19/values-v19.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "11",
+                        "endColumns": "10",
+                        "endOffsets": "545"
+                    }
+                }
+            ]
+        }
+    ]
+}
