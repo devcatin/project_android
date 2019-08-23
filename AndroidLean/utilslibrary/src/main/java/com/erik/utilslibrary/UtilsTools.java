@@ -11,12 +11,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -192,26 +195,29 @@ public class UtilsTools {
         }
     }
 
+    public static <D> boolean isEmpty(List<D> list) {
+        return list == null || list.isEmpty();
+    }
 
+    public static String readJsonFile(Context context, String fileName) {
+        StringBuilder builder = new StringBuilder();
+        int id = context.getResources().getIdentifier(fileName, "raw", context.getPackageName());
+        InputStream inputStream = context.getResources().openRawResource(id);
+        InputStreamReader inputStreamReader;
+        try {
+            inputStreamReader = new InputStreamReader(inputStream, "UTF-8");
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            String content;
+            while ((content = bufferedReader.readLine()) != null) {
+                builder.append(content);
+            }
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        return builder.toString();
+    }
 
 }

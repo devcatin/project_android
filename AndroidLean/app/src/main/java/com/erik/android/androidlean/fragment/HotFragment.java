@@ -119,7 +119,7 @@ public class HotFragment extends BaseFragment implements AdapterView.OnItemClick
     private void bindViews(View view) {
         list_new = view.findViewById(R.id.list_news);
         list_new.setOnItemClickListener(this);
-        adapter = new ListAdapter(beans, getActivity(), BR.user);
+        adapter = new ListAdapter(getContext(), beans);
         list_new.setAdapter(adapter);
         refreshLayout = view.findViewById(R.id.refreshLayout);
     }

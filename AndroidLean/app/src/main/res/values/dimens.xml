@@ -9,6 +9,7 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
 
     <dimen name="default_height">120dp</dimen>
 
+    <dimen name="title_font_size">20sp</dimen>
     <dimen name="font_size">12dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
