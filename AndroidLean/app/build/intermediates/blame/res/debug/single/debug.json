@@ -8,12 +8,12 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/color-v23_design_tint_password_toggle.xml.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f2e88bee3222aa94d9575e6775f64609/res/color-v23/design_tint_password_toggle.xml"
-    },
-    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/color-v23_design_tint_password_toggle.xml.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f2e88bee3222aa94d9575e6775f64609/res/color-v23/design_tint_password_toggle.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
@@ -24,20 +24,20 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/397b44834e7186529f9db7622a473dd5/res/drawable/gray_circle_bg.xml"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_selector_login_change_psw.xml.flat",
-        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/drawable/selector_login_change_psw.xml"
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_selector_login_change_psw.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/drawable/selector_login_change_psw.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/color_mtrl_bottom_nav_item_tint.xml.flat",
@@ -60,16 +60,16 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility.xml.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f2e88bee3222aa94d9575e6775f64609/res/drawable-anydpi-v21/design_ic_visibility.xml"
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/menu_menu.xml.flat",
         "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/menu/menu.xml"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable/abc_ic_ab_back_material.xml"
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility.xml.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f2e88bee3222aa94d9575e6775f64609/res/drawable-anydpi-v21/design_ic_visibility.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/layout_design_navigation_item_subheader.xml.flat",
@@ -92,12 +92,12 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/color/abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable/abc_list_selector_holo_dark.xml"
-    },
-    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -124,12 +124,12 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_index_icon_buy_hover.png.flat",
-        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/mipmap-xxhdpi/index_icon_buy_hover.png"
-    },
-    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_index_icon_buy_hover.png.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/mipmap-xxhdpi/index_icon_buy_hover.png"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_index_icon_hot_hover.png.flat",
@@ -140,12 +140,16 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/07bceb938f79771a81f9e61c6b3a71c8/res/layout-v21/notification_action_tombstone.xml"
     },
     {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/layout_home_grid_view_item.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/home_grid_view_item.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",
@@ -156,12 +160,12 @@
         "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/activity_detail.xml"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f2e88bee3222aa94d9575e6775f64609/res/animator/design_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/anim_design_bottom_sheet_slide_out.xml.flat",
@@ -180,16 +184,16 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_mtrl_tabs_default_indicator.xml.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f2e88bee3222aa94d9575e6775f64609/res/drawable/mtrl_tabs_default_indicator.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xhdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_mtrl_tabs_default_indicator.xml.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f2e88bee3222aa94d9575e6775f64609/res/drawable/mtrl_tabs_default_indicator.xml"
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -752,6 +756,10 @@
         "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/mipmap-xxhdpi/ic_launcher_logo.png"
     },
     {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/layout_home_banner_item.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/home_banner_item.xml"
+    },
+    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
@@ -970,6 +978,10 @@
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/layout_home_footer_item.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/home_footer_item.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
@@ -1716,12 +1728,12 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
-        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/anim/abc_popup_enter.xml"
-    },
-    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_list_line.xml.flat",
         "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/drawable/list_line.xml"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
+        "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/anim/abc_popup_enter.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-v21_abc_list_divider_material.xml.flat",
@@ -1762,6 +1774,10 @@
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/layout_home_class_item.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/home_class_item.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/color_mtrl_tabs_legacy_text_color_selector.xml.flat",
@@ -2172,6 +2188,10 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/raw_json.json.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/raw/json.json"
+    },
+    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
@@ -2216,6 +2236,10 @@
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f2e88bee3222aa94d9575e6775f64609/res/layout/design_navigation_item_header.xml"
     },
     {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/layout_home_content_item.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/home_content_item.xml"
+    },
+    {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
@@ -2234,6 +2258,10 @@
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/drawable-xhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/layout_home_header_item.xml.flat",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/home_header_item.xml"
     },
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",

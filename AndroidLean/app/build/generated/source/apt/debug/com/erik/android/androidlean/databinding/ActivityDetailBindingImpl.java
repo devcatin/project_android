@@ -28,7 +28,7 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
         this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
     }
     private ActivityDetailBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
-        super(bindingComponent, root, 0
+        super(bindingComponent, root, 1
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[1]
             , (com.erik.android.androidlean.view.NavigationBar) bindings[3]
@@ -45,7 +45,7 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x2L;
+                mDirtyFlags = 0x8L;
         }
         requestRebind();
     }
@@ -73,6 +73,7 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     }
 
     public void setUser(@Nullable com.erik.android.androidlean.bean.UserBean User) {
+        updateRegistration(0, User);
         this.mUser = User;
         synchronized(this) {
             mDirtyFlags |= 0x1L;
@@ -84,6 +85,29 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     @Override
     protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
         switch (localFieldId) {
+            case 0 :
+                return onChangeUser((com.erik.android.androidlean.bean.UserBean) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeUser(com.erik.android.androidlean.bean.UserBean User, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        else if (fieldId == BR.username) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x2L;
+            }
+            return true;
+        }
+        else if (fieldId == BR.password) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x4L;
+            }
+            return true;
         }
         return false;
     }
@@ -99,22 +123,33 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
         java.lang.String userUsername = null;
         java.lang.String userPassword = null;
 
-        if ((dirtyFlags & 0x3L) != 0) {
+        if ((dirtyFlags & 0xfL) != 0) {
 
 
+            if ((dirtyFlags & 0xbL) != 0) {
 
-                if (user != null) {
-                    // read user.username
-                    userUsername = user.getUsername();
-                    // read user.password
-                    userPassword = user.getPassword();
-                }
+                    if (user != null) {
+                        // read user.username
+                        userUsername = user.getUsername();
+                    }
+            }
+            if ((dirtyFlags & 0xdL) != 0) {
+
+                    if (user != null) {
+                        // read user.password
+                        userPassword = user.getPassword();
+                    }
+            }
         }
         // batch finished
-        if ((dirtyFlags & 0x3L) != 0) {
+        if ((dirtyFlags & 0xdL) != 0) {
             // api target 1
 
             android.databinding.adapters.TextViewBindingAdapter.setText(this.editdetail, userPassword);
+        }
+        if ((dirtyFlags & 0xbL) != 0) {
+            // api target 1
+
             android.databinding.adapters.TextViewBindingAdapter.setText(this.editname, userUsername);
         }
     }
@@ -124,7 +159,9 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
         flag 0 (0x1L): user
-        flag 1 (0x2L): null
+        flag 1 (0x2L): user.username
+        flag 2 (0x3L): user.password
+        flag 3 (0x4L): null
     flag mapping end*/
     //end
 }

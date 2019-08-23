@@ -8,6 +8,7 @@ import android.util.SparseIntArray;
 import android.view.View;
 import com.erik.android.androidlean.databinding.ActivityDetailBindingImpl;
 import com.erik.android.androidlean.databinding.FragmentNewlistBindingImpl;
+import com.erik.android.androidlean.databinding.HomeGridViewItemBindingImpl;
 import com.erik.android.androidlean.databinding.ListItemBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -24,13 +25,16 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTNEWLIST = 2;
 
-  private static final int LAYOUT_LISTITEM = 3;
+  private static final int LAYOUT_HOMEGRIDVIEWITEM = 3;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
+  private static final int LAYOUT_LISTITEM = 4;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.erik.android.androidlean.R.layout.activity_detail, LAYOUT_ACTIVITYDETAIL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.erik.android.androidlean.R.layout.fragment_newlist, LAYOUT_FRAGMENTNEWLIST);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.erik.android.androidlean.R.layout.home_grid_view_item, LAYOUT_HOMEGRIDVIEWITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.erik.android.androidlean.R.layout.list_item, LAYOUT_LISTITEM);
   }
 
@@ -54,6 +58,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new FragmentNewlistBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for fragment_newlist is invalid. Received: " + tag);
+        }
+        case  LAYOUT_HOMEGRIDVIEWITEM: {
+          if ("layout/home_grid_view_item_0".equals(tag)) {
+            return new HomeGridViewItemBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for home_grid_view_item is invalid. Received: " + tag);
         }
         case  LAYOUT_LISTITEM: {
           if ("layout/list_item_0".equals(tag)) {
@@ -106,20 +116,28 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(3);
+    static final SparseArray<String> sKeys = new SparseArray<String>(10);
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "user");
+      sKeys.put(1, "password");
+      sKeys.put(2, "headimg");
+      sKeys.put(3, "sex");
+      sKeys.put(4, "id");
+      sKeys.put(5, "user");
+      sKeys.put(6, "bean");
+      sKeys.put(7, "age");
+      sKeys.put(8, "username");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
 
     static {
       sKeys.put("layout/activity_detail_0", com.erik.android.androidlean.R.layout.activity_detail);
       sKeys.put("layout/fragment_newlist_0", com.erik.android.androidlean.R.layout.fragment_newlist);
+      sKeys.put("layout/home_grid_view_item_0", com.erik.android.androidlean.R.layout.home_grid_view_item);
       sKeys.put("layout/list_item_0", com.erik.android.androidlean.R.layout.list_item);
     }
   }

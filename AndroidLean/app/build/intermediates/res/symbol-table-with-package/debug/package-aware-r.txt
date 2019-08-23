@@ -769,6 +769,7 @@ color background_material_dark
 color background_material_light
 color background_white
 color bg_topbar
+color blue_color
 color bottom_bg
 color bottom_color
 color bright_foreground_disabled_material_dark
@@ -1092,6 +1093,7 @@ dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
+dimen title_font_size
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1365,6 +1367,7 @@ id chains
 id checkbox
 id chronometer
 id circleIndicator
+id cl_item_view
 id clip_horizontal
 id clip_vertical
 id collapseActionView
@@ -1425,6 +1428,7 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
+id gv_grid_view
 id home
 id homeAsUp
 id icon
@@ -1442,6 +1446,7 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id iv_head
+id iv_icon
 id iv_qrcode
 id labeled
 id largeLabel
@@ -1603,6 +1608,9 @@ id useLogo
 id usecode_layout
 id usename
 id usename_layout
+id v_bottom_line
+id v_line
+id v_top_line
 id viewPager
 id view_offset_helper
 id visible
@@ -1695,6 +1703,12 @@ layout fragment_home
 layout fragment_mine
 layout fragment_newlist
 layout fregment_content
+layout home_banner_item
+layout home_class_item
+layout home_content_item
+layout home_footer_item
+layout home_grid_view_item
+layout home_header_item
 layout list_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1739,6 +1753,7 @@ mipmap index_icon_mine_nor
 mipmap qrcode_default_grid_scan_line
 mipmap qrcode_default_scan_line
 raw audio
+raw json
 raw test
 string abc_action_bar_home_description
 string abc_action_bar_up_description

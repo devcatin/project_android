@@ -10,5 +10,9 @@
     {
         "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_newlist.xml",
         "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/fragment_newlist.xml"
+    },
+    {
+        "merged": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/home_grid_view_item.xml",
+        "source": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/res/layout/home_grid_view_item.xml"
     }
 ]

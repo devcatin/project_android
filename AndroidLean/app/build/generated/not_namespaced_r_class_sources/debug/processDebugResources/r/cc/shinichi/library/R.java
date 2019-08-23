@@ -40,26 +40,26 @@ public final class R {
         private id() {}
 
         public static final int btn_show_origin = 0x7f080047;
-        public static final int fingerDragHelper = 0x7f080088;
-        public static final int fm_center_progress_container = 0x7f080093;
-        public static final int fm_image_show_origin_container = 0x7f080094;
-        public static final int gif_view = 0x7f080098;
-        public static final int imgCloseButton = 0x7f0800a4;
-        public static final int img_download = 0x7f0800a5;
-        public static final int photo_view = 0x7f0800d8;
-        public static final int progress_view = 0x7f0800dd;
-        public static final int rootView = 0x7f0800eb;
-        public static final int sh_progress_text = 0x7f080105;
-        public static final int sh_progress_view = 0x7f080106;
-        public static final int tv_indicator = 0x7f08013f;
-        public static final int viewPager = 0x7f08014f;
+        public static final int fingerDragHelper = 0x7f080089;
+        public static final int fm_center_progress_container = 0x7f080094;
+        public static final int fm_image_show_origin_container = 0x7f080095;
+        public static final int gif_view = 0x7f080099;
+        public static final int imgCloseButton = 0x7f0800a6;
+        public static final int img_download = 0x7f0800a7;
+        public static final int photo_view = 0x7f0800db;
+        public static final int progress_view = 0x7f0800e0;
+        public static final int rootView = 0x7f0800ee;
+        public static final int sh_progress_text = 0x7f080108;
+        public static final int sh_progress_view = 0x7f080109;
+        public static final int tv_indicator = 0x7f080142;
+        public static final int viewPager = 0x7f080155;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int sh_default_progress_layout = 0x7f0b0057;
-        public static final int sh_item_photoview = 0x7f0b0058;
-        public static final int sh_layout_preview = 0x7f0b0059;
+        public static final int sh_default_progress_layout = 0x7f0b005d;
+        public static final int sh_item_photoview = 0x7f0b005e;
+        public static final int sh_layout_preview = 0x7f0b005f;
     }
     public static final class string {
         private string() {}

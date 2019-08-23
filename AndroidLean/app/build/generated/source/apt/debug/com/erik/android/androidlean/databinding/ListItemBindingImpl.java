@@ -14,7 +14,6 @@ public class ListItemBindingImpl extends ListItemBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.iv_head, 3);
         sViewsWithIds.put(R.id.rl_list, 4);
     }
     // views
@@ -29,12 +28,13 @@ public class ListItemBindingImpl extends ListItemBinding  {
         this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
     }
     private ListItemBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
-        super(bindingComponent, root, 0
-            , (com.erik.android.androidlean.view.CustomRoundAngleImageView) bindings[3]
+        super(bindingComponent, root, 1
+            , (com.erik.android.androidlean.view.CustomRoundAngleImageView) bindings[1]
             , (android.widget.LinearLayout) bindings[4]
+            , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[2]
-            , (android.widget.TextView) bindings[1]
             );
+        this.ivHead.setTag(null);
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
         this.txtItemContent.setTag(null);
@@ -47,7 +47,7 @@ public class ListItemBindingImpl extends ListItemBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x2L;
+                mDirtyFlags = 0x10L;
         }
         requestRebind();
     }
@@ -75,6 +75,7 @@ public class ListItemBindingImpl extends ListItemBinding  {
     }
 
     public void setUser(@Nullable com.erik.android.androidlean.bean.UserBean User) {
+        updateRegistration(0, User);
         this.mUser = User;
         synchronized(this) {
             mDirtyFlags |= 0x1L;
@@ -86,6 +87,35 @@ public class ListItemBindingImpl extends ListItemBinding  {
     @Override
     protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
         switch (localFieldId) {
+            case 0 :
+                return onChangeUser((com.erik.android.androidlean.bean.UserBean) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeUser(com.erik.android.androidlean.bean.UserBean User, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        else if (fieldId == BR.headimg) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x2L;
+            }
+            return true;
+        }
+        else if (fieldId == BR.username) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x4L;
+            }
+            return true;
+        }
+        else if (fieldId == BR.password) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x8L;
+            }
+            return true;
         }
         return false;
     }
@@ -99,24 +129,48 @@ public class ListItemBindingImpl extends ListItemBinding  {
         }
         com.erik.android.androidlean.bean.UserBean user = mUser;
         java.lang.String userUsername = null;
+        java.lang.String userHeadimg = null;
         java.lang.String userPassword = null;
 
-        if ((dirtyFlags & 0x3L) != 0) {
+        if ((dirtyFlags & 0x1fL) != 0) {
 
 
+            if ((dirtyFlags & 0x15L) != 0) {
 
-                if (user != null) {
-                    // read user.username
-                    userUsername = user.getUsername();
-                    // read user.password
-                    userPassword = user.getPassword();
-                }
+                    if (user != null) {
+                        // read user.username
+                        userUsername = user.getUsername();
+                    }
+            }
+            if ((dirtyFlags & 0x13L) != 0) {
+
+                    if (user != null) {
+                        // read user.headimg
+                        userHeadimg = user.getHeadimg();
+                    }
+            }
+            if ((dirtyFlags & 0x19L) != 0) {
+
+                    if (user != null) {
+                        // read user.password
+                        userPassword = user.getPassword();
+                    }
+            }
         }
         // batch finished
-        if ((dirtyFlags & 0x3L) != 0) {
+        if ((dirtyFlags & 0x13L) != 0) {
+            // api target 1
+
+            com.erik.android.androidlean.adapter.ListAdapter.setImageResource(this.ivHead, userHeadimg);
+        }
+        if ((dirtyFlags & 0x19L) != 0) {
             // api target 1
 
             android.databinding.adapters.TextViewBindingAdapter.setText(this.txtItemContent, userPassword);
+        }
+        if ((dirtyFlags & 0x15L) != 0) {
+            // api target 1
+
             android.databinding.adapters.TextViewBindingAdapter.setText(this.txtItemTitle, userUsername);
         }
     }
@@ -126,7 +180,10 @@ public class ListItemBindingImpl extends ListItemBinding  {
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
         flag 0 (0x1L): user
-        flag 1 (0x2L): null
+        flag 1 (0x2L): user.headimg
+        flag 2 (0x3L): user.username
+        flag 3 (0x4L): user.password
+        flag 4 (0x5L): null
     flag mapping end*/
     //end
 }
