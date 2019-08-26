@@ -78,7 +78,7 @@ public class HotFragment extends BaseFragment implements AdapterView.OnItemClick
         NetRequest netRequest = NetRequest.getInstance(getContext());
         HashMap<String, String> param = new HashMap<>();
         param.put("pageIndex", String.valueOf(pageIndex));
-        param.put("pageSize", String.valueOf(5));
+        param.put("pageSize", String.valueOf(10));
         netRequest.get(RequestMethod.GET_USER_LIST, param, new NetRequest.RequestCallBack() {
             @Override
             public void success(Response response) throws IOException {

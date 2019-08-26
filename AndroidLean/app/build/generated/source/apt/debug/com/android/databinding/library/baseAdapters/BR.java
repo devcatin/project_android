@@ -13,9 +13,11 @@ public class BR {
 
   public static final int user = 5;
 
-  public static final int bean = 6;
+  public static final int live = 6;
 
-  public static final int age = 7;
+  public static final int bean = 7;
 
-  public static final int username = 8;
+  public static final int age = 8;
+
+  public static final int username = 9;
 }

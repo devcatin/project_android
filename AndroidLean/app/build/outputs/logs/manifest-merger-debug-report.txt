@@ -25,6 +25,7 @@ MERGED from [com.shizhefei:LargeImageView:1.1.0] /Users/yuanwang/.gradle/caches/
 MERGED from [com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/397b44834e7186529f9db7622a473dd5/AndroidManifest.xml:2:1-19:12
 MERGED from [com.github.piasy:BigImageViewer:1.5.7] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/be7c0af8baf0e99263094e840ad28c57/AndroidManifest.xml:25:1-36:12
 MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c52f2fe522b1e9e9d520fe5d16f06592/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.zackratos.ultimatebar:ultimatebar3:3.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/736095e3e7cff1120b19a407ea0aacf4/AndroidManifest.xml:2:1-16:12
 MERGED from [com.android.support:support-v4:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9e8ccc061c14da39dddfff9d30f4f0b8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5c84be911666563b1504be56a502b978/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/52f52246f2d8db21b03c708d1c9b4d46/AndroidManifest.xml:17:1-22:12
@@ -143,6 +144,8 @@ MERGED from [com.shizhefei:LargeImageView:1.1.0] /Users/yuanwang/.gradle/caches/
 MERGED from [com.shizhefei:LargeImageView:1.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8b0a3ab2c19dac84968ba0e36cb08e02/AndroidManifest.xml:11:5-20
 MERGED from [com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/397b44834e7186529f9db7622a473dd5/AndroidManifest.xml:13:5-17:19
 MERGED from [com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/397b44834e7186529f9db7622a473dd5/AndroidManifest.xml:13:5-17:19
+MERGED from [com.github.zackratos.ultimatebar:ultimatebar3:3.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/736095e3e7cff1120b19a407ea0aacf4/AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.zackratos.ultimatebar:ultimatebar3:3.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/736095e3e7cff1120b19a407ea0aacf4/AndroidManifest.xml:11:5-14:19
 MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/07bceb938f79771a81f9e61c6b3a71c8/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/07bceb938f79771a81f9e61c6b3a71c8/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/3051092011ca0422a9a930596dbec676/AndroidManifest.xml:22:5-23:19
@@ -170,7 +173,7 @@ MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/yuanwang/.gradle/cache
 	android:name
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:17:9-46
 activity#com.erik.android.androidlean.activity.LocationActivity
-ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:25:9-72
+ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:25:9-63
 	android:name
 		ADDED from /Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:25:19-60
 service#com.erik.android.androidlean.ohter.WallPaperService
@@ -343,6 +346,8 @@ MERGED from [com.github.piasy:BigImageViewer:1.5.7] /Users/yuanwang/.gradle/cach
 MERGED from [com.github.piasy:BigImageViewer:1.5.7] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/be7c0af8baf0e99263094e840ad28c57/AndroidManifest.xml:30:5-32:41
 MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c52f2fe522b1e9e9d520fe5d16f06592/AndroidManifest.xml:7:5-9:41
 MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/c52f2fe522b1e9e9d520fe5d16f06592/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.zackratos.ultimatebar:ultimatebar3:3.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/736095e3e7cff1120b19a407ea0aacf4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.zackratos.ultimatebar:ultimatebar3:3.1.1] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/736095e3e7cff1120b19a407ea0aacf4/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9e8ccc061c14da39dddfff9d30f4f0b8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/9e8ccc061c14da39dddfff9d30f4f0b8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/5c84be911666563b1504be56a502b978/AndroidManifest.xml:20:5-44

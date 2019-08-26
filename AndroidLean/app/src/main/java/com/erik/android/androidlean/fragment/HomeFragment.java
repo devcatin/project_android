@@ -1,9 +1,7 @@
 package com.erik.android.androidlean.fragment;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.Message;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -33,6 +31,7 @@ import com.erik.android.androidlean.bean.BannerBean;
 import com.erik.android.androidlean.bean.ClassBean;
 import com.erik.android.androidlean.bean.HomeBean;
 import com.erik.android.androidlean.bean.HotelEntity;
+import com.erik.android.androidlean.bean.LiveBean;
 import com.erik.android.androidlean.bean.UserBean;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.network.BaseResponse;
@@ -92,19 +91,19 @@ public class HomeFragment extends BaseFragment {
     }
 
     private void navigationBar(View view) {
-        final NavigationBar navigationBar = view.findViewById(R.id.nav_bar);
-        navigationBar.setShowBackBtn(false);
-        navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
-            @Override
-            public void onBackClick() {
-                Activity activity = ActivityManager.getActivity().get();
-                activity.finish();
-            }
-            @Override
-            public void onRightClick() {
-                registerForContextMenu(navigationBar.getBtn_right());
-            }
-        });
+//        final NavigationBar navigationBar = view.findViewById(R.id.nav_bar);
+//        navigationBar.setShowBackBtn(false);
+//        navigationBar.setBtnOnClickListener(new NavigationBar.ButtonOnClickListener() {
+//            @Override
+//            public void onBackClick() {
+//                Activity activity = ActivityManager.getActivity().get();
+//                activity.finish();
+//            }
+//            @Override
+//            public void onRightClick() {
+//                registerForContextMenu(navigationBar.getBtn_right());
+//            }
+//        });
     }
 
     @Override
@@ -130,8 +129,11 @@ public class HomeFragment extends BaseFragment {
                         datas.clear();
                         List<BannerBean> banners = homeBean.getBanners();
                         List<ClassBean> classes = homeBean.getClasses();
+                        List<LiveBean> liveBeans = homeBean.getLives();
                         datas.add(banners);
                         datas.add(classes);
+                        datas.add(liveBeans);
+                        datas.add(liveBeans);
                     }
                     Message message = new Message();
                     message.what = 0x123;

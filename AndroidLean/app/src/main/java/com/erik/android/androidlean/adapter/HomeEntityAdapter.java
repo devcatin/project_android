@@ -6,10 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bumptech.glide.Glide;
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.bean.BannerBean;
 import com.erik.android.androidlean.bean.ClassBean;
 import com.erik.android.androidlean.bean.HotelEntity;
+import com.erik.android.androidlean.bean.LiveBean;
 import com.erik.utilslibrary.UtilsTools;
 
 import java.util.ArrayList;
@@ -48,7 +50,7 @@ public class HomeEntityAdapter extends SectionedRecyclerViewAdapter {
 
     @Override
     protected boolean hasHeaderInSection(int section) {
-        if (section == 0 || section == 1) {
+        if (section == 0 || section == 1 || section == 2) {
             return false;
         }
         return true;
@@ -57,7 +59,7 @@ public class HomeEntityAdapter extends SectionedRecyclerViewAdapter {
     //是否有footer布局
     @Override
     protected boolean hasFooterInSection(int section) {
-        if (section == 0 || section == 1) {
+        if (section == 0 || section == 1 || section == 2) {
             return false;
         }
         return true;
@@ -79,6 +81,8 @@ public class HomeEntityAdapter extends SectionedRecyclerViewAdapter {
             return new BannerHolder(mInflater.inflate(R.layout.home_banner_item, parent, false));
         } else if (viewType == TYPE_CLASS) {
             return new ClassHolder(mInflater.inflate(R.layout.home_class_item, parent, false));
+        } else if (viewType == TYPE_LIVE) {
+            return new LiveHolder(mInflater.inflate(R.layout.home_live_item, parent, false));
         } else {
             return new ContentHolder(mInflater.inflate(R.layout.home_content_item, parent, false));
         }
@@ -98,7 +102,7 @@ public class HomeEntityAdapter extends SectionedRecyclerViewAdapter {
     protected void onBindItemViewHolder(final RecyclerView.ViewHolder holder, final int section, final int position) {
         switch (section) {
             case 0: {
-                BannerHolder bannerHolder = (BannerHolder) holder;
+                BannerHolder bannerHolder = (BannerHolder)holder;
                 List<BannerBean> list = datas.get(section);
                 List<String> banners = new ArrayList<>();
                 for (BannerBean bean: list) {
@@ -114,10 +118,17 @@ public class HomeEntityAdapter extends SectionedRecyclerViewAdapter {
                 break;
             }
             case 1: {
-                final ClassHolder classHolder = (ClassHolder) holder;
+                final ClassHolder classHolder = (ClassHolder)holder;
                 List<ClassBean> list = datas.get(section);
                 GridViewAdapter adapter = new GridViewAdapter(mContext, list);
                 classHolder.gridView.setAdapter(adapter);
+                break;
+            }
+            case 2: {
+                final LiveHolder liveHolder = (LiveHolder)holder;
+                List<LiveBean> liveBeans = datas.get(section);
+                LiveBean liveBean = liveBeans.get(position);
+                liveHolder.bind(liveBean);
                 break;
             }
             default: {

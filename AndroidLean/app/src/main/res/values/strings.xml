@@ -41,6 +41,8 @@
     <string name="location">地图定位</string>
     <string name="wallpapper">切换壁纸</string>
 
+    <string name="fast_appoint">立即预约</string>
+
     <string name="title_activity_base">BaseActivity</string>
 
 </resources>

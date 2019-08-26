@@ -37,6 +37,12 @@
                 android:layout_height="wrap_content"
                 android:text="@{user.password}" />
 
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@{user.headimg}" />
+
         </LinearLayout>
 
     </LinearLayout>

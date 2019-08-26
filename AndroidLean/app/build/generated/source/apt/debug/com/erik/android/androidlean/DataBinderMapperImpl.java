@@ -9,6 +9,7 @@ import android.view.View;
 import com.erik.android.androidlean.databinding.ActivityDetailBindingImpl;
 import com.erik.android.androidlean.databinding.FragmentNewlistBindingImpl;
 import com.erik.android.androidlean.databinding.HomeGridViewItemBindingImpl;
+import com.erik.android.androidlean.databinding.HomeLiveItemBindingImpl;
 import com.erik.android.androidlean.databinding.ListItemBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -27,14 +28,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_HOMEGRIDVIEWITEM = 3;
 
-  private static final int LAYOUT_LISTITEM = 4;
+  private static final int LAYOUT_HOMELIVEITEM = 4;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
+  private static final int LAYOUT_LISTITEM = 5;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(5);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.erik.android.androidlean.R.layout.activity_detail, LAYOUT_ACTIVITYDETAIL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.erik.android.androidlean.R.layout.fragment_newlist, LAYOUT_FRAGMENTNEWLIST);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.erik.android.androidlean.R.layout.home_grid_view_item, LAYOUT_HOMEGRIDVIEWITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.erik.android.androidlean.R.layout.home_live_item, LAYOUT_HOMELIVEITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.erik.android.androidlean.R.layout.list_item, LAYOUT_LISTITEM);
   }
 
@@ -64,6 +68,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new HomeGridViewItemBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for home_grid_view_item is invalid. Received: " + tag);
+        }
+        case  LAYOUT_HOMELIVEITEM: {
+          if ("layout/home_live_item_0".equals(tag)) {
+            return new HomeLiveItemBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for home_live_item is invalid. Received: " + tag);
         }
         case  LAYOUT_LISTITEM: {
           if ("layout/list_item_0".equals(tag)) {
@@ -116,7 +126,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(10);
+    static final SparseArray<String> sKeys = new SparseArray<String>(11);
 
     static {
       sKeys.put(0, "_all");
@@ -125,19 +135,21 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put(3, "sex");
       sKeys.put(4, "id");
       sKeys.put(5, "user");
-      sKeys.put(6, "bean");
-      sKeys.put(7, "age");
-      sKeys.put(8, "username");
+      sKeys.put(6, "live");
+      sKeys.put(7, "bean");
+      sKeys.put(8, "age");
+      sKeys.put(9, "username");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(5);
 
     static {
       sKeys.put("layout/activity_detail_0", com.erik.android.androidlean.R.layout.activity_detail);
       sKeys.put("layout/fragment_newlist_0", com.erik.android.androidlean.R.layout.fragment_newlist);
       sKeys.put("layout/home_grid_view_item_0", com.erik.android.androidlean.R.layout.home_grid_view_item);
+      sKeys.put("layout/home_live_item_0", com.erik.android.androidlean.R.layout.home_live_item);
       sKeys.put("layout/list_item_0", com.erik.android.androidlean.R.layout.list_item);
     }
   }

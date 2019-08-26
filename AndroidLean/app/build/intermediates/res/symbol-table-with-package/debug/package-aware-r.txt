@@ -1189,6 +1189,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
 drawable animation_drawable
+drawable arrow_right
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
@@ -1222,6 +1223,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable icon_download_new
 drawable layer_list_drawable
+drawable layer_white_drawable
 drawable list_line
 drawable load_failed
 drawable mtrl_snackbar_background
@@ -1321,6 +1323,7 @@ id bottom
 id bt_pwd_clear
 id bt_pwd_eyes
 id bt_usename_clear
+id btn_appoint
 id btn_back
 id btn_change_volume
 id btn_clean
@@ -1594,6 +1597,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tv_indicator
 id tv_show
+id tv_subtitle
 id tv_title
 id two
 id txt_hue
@@ -1709,6 +1713,7 @@ layout home_content_item
 layout home_footer_item
 layout home_grid_view_item
 layout home_header_item
+layout home_live_item
 layout list_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1814,6 +1819,7 @@ string download_title
 string draw_board
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fast_appoint
 string hide_bottom_view_on_scroll_behavior
 string indicator
 string load_html

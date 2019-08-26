@@ -6,12 +6,6 @@
     android:background="@color/back_ground_color"
     android:orientation="vertical" >
 
-    <com.erik.android.androidlean.view.NavigationBar
-        android:id="@+id/nav_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:titleText="首页" />
-
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
@@ -25,7 +19,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:background="@color/background_white" />
+            android:background="@color/back_ground_color" />
 
     </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 

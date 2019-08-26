@@ -22,7 +22,7 @@
         android:roundIcon="@mipmap/ic_launcher_logo"
         android:supportsRtl="true"
         android:theme="@style/AppNewTheme">
-        <activity android:name=".activity.LocationActivity"></activity>
+        <activity android:name=".activity.LocationActivity" />
 
         <service android:name=".ohter.WallPaperService" />
 

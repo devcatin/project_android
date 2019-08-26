@@ -14,6 +14,7 @@ public abstract class SectionedRecyclerViewAdapter <H extends RecyclerView.ViewH
     protected static final int TYPE_ITEM = -3;
     protected static final int TYPE_BANNER = -4;
     protected static final int TYPE_CLASS = -5;
+    protected static final int TYPE_LIVE = -6;
 
     private int[] sectionForPosition = null;
     private int[] positionWithinSection = null;
@@ -149,6 +150,9 @@ public abstract class SectionedRecyclerViewAdapter <H extends RecyclerView.ViewH
             case 1:
                 type = TYPE_CLASS;
                 break;
+            case 2:
+                type = TYPE_LIVE;
+                break;
                 default:
                     type = TYPE_ITEM;
                     break;
@@ -159,7 +163,7 @@ public abstract class SectionedRecyclerViewAdapter <H extends RecyclerView.ViewH
     /**
      * Returns true if the argument position corresponds to a header
      */
-    public boolean isSectionHeaderPosition(int position) {
+    protected boolean isSectionHeaderPosition(int position) {
         if(isHeader == null) {
             setupIndices();
         }
@@ -169,7 +173,7 @@ public abstract class SectionedRecyclerViewAdapter <H extends RecyclerView.ViewH
     /**
      * Returns true if the argument position corresponds to a footer
      */
-    public boolean isSectionFooterPosition(int position) {
+    protected boolean isSectionFooterPosition(int position) {
         if(isFooter == null) {
             setupIndices();
         }

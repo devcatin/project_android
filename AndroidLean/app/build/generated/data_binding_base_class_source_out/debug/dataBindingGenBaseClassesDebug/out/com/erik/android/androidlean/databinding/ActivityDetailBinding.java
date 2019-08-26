@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.erik.android.androidlean.bean.UserBean;
 import com.erik.android.androidlean.view.NavigationBar;
@@ -22,16 +23,20 @@ public abstract class ActivityDetailBinding extends ViewDataBinding {
   public final TextView editname;
 
   @NonNull
+  public final ImageView ivHead;
+
+  @NonNull
   public final NavigationBar navBar;
 
   @Bindable
   protected UserBean mUser;
 
   protected ActivityDetailBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView editdetail, TextView editname, NavigationBar navBar) {
+      TextView editdetail, TextView editname, ImageView ivHead, NavigationBar navBar) {
     super(_bindingComponent, _root, _localFieldCount);
     this.editdetail = editdetail;
     this.editname = editname;
+    this.ivHead = ivHead;
     this.navBar = navBar;
   }
 

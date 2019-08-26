@@ -18,7 +18,7 @@ public class ListItemBindingImpl extends ListItemBinding  {
     }
     // views
     @NonNull
-    private final android.widget.RelativeLayout mboundView0;
+    private final android.widget.LinearLayout mboundView0;
     // variables
     // values
     // listeners
@@ -35,7 +35,7 @@ public class ListItemBindingImpl extends ListItemBinding  {
             , (android.widget.TextView) bindings[2]
             );
         this.ivHead.setTag(null);
-        this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);
         this.txtItemContent.setTag(null);
         this.txtItemTitle.setTag(null);

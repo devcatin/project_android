@@ -14,7 +14,7 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.nav_bar, 3);
+        sViewsWithIds.put(R.id.nav_bar, 4);
     }
     // views
     @NonNull
@@ -25,16 +25,18 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityDetailBindingImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
     }
     private ActivityDetailBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 1
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[1]
-            , (com.erik.android.androidlean.view.NavigationBar) bindings[3]
+            , (android.widget.ImageView) bindings[3]
+            , (com.erik.android.androidlean.view.NavigationBar) bindings[4]
             );
         this.editdetail.setTag(null);
         this.editname.setTag(null);
+        this.ivHead.setTag(null);
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
@@ -45,7 +47,7 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x8L;
+                mDirtyFlags = 0x10L;
         }
         requestRebind();
     }
@@ -109,6 +111,12 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
             }
             return true;
         }
+        else if (fieldId == BR.headimg) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x8L;
+            }
+            return true;
+        }
         return false;
     }
 
@@ -122,35 +130,48 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
         com.erik.android.androidlean.bean.UserBean user = mUser;
         java.lang.String userUsername = null;
         java.lang.String userPassword = null;
+        java.lang.String userHeadimg = null;
 
-        if ((dirtyFlags & 0xfL) != 0) {
+        if ((dirtyFlags & 0x1fL) != 0) {
 
 
-            if ((dirtyFlags & 0xbL) != 0) {
+            if ((dirtyFlags & 0x13L) != 0) {
 
                     if (user != null) {
                         // read user.username
                         userUsername = user.getUsername();
                     }
             }
-            if ((dirtyFlags & 0xdL) != 0) {
+            if ((dirtyFlags & 0x15L) != 0) {
 
                     if (user != null) {
                         // read user.password
                         userPassword = user.getPassword();
                     }
             }
+            if ((dirtyFlags & 0x19L) != 0) {
+
+                    if (user != null) {
+                        // read user.headimg
+                        userHeadimg = user.getHeadimg();
+                    }
+            }
         }
         // batch finished
-        if ((dirtyFlags & 0xdL) != 0) {
+        if ((dirtyFlags & 0x15L) != 0) {
             // api target 1
 
             android.databinding.adapters.TextViewBindingAdapter.setText(this.editdetail, userPassword);
         }
-        if ((dirtyFlags & 0xbL) != 0) {
+        if ((dirtyFlags & 0x13L) != 0) {
             // api target 1
 
             android.databinding.adapters.TextViewBindingAdapter.setText(this.editname, userUsername);
+        }
+        if ((dirtyFlags & 0x19L) != 0) {
+            // api target 1
+
+            com.erik.android.androidlean.adapter.GridViewAdapter.setImageResource(this.ivHead, userHeadimg);
         }
     }
     // Listener Stub Implementations
@@ -161,7 +182,8 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
         flag 0 (0x1L): user
         flag 1 (0x2L): user.username
         flag 2 (0x3L): user.password
-        flag 3 (0x4L): null
+        flag 3 (0x4L): user.headimg
+        flag 4 (0x5L): null
     flag mapping end*/
     //end
 }
