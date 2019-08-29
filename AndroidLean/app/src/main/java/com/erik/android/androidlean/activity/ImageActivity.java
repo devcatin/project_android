@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
@@ -58,6 +59,11 @@ public class ImageActivity extends BaseActivity {
                 Toast.makeText(ImageActivity.this, "点击右边按钮", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+
     }
 
 }

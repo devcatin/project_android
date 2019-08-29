@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.qrcodelibrary.ZXingUtils;
@@ -49,6 +50,11 @@ public class QRCodeActivity extends BaseActivity {
         ImageView imageView = findViewById(R.id.iv_qrcode);
         Bitmap bitmap = ZXingUtils.createQRImage("https://www.baidu.com", 300, 300);
         imageView.setImageBitmap(bitmap);
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+
     }
 
 }

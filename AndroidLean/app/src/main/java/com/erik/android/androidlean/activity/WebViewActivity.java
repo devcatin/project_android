@@ -17,6 +17,7 @@ import android.webkit.WebViewClient;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.bean.TestObject;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
@@ -117,6 +118,11 @@ public class WebViewActivity extends BaseActivity implements View.OnClickListene
                 webview.loadUrl("javascript:test()");
             }
         }, 3000);
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+
     }
 
     //我们需要重写回退按钮的时间,当用户点击回退按钮：

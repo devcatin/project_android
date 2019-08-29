@@ -29,6 +29,7 @@ import com.erik.android.androidlean.adapter.ListAdapter;
 import com.erik.android.androidlean.adapter.SectionedSpanSizeLookup;
 import com.erik.android.androidlean.bean.BannerBean;
 import com.erik.android.androidlean.bean.ClassBean;
+import com.erik.android.androidlean.bean.ComBean;
 import com.erik.android.androidlean.bean.HomeBean;
 import com.erik.android.androidlean.bean.HotelEntity;
 import com.erik.android.androidlean.bean.LiveBean;
@@ -49,6 +50,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import okhttp3.Response;
 
@@ -56,7 +58,7 @@ public class HomeFragment extends BaseFragment {
 
     private RecyclerView recyclerView;
     private HomeEntityAdapter homeEntityAdapter;
-    private List<List> datas = new ArrayList<>();
+    private List<ComBean> datas = new ArrayList<>();
 
     @Override
     public void onAttach(Context context) {
@@ -114,7 +116,7 @@ public class HomeFragment extends BaseFragment {
     @Override
     public void requestData() {
         super.requestData();
-        NetRequest netRequest = NetRequest.getInstance(getContext());
+        final NetRequest netRequest = NetRequest.getInstance(getContext());
         netRequest.get(RequestMethod.GET_HOME_DATA, new NetRequest.RequestCallBack() {
             @Override
             public void success(Response response) throws IOException {
@@ -130,10 +132,23 @@ public class HomeFragment extends BaseFragment {
                         List<BannerBean> banners = homeBean.getBanners();
                         List<ClassBean> classes = homeBean.getClasses();
                         List<LiveBean> liveBeans = homeBean.getLives();
-                        datas.add(banners);
-                        datas.add(classes);
-                        datas.add(liveBeans);
-                        datas.add(liveBeans);
+
+                        ComBean comBean = new ComBean();
+                        comBean.setType("banner");
+                        comBean.setBanners(banners);
+
+                        ComBean comBean1 = new ComBean();
+                        comBean1.setType("class");
+                        comBean1.setClasses(classes);
+
+                        ComBean comBean2 = new ComBean();
+                        comBean2.setType("live");
+                        comBean2.setLives(liveBeans);
+
+
+                        datas.add(comBean);
+                        datas.add(comBean1);
+                        datas.add(comBean2);
                     }
                     Message message = new Message();
                     message.what = 0x123;

@@ -16,8 +16,6 @@ public class HomeGridViewItemBindingImpl extends HomeGridViewItemBinding  {
         sViewsWithIds = null;
     }
     // views
-    @NonNull
-    private final android.support.constraint.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
@@ -28,12 +26,12 @@ public class HomeGridViewItemBindingImpl extends HomeGridViewItemBinding  {
     }
     private HomeGridViewItemBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.support.constraint.ConstraintLayout) bindings[0]
             , (android.widget.ImageView) bindings[1]
             , (android.widget.TextView) bindings[2]
             );
+        this.clLayout.setTag(null);
         this.ivIcon.setTag(null);
-        this.mboundView0 = (android.support.constraint.ConstraintLayout) bindings[0];
-        this.mboundView0.setTag(null);
         this.tvTitle.setTag(null);
         setRootTag(root);
         // listeners

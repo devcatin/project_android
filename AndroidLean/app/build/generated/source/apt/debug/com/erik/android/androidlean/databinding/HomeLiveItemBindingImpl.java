@@ -17,8 +17,6 @@ public class HomeLiveItemBindingImpl extends HomeLiveItemBinding  {
         sViewsWithIds.put(R.id.btn_appoint, 4);
     }
     // views
-    @NonNull
-    private final android.widget.LinearLayout mboundView0;
     // variables
     // values
     // listeners
@@ -31,12 +29,12 @@ public class HomeLiveItemBindingImpl extends HomeLiveItemBinding  {
         super(bindingComponent, root, 0
             , (android.widget.Button) bindings[4]
             , (android.widget.ImageView) bindings[1]
+            , (android.widget.LinearLayout) bindings[0]
             , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[2]
             );
         this.ivHead.setTag(null);
-        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
-        this.mboundView0.setTag(null);
+        this.llLayout.setTag(null);
         this.tvSubtitle.setTag(null);
         this.tvTitle.setTag(null);
         setRootTag(root);

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.erik.android.androidlean.bean.LiveBean;
 import java.lang.Deprecated;
@@ -23,6 +24,9 @@ public abstract class HomeLiveItemBinding extends ViewDataBinding {
   public final ImageView ivHead;
 
   @NonNull
+  public final LinearLayout llLayout;
+
+  @NonNull
   public final TextView tvSubtitle;
 
   @NonNull
@@ -32,10 +36,12 @@ public abstract class HomeLiveItemBinding extends ViewDataBinding {
   protected LiveBean mLive;
 
   protected HomeLiveItemBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button btnAppoint, ImageView ivHead, TextView tvSubtitle, TextView tvTitle) {
+      Button btnAppoint, ImageView ivHead, LinearLayout llLayout, TextView tvSubtitle,
+      TextView tvTitle) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnAppoint = btnAppoint;
     this.ivHead = ivHead;
+    this.llLayout = llLayout;
     this.tvSubtitle = tvSubtitle;
     this.tvTitle = tvTitle;
   }

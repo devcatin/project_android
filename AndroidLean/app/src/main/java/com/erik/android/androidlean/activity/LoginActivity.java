@@ -18,6 +18,7 @@ import android.widget.EditText;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
@@ -119,6 +120,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
             }
         });
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+
     }
 
     private void initWatcher() {

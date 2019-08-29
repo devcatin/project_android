@@ -1,9 +1,12 @@
 package com.erik.android.androidlean.adapter;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,13 +14,14 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.bumptech.glide.Glide;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.activity.DetailActivity;
 import com.erik.android.androidlean.bean.ClassBean;
-import com.erik.android.androidlean.bean.UserBean;
+import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.databinding.HomeGridViewItemBinding;
-import com.erik.android.androidlean.databinding.ListItemBinding;
-import com.erik.android.androidlean.view.CustomRoundAngleImageView;
+import com.erik.utilslibrary.ActivityManager;
 
 import java.util.List;
 
@@ -58,7 +62,16 @@ public class GridViewAdapter extends BaseAdapter {
         } else {
             listViewHolder = (ListViewHolder)convertView.getTag();
         }
-        ClassBean bean = beans.get(position);
+        final ClassBean bean = beans.get(position);
+        listViewHolder.cl_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ARouter.getInstance()
+                        .build(ConstConfig.DETAIL_ACTIVITY)
+                        .withString("name", bean.getTitle())
+                        .navigation();
+            }
+        });
         listViewHolder.bind(bean);
         return convertView;
     }
@@ -71,10 +84,12 @@ public class GridViewAdapter extends BaseAdapter {
     private class ListViewHolder extends RecyclerView.ViewHolder {
 
         private HomeGridViewItemBinding itemBinding;
+        public ConstraintLayout cl_layout;
 
         private ListViewHolder(View itemView) {
             super(itemView);
             itemBinding = DataBindingUtil.bind(itemView);
+            cl_layout = itemView.findViewById(R.id.cl_layout);
         }
 
         private void bind(@NonNull ClassBean bean) {

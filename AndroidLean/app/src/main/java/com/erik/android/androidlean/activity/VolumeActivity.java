@@ -4,15 +4,12 @@ import android.app.Activity;
 import android.app.Service;
 import android.app.WallpaperManager;
 import android.content.Context;
-import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -21,8 +18,8 @@ import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.alibaba.android.arouter.launcher.ARouter;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
@@ -131,6 +128,11 @@ public class VolumeActivity extends BaseActivity implements View.OnClickListener
         lower.setOnClickListener(this);
         quite = findViewById(R.id.btn_quite);
         quite.setOnClickListener(this);
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+
     }
 
     @Override

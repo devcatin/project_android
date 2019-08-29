@@ -19,9 +19,11 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.erik.android.androidlean.adapter.TestFragmentPagerAdapter;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 
 
 public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {
@@ -97,6 +99,11 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         viewPager.setAdapter(adapter);
         viewPager.setCurrentItem(0);
         viewPager.addOnPageChangeListener(this);
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+        Toast.makeText(MainActivity.this, event.message, Toast.LENGTH_SHORT).show();
     }
 
     @Override

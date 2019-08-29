@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.ohter.WallPaperService;
 import com.erik.android.androidlean.view.NavigationBar;
@@ -70,6 +71,11 @@ public class ChangeWallPagerActivity extends BaseActivity implements View.OnClic
         btn_on.setOnClickListener(this);
         btn_off.setOnClickListener(this);
         btn_clean.setOnClickListener(this);
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+
     }
 
     @Override

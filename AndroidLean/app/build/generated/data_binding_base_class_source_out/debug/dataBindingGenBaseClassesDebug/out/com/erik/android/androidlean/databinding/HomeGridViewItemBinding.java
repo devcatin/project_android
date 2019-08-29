@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,9 @@ import java.lang.Object;
 
 public abstract class HomeGridViewItemBinding extends ViewDataBinding {
   @NonNull
+  public final ConstraintLayout clLayout;
+
+  @NonNull
   public final ImageView ivIcon;
 
   @NonNull
@@ -25,8 +29,9 @@ public abstract class HomeGridViewItemBinding extends ViewDataBinding {
   protected ClassBean mBean;
 
   protected HomeGridViewItemBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView ivIcon, TextView tvTitle) {
+      ConstraintLayout clLayout, ImageView ivIcon, TextView tvTitle) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.clLayout = clLayout;
     this.ivIcon = ivIcon;
     this.tvTitle = tvTitle;
   }

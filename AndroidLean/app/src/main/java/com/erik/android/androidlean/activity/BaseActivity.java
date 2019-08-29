@@ -4,10 +4,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.utilslibrary.ActivityManager;
 import com.github.zackratos.ultimatebar.UltimateBar;
 
-public class BaseActivity extends AppCompatActivity {
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+public abstract class BaseActivity extends AppCompatActivity {
 
     private static long lastClickTime;
 
@@ -26,13 +31,25 @@ public class BaseActivity extends AppCompatActivity {
                 .navigationDrawable2(null)     // Android 8.0 以下导航栏灰色模式时导航栏颜色
                 .create()
                 .immersionBar();
+        EventBus.getDefault().register(this);
     }
 
     @Override
     protected void onDestroy() {
         ActivityManager.getActivity().remove(this);
+        EventBus.getDefault().unregister(this);
         super.onDestroy();
     }
+
+    @Subscribe(threadMode = ThreadMode.MAIN, sticky = false, priority = 0)
+    public void onMessageHandle(MessageEvent event) {
+        onMessageEvent(event);
+    }
+
+    /**
+     * @param event
+     */
+    public abstract void onMessageEvent(MessageEvent event);
 
     public boolean isFastClick() {
         long time = System.currentTimeMillis();

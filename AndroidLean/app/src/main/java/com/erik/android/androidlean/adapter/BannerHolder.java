@@ -4,11 +4,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.UserBean;
+import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.tool.GlideImageLoader;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
+import com.youth.banner.listener.OnBannerListener;
 
 import java.util.ArrayList;
 import java.util.List;

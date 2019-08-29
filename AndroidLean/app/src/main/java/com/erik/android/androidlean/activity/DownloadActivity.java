@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
@@ -97,6 +98,11 @@ public class DownloadActivity extends BaseActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+
     }
 
     private final class ButtonClickListener implements View.OnClickListener {

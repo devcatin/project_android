@@ -16,8 +16,8 @@ public abstract class SectionedRecyclerViewAdapter <H extends RecyclerView.ViewH
     protected static final int TYPE_CLASS = -5;
     protected static final int TYPE_LIVE = -6;
 
-    private int[] sectionForPosition = null;
-    private int[] positionWithinSection = null;
+    protected int[] sectionForPosition = null;
+    protected int[] positionWithinSection = null;
     private boolean[] isHeader = null;
     private boolean[] isFooter = null;
     private int count = 0;
@@ -42,7 +42,7 @@ public abstract class SectionedRecyclerViewAdapter <H extends RecyclerView.ViewH
         return count;
     }
 
-    private void setupIndices(){
+    protected void setupIndices() {
         count = countItems();
         allocateAuxiliaryArrays(count);
         precomputeIndices();
@@ -113,14 +113,15 @@ public abstract class SectionedRecyclerViewAdapter <H extends RecyclerView.ViewH
         } else if(isSectionFooterPosition(position)) {
             onBindSectionFooterViewHolder((FooterHolder)holder, section);
         } else {
-            onBindItemViewHolder(holder, section, index);
+            int viewType = getItemViewType(position);
+            onBindItemViewHolder(holder, section, index, viewType);
         }
     }
 
     @Override
     public int getItemViewType(int position) {
-        if(sectionForPosition == null){
-            setupIndices();
+        if(sectionForPosition == null) {
+            this.setupIndices();
         }
         int section = sectionForPosition[position];
         int index = positionWithinSection[position];
@@ -142,22 +143,7 @@ public abstract class SectionedRecyclerViewAdapter <H extends RecyclerView.ViewH
     }
 
     protected int getSectionItemViewType(int section, int position) {
-        int type;
-        switch (section) {
-            case 0:
-                type = TYPE_BANNER;
-                break;
-            case 1:
-                type = TYPE_CLASS;
-                break;
-            case 2:
-                type = TYPE_LIVE;
-                break;
-                default:
-                    type = TYPE_ITEM;
-                    break;
-        }
-        return type;
+        return 0;
     }
 
     /**
@@ -232,7 +218,7 @@ public abstract class SectionedRecyclerViewAdapter <H extends RecyclerView.ViewH
     /**
      * Binds data to the item view for a given position within a section
      */
-    protected abstract void onBindItemViewHolder(RecyclerView.ViewHolder holder, int section, int position);
+    protected abstract void onBindItemViewHolder(RecyclerView.ViewHolder holder, int section, int position, int viewType);
 
     class SectionDataObserver extends RecyclerView.AdapterDataObserver {
         @Override

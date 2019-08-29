@@ -10,6 +10,7 @@ import android.widget.SeekBar;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.tool.ImageHelper;
 import com.erik.android.androidlean.view.NavigationBar;
@@ -76,6 +77,11 @@ public class MatrixActivity extends BaseActivity implements SeekBar.OnSeekBarCha
 
             }
         });
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+
     }
 
     @Override

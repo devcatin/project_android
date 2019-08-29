@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.erik.android.androidlean.R;
+import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.DrawingBoard;
 import com.erik.android.androidlean.view.NavigationBar;
@@ -56,6 +57,11 @@ public class DrawBoardActivity extends BaseActivity {
                 draw_board.clear();
             }
         });
+    }
+
+    @Override
+    public void onMessageEvent(MessageEvent event) {
+
     }
 
 }

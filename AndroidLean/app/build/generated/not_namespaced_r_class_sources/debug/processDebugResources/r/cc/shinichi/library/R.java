@@ -40,19 +40,19 @@ public final class R {
         private id() {}
 
         public static final int btn_show_origin = 0x7f080048;
-        public static final int fingerDragHelper = 0x7f08008a;
-        public static final int fm_center_progress_container = 0x7f080095;
-        public static final int fm_image_show_origin_container = 0x7f080096;
-        public static final int gif_view = 0x7f08009a;
-        public static final int imgCloseButton = 0x7f0800a7;
-        public static final int img_download = 0x7f0800a8;
-        public static final int photo_view = 0x7f0800dc;
-        public static final int progress_view = 0x7f0800e1;
-        public static final int rootView = 0x7f0800ef;
-        public static final int sh_progress_text = 0x7f080109;
-        public static final int sh_progress_view = 0x7f08010a;
-        public static final int tv_indicator = 0x7f080143;
-        public static final int viewPager = 0x7f080157;
+        public static final int fingerDragHelper = 0x7f08008b;
+        public static final int fm_center_progress_container = 0x7f080096;
+        public static final int fm_image_show_origin_container = 0x7f080097;
+        public static final int gif_view = 0x7f08009b;
+        public static final int imgCloseButton = 0x7f0800a8;
+        public static final int img_download = 0x7f0800a9;
+        public static final int photo_view = 0x7f0800de;
+        public static final int progress_view = 0x7f0800e3;
+        public static final int rootView = 0x7f0800f1;
+        public static final int sh_progress_text = 0x7f08010b;
+        public static final int sh_progress_view = 0x7f08010c;
+        public static final int tv_indicator = 0x7f080145;
+        public static final int viewPager = 0x7f080159;
     }
     public static final class layout {
         private layout() {}
