@@ -12,12 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <!--<com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView-->
-        <!--android:id="@+id/imageView"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" />-->
-
-    <com.shizhefei.view.largeimage.LargeImageView
+    <com.erik.android.androidlean.view.BigImageView
         android:id="@+id/imageView"
         android:scrollbars="vertical|horizontal"
         android:layout_width="match_parent"

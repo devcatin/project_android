@@ -1,31 +1,28 @@
 package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
-import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.transition.Transition;
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
+import com.erik.android.androidlean.view.BigImageView;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
 import com.github.piasy.biv.BigImageViewer;
 import com.github.piasy.biv.loader.glide.GlideImageLoader;
-import com.shizhefei.view.largeimage.LargeImageView;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 
 @Route(path = ConstConfig.VIEW_LARGER_IMAGE_ACTIVITY)
 public class LargerImageActivity extends BaseActivity {
 
-    private LargeImageView imageView;
+    private BigImageView imageView;
     @Autowired(name = "name")
     public String name;
 
@@ -40,23 +37,11 @@ public class LargerImageActivity extends BaseActivity {
 
     private void bindViews() {
         imageView = findViewById(R.id.imageView);
-        String url = "https://v.iduov.com/insurance-person/d709c946-cee5-4311-9d51-226758610dab.png";
-        /*imageView.setMinimumScaleType(SubsamplingScaleImageView.SCALE_TYPE_CENTER_INSIDE);
-        imageView.setMinScale(1.5f);
-        imageView.setMaxScale(1.5f);
-        Glide.with(this).load(url).downloadOnly(new SimpleTarget<File>() {
-            @Override
-            public void onResourceReady(@NonNull File resource, @Nullable Transition<? super File> transition) {
-                ImageSource imageSource = ImageSource.uri(Uri.fromFile(resource));
-                //imageView.setImage(imageSource, new ImageViewState(1.5f, new PointF(0, 0), 0));
-            }
-        });*/
-        Glide.with(this).load(url).into(new SimpleTarget<Drawable>() {
-            @Override
-            public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
-                imageView.setImage(resource);
-            }
-        });
+        //String url = "https://v.iduov.com/insurance-person/d709c946-cee5-4311-9d51-226758610dab.png";
+//        String url = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568629148890&di=fc1bcb68dd7db9e365515e1cf203bbec&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F012ec4574584276ac72525aee9f5cd.jpg";
+//        imageView.configWithImageUrl(url);
+        String url = "big.png";
+        imageView.configWithLocalImageUrl(url);
     }
 
     private void navigationBar() {

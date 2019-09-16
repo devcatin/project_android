@@ -103,8 +103,8 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
                 enterPreforenceActivity();
                 break;
             case R.id.btn_view_larger_image:
-                viewLargeImage();
-                //enterViewLargerImageActivity();
+                //viewLargeImage();
+                enterViewLargerImageActivity();
                 break;
             case R.id.btn_change_volume:
                 enterChangeVolume();
