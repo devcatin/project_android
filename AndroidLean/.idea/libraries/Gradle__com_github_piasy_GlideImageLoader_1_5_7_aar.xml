@@ -1,10 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.piasy:GlideImageLoader:1.5.7@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ee0e5cebd3ae8fd5a470cb7e53340dbe/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ee0e5cebd3ae8fd5a470cb7e53340dbe/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90311d1bc72fcaeb07a0b2b0435b1b2d/GlideImageLoader-1.5.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90311d1bc72fcaeb07a0b2b0435b1b2d/GlideImageLoader-1.5.7/res" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.piasy/GlideImageLoader/1.5.7/c6fa3546d3ab1264ca6bb6cfa86bbb7cebd18dc8/GlideImageLoader-1.5.7-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.piasy/GlideImageLoader/1.5.7/210818c226432718789ab030b093898eac65dc7d/GlideImageLoader-1.5.7-sources.jar!/" />
     </SOURCES>

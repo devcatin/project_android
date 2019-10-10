@@ -4,7 +4,7 @@
             "outputFile": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v19/values-v19.xml",
             "map": [
                 {
-                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/397b44834e7186529f9db7622a473dd5/res/values-v19/values-v19.xml",
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8424b520d380550b9dfed5b09832502f/BigImageViewPager-v4_4.1.0/res/values-v19/values-v19.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

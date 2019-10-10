@@ -2,19 +2,24 @@ package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.PointF;
 import android.net.Uri;
+import android.os.Handler;
 import android.provider.Contacts;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
+import android.view.ViewStub;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -24,6 +29,9 @@ import android.widget.Toast;
 import com.erik.android.androidlean.adapter.TestFragmentPagerAdapter;
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.bean.MessageEvent;
+import com.erik.android.androidlean.fragment.SplashFragment;
+
+import java.lang.ref.WeakReference;
 
 
 public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {
@@ -45,11 +53,77 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     public static final int PAGE_THREE = 2;
     public static final int PAGE_FOUR = 3;
 
+    private ViewStub viewStub;
+    private SplashFragment splashFragment;
+
+    private Handler mHandler = new Handler();
+
+    static class DelayRunnable implements Runnable{
+        private WeakReference<Context> contextRef;
+        private WeakReference<SplashFragment> fragmentRef;
+
+        public DelayRunnable(Context context, SplashFragment f) {
+            contextRef = new WeakReference<>(context);
+            fragmentRef = new WeakReference<>(f);
+        }
+
+        @Override
+        public void run() {
+            if(contextRef!=null){
+                SplashFragment splashFragment = fragmentRef.get();
+                if(splashFragment==null){
+                    return;
+                }
+                FragmentActivity activity = (FragmentActivity) contextRef.get();
+                FragmentTransaction transaction = activity.getSupportFragmentManager().beginTransaction();
+                transaction.remove(splashFragment);
+                transaction.commit();
+            }
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        splashFragment = new SplashFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame, splashFragment);
+        transaction.commit();
+
+        viewStub = findViewById(R.id.content_viewstub);
+
+        //1.判断当窗体加载完毕的时候,就把我们真正的布局加载进来
+        getWindow().getDecorView().post(new Runnable() {
+            @Override
+            public void run() {
+                // 开启延迟加载
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        //将viewstub加载进来
+                        viewStub.inflate();
+                        initMain();
+                    }
+                } );
+            }
+        });
+
+        //2.判断当窗体加载完毕的时候执行,延迟一段时间是为了模拟做动画的耗时。
+        getWindow().getDecorView().post(new Runnable() {
+            @Override
+            public void run() {
+                // 开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）
+                mHandler.postDelayed(new DelayRunnable(MainActivity.this, splashFragment) ,2000);
+            }
+        });
+
+        //3.同时进行异步加载数据
+    }
+
+    private void initMain() {
         adapter = new TestFragmentPagerAdapter(getSupportFragmentManager());
         bindViews();
         rb_home.setChecked(true);

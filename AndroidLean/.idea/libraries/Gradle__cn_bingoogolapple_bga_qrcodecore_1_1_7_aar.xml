@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: cn.bingoogolapple:bga-qrcodecore:1.1.7@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/106ce329d0dda93b21a399ddff848411/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/106ce329d0dda93b21a399ddff848411/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7c811e2fa9a676d11c84c685873e324f/bga-qrcodecore-1.1.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7c811e2fa9a676d11c84c685873e324f/bga-qrcodecore-1.1.7/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

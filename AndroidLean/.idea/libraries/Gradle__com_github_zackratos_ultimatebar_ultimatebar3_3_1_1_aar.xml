@@ -1,10 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.zackratos.ultimatebar:ultimatebar3:3.1.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/736095e3e7cff1120b19a407ea0aacf4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/736095e3e7cff1120b19a407ea0aacf4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3bde610771d8de1f8705b8589fd072e9/ultimatebar3-3.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3bde610771d8de1f8705b8589fd072e9/ultimatebar3-3.1.1/res" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zackratos.ultimatebar/ultimatebar3/3.1.1/137ed0a371683a0448e53902e57744dc0034c44b/ultimatebar3-3.1.1-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zackratos.ultimatebar/ultimatebar3/3.1.1/5c27e33fe39e0a9fe1951a165533243fdf26aefc/ultimatebar3-3.1.1-sources.jar!/" />
     </SOURCES>

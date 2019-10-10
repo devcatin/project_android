@@ -1194,6 +1194,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back
 drawable bg_frame_search
+drawable bg_welcome
 drawable bitmap_drawable
 drawable black_background
 drawable circle_style
@@ -1378,6 +1379,7 @@ id collapseActionView
 id container
 id content
 id contentPanel
+id content_viewstub
 id coordinator
 id custom
 id customPanel
@@ -1426,6 +1428,7 @@ id fm_center_progress_container
 id fm_image_show_origin_container
 id focusCrop
 id forever
+id frame
 id ghost_view
 id gif_view
 id glide_custom_view_target_tag
@@ -1682,6 +1685,7 @@ layout activity_larger_image
 layout activity_location
 layout activity_login
 layout activity_main
+layout activity_main_viewstub
 layout activity_matrix
 layout activity_preforence
 layout activity_qrcode
@@ -1708,6 +1712,7 @@ layout fragment_buy
 layout fragment_home
 layout fragment_mine
 layout fragment_newlist
+layout fragment_splash
 layout fregment_content
 layout home_banner_item
 layout home_class_item
@@ -1822,6 +1827,7 @@ string draw_board
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string fast_appoint
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string indicator
 string load_html

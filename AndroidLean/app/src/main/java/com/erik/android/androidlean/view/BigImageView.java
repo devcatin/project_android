@@ -57,6 +57,8 @@ public class BigImageView extends View implements GestureDetector.OnGestureListe
 
     final static int BUFFER_SIZE = 4096;
 
+    private HttpURLConnection connection;
+
     private android.os.Handler handler = new android.os.Handler(new android.os.Handler.Callback() {
         @Override
         public boolean handleMessage(Message msg) {
@@ -181,7 +183,7 @@ public class BigImageView extends View implements GestureDetector.OnGestureListe
             public void run() {
                 try {
                     URL url = new URL(imageUrl);
-                    HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+                    connection = (HttpURLConnection)url.openConnection();
                     connection.setRequestMethod("GET");
                     connection.setReadTimeout(30000);
                     connection.connect();
@@ -212,7 +214,8 @@ public class BigImageView extends View implements GestureDetector.OnGestureListe
 
         //创建一个区域解码器
         try {
-            mDecode = BitmapRegionDecoder.newInstance(is, false);
+            mInputStream = connection.getInputStream();
+            mDecode = BitmapRegionDecoder.newInstance(mInputStream, false);
             //byte[] data = toByteArray(is);
             //mDecode = BitmapRegionDecoder.newInstance(data, 0, data.length, false);
         } catch (IOException e) {

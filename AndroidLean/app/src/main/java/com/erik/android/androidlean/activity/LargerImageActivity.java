@@ -1,15 +1,20 @@
 package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.bean.MessageEvent;
 import com.erik.android.androidlean.constant.ConstConfig;
 import com.erik.android.androidlean.view.BigImageView;
+import com.erik.android.androidlean.view.LongImageView;
 import com.erik.android.androidlean.view.NavigationBar;
 import com.erik.utilslibrary.ActivityManager;
 import com.github.piasy.biv.BigImageViewer;
@@ -37,9 +42,16 @@ public class LargerImageActivity extends BaseActivity {
 
     private void bindViews() {
         imageView = findViewById(R.id.imageView);
-        //String url = "https://v.iduov.com/insurance-person/d709c946-cee5-4311-9d51-226758610dab.png";
-//        String url = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568629148890&di=fc1bcb68dd7db9e365515e1cf203bbec&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F012ec4574584276ac72525aee9f5cd.jpg";
-//        imageView.configWithImageUrl(url);
+        //loadLocalImage();
+        loadNetImage();
+    }
+
+    private void loadNetImage() {
+        String url = "https://v.iduov.com/insurance-person/d709c946-cee5-4311-9d51-226758610dab.png";
+        imageView.configWithImageUrl(url);
+    }
+
+    private void loadLocalImage() {
         String url = "big.png";
         imageView.configWithLocalImageUrl(url);
     }

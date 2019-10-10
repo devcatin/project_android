@@ -4,7 +4,7 @@
             "outputFile": "/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f2e88bee3222aa94d9575e6775f64609/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/1dbd221111b23628036d94466509d27f/design-28.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/bf28948697be8789c9da07031428834b/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/yuanwang/.gradle/caches/transforms-2/files-2.1/f823b7778b12fd752ebeeeaf85408981/appcompat-v7-28.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

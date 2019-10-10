@@ -31,6 +31,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 .navigationDrawable2(null)     // Android 8.0 以下导航栏灰色模式时导航栏颜色
                 .create()
                 .immersionBar();
+
         EventBus.getDefault().register(this);
     }
 
