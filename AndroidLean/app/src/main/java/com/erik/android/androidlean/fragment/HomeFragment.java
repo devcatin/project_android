@@ -59,6 +59,7 @@ public class HomeFragment extends BaseFragment {
     private RecyclerView recyclerView;
     private HomeEntityAdapter homeEntityAdapter;
     private List<ComBean> datas = new ArrayList<>();
+    private boolean isPrepared;
 
     @Override
     public void onAttach(Context context) {
@@ -77,9 +78,19 @@ public class HomeFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        isPrepared = true;
+        lazyLoad();
         navigationBar(view);
         bindViews(view);
         return view;
+    }
+
+    @Override
+    protected void lazyLoad() {
+        if (!isPrepared || !isVisible) {
+            return;
+        }
+        //填充各控件的数据
     }
 
     @Override

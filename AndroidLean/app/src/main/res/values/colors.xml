@@ -20,4 +20,6 @@
     <color name="text_gray">#B0B0B0</color>
     <color name="list_line">#CCCCCC</color>
 
+    <color name="transparent">#00000000</color>
+
 </resources>

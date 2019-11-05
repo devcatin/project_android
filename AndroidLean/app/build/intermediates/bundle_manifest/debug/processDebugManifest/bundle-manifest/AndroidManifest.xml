@@ -7,10 +7,10 @@
     <uses-sdk
         android:minSdkVersion="19"
         android:targetSdkVersion="28" />
-    <!-- 访问internet权限 -->
-    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 往SDCard写入数据权限 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- if you want to load images from a file OR from the internet -->
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -20,6 +20,9 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.0" /> <!-- 访问internet权限 -->
     <application
         android:name="com.erik.android.androidlean.ohter.TestApplication"
         android:allowBackup="true"
@@ -32,10 +35,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppNewTheme" >
+        <activity android:name="com.erik.android.androidlean.activity.WeatherActivity" />
         <activity android:name="com.erik.android.androidlean.activity.LocationActivity" />
-
-        <service android:name="com.erik.android.androidlean.ohter.WallPaperService" />
-
         <activity android:name="com.erik.android.androidlean.activity.ChangeWallPagerActivity" />
         <activity android:name="com.erik.android.androidlean.activity.QRCodeActivity" />
         <activity android:name="com.erik.android.androidlean.activity.VolumeActivity" />
@@ -49,14 +50,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
-                <data
-                    android:host="m.test.com"
-                    android:scheme="arouter" />
-
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="m.test.com"
+                    android:scheme="arouter" />
             </intent-filter>
         </activity>
         <activity
@@ -94,6 +95,10 @@
             android:authorities="com.jay.example.providers.myprovider"
             android:enabled="true"
             android:exported="true" />
+
+        <service android:name="com.erik.android.androidlean.ohter.WallPaperService" />
+        <service android:name="com.erik.android.androidlean.ohter.TestService" />
+        <service android:name="com.erik.android.androidlean.ohter.WeatherService" />
 
         <activity
             android:name="com.erik.qrcodelibrary.QRCodeActivity"

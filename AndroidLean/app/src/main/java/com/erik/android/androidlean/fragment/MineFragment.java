@@ -18,6 +18,8 @@ import cc.shinichi.library.ImagePreview;
 
 public class MineFragment extends BaseFragment implements View.OnClickListener {
 
+    private boolean isPrepared;
+
     public MineFragment() {
 
     }
@@ -30,9 +32,19 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_mine, container, false);
+        isPrepared = true;
+        lazyLoad();
         navigationBar(view);
         bindViews(view);
         return view;
+    }
+
+    @Override
+    protected void lazyLoad() {
+        if (!isPrepared || !isVisible) {
+            return;
+        }
+        //填充各控件的数据
     }
 
     private void bindViews(View view) {

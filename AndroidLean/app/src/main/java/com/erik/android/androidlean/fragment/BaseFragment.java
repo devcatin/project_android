@@ -16,7 +16,7 @@ import com.scwang.smartrefresh.layout.header.BezierRadarHeader;
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
-public class BaseFragment extends Fragment {
+public abstract class BaseFragment extends Fragment {
 
     private Activity activity;
     //分页请求页数初始值
@@ -26,6 +26,8 @@ public class BaseFragment extends Fragment {
     //是否是上拉和下拉
     public boolean isDoubleRefresh = false;
     public SmartRefreshLayout refreshLayout;
+
+    protected boolean isVisible;
 
     public Handler handler = new Handler(new Handler.Callback() {
         @Override
@@ -55,6 +57,26 @@ public class BaseFragment extends Fragment {
             return false;
         }
     });
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (getUserVisibleHint()) {
+            isVisible = true;
+            onVisible();
+        } else {
+            isVisible = false;
+            onInvisible();
+        }
+    }
+
+    protected void onVisible() {
+        lazyLoad();
+    }
+
+    protected abstract void lazyLoad();
+
+    protected void onInvisible() {}
 
     public Context getContext() {
         if (activity == null) {

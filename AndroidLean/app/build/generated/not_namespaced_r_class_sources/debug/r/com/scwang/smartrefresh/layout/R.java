@@ -88,17 +88,17 @@ public final class R {
         public static final int MatchLayout = 0x7f080007;
         public static final int Scale = 0x7f08000a;
         public static final int Translate = 0x7f08000b;
-        public static final int srl_classics_arrow = 0x7f08011f;
-        public static final int srl_classics_center = 0x7f080120;
-        public static final int srl_classics_progress = 0x7f080121;
-        public static final int srl_classics_title = 0x7f080122;
-        public static final int srl_classics_update = 0x7f080123;
+        public static final int srl_classics_arrow = 0x7f080120;
+        public static final int srl_classics_center = 0x7f080121;
+        public static final int srl_classics_progress = 0x7f080122;
+        public static final int srl_classics_title = 0x7f080123;
+        public static final int srl_classics_update = 0x7f080124;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int srl_classics_footer = 0x7f0b0063;
-        public static final int srl_classics_header = 0x7f0b0064;
+        public static final int srl_classics_footer = 0x7f0b0065;
+        public static final int srl_classics_header = 0x7f0b0066;
     }
     public static final class string {
         private string() {}

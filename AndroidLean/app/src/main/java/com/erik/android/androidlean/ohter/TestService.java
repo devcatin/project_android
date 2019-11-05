@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.erik.android.androidlean.activity.MainActivity;
 import com.erik.android.androidlean.R;
@@ -44,12 +45,6 @@ public class TestService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.i(TAG, "onStartCommand方法被调用");
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                //任务逻辑
-            }
-        }).start();
         return super.onStartCommand(intent, flags, startId);
     }
 

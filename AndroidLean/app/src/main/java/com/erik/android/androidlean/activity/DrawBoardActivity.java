@@ -2,8 +2,11 @@ package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -22,6 +25,14 @@ public class DrawBoardActivity extends BaseActivity {
     @Autowired(name = "name")
     public String name;
 
+    Handler handler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+            Toast.makeText(DrawBoardActivity.this, "消息",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+    });
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +40,18 @@ public class DrawBoardActivity extends BaseActivity {
 
         navigationBar();
         bindViews();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                handler.sendEmptyMessage(0);
+            }
+        });
     }
 
     private void navigationBar() {

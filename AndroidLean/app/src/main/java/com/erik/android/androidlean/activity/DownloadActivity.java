@@ -1,13 +1,17 @@
 package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Bundle;
+import android.support.animation.SpringAnimation;
+import android.support.animation.SpringForce;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +34,7 @@ public class DownloadActivity extends BaseActivity {
     public EditText editPath;
     private Button btndown;
     private Button btnstop;
+    private Button btn_show;
     private TextView textResult;
     public ProgressBar progressBar;
     private static final int PROCESSONG = 1;
@@ -78,9 +83,11 @@ public class DownloadActivity extends BaseActivity {
         btnstop = findViewById(R.id.btnstop);
         textResult = findViewById(R.id.textresult);
         progressBar = findViewById(R.id.progressBar);
+        btn_show = findViewById(R.id.btn_show);
         ButtonClickListener listener = new ButtonClickListener();
         btndown.setOnClickListener(listener);
         btnstop.setOnClickListener(listener);
+        btn_show.setOnClickListener(listener);
     }
 
     private void navigationBar() {
@@ -98,6 +105,33 @@ public class DownloadActivity extends BaseActivity {
 
             }
         });
+    }
+
+    /**
+     * 弹性弹框
+     */
+    private void showDialog() {
+        Dialog dialog = new Dialog(
+                DownloadActivity.this,
+                R.style.test_dialog);
+
+        //整个弹框布局
+        View contentView = getLayoutInflater().inflate(R.layout.dialog_layout, null);
+        //弹性动画的布局
+        //View test_view = contentView.findViewById(R.id.test_view);
+        LinearLayout ll_layout = contentView.findViewById(R.id.ll_layout);
+        dialog.setContentView(contentView);
+
+        dialog.setCanceledOnTouchOutside(true);
+
+        //Stiffness越小，弹性效果越好，弹的时间越长。DampingRatio的值越大，弹性效果越差。
+        //StartVelocity开始速度，单位是px/second.正数是弹簧收缩的方向，负数则相反。
+        SpringAnimation signUpBtnAnimY = new SpringAnimation(ll_layout,SpringAnimation.TRANSLATION_Y,0);
+        signUpBtnAnimY.getSpring().setStiffness(SpringForce.STIFFNESS_VERY_LOW);
+        signUpBtnAnimY.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_LOW_BOUNCY);
+        signUpBtnAnimY.setStartVelocity(10000);
+        signUpBtnAnimY.start();
+        dialog.show();
     }
 
     @Override
@@ -123,6 +157,9 @@ public class DownloadActivity extends BaseActivity {
                     exit();
                     btndown.setEnabled(true);
                     btnstop.setEnabled(false);
+                    break;
+                case R.id.btn_show:
+                    showDialog();
                     break;
             }
         }

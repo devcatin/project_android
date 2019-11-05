@@ -30,6 +30,7 @@
         <item name="windowNoTitle">true</item>
         <!--设置窗体透明-->
         <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowBackground">@drawable/bg_welcome</item>-->
         <!--设置窗体切换动画-->
         <item name="android:windowAnimationStyle">@style/activityAnimation</item>
         <item name="android:listDivider">@drawable/list_line</item>
@@ -52,5 +53,15 @@
     <style name="AppNewTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppNewTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="test_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
 
 </resources>

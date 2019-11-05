@@ -1,22 +1,37 @@
 package com.erik.android.androidlean.activity;
 
 import android.app.Activity;
+import android.app.ActivityManager;
+import android.app.IntentService;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModel;
+import android.arch.lifecycle.ViewModelProvider;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.PointF;
 import android.net.Uri;
 import android.os.Handler;
 import android.provider.Contacts;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.LruCache;
+import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.ViewStub;
@@ -29,7 +44,12 @@ import android.widget.Toast;
 import com.erik.android.androidlean.adapter.TestFragmentPagerAdapter;
 import com.erik.android.androidlean.R;
 import com.erik.android.androidlean.bean.MessageEvent;
+import com.erik.android.androidlean.bean.Student;
+import com.erik.android.androidlean.bean.UserModel;
 import com.erik.android.androidlean.fragment.SplashFragment;
+import com.erik.android.androidlean.ohter.TestService;
+import com.erik.android.androidlean.ohter.WeatherService;
+import com.erik.utilslibrary.StatusBarUtil;
 
 import java.lang.ref.WeakReference;
 
@@ -37,6 +57,8 @@ import java.lang.ref.WeakReference;
 public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {
 
     public static final String TAG = "TestService";
+
+    private static final int NOTIFY_ID = 123;
 
     private RadioGroup rg_tab_bar;
     private RadioButton rb_home;
@@ -84,10 +106,9 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        StatusBarUtil.setFullScreen(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         splashFragment = new SplashFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame, splashFragment);
@@ -106,6 +127,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                         //将viewstub加载进来
                         viewStub.inflate();
                         initMain();
+                        StatusBarUtil.cancelFullScreen(MainActivity.this);
                     }
                 } );
             }
@@ -121,6 +143,22 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         });
 
         //3.同时进行异步加载数据
+        SparseArray<String> map = new SparseArray<>();
+        map.put(1, "Hello");
+
+        final UserModel viewModel = new ViewModelProvider(this, new ViewModelProvider.Factory() {
+            @NonNull
+            @Override
+            public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
+                return null;
+            }
+        }).get(UserModel.class);
+        viewModel.getStudent().observe(this, new Observer<Student>() {
+            @Override
+            public void onChanged(@Nullable Student student) {
+                //update ui.
+            }
+        });
     }
 
     private void initMain() {
@@ -173,6 +211,63 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         viewPager.setAdapter(adapter);
         viewPager.setCurrentItem(0);
         viewPager.addOnPageChangeListener(this);
+
+        localNotification();
+    }
+
+    //本地通知
+    private void localNotification() {
+        // 本地通知
+        NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        String title = "晴转多云 22℃" ;
+        String content = "上海市浦东新区" ;
+
+        //1.实例化一个通知，指定图标、概要、时间
+        //2.指定通知的标题、内容和intent
+        Intent intent = new Intent(this, WeatherActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
+        Notification notification = new Notification.Builder(this)
+                .setContentTitle(title)
+                .setSmallIcon(R.drawable.weather)
+                .setContentText(content)
+                .setWhen(5000)
+                .setContentIntent(pi)
+                .build();
+        //3.指定声音
+        notification.defaults = Notification.DEFAULT_SOUND;
+        //4.发送通知
+        nm.notify(1, notification);
+    }
+
+    //位图缓存
+    public void lruCache() {
+        int memClass = ((ActivityManager)getSystemService(Context.ACTIVITY_SERVICE)).getMemoryClass();
+        int cacheSize = 1024 * 1024 * memClass / 8;
+        LruCache cache = new LruCache<String, Bitmap>( cacheSize );
+    }
+
+    public static Bitmap decodeBitmapWithGiveSizeFromResource(Resources res, int resId, int reqWidth, int reqHeight) {
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeResource(res, resId, options);
+        options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+        options.inJustDecodeBounds = false;
+        return BitmapFactory.decodeResource(res, resId, options);
+    }
+
+    public static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
+        final int height = options.outHeight;
+        final int widht = options.outWidth;
+        int inSampleSize = 1;
+
+        if (height > reqHeight || widht > reqWidth) {
+            final int halfHeight = height / 2;
+            final int halfWidth = widht / 2;
+            while ((halfHeight / inSampleSize) > reqHeight &&(halfWidth / inSampleSize) > reqWidth) {
+                inSampleSize *= 2;
+            }
+        }
+        return inSampleSize;
     }
 
     @Override

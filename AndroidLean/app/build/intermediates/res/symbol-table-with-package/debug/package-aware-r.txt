@@ -879,6 +879,7 @@ color text_gray
 color text_topbar
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1272,6 +1273,7 @@ drawable username
 drawable wallpaper1
 drawable wallpaper2
 drawable wallpaper3
+drawable weather
 drawable white_radius
 id ALT
 id CTRL
@@ -1345,6 +1347,7 @@ id btn_qrcode
 id btn_query
 id btn_quite
 id btn_right
+id btn_show
 id btn_show_origin
 id btn_start
 id btn_stop
@@ -1575,6 +1578,7 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id test_view
 id text
 id text2
 id textSpacerNoButtons
@@ -1690,6 +1694,7 @@ layout activity_matrix
 layout activity_preforence
 layout activity_qrcode
 layout activity_volume
+layout activity_weather
 layout activity_web_view
 layout banner
 layout content_base
@@ -1708,6 +1713,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_layout
 layout fragment_buy
 layout fragment_home
 layout fragment_mine
@@ -2389,6 +2395,7 @@ style Widget_MaterialComponents_Toolbar
 style Widget_Support_CoordinatorLayout
 style activityAnimation
 style tab_menu_item
+style test_dialog
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
