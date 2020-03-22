@@ -72,6 +72,8 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         location.setOnClickListener(this);
         Button wallpapper = view.findViewById(R.id.btn_wallpapper);
         wallpapper.setOnClickListener(this);
+        Button showDialog = view.findViewById(R.id.btn_dialog);
+        showDialog.setOnClickListener(this);
     }
 
     private void navigationBar(View view) {
@@ -129,6 +131,9 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.btn_wallpapper:
                 enterWallPapper();
+                break;
+            case R.id.btn_dialog:
+                enterDialog();
                 break;
         }
     }
@@ -231,6 +236,12 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     private void enterWallPapper() {
         ARouter.getInstance().build(ConstConfig.WALLPAPPER_ACTIVITY)
                 .withString("name", "切换壁纸")
+                .navigation();
+    }
+
+    private void enterDialog() {
+        ARouter.getInstance().build(ConstConfig.DIALOG_ACTIVITY)
+                .withString("name", "显示弹出框")
                 .navigation();
     }
 

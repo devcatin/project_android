@@ -1332,14 +1332,17 @@ id btn_change_volume
 id btn_clean
 id btn_clean_board
 id btn_delete
+id btn_dialog
 id btn_download
 id btn_draw_board
+id btn_fragment_dialog
 id btn_higher
 id btn_insert
 id btn_location
 id btn_login
 id btn_lower
 id btn_matrix_color
+id btn_normal_dialog
 id btn_off
 id btn_on
 id btn_preforence
@@ -1682,6 +1685,7 @@ layout abc_tooltip
 layout activity_base
 layout activity_change_wall_pager
 layout activity_detail
+layout activity_dialog
 layout activity_download
 layout activity_draw_board
 layout activity_image
@@ -1713,7 +1717,9 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_fragment
 layout dialog_layout
+layout dialog_normal
 layout fragment_buy
 layout fragment_home
 layout fragment_mine
@@ -1853,6 +1859,9 @@ string path_password_strike_through
 string preforence
 string qrcode
 string search_menu_title
+string show_dialog
+string show_fragment_dialog
+string show_normal_dialog
 string srl_component_falsify
 string srl_content_empty
 string srl_footer_failed

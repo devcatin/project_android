@@ -145,20 +145,6 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         //3.同时进行异步加载数据
         SparseArray<String> map = new SparseArray<>();
         map.put(1, "Hello");
-
-        final UserModel viewModel = new ViewModelProvider(this, new ViewModelProvider.Factory() {
-            @NonNull
-            @Override
-            public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
-                return null;
-            }
-        }).get(UserModel.class);
-        viewModel.getStudent().observe(this, new Observer<Student>() {
-            @Override
-            public void onChanged(@Nullable Student student) {
-                //update ui.
-            }
-        });
     }
 
     private void initMain() {

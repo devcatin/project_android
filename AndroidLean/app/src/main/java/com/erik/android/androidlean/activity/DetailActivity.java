@@ -3,9 +3,6 @@ package com.erik.android.androidlean.activity;
 import android.app.Activity;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;

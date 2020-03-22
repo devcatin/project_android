@@ -15,5 +15,6 @@ public final class ConstConfig {
     public static final String QRCODE_ACTIVITY = "/detail/qrcode";
     public static final String WALLPAPPER_ACTIVITY = "/detail/wallpapper";
     public static final String LOCATION_ACTIVITY = "/detail/location";
+    public static final String DIALOG_ACTIVITY = "/detail/dialog";
 
 }

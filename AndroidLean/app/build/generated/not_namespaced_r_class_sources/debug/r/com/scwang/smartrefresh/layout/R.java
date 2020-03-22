@@ -88,38 +88,38 @@ public final class R {
         public static final int MatchLayout = 0x7f080007;
         public static final int Scale = 0x7f08000a;
         public static final int Translate = 0x7f08000b;
-        public static final int srl_classics_arrow = 0x7f080120;
-        public static final int srl_classics_center = 0x7f080121;
-        public static final int srl_classics_progress = 0x7f080122;
-        public static final int srl_classics_title = 0x7f080123;
-        public static final int srl_classics_update = 0x7f080124;
+        public static final int srl_classics_arrow = 0x7f080123;
+        public static final int srl_classics_center = 0x7f080124;
+        public static final int srl_classics_progress = 0x7f080125;
+        public static final int srl_classics_title = 0x7f080126;
+        public static final int srl_classics_update = 0x7f080127;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int srl_classics_footer = 0x7f0b0065;
-        public static final int srl_classics_header = 0x7f0b0066;
+        public static final int srl_classics_footer = 0x7f0b0068;
+        public static final int srl_classics_header = 0x7f0b0069;
     }
     public static final class string {
         private string() {}
 
-        public static final int srl_component_falsify = 0x7f0f0050;
-        public static final int srl_content_empty = 0x7f0f0051;
-        public static final int srl_footer_failed = 0x7f0f0052;
-        public static final int srl_footer_finish = 0x7f0f0053;
-        public static final int srl_footer_loading = 0x7f0f0054;
-        public static final int srl_footer_nothing = 0x7f0f0055;
-        public static final int srl_footer_pulling = 0x7f0f0056;
-        public static final int srl_footer_refreshing = 0x7f0f0057;
-        public static final int srl_footer_release = 0x7f0f0058;
-        public static final int srl_header_failed = 0x7f0f0059;
-        public static final int srl_header_finish = 0x7f0f005a;
-        public static final int srl_header_loading = 0x7f0f005b;
-        public static final int srl_header_pulling = 0x7f0f005c;
-        public static final int srl_header_refreshing = 0x7f0f005d;
-        public static final int srl_header_release = 0x7f0f005e;
-        public static final int srl_header_secondary = 0x7f0f005f;
-        public static final int srl_header_update = 0x7f0f0060;
+        public static final int srl_component_falsify = 0x7f0f0053;
+        public static final int srl_content_empty = 0x7f0f0054;
+        public static final int srl_footer_failed = 0x7f0f0055;
+        public static final int srl_footer_finish = 0x7f0f0056;
+        public static final int srl_footer_loading = 0x7f0f0057;
+        public static final int srl_footer_nothing = 0x7f0f0058;
+        public static final int srl_footer_pulling = 0x7f0f0059;
+        public static final int srl_footer_refreshing = 0x7f0f005a;
+        public static final int srl_footer_release = 0x7f0f005b;
+        public static final int srl_header_failed = 0x7f0f005c;
+        public static final int srl_header_finish = 0x7f0f005d;
+        public static final int srl_header_loading = 0x7f0f005e;
+        public static final int srl_header_pulling = 0x7f0f005f;
+        public static final int srl_header_refreshing = 0x7f0f0060;
+        public static final int srl_header_release = 0x7f0f0061;
+        public static final int srl_header_secondary = 0x7f0f0062;
+        public static final int srl_header_update = 0x7f0f0063;
     }
     public static final class styleable {
         private styleable() {}

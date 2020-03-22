@@ -5,6 +5,7 @@ import com.alibaba.android.arouter.facade.model.RouteMeta;
 import com.alibaba.android.arouter.facade.template.IRouteGroup;
 import com.erik.android.androidlean.activity.ChangeWallPagerActivity;
 import com.erik.android.androidlean.activity.DetailActivity;
+import com.erik.android.androidlean.activity.DialogActivity;
 import com.erik.android.androidlean.activity.DownloadActivity;
 import com.erik.android.androidlean.activity.DrawBoardActivity;
 import com.erik.android.androidlean.activity.ImageActivity;
@@ -26,6 +27,7 @@ public class ARouter$$Group$$detail implements IRouteGroup {
   @Override
   public void loadInto(Map<String, RouteMeta> atlas) {
     atlas.put("/detail/content", RouteMeta.build(RouteType.ACTIVITY, DetailActivity.class, "/detail/content", "detail", new java.util.HashMap<String, Integer>(){{put("name", 8); put("user", 8); }}, -1, -2147483648));
+    atlas.put("/detail/dialog", RouteMeta.build(RouteType.ACTIVITY, DialogActivity.class, "/detail/dialog", "detail", new java.util.HashMap<String, Integer>(){{put("name", 8); }}, -1, -2147483648));
     atlas.put("/detail/download", RouteMeta.build(RouteType.ACTIVITY, DownloadActivity.class, "/detail/download", "detail", new java.util.HashMap<String, Integer>(){{put("name", 8); }}, -1, -2147483648));
     atlas.put("/detail/drawboard", RouteMeta.build(RouteType.ACTIVITY, DrawBoardActivity.class, "/detail/drawboard", "detail", new java.util.HashMap<String, Integer>(){{put("name", 8); }}, -1, -2147483648));
     atlas.put("/detail/imageview", RouteMeta.build(RouteType.ACTIVITY, ImageActivity.class, "/detail/imageview", "detail", new java.util.HashMap<String, Integer>(){{put("name", 8); }}, -1, -2147483648));

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:minHeight="50dip"
+        android:text="请选择指定的类型"
+        android:textColor="#CCC" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:gravity="center"
+        android:minHeight="44dip"
+        android:text="ActionSheet 1"
+        android:textAllCaps="false"
+        android:textColor="#333"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:gravity="center"
+        android:minHeight="44dip"
+        android:text="ActionSheet 2"
+        android:textAllCaps="false"
+        android:textColor="#333"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:gravity="center"
+        android:minHeight="44dip"
+        android:text="ActionSheet 3"
+        android:textAllCaps="false"
+        android:textColor="#333"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dip"
+        android:gravity="center"
+        android:minHeight="44dip"
+        android:text="取消"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_light"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+
+</LinearLayout>

@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.erik.android.androidlean">
-    <!-- 访问internet权限 -->
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:name=".ohter.TestApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_logo"
         android:supportsRtl="true"
         android:theme="@style/AppNewTheme">
-        <activity android:name=".activity.WeatherActivity"></activity>
+        <activity android:name=".activity.DialogActivity"/>
+        <activity android:name=".activity.WeatherActivity" />
         <activity android:name=".activity.LocationActivity" />
-
         <activity android:name=".activity.ChangeWallPagerActivity" />
-
         <activity android:name=".activity.QRCodeActivity" />
         <activity android:name=".activity.VolumeActivity" />
         <activity android:name=".activity.LargerImageActivity" />
@@ -31,8 +40,8 @@
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="m.test.com"
                     android:scheme="arouter" />
@@ -67,6 +76,7 @@
         <activity
             android:name=".activity.PreforenceActivity"
             android:launchMode="singleTop" />
+
         <provider
             android:name=".ohter.NameContentProvider"
             android:authorities="com.jay.example.providers.myprovider"
@@ -74,20 +84,8 @@
             android:exported="true" />
 
         <service android:name=".ohter.WallPaperService" />
-
         <service android:name=".ohter.TestService" />
         <service android:name=".ohter.WeatherService" />
-    </application> <!-- 往SDCard写入数据权限 -->
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- if you want to load images from a file OR from the internet -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.SET_WALLPAPER" />
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-#Mon Nov 04 11:07:52 CST 2019
+#Mon Dec 02 14:57:49 CST 2019
 base.0=/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

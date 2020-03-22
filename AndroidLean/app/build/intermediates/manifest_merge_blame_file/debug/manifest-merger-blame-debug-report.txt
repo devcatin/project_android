@@ -11,35 +11,35 @@
 9-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml
 10    <!-- 往SDCard写入数据权限 -->
 11    <uses-permission android:name="android.permission.READ_CONTACTS" />
-11-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:81:5-72
-11-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:81:22-69
+11-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:5:5-72
+11-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:5:22-69
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- if you want to load images from a file OR from the internet -->
-12-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:82:5-81
-12-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:82:22-78
+12-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:6:5-81
+12-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:6:22-78
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:83:5-67
-13-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:83:22-64
+13-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:7:5-67
+13-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:7:22-64
 14    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-14-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:84:5-84
-14-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:84:22-81
+14-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:8:5-84
+14-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:8:22-81
 15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-15-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:82:5-81
-15-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:82:22-78
+15-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:6:5-81
+15-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:6:22-78
 16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-16-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:86:5-80
-16-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:86:22-77
+16-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:10:5-80
+16-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:10:22-77
 17    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
-17-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:87:5-88
-17-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:87:22-85
+17-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:11:5-88
+17-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:11:22-85
 18    <uses-permission android:name="android.permission.VIBRATE" />
-18-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:88:5-66
-18-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:88:22-63
+18-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:12:5-66
+18-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:12:22-63
 19    <uses-permission android:name="android.permission.SET_WALLPAPER" />
-19-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:89:5-72
-19-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:89:22-69
+19-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:13:5-72
+19-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:13:22-69
 20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-20-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:91:5-79
-20-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:91:22-76
+20-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:14:5-79
+20-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:14:22-76
 21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 21-->[com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8424b520d380550b9dfed5b09832502f/BigImageViewPager-v4_4.1.0/AndroidManifest.xml:9:5-79
 21-->[com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8424b520d380550b9dfed5b09832502f/BigImageViewPager-v4_4.1.0/AndroidManifest.xml:9:22-76
@@ -48,187 +48,189 @@
 23-->[com.android.support:support-dynamic-animation:25.3.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/50a6404b5fad6e8241f08b408ba0cfd4/support-dynamic-animation-25.3.0/AndroidManifest.xml:22:5-24:34
 24        android:name="android.support.VERSION"
 24-->[com.android.support:support-dynamic-animation:25.3.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/50a6404b5fad6e8241f08b408ba0cfd4/support-dynamic-animation-25.3.0/AndroidManifest.xml:23:9-47
-25        android:value="25.3.0" /> <!-- 访问internet权限 -->
+25        android:value="25.3.0" />
 25-->[com.android.support:support-dynamic-animation:25.3.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/50a6404b5fad6e8241f08b408ba0cfd4/support-dynamic-animation-25.3.0/AndroidManifest.xml:24:9-31
-26    <application
-26-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:5:5-80:19
-27        android:name="com.erik.android.androidlean.ohter.TestApplication"
-27-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:6:9-46
-28        android:allowBackup="true"
-28-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:7:9-35
-29        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-29-->[com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/71cb7083e65f3c70aa55a550991b6f23/support-compat-28.0.0/AndroidManifest.xml:22:18-91
-30        android:debuggable="true"
-31        android:icon="@mipmap/ic_launcher"
-31-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:8:9-43
-32        android:label="@string/app_name"
-32-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:9:9-41
-33        android:networkSecurityConfig="@xml/network_security_config"
-33-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:10:9-69
+26
+27    <application
+27-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:16:5-89:19
+28        android:name="com.erik.android.androidlean.ohter.TestApplication"
+28-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:17:9-46
+29        android:allowBackup="true"
+29-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:18:9-35
+30        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+30-->[com.android.support:support-compat:28.0.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/71cb7083e65f3c70aa55a550991b6f23/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:19:9-43
+33        android:label="@string/app_name"
+33-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:20:9-41
 34        android:roundIcon="@mipmap/ic_launcher_logo"
-34-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:11:9-53
+34-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:21:9-53
 35        android:supportsRtl="true"
-35-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:12:9-35
+35-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:22:9-35
 36        android:testOnly="true"
 37        android:theme="@style/AppNewTheme" >
-37-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:13:9-43
-38        <activity android:name="com.erik.android.androidlean.activity.WeatherActivity" />
-38-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:14:9-71
-38-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:14:19-59
-39        <activity android:name="com.erik.android.androidlean.activity.LocationActivity" />
-39-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:15:9-63
-39-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:15:19-60
-40        <activity android:name="com.erik.android.androidlean.activity.ChangeWallPagerActivity" />
-40-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:17:9-70
-40-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:17:19-67
-41        <activity android:name="com.erik.android.androidlean.activity.QRCodeActivity" />
-41-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:19:9-61
-41-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:19:19-58
-42        <activity android:name="com.erik.android.androidlean.activity.VolumeActivity" />
-42-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:20:9-61
-42-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:20:19-58
-43        <activity android:name="com.erik.android.androidlean.activity.LargerImageActivity" />
-43-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:21:9-66
-43-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:21:19-63
-44        <activity
-44-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:22:9-40:20
-45            android:name="com.erik.android.androidlean.activity.MainActivity"
-45-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:23:13-50
-46            android:configChanges="orientation" >
-46-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:24:13-48
-47            <intent-filter>
-47-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:25:13-29:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:26:17-69
-48-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:26:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:28:17-77
-50-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:28:27-74
-51            </intent-filter>
-52            <intent-filter>
-52-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:30:13-39:29
-53                <action android:name="android.intent.action.VIEW" />
-53-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:31:17-69
-53-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:31:25-66
-54
-55                <category android:name="android.intent.category.DEFAULT" />
-55-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:33:17-76
-55-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:33:27-73
-56                <category android:name="android.intent.category.BROWSABLE" />
-56-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:35:17-78
-56-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:35:27-75
-57
-58                <data
-58-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:36:17-38:48
-59                    android:host="m.test.com"
-59-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:37:21-46
-60                    android:scheme="arouter" />
-60-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:38:21-45
-61            </intent-filter>
-62        </activity>
-63        <activity
-63-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:41:9-43:46
-64            android:name="com.erik.android.androidlean.activity.DetailActivity"
-64-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:42:13-52
-65            android:launchMode="singleTop" />
-65-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:43:13-43
-66        <activity
-66-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:44:9-46:46
-67            android:name="com.erik.android.androidlean.activity.MatrixActivity"
-67-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:45:13-52
-68            android:launchMode="singleTop" />
-68-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:46:13-43
-69        <activity
-69-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:47:9-49:46
-70            android:name="com.erik.android.androidlean.activity.DrawBoardActivity"
-70-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:48:13-55
-71            android:launchMode="singleTop" />
-71-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:49:13-43
-72        <activity
-72-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:50:9-53:50
-73            android:name="com.erik.android.androidlean.activity.BaseActivity"
-73-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:51:13-50
-74            android:label="@string/title_activity_base"
-74-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:52:13-56
-75            android:theme="@style/AppNewTheme" />
-75-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:53:13-47
-76        <activity
-76-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:54:9-56:46
-77            android:name="com.erik.android.androidlean.activity.ImageActivity"
-77-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:55:13-51
-78            android:launchMode="singleTop" />
-78-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:56:13-43
-79        <activity
-79-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:57:9-60:46
-80            android:name="com.erik.android.androidlean.activity.WebViewActivity"
-80-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:58:13-53
-81            android:label="WebView"
-81-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:59:13-36
-82            android:launchMode="singleTop" />
-82-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:60:13-43
-83        <activity
-83-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:61:9-63:46
-84            android:name="com.erik.android.androidlean.activity.DownloadActivity"
-84-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:62:13-54
-85            android:launchMode="singleTop" />
-85-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:63:13-43
-86        <activity
-86-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:64:9-66:46
-87            android:name="com.erik.android.androidlean.activity.LoginActivity"
-87-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:65:13-51
-88            android:launchMode="singleTop" />
-88-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:66:13-43
-89        <activity
-89-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:67:9-69:46
-90            android:name="com.erik.android.androidlean.activity.PreforenceActivity"
-90-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:68:13-56
-91            android:launchMode="singleTop" />
-91-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:69:13-43
-92
-93        <provider
-93-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:70:9-74:39
-94            android:name="com.erik.android.androidlean.ohter.NameContentProvider"
-94-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:71:13-54
-95            android:authorities="com.jay.example.providers.myprovider"
-95-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:72:13-71
-96            android:enabled="true"
-96-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:73:13-35
-97            android:exported="true" />
-97-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:74:13-36
-98
-99        <service android:name="com.erik.android.androidlean.ohter.WallPaperService" />
-99-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:76:9-59
-99-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:76:18-56
-100        <service android:name="com.erik.android.androidlean.ohter.TestService" />
-100-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:78:9-54
-100-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:78:18-51
-101        <service android:name="com.erik.android.androidlean.ohter.WeatherService" />
-101-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:79:9-57
-101-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:79:18-54
-102
-103        <activity
-103-->[:qrcodelibrary-release:] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c931640acca6fbb2312e45148feaf78/qrcodelibrary-release/AndroidManifest.xml:12:9-15:59
-104            android:name="com.erik.qrcodelibrary.QRCodeActivity"
-104-->[:qrcodelibrary-release:] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c931640acca6fbb2312e45148feaf78/qrcodelibrary-release/AndroidManifest.xml:13:13-65
-105            android:label="@string/title_activity_qrcode"
-105-->[:qrcodelibrary-release:] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c931640acca6fbb2312e45148feaf78/qrcodelibrary-release/AndroidManifest.xml:14:13-58
-106            android:theme="@style/AppTheme.NoActionBar" />
-106-->[:qrcodelibrary-release:] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c931640acca6fbb2312e45148feaf78/qrcodelibrary-release/AndroidManifest.xml:15:13-56
-107
-108        <meta-data
-108-->[com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ccc6c41444d701eca14865d09c3f30d0/okhttp3-integration-4.9.0/AndroidManifest.xml:11:9-13:43
-109            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
-109-->[com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ccc6c41444d701eca14865d09c3f30d0/okhttp3-integration-4.9.0/AndroidManifest.xml:12:13-84
-110            android:value="GlideModule" />
-110-->[com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ccc6c41444d701eca14865d09c3f30d0/okhttp3-integration-4.9.0/AndroidManifest.xml:13:13-40
-111
-112        <activity
-112-->[com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8424b520d380550b9dfed5b09832502f/BigImageViewPager-v4_4.1.0/AndroidManifest.xml:14:9-16:57
-113            android:name="cc.shinichi.library.view.ImagePreviewActivity"
-113-->[com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8424b520d380550b9dfed5b09832502f/BigImageViewPager-v4_4.1.0/AndroidManifest.xml:15:13-73
-114            android:theme="@style/Theme.ImagePreview" />
-114-->[com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8424b520d380550b9dfed5b09832502f/BigImageViewPager-v4_4.1.0/AndroidManifest.xml:16:13-54
-115    </application>
-116
-117</manifest>
+37-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:23:9-43
+38        <activity android:name="com.erik.android.androidlean.activity.DialogActivity" />
+38-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:24:9-60
+38-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:24:19-58
+39        <activity android:name="com.erik.android.androidlean.activity.WeatherActivity" />
+39-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:25:9-62
+39-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:25:19-59
+40        <activity android:name="com.erik.android.androidlean.activity.LocationActivity" />
+40-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:26:9-63
+40-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:26:19-60
+41        <activity android:name="com.erik.android.androidlean.activity.ChangeWallPagerActivity" />
+41-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:27:9-70
+41-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:27:19-67
+42        <activity android:name="com.erik.android.androidlean.activity.QRCodeActivity" />
+42-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:28:9-61
+42-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:28:19-58
+43        <activity android:name="com.erik.android.androidlean.activity.VolumeActivity" />
+43-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:29:9-61
+43-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:29:19-58
+44        <activity android:name="com.erik.android.androidlean.activity.LargerImageActivity" />
+44-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:30:9-66
+44-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:30:19-63
+45        <activity
+45-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:31:9-49:20
+46            android:name="com.erik.android.androidlean.activity.MainActivity"
+46-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:32:13-50
+47            android:configChanges="orientation" >
+47-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:33:13-48
+48            <intent-filter>
+48-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:34:13-38:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:35:17-69
+49-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:35:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:37:17-77
+51-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:37:27-74
+52            </intent-filter>
+53            <intent-filter>
+53-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:39:13-48:29
+54                <action android:name="android.intent.action.VIEW" />
+54-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:40:17-69
+54-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:40:25-66
+55
+56                <category android:name="android.intent.category.DEFAULT" />
+56-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:42:17-76
+56-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:42:27-73
+57                <category android:name="android.intent.category.BROWSABLE" />
+57-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:43:17-78
+57-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:43:27-75
+58
+59                <data
+59-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:45:17-47:48
+60                    android:host="m.test.com"
+60-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:46:21-46
+61                    android:scheme="arouter" />
+61-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:47:21-45
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:50:9-52:46
+65            android:name="com.erik.android.androidlean.activity.DetailActivity"
+65-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:51:13-52
+66            android:launchMode="singleTop" />
+66-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:52:13-43
+67        <activity
+67-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:53:9-55:46
+68            android:name="com.erik.android.androidlean.activity.MatrixActivity"
+68-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:54:13-52
+69            android:launchMode="singleTop" />
+69-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:55:13-43
+70        <activity
+70-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:56:9-58:46
+71            android:name="com.erik.android.androidlean.activity.DrawBoardActivity"
+71-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:57:13-55
+72            android:launchMode="singleTop" />
+72-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:58:13-43
+73        <activity
+73-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:59:9-62:50
+74            android:name="com.erik.android.androidlean.activity.BaseActivity"
+74-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:60:13-50
+75            android:label="@string/title_activity_base"
+75-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:61:13-56
+76            android:theme="@style/AppNewTheme" />
+76-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:62:13-47
+77        <activity
+77-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:63:9-65:46
+78            android:name="com.erik.android.androidlean.activity.ImageActivity"
+78-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:64:13-51
+79            android:launchMode="singleTop" />
+79-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:65:13-43
+80        <activity
+80-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:66:9-69:46
+81            android:name="com.erik.android.androidlean.activity.WebViewActivity"
+81-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:67:13-53
+82            android:label="WebView"
+82-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:68:13-36
+83            android:launchMode="singleTop" />
+83-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:69:13-43
+84        <activity
+84-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:70:9-72:46
+85            android:name="com.erik.android.androidlean.activity.DownloadActivity"
+85-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:71:13-54
+86            android:launchMode="singleTop" />
+86-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:72:13-43
+87        <activity
+87-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:73:9-75:46
+88            android:name="com.erik.android.androidlean.activity.LoginActivity"
+88-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:74:13-51
+89            android:launchMode="singleTop" />
+89-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:75:13-43
+90        <activity
+90-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:76:9-78:46
+91            android:name="com.erik.android.androidlean.activity.PreforenceActivity"
+91-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:77:13-56
+92            android:launchMode="singleTop" />
+92-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:78:13-43
+93
+94        <provider
+94-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:80:9-84:39
+95            android:name="com.erik.android.androidlean.ohter.NameContentProvider"
+95-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:81:13-54
+96            android:authorities="com.jay.example.providers.myprovider"
+96-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:82:13-71
+97            android:enabled="true"
+97-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:83:13-35
+98            android:exported="true" />
+98-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:84:13-36
+99
+100        <service android:name="com.erik.android.androidlean.ohter.WallPaperService" />
+100-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:86:9-59
+100-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:86:18-56
+101        <service android:name="com.erik.android.androidlean.ohter.TestService" />
+101-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:87:9-54
+101-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:87:18-51
+102        <service android:name="com.erik.android.androidlean.ohter.WeatherService" />
+102-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:88:9-57
+102-->/Users/yuanwang/Documents/Learning/project_android/AndroidLean/app/src/main/AndroidManifest.xml:88:18-54
+103
+104        <activity
+104-->[:qrcodelibrary-release:] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c931640acca6fbb2312e45148feaf78/qrcodelibrary-release/AndroidManifest.xml:12:9-15:59
+105            android:name="com.erik.qrcodelibrary.QRCodeActivity"
+105-->[:qrcodelibrary-release:] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c931640acca6fbb2312e45148feaf78/qrcodelibrary-release/AndroidManifest.xml:13:13-65
+106            android:label="@string/title_activity_qrcode"
+106-->[:qrcodelibrary-release:] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c931640acca6fbb2312e45148feaf78/qrcodelibrary-release/AndroidManifest.xml:14:13-58
+107            android:theme="@style/AppTheme.NoActionBar" />
+107-->[:qrcodelibrary-release:] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/2c931640acca6fbb2312e45148feaf78/qrcodelibrary-release/AndroidManifest.xml:15:13-56
+108
+109        <meta-data
+109-->[com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ccc6c41444d701eca14865d09c3f30d0/okhttp3-integration-4.9.0/AndroidManifest.xml:11:9-13:43
+110            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+110-->[com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ccc6c41444d701eca14865d09c3f30d0/okhttp3-integration-4.9.0/AndroidManifest.xml:12:13-84
+111            android:value="GlideModule" />
+111-->[com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/ccc6c41444d701eca14865d09c3f30d0/okhttp3-integration-4.9.0/AndroidManifest.xml:13:13-40
+112
+113        <activity
+113-->[com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8424b520d380550b9dfed5b09832502f/BigImageViewPager-v4_4.1.0/AndroidManifest.xml:14:9-16:57
+114            android:name="cc.shinichi.library.view.ImagePreviewActivity"
+114-->[com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8424b520d380550b9dfed5b09832502f/BigImageViewPager-v4_4.1.0/AndroidManifest.xml:15:13-73
+115            android:theme="@style/Theme.ImagePreview" />
+115-->[com.github.SherlockGougou:BigImageViewPager:v4_4.1.0] /Users/yuanwang/.gradle/caches/transforms-2/files-2.1/8424b520d380550b9dfed5b09832502f/BigImageViewPager-v4_4.1.0/AndroidManifest.xml:16:13-54
+116    </application>
+117
+118</manifest>
